@@ -79,7 +79,6 @@ key_key.twilightforest.item_display_map_cycle:key.keyboard.unknown
 key_key.twilightforest.red_thread_vision:key.keyboard.unknown
 key_key.twilightforest.zoom:key.keyboard.unknown
 key_key.twilightforest.swap_hotbar:key.keyboard.unknown
-key_key.corpse.death_history:key.keyboard.o
 key_accessories.key.open_accessories_screen:key.keyboard.h
 key_key.ftbteams.open_gui:key.keyboard.unknown
 key_key.ftbquests.quests:key.keyboard.unknown
@@ -175,3 +174,6 @@ key_gui.xaero_toggle_pac_chunk_claims:key.keyboard.unknown
 key_key.ad_astra.toggle_suit_flight:key.keyboard.j
 key_key.ad_astra.open_radio:key.keyboard.unknown
 key_key.entityculling.toggle:key.keyboard.unknown
+key_key.veinminer_client.hold:key.keyboard.grave.accent
+key_key.veinminer_client.toggle:key.keyboard.backslash
+key_key.veinminer_client.config:key.keyboard.o

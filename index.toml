@@ -5,6 +5,10 @@ file = "config/DistantHorizons.toml"
 hash = "c8c969a921c48a50099f2597a0ea0a659568c8e7be888c489966421d03421bd6"
 
 [[files]]
+file = "config/Veinminer/settings.json"
+hash = "bc292631834b645457da2f800afebb01d7b994dbb5e39c33d76867e39543d636"
+
+[[files]]
 file = "config/fallingtree.json"
 hash = "152830fbd3483f9e253f1d8c161a8b6d0d0d22f0a312f5f858b0157656916a08"
 
@@ -513,6 +517,11 @@ hash = "4dbf6265b20a945f67babc52ede3a5470cb0dfe5796f391f083667e25e5a58b9"
 metafile = true
 
 [[files]]
+file = "mods/veinminer-client-neoforge-2-11-2-1-21-1.pw.toml"
+hash = "5c841455c100befb499ffc108d5453e369dbc0827027471301384f51d7ecf06e"
+metafile = true
+
+[[files]]
 file = "mods/veinminer-neoforge-2-11-2-1-21-1.pw.toml"
 hash = "43d692735db9c891ebec5a5ea13774caefd68957a46ab9f5881c1cd26aacb72f"
 metafile = true
@@ -564,7 +573,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "58f7297ff1e132c2b39fe6776d40eb12c53b28af34d3c5adad8f48e7ce4a4456"
+hash = "217b181370afff5a46fc93403668a68b2a9e80a5d2abec0f2b4ea04a37f79aa3"
 preserve = true
 
 [[files]]

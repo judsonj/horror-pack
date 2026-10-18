@@ -1,0 +1,8 @@
+name = "veinminer-client-neoforge-2.11.2+1.21.1.jar"
+filename = "veinminer-client-neoforge-2.11.2+1.21.1.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/dxa0Bm8m/versions/dIwSWhIM/veinminer-client-neoforge-2.11.2%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "7ad476f80a5aee3b030d161f3be643cf01622cce254b9779b8d37137693cd6a9d4740c00ee94e265873b14ab19aa18cc9fb9324e5e9669bb9dc94d34c1c2679e"
