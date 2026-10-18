@@ -1,0 +1,662 @@
+[general]
+	#Ticks between Nexus update cycles.
+	# Default: 20
+	# Range: 1 ~ 200
+	cycleTicks = 20
+	#The Nexus's health pool. Only reachable at all once the CDU ring
+	#below has made it vulnerable - while it is active it is invulnerable
+	#and kept topped up, so this is the length of the final fight and
+	#nothing else.
+	# Default: 600.0
+	# Range: 10.0 ~ 100000.0
+	nexusHealth = 600.0
+	#Whether new worlds start with the Nexus boss bar showing. It can be
+	#turned on and off at any time with /infnexus bossbar.
+	bossBarByDefault = false
+	#Keep the area around a Nexus chunk-loaded so it keeps
+	#developing even when no players are nearby.
+	keepNexusLoaded = true
+	#Radius in chunks the Nexus force-loads when keepNexusLoaded
+	#is on. Higher = more remote growth, but more server load.
+	#Note: the default 2 only force-loads ~40 blocks out, well short of the
+	#~100-block infection radius - growth past that waits for a player to
+	#visit. Raise this (or use forceLoadFullRadius below) for unattended spread.
+	# Default: 2
+	# Range: 0 ~ 32
+	nexusChunkRadius = 2
+	#If true, force-load enough chunks to cover the whole infection radius
+	#(the largest entry of phaseRadii) instead of nexusChunkRadius, so the Nexus
+	#can spread to its full extent with no players around. Overrides
+	#nexusChunkRadius when on. WARNING: this keeps a large area loaded
+	#and ticking, and it does so from the moment the Nexus appears rather
+	#than growing with it. At the default 160-block final radius that is
+	#an 11-chunk radius: 23x23, over five hundred chunks, per Nexus. The
+	#note here used to say 15x15, which undersold it by half.
+	forceLoadFullRadius = false
+	#Let the infection hold open the handful of chunks it is
+	#currently spreading into.
+	#
+	#Without this the front only advances through ground a player
+	#happens to have loaded, so a Nexus left alone stops growing at
+	#whatever radius it had reached and waits. Structures already pull
+	#in the chunks they build in; this gives the infection itself the
+	#same courtesy, for about a dozen chunks that move along with the
+	#front - not the whole radius, which is what forceLoadFullRadius
+	#does and why that one is off by default.
+	#
+	#Independent of nexusKeepChunksLoaded: that one holds a fixed
+	#area open for good, this one is a window that moves and lets go
+	#behind itself, and either can be used without the other.
+	frontChunkLoading = true
+	#Leave a biomass corpse where the Nexus fell instead of having it
+	#vanish without a trace.
+	biomassOnDeath = true
+	#Push the world spawn out from under a Nexus when one appears near it.
+	#Autospawn puts the first Nexus at the world spawn, which is where the
+	#players are - and that is exactly the problem: anyone arriving without
+	#a bed starts inside the infection with nothing. Spore Inquisition
+	#solves this the same way, which is where the 750-block default comes
+	#from. The spawn moves outward along the bearing it already had from
+	#the Nexus, so the world stays recognisable.
+	moveWorldSpawn = false
+	#How far from the Nexus the world spawn is moved, in blocks.
+	# Default: 750
+	# Range: 64 ~ 100000
+	worldSpawnDistance = 750
+	#Only move the spawn if it is closer than this to the new Nexus. Set
+	#it below worldSpawnDistance or the spawn will be moved every time.
+	# Default: 400
+	# Range: 16 ~ 100000
+	worldSpawnClearance = 400
+
+[phases]
+	#Points a Nexus must gather to finish phases I, II and III.
+	#The whole progression is one running point total: every phase is
+	#this many points, so the phase is simply which band the total sits in.
+	#Killing infected takes points off, which is what makes the Nexus fall
+	#back a phase - see pointsPerKill.
+	# Default: 100
+	# Range: 10 ~ 100000
+	pointsPerPhase = 100
+	#Points held by phase IV. Larger than a normal phase so the endgame
+	#is not lost to the first handful of kills: at the default values it
+	#takes twice as many kills to push a Nexus out of phase IV as out of
+	#any other phase.
+	# Default: 200
+	# Range: 10 ~ 100000
+	finalPhaseBuffer = 200
+	#Points gained per second, one entry per phase (I, II, III, IV).
+	#Time to finish a phase = its points / this rate. The defaults give
+	#roughly 2.5h, 1.5h, 1h and 1.5h - about the same total time to reach
+	#phase IV as before, but spread evenly instead of one long phase I.
+	#These also set the pace players must out-kill to hold the Nexus back:
+	#rate * 3600 / pointsPerKill kills per hour just to break even.
+	gainPerSecond = [0.011, 0.018, 0.028, 0.037]
+	#If true, a Nexus climbs from one phase to the next once it has the
+	#points. Set to false to freeze escalation: the total then parks just
+	#below the next boundary (the boss bar sits full) and phases only move
+	#via /infnexus power set or add - the phase follows the point total,
+	#and /infnexus phase only reports it. Regression still works either way.
+	autoEscalate = true
+	#Stop the Nexus attacking while it is being beaten back.
+	#
+	#A Nexus driven to the bottom of its phase stops sending waves,
+	#hunters and sieges until it has clawed some points back, so a party
+	#that is winning gets room to press. Defenders are never held back:
+	#the zone always garrisons itself, whatever shape the Nexus is in.
+	#otherwise the party is ground down by reinforcements they are
+	#already outpacing. Turn it off for a Nexus that fights hardest when
+	#it is losing.
+	attackPauseEnabled = true
+	#Attacks stop when phase progress falls below this fraction.
+	# Default: 0.15
+	# Range: 0.0 ~ 1.0
+	attackPauseBelow = 0.15
+	#And start again above this one. The gap between the two is what
+	#stops attacks flickering on and off around a single threshold;
+	#setting it at or below attackPauseBelow removes that and is clamped
+	#back up at runtime.
+	# Default: 0.35
+	# Range: 0.0 ~ 1.0
+	attackResumeAbove = 0.35
+	#First phase this applies to, counting from 1. The default 3 means a
+	#phase I or II Nexus never stops attacking - it has little enough to
+	#send as it is.
+	# Default: 3
+	# Range: 1 ~ 4
+	attackPauseFromPhase = 3
+	#If true, a phase cannot end until the infection has actually taken
+	#the ground that phase promised. Stops the phase counter from running
+	#ahead of the visible infection when chunks are unloaded or players
+	#are holding the front back.
+	requireZoneCaughtUp = true
+	#While a Proto Hivemind is alive near the Nexus, points cannot fall
+	#below the start of the current phase - the Nexus cannot be pushed
+	#back a phase until the Proto is dead. Gives Protos a role beyond
+	#being spawned, and gives players a target other than CDUs.
+	protoAnchor = true
+	#Range in blocks a Proto anchors from. 0 = use the infection radius.
+	# Default: 0
+	# Range: 0 ~ 2000
+	protoAnchorRange = 0
+
+[power]
+	#Points a Nexus loses when a player - or freeze damage - kills a Spore
+	#mob. Despawns never count. At the default 1.5 one phase is about 67
+	#kills, and phase IV about 133.
+	# Default: 1.5
+	# Range: 0.0 ~ 1000.0
+	pointsPerKill = 1.5
+	#How far past the infected radius a kill still counts against the
+	#Nexus, in blocks.
+	#
+	#A kill counts if it happened inside the zone plus this margin - the
+	#fight for its ground - or if the dead mob was one the Nexus itself
+	#sent, wherever in the world it died, since a hunt squad is killed far
+	#from home by design.
+	#
+	#Everything else is Spore's own business. The base mod spawns infected
+	#across the whole world; counting those took points off every Nexus
+	#alive, so a base that fought wild spawns all day held down a Nexus
+	#nobody had ever visited and it could never get off the ground.
+	# Default: 10
+	# Range: 0 ~ 10000
+	killRadiusMargin = 10
+
+[growth]
+	#Infection radius reached by the END of each phase (I, II, III, IV).
+	#The zone grows with every phase instead of hitting its maximum during
+	#phase I and then standing still. Within a phase the radius follows the
+	#square root of progress, so area grows evenly: the zone spreads briskly
+	#when a phase opens and eases off as it fills.
+	#The infection still spreads block-by-block through connected blocks,
+	#so this is a ceiling, not a stamp.
+	phaseRadii = [60.0, 100.0, 130.0, 160.0]
+	#Multiplier over phaseRadii, for scaling the whole infection at once.
+	#This is where an old radiusPerPower setting should go: if you ran
+	#radiusPerPower 2.0 (a 200-block zone), set this to 1.25 to keep a
+	#comparable size against the new 160-block default.
+	# Default: 1.0
+	# Range: 0.05 ~ 20.0
+	radiusScale = 1.0
+	#How far the fleshy core and the living crust reach, in blocks
+	#from the Nexus.
+	#
+	#Blocks, not a fraction of the infection radius. A fraction moves
+	#under every column at once as the zone grows, which means the
+	#ground has to be repainted to keep up - and that repainting was
+	#the source of most of this mod's colouring bugs. The Nexus does
+	#not move, so a distance from it does not either.
+	# Default: 26.0
+	# Range: 4.0 ~ 512.0
+	coreRadius = 26.0
+	#How much of the infection radius the Nexus rebuilds into living
+	#zone, as a fraction.
+	#
+	#This used to be two settings that disagreed: the terraforming
+	#reached 32% of the radius while the living crust was a flat 70
+	#blocks, so at the default reach the terraforming sat entirely
+	#inside the crust and no outer patch was ever reshaped at all.
+	#One number now, and it is both.
+	# Default: 0.35
+	# Range: 0.02 ~ 1.0
+	zoneFraction = 0.35
+	#Relative weight of each patch biome beyond the living crust.
+	#
+	#Everything out there is a patchwork rather than a ring: which one
+	#a column gets is decided by the coordinates and the world seed and
+	#nothing else, so it never changes and never needs repainting.
+	#A bias added to each field: equal values give each about a fifth of
+	#the ground, and moving one by a hundredth is worth roughly a per
+	#cent. Measured at the defaults: 35 / 29 / 13 / 3, plus 8 for the
+	#hills that sit inside them.
+	#
+	#thicket - mycelium under standing, canopied trees
+	#burnt   - grey ground, snapped trunks, no crowns
+	#bile    - wet hollows of bile and crusted bile
+	#flesh   - organ clusters and bulbs, an outpost of the core. Kept
+	#          deliberately rare, near 2%: it is meant to be a thing you
+	#          come across, and a big one reads as a maze
+	#
+	#The biomass hills are not in this list. They are an inclusion
+	#rather than a competitor - see massChance below.
+	# Default: 0.16
+	# Range: -1.0 ~ 1.0
+	patchThicket = 0.16
+	# Default: 0.06
+	# Range: -1.0 ~ 1.0
+	patchBurnt = 0.06
+	# Default: -0.05
+	# Range: -1.0 ~ 1.0
+	patchBile = -0.05
+	# Default: -0.2
+	# Range: -1.0 ~ 1.0
+	patchFlesh = -0.2
+	#Share of the ground, from 0 to 1, taken by the biomass hills - the
+	#one biome that sits inside the others rather than competing with
+	#them, the way a fissure does. They are piled up to the terraform
+	#ceiling, and the share is scaled by how built-up the biome under
+	#them already is, so 0.14 comes out near 8% overall and much more
+	#inside flesh. Zero switches them off entirely.
+	# Default: 0.14
+	# Range: 0.0 ~ 1.0
+	massChance = 0.14
+	#If true, water is turned into bile.
+	#If false, water is left untouched and kelp/seagrass become
+	#underwater Spore plants instead.
+	bileFromWater = false
+	#Maximum blocks the infection BFS converts per cycle.
+	#With default cycleTicks=20 (1 cycle/sec), this is the per-second cap.
+	#In practice the BFS is bounded by frontier ring size, so the front grows
+	#roughly one ring outward per cycle.
+	# Default: 4096
+	# Range: 1 ~ 16384
+	infectionPerCycle = 4096
+	#How many blocks below the surface the infection reaches, per column.
+	#
+	#Depth is a distance now rather than an on/off switch, and it is
+	#measured down from the real ground - not from a heightmap, which
+	#counts leaves and water and used to leave the soil under a forest or
+	#a lake untouched. Higher values mean a deeper, and heavier,
+	#infection; 0 keeps it to the surface skin.
+	# Default: 12
+	# Range: 0 ~ 128
+	infectDepth = 12
+	#Update cycles between biomass-builder steps.
+	# Default: 2
+	# Range: 1 ~ 200
+	biomassBuildCooldown = 2
+	#Blocks the terraforming may place or carve in one step.
+	#
+	#Together with biomassBuildCooldown this is how fast the ground
+	#gets reshaped. Raise it to have a zone finished sooner at the cost
+	#of more block updates per tick; lower it to have the landscape
+	#change slowly enough to watch. It costs nothing while there is
+	#nothing to do - a sweep over finished ground places nothing.
+	# Default: 24
+	# Range: 1 ~ 512
+	terraformBlocksPerStep = 24
+	#Let the infection reshape the ground instead of only recolouring it:
+	#biomass mounds in the living zone and thicket, and the core flooded
+	#up to the Nexus's own level so hollows disappear. Only empty space is
+	#built into, so structures and player builds are never buried - but the
+	#change is permanent. Turn off for a purely cosmetic infection.
+	terraform = true
+	#Let the infection grow over player builds instead of stopping at
+	#them. On by default: it is a virus, and putting a house in the
+	#middle of an outbreak is your decision to make.
+	#
+	#It never touches bedrock, a CDU, or ground a CDU has frozen - that
+	#last pair is not politeness, it is the counter-play. Nor does it
+	#bury its own spires and towers.
+	consumePlayerBuilds = true
+	#Tallest biomass mound, in blocks. Scales down with the phase, so an
+	#early Nexus barely lifts the ground and a late one has rebuilt it.
+	# Default: 3
+	# Range: 0 ~ 16
+	terraformHeight = 3
+
+[defenders]
+	#Ticks between attempts to top the garrison back up to maxDefenders.
+	#One defender per attempt, and only when a player is near enough for
+	#the count to be worth taking.
+	# Default: 200
+	# Range: 20 ~ 100000
+	spawnIntervalTicks = 200
+	#Most infected the Nexus keeps standing in its zone, at phase IV.
+	#Scales down with the phase - a quarter of this at phase I. Set to 0
+	#to switch defenders off entirely.
+	# Default: 16
+	# Range: 0 ~ 200
+	maxDefenders = 16
+	#Tier 1 - basic Infected.
+	tier1Pool = ["spore:inf_human", "spore:inf_pillager", "spore:inf_villager", "spore:inf_witch", "spore:inf_husk", "spore:inf_drowned", "spore:inf_diseased_villager", "spore:inf_hazmat", "spore:inf_wanderer", "spore:inf_player", "spore:bairn"]
+	#Tier 2 - Evolved Infected.
+	tier2Pool = ["spore:bloater", "spore:brute", "spore:chemist", "spore:conductor", "spore:gargoyle", "spore:gorgon", "spore:griefer", "spore:howler", "spore:inebriater", "spore:inf_evoker", "spore:inf_vindicator", "spore:jagd", "spore:knight", "spore:leaper", "spore:mephitic", "spore:naiad", "spore:scamper", "spore:scavenger", "spore:slasher", "spore:spitter", "spore:stalker", "spore:thorn", "spore:volatile", "spore:braiomil", "spore:protector", "spore:busser", "spore:nuclea"]
+	#Tier 3 - Hyper-Evolved Infected.
+	tier3Pool = ["spore:brot", "spore:grober", "spore:hevoker", "spore:hvindicator", "spore:inquisitor", "spore:ogre", "spore:wendigo", "spore:hollen"]
+	#Experiments - special mobs, roughly tier 1-2 strength.
+	experimentPool = ["spore:biobloob", "spore:lacerator", "spore:plagued", "spore:saugling"]
+	#Calamities - Spore's largest threats. Empty by default: they are a
+	#world event in the base mod, not routine Nexus troops, and dropping
+	#one on a base unannounced is not a fair fight. Fill this in and they
+	#become available to sieges through the "calamity" term in
+	#siege.waves; while it is empty that term is skipped, not substituted.
+	#
+	#All nine, ready to paste - delete the ones you do not want:
+	#
+	#  calamityPool = [
+	#      "spore:sieger",        # Sieger
+	#      "spore:howitzer",      # Howitzer
+	#      "spore:stahl",         # Stahlmorder
+	#      "spore:hohlfresser",   # Hohlfresser
+	#      "spore:gazenbreacher", # GazenBreacher
+	#      "spore:kraken",        # Grakensenker
+	#      "spore:leviathan",     # Leviathan
+	#      "spore:hindenburg",    # Hindenburg
+	#      "spore:verfall",       # Verfalldrache
+	#  ]
+	#
+	#Ids not listed here are parts and projectiles - a Leviathan segment,
+	#a Howitzer arm, the Hindenburg's bomb. Spawning one of those on its
+	#own gets you a floating body part, not a monster.
+	calamityPool = []
+	#Organoids - entity-structures spawned as static defenders.
+	organoidPool = ["spore:hivetumor", "spore:vigil", "spore:usurper", "spore:umarmed", "spore:mound", "spore:braurei", "spore:verva", "spore:delusioner", "spore:reconstructor"]
+
+[waves]
+	#Attack players inside the infected radius.
+	enabled = true
+	# Default: 6000
+	# Range: 200 ~ 1000000
+	intervalTicks = 6000
+	#Mobs per wave, plus one for each phase - so 1 here is one mob at
+	#phase I and four at phase IV. A wave is the standing pressure on a
+	#player who lives inside the zone, and it arrives on top of a
+	#garrison of up to sixteen defenders; at four plus the phase it was
+	#less pressure than weather.
+	# Default: 1
+	# Range: 1 ~ 64
+	size = 1
+	# Default: 24
+	# Range: 4 ~ 256
+	spawnDistance = 24
+
+[hunt]
+	#Hunt players beyond the infected radius.
+	enabled = true
+	# Default: 24000
+	# Range: 18000 ~ 72000
+	intervalTicks = 24000
+	#Inner radius of the hunter/siege spawn ring around the player.
+	# Default: 64
+	# Range: 16 ~ 2000
+	spawnDistanceMin = 64
+	#Outer radius of the hunter/siege spawn ring around the player.
+	# Default: 90
+	# Range: 16 ~ 2000
+	spawnDistanceMax = 90
+	#Only hunt players within this range of the Nexus.
+	# Default: 16000
+	# Range: 256 ~ 100000
+	maxRange = 16000
+	# Default: 3
+	# Range: 1 ~ 64
+	size = 3
+	#Hold hunts back for a while after players have been killing.
+	#
+	#A hunt is the Nexus sending a squad after somebody who has left its
+	#reach, which takes troops to spare. Fight your way through the zone
+	#and the hunts stop until it has restocked, so a fight inside the
+	#infection buys a window you earned rather than one the timer handed
+	#you.
+	#
+	#Only the Nexus's own troops count - the defenders, wave mobs,
+	#hunters and siege mobs it sent. Infected that Spore spawns by itself,
+	#including everything the fog brings, are not its army and killing
+	#them does not hold anything back; otherwise a base that grinds wild
+	#spawns all day would switch off the hunts of a Nexus it has never
+	#visited.
+	#
+	#Measured by kills, not by counting what is alive in the zone. The
+	#head-count is the obvious design and it does not survive a real
+	#server: defenders despawn once you walk away, most of the zone is not
+	#force-loaded so it stops being counted at all, and hunts by
+	#definition target players who have LEFT the zone - which is exactly
+	#when both of those bite. Kills arrive as events instead, so nothing
+	#an optimisation mod or a chunk unload does can change the answer.
+	#
+	#It is also deliberately not driven by damage dealt to the Nexus: it
+	#is invulnerable until the CDUs go in, so that could only ever fire
+	#during the final assault, the one moment it should be at its worst
+	#rather than its weakest.
+	requiresGarrison = true
+	#Kills of the Nexus's own troops, within about one half-life, that
+	#stop hunts. Eight is roughly a hunter squad plus the defenders that
+	#come with it - one real skirmish.
+	# Default: 8.0
+	# Range: 1.0 ~ 1000.0
+	pressurePauseAt = 8.0
+	#Ceiling on the meter, or 0 for none. An evening spent grinding the
+	#zone banks an evening of quiet, which is the point: a Nexus that has
+	#lost its whole army several times over is in no state to be chasing
+	#anyone across the map. A full meter holds for
+	#(max - resumeAt) * pressureRecoverySeconds seconds - two hours at
+	#the defaults.
+	#
+	#It used to default to 0. That is unbounded, and the kills that fill
+	#it are ones the Nexus hands out for free: it spawns a defender every
+	#ten seconds and the meter drains one point every two minutes, so a
+	#player standing in the zone killing them as they appear banked quiet
+	#twelve times faster than it ran out and switched hunts off for good.
+	# Default: 60.0
+	# Range: 0.0 ~ 100000.0
+	pressureMax = 60.0
+	#Hunts start again once the meter has decayed to this. Clamped down
+	#to pressurePauseAt; the gap between the two is what stops hunts
+	#flickering on and off around one threshold.
+	# Default: 2.0
+	# Range: 0.0 ~ 1000.0
+	pressureResumeAt = 2.0
+	#Seconds of quiet each kill buys - the rate the meter drains at.
+	#
+	#With the defaults a skirmish of eight kills holds hunts for twelve
+	#minutes, clearing a zone of thirty buys nearly an hour, and an
+	#evening spent grinding three hundred buys most of a day. That is the
+	#point of a flat rate: the reward keeps pace with the effort instead
+	#of flattening out, so a party can clear the area and then go and play
+	#with the rest of their modpack.
+	#
+	#The drain runs on world time, not on the Nexus being loaded or
+	#anyone being nearby, so a hold always ends when it says it will.
+	# Default: 120.0
+	# Range: 1.0 ~ 100000.0
+	pressureRecoverySeconds = 120.0
+	#Ticks an orphaned hunter survives alone before despawn.
+	# Default: 1200
+	# Range: 200 ~ 72000
+	despawnGraceTicks = 1200
+
+[evolution]
+	#Periodically seed Spore's Scent entities to grant
+	#evolution points to nearby Infected (T1->T2->T3).
+	enabled = true
+	# Default: 4800
+	# Range: 200 ~ 1000000
+	intervalTicks = 4800
+	#Scents released per evolution cycle. Scent is Spore's own
+	#evolution-points amplifier: it upgrades nearby Infected on its own,
+	#so this is how fast the zone's mobs mature rather than how many
+	#there are.
+	# Default: 1
+	# Range: 1 ~ 10
+	scentCount = 1
+
+[siege]
+	#Run phase-IV siege events. Set to false to disable sieges entirely.
+	enabled = true
+	#Minimum ticks between phase-IV siege events (default 108000 = 1.5h).
+	#Each siege rolls a fresh random delay between min and max, so raising
+	#these is how you make sieges rarer instead of constant.
+	#Siege squads spawn in the hunt spawn ring (see hunt.spawnDistanceMin/Max).
+	# Default: 108000
+	# Range: 1200 ~ 1728000
+	intervalMinTicks = 108000
+	#Maximum ticks between phase-IV siege events (default 216000 = 3h).
+	#Clamped up to intervalMinTicks if set lower.
+	# Default: 216000
+	# Range: 1200 ~ 1728000
+	intervalMaxTicks = 216000
+	#Number of waves per siege event. If this is larger than the number
+	#of compositions in "waves" below, the last composition repeats with
+	#one more of its heaviest term each time, so a long siege keeps
+	#getting worse instead of levelling off.
+	# Default: 4
+	# Range: 1 ~ 10
+	waveCount = 4
+	#Ticks between siege waves. A minute: half of that gave a player no
+	#room to reposition, drink anything or bury the last lot before the
+	#next arrived, so a siege read as one long fight rather than as
+	#waves.
+	# Default: 1200
+	# Range: 40 ~ 12000
+	waveGapTicks = 1200
+	#What each wave of a siege is made of, one line per wave.
+	#
+	#A line is a comma-separated list of "<count> <what>" terms, where
+	#<what> is a pool name - tier1, tier2, tier3, experiment, organoid,
+	#calamity - or an entity id spelled out, e.g. "1 spore:ogre".
+	#The count may be left off and means one.
+	#
+	#The defaults open with bodies to push players off the walls, bring in
+	#the heavies once the fight is committed, and close with whatever the
+	#infection has been saving. Calamities appear only if you have put
+	#something in calamityPool - the term is simply skipped otherwise.
+	#
+	#Counts are per besieged group, not per player: a group gets one wave
+	#scaled by perPlayerScale, not one whole wave each.
+	#
+	#Example of a heavier final wave, once calamityPool has something in it:
+	#  "4 tier3, 2 spore:wendigo, 1 calamity"
+	waves = ["8 tier1, 1 tier2", "5 tier1, 4 tier2", "3 tier2, 3 tier3, 1 experiment", "2 tier2, 4 tier3, 1 calamity"]
+	#Hard ceiling on how many mobs one wave may spawn against one group,
+	#after perPlayerScale. A twenty-player town would otherwise ask for a
+	#wave nobody's server can render.
+	# Default: 40
+	# Range: 1 ~ 500
+	maxPerWave = 40
+	#How close two players must be to count as one besieged group, in
+	#blocks. Groups are formed by chaining, so a line of players each
+	#within this range of the next counts as one group however long the
+	#line is; lower it if your players spread out along roads.
+	#
+	#Separate groups are besieged separately: ten players at a base, three
+	#at an outpost and one alone are three groups, and each gets its own
+	#wave scaled by its own size.
+	# Default: 100
+	# Range: 8 ~ 1000
+	groupRange = 100
+	#How much a wave grows for each player past the first in a besieged
+	#group. 0.5 means a pair gets 1.5x one player's wave and a group of
+	#four gets 2.5x. Set to 0 to make group size cost nothing.
+	#
+	#Before this existed a full siege spawned once per player AND was
+	#sized by the group as well, so four players together faced about
+	#sixteen times what one player did.
+	# Default: 0.5
+	# Range: 0.0 ~ 4.0
+	perPlayerScale = 0.5
+
+[proto]
+	#Spawn Proto Hiveminds inside the living zone during phase IV.
+	enabled = true
+	#Minimum ticks between Proto spawns (default 2 hours).
+	# Default: 144000
+	# Range: 24000 ~ 1728000
+	intervalMinTicks = 144000
+	#Maximum ticks between Proto spawns (default 12 hours).
+	# Default: 864000
+	# Range: 24000 ~ 1728000
+	intervalMaxTicks = 864000
+	#Hard cap on simultaneously alive Protos near the Nexus.
+	# Default: 2
+	# Range: 1 ~ 10
+	maxAlive = 2
+
+[structures]
+	#Build organic structures (spires, cysts, tendrils) inside the infected zone.
+	enabled = true
+	#Ticks between structure-builder block-placement steps.
+	# Default: 8
+	# Range: 2 ~ 200
+	stepCooldownTicks = 8
+	#How many structures build at the same time. Higher = faster
+	#completion of the spire set, at a little more cost per step.
+	# Default: 4
+	# Range: 1 ~ 32
+	maxConcurrentBuilds = 4
+	#Generate spires (the tall conical pillars in the infected ring).
+	spires = true
+	#Update cycles between the great tower's repair passes, and blocks it
+	#may lay in one. A pass looks at a single random horizontal slice, so
+	#a given hole is only visited about once every (tower height) passes.
+	#
+	#Raise the cooldown or lower the blocks to give a breach more time to
+	#be useful; the tower is what players break through to reach the
+	#Nexus, and a wall that closes faster than they can walk through it is
+	#not a fight, it is a door that will not stay open.
+	# Default: 60
+	# Range: 1 ~ 100000
+	towerRepairCooldownCycles = 60
+	#Blocks the great tower lays in one repair pass. With the cooldown
+	#above, this is how fast a breach closes: at the defaults a three by
+	#three hole takes about fifty minutes, which is long enough for one
+	#to be worth making.
+	# Default: 4
+	# Range: 1 ~ 512
+	towerRepairBlocks = 4
+	#Rib arches over the way in, craters of bile in the living zone, and
+	#clutches of sacs out in the thicket. Newer than the rest and grouped
+	#under one switch so they can be turned off if they do not fit.
+	extraStructures = true
+
+[autospawn]
+	#Spawn the world's first Nexus automatically, shortly after the world
+	#is first loaded.
+	enabled = false
+	#Ticks after a world is first loaded before the automatic Nexus
+	#appears. The default is five minutes, so a new world is not an
+	#outbreak before anyone has found a tree.
+	# Default: 6000
+	# Range: 0 ~ 10000000
+	delayTicks = 6000
+	#Bring the infection back some time after a Nexus is destroyed, so
+	#killing it buys a reprieve rather than ending the threat. Off by
+	#default: a destroyed Nexus staying destroyed is the normal game.
+	#
+	#Whatever the last Nexus infected stays infected either way - the
+	#ground is not cleaned up, and clearing it is the players' problem.
+	respawnEnabled = false
+	#Ticks after a Nexus dies before the next one appears.
+	#24000 ticks is one Minecraft day, so the default 120000 is five days.
+	# Default: 120000
+	# Range: 1200 ~ 100000000
+	respawnDelayTicks = 120000
+	#Extra random ticks added to the delay, rolled per respawn, so the
+	#return is not on a schedule players can set a clock by. 0 disables.
+	# Default: 48000
+	# Range: 0 ~ 100000000
+	respawnDelayExtraTicks = 48000
+	#Respawn on the spot where the last Nexus died. When false the new
+	#one appears at world spawn instead, the same place autospawn uses.
+	respawnAtDeathSite = true
+	#How many times the infection may come back. 0 means no limit.
+	#Counts respawns only, not the first Nexus.
+	# Default: 0
+	# Range: 0 ~ 1000
+	respawnMax = 0
+	#Only respawn while at least one player is within this many blocks
+	#of the chosen spot, so the infection returns where somebody will
+	#actually meet it. 0 respawns regardless of who is around.
+	# Default: 0
+	# Range: 0 ~ 100000
+	respawnPlayerRange = 0
+
+[cdu]
+	#Active CDUs within cduRadius needed to make the Nexus vulnerable.
+	#
+	#This is how the Nexus is beaten. It is invulnerable and self-healing
+	#until the ring is up, so the fight is a construction problem first
+	#and a damage problem second: build and fuel this many of Spore's
+	#CDUs close enough to it, while it hunts and besieges you for doing
+	#so. A CDU that runs out of fuel, or that hostile Spore mobs have
+	#infested, does not count.
+	# Default: 4
+	# Range: 1 ~ 64
+	cduNeeded = 4
+	#How close a CDU has to be to count towards cduNeeded. Measured as a
+	#cube around the Nexus, so a CDU placed on a diagonal counts at the
+	#same distance as one placed on an axis.
+	# Default: 20
+	# Range: 2 ~ 64
+	cduRadius = 20

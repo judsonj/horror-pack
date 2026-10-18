@@ -65,6 +65,10 @@ file = "config/ftbquests/quests/reward_tables/rare.snbt"
 hash = "ddd7132c52662967a1a7a90c07e87d8a719634ed3b3fbbc5332f3f345387ba6f"
 
 [[files]]
+file = "config/infnexus-common.toml"
+hash = "84703491485d398e91f0b34bb0a4175307c0da4d0c89efbeea9340d15c77dcd5"
+
+[[files]]
 file = "config/iris.properties"
 hash = "efe0c30620affee4a63c94309643da1b5a10d9b411d292f1394bd233489a7334"
 
@@ -731,8 +735,8 @@ hash = "734e155b3016c152cb8a7f2198af300a64baa02ce23e7341d90513a236fd2eb8"
 metafile = true
 
 [[files]]
-file = "mods/survivors-0.5.1.jar"
-hash = "c2e28b8d91975fc25cb6110b2ecd01cb2b31543fbf6867feeedb86bb3d6352d6"
+file = "mods/survivors-0.7.0.jar"
+hash = "87d27122141fc7ae664f9e02ef9ffc936bc4a526bd5849524af1ecce4e9915ba"
 
 [[files]]
 file = "mods/t-and-t-fabric-neoforge-1-13-11.pw.toml"
