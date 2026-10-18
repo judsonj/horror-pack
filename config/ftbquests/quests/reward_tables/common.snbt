@@ -1,0 +1,15 @@
+{
+	id: "7993104BCF29421E"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ id: "4E32E11CDA931639", item: { count: 1, id: "minecraft:bread" }, count: 16, weight: 10.0f }
+		{ id: "53C87679362B95D4", item: { count: 1, id: "minecraft:torch" }, count: 32, weight: 12.0f }
+		{ id: "26517369CAFE8460", item: { count: 1, id: "minecraft:cooked_beef" }, count: 8, weight: 8.0f }
+		{ id: "0C909AF5BBA71DA9", item: { count: 1, id: "minecraft:coal" }, count: 16, weight: 8.0f }
+		{ id: "57F05B263907EA17", item: { count: 1, id: "minecraft:iron_nugget" }, count: 8, weight: 6.0f }
+		{ id: "6E5E95E640217E2D", item: { count: 1, id: "create:andesite_alloy" }, count: 16, weight: 6.0f }
+		{ id: "55B3D3F11CB5B3D1", item: { count: 1, id: "minecraft:copper_ingot" }, count: 4, weight: 5.0f }
+		{ id: "0AF31C1715B2AD32", item: { count: 1, id: "minecraft:arrow" }, count: 16, weight: 5.0f }
+	]
+}

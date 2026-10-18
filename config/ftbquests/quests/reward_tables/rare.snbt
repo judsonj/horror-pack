@@ -1,0 +1,15 @@
+{
+	id: "4D21E7414940E717"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ id: "29888E9D9FC10014", item: { count: 1, id: "minecraft:iron_ingot" }, count: 8, weight: 10.0f }
+		{ id: "540CDE8E34071959", item: { count: 1, id: "create:brass_ingot" }, count: 8, weight: 8.0f }
+		{ id: "2D2B9BEA03EB4DED", item: { count: 1, id: "create:track" }, count: 16, weight: 8.0f }
+		{ id: "55C7A0566511DF60", item: { count: 1, id: "minecraft:golden_apple" }, count: 2, weight: 4.0f }
+		{ id: "77BDF96A9553E47F", item: { count: 1, id: "minecraft:diamond" }, count: 1, weight: 4.0f }
+		{ id: "5B2A3A4D685FA03A", item: { count: 1, id: "minecraft:redstone" }, count: 16, weight: 6.0f }
+		{ id: "519C34AC6F6DA037", item: { count: 1, id: "create:railway_casing" }, count: 4, weight: 6.0f }
+		{ id: "55211BD0101148CA", item: { count: 1, id: "minecraft:lantern" }, count: 16, weight: 6.0f }
+	]
+}

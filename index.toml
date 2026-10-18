@@ -1,6 +1,54 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/ch0.snbt"
+hash = "7a90dbd0876e1cdcef226623a3f89976f41e34c32fa036a6c437c6bdd51d026c"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/ch1.snbt"
+hash = "01aa4b142eaad93c196f23a92d5800a21ff6f774f9319fb3dab4c2cdaa7d3e6f"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/ch2.snbt"
+hash = "ccc000527b898f8c995f05368f5434e93671f1b5bcdd8df65014a520e059b633"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/ch3.snbt"
+hash = "4d24f0b5737bff95a52b82f9b0e3d536752a91dd2c1abefdf34f12211a27b562"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/ch4.snbt"
+hash = "5ccef89d0957661113f9112d3ca9a75d3917431f975e8ff811909a0b814f5905"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/ch5.snbt"
+hash = "2a382d45a57fee4aae6af1697b17f66be16c5f6abad32a6a6150d5e4dd0cc85f"
+
+[[files]]
+file = "config/ftbquests/quests/data.snbt"
+hash = "65a9535f763cc9487e646c28afd72713ee5acf7e8113eb951f8adb28ba58aa55"
+
+[[files]]
+file = "config/ftbquests/quests/lang/en_us.snbt"
+hash = "451425285bd45eb1277edcf03f5f0aa599c47c98133ce2eac88d02435d882323"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/common.snbt"
+hash = "7a8926ff239dfcf59336e2a7759d1b4f97287a2947d62c6e7a9e1f8170adba8f"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/epic.snbt"
+hash = "8c14ae65a7d5896d0dde9d5e39f859598667ebdfdbda9bb85169d82b28e864d8"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/rare.snbt"
+hash = "ddd7132c52662967a1a7a90c07e87d8a719634ed3b3fbbc5332f3f345387ba6f"
+
+[[files]]
 file = "config/iris.properties"
 hash = "efe0c30620affee4a63c94309643da1b5a10d9b411d292f1394bd233489a7334"
 

@@ -1,0 +1,72 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ch3"
+	group: ""
+	icon: { id: "createaddition:tesla_coil" }
+	id: "5829F60643377E5B"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "18B606392431482E"
+			x: 0d
+			y: 0d
+			dependencies: ["0B9F12FC3A0D76DB"]
+			hide_until_deps_complete: true
+			tasks: [{ id: "3DFC893B433128B8", type: "checkmark" }]
+			rewards: [{ id: "680B030C3322C533", type: "random", table_id: 5557977682739783447L }]
+		}
+		{
+			id: "552775E8592A7452"
+			x: 2d
+			y: -1.5d
+			dependencies: ["18B606392431482E"]
+			tasks: [{ id: "3D658C3D0F3B46F3", type: "item", item: { count: 1, id: "minecraft:stone_bricks" }, count: 64L }]
+			rewards: [{ id: "1B9C36BAB5E34A1D", type: "xp_levels", xp_levels: 3 }]
+		}
+		{
+			id: "400E1D5A58994D60"
+			x: 4d
+			y: -1.5d
+			dependencies: ["552775E8592A7452"]
+			tasks: [{ id: "64B3734962074AAA", type: "item", item: { count: 1, id: "createaddition:tesla_coil" } }]
+			rewards: [{ id: "7BD926B5ED36A6F0", type: "random", table_id: 5557977682739783447L }]
+		}
+		{
+			id: "47A3E909D9DFB68F"
+			x: 2d
+			y: 1.5d
+			dependencies: ["18B606392431482E"]
+			tasks: [{ id: "282E62A261B6F568", type: "kill", entity: "spore:bloater", value: 10L }]
+			rewards: [{ id: "26A18C9B53369E7C", type: "random", table_id: 5557977682739783447L }]
+		}
+		{
+			id: "0BF299613535445C"
+			x: 4d
+			y: 1.5d
+			dependencies: ["47A3E909D9DFB68F"]
+			tasks: [{ id: "6A5CEB47973763F3", type: "kill", entity: "weeping_angels:weeping_angel", value: 1L }]
+			rewards: [{ id: "798C436A4A911088", type: "random", table_id: 5557977682739783447L }]
+		}
+		{
+			id: "0A344FDEFF65DB42"
+			x: 6d
+			y: 1.5d
+			dependencies: ["0BF299613535445C"]
+			optional: true
+			tasks: [{ id: "4F2EF789DF28D88D", type: "kill", entity: "mowziesmobs:ferrous_wroughtnaut", value: 1L }]
+			rewards: [{ id: "6B4AFBFCB3F9B076", type: "random", table_id: 2893836879149437615L }]
+		}
+		{
+			id: "3982EBB723ECD32B"
+			x: 9d
+			y: 0d
+			dependencies: ["400E1D5A58994D60" "0BF299613535445C"]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{ id: "5B20A4A407692A4B", type: "checkmark" }]
+			rewards: [{ id: "14A02A0A9719CB42", type: "random", table_id: 2893836879149437615L }]
+		}
+	]
+}

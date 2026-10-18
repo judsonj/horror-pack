@@ -1,12 +1,12 @@
-name = "The Ages Pack"
+name = "Horror Pack"
 author = "Claude & friends"
-version = "0.1.0-alpha"
+version = "0.2.0-alpha"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "f01c43f795645c50626066dd4982faa6b90bcdf33782cb942c7eecd297193dcc"
+hash = "3733a3b204638707098c7a1055958621b452d6c04e5c4f3251e8528fee95f3b1"
 
 [versions]
 minecraft = "1.21.1"

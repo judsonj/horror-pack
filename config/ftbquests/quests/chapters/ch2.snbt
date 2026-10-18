@@ -1,0 +1,81 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ch2"
+	group: ""
+	icon: { id: "create:track" }
+	id: "0750595BB1E99F0F"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "2227FE9F824CE158"
+			x: 0d
+			y: 0d
+			dependencies: ["7D0BC39519E50BC5"]
+			hide_until_deps_complete: true
+			tasks: [{ id: "12740E4060AA34EE", type: "item", item: { count: 1, id: "create:brass_ingot" } }]
+			rewards: [{ id: "058EA2C312D1A421", type: "xp_levels", xp_levels: 3 }]
+		}
+		{
+			id: "17417239150B9BF0"
+			x: 2d
+			y: -1.5d
+			dependencies: ["2227FE9F824CE158"]
+			tasks: [{ id: "4A8846191D1A2388", type: "item", item: { count: 1, id: "create:track" }, count: 32L }]
+			rewards: [{ id: "1152385319194687", type: "random", table_id: 8760363617949925918L }]
+		}
+		{
+			id: "1300434F59C13300"
+			x: 4d
+			y: -1.5d
+			dependencies: ["17417239150B9BF0"]
+			tasks: [{ id: "75D2E7D194A331BC", type: "item", item: { count: 1, id: "create:controls" } }]
+			rewards: [{ id: "5026E7E8DAE52CBC", type: "xp_levels", xp_levels: 4 }]
+		}
+		{
+			id: "6E36006FC0490D84"
+			x: 6d
+			y: -1.5d
+			dependencies: ["1300434F59C13300"]
+			tasks: [{ id: "195DC97F75E85463", type: "checkmark" }]
+			rewards: [{ id: "1D82601A7F460D98", type: "random", table_id: 5557977682739783447L }]
+		}
+		{
+			id: "20BC1DE9290ABEE6"
+			x: 8d
+			y: -1.5d
+			dependencies: ["6E36006FC0490D84"]
+			tasks: [{ id: "67AB2F829C7459EA", type: "item", item: { count: 1, id: "create:schedule" } }]
+			rewards: [{ id: "5C41EBB345630ECE", type: "xp_levels", xp_levels: 5 }]
+		}
+		{
+			id: "64F936ADB8D3EDAE"
+			x: 2d
+			y: 1.5d
+			dependencies: ["7D0BC39519E50BC5"]
+			hide_until_deps_complete: true
+			tasks: [{ id: "2B3785B845DEA428", type: "checkmark" }]
+			rewards: [{ id: "4F3470DEC653A06D", type: "xp_levels", xp_levels: 6 }]
+		}
+		{
+			id: "51AD8034176BFA4A"
+			x: 4d
+			y: 1.5d
+			dependencies: ["6E36006FC0490D84"]
+			optional: true
+			tasks: [{ id: "713898978F102C5D", type: "item", item: { count: 1, id: "create_power_loader:empty_andesite_chunk_loader" } }]
+			rewards: [{ id: "0C2AF400F5B44136", type: "xp_levels", xp_levels: 3 }]
+		}
+		{
+			id: "0B9F12FC3A0D76DB"
+			x: 11d
+			y: 0d
+			dependencies: ["20BC1DE9290ABEE6" "64F936ADB8D3EDAE"]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{ id: "53F9D6BD881D074D", type: "checkmark" }]
+			rewards: [{ id: "3676B7BF5B5728B0", type: "random", table_id: 5557977682739783447L }]
+		}
+	]
+}

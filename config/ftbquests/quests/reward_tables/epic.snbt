@@ -1,0 +1,13 @@
+{
+	id: "2828F94F33A092AF"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ id: "2CB3B43FFB720318", item: { count: 1, id: "minecraft:diamond" }, count: 4, weight: 10.0f }
+		{ id: "2C3989599F5E854D", item: { count: 1, id: "minecraft:totem_of_undying" }, count: 1, weight: 4.0f }
+		{ id: "55B8FD9174EC887D", item: { count: 1, id: "minecraft:enchanted_golden_apple" }, count: 1, weight: 2.0f }
+		{ id: "2B23644136F28DED", item: { count: 1, id: "create:brass_ingot" }, count: 32, weight: 8.0f }
+		{ id: "32F2992C5FACC78D", item: { count: 1, id: "createbigcannons:cast_iron_ingot" }, count: 16, weight: 6.0f }
+		{ id: "5FCF107296C25393", item: { count: 1, id: "minecraft:experience_bottle" }, count: 32, weight: 8.0f }
+	]
+}
