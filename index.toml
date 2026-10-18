@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/DistantHorizons.toml"
+hash = "c8c969a921c48a50099f2597a0ea0a659568c8e7be888c489966421d03421bd6"
+
+[[files]]
 file = "config/fallingtree.json"
 hash = "152830fbd3483f9e253f1d8c161a8b6d0d0d22f0a312f5f858b0157656916a08"
 
@@ -81,6 +85,10 @@ file = "config/xaero/minimap/profiles/default.cfg"
 hash = "4991e399d360cb2342b2c483c3f95873c6d21c9852d344cfec7e3e5610f29e2d"
 
 [[files]]
+file = "kubejs/server_scripts/faces_daylight.js"
+hash = "89bf900d51514bed5dba5db9403ad0292613147f3255264edd75df0aa7577fa9"
+
+[[files]]
 file = "kubejs/server_scripts/starter_kit.js"
 hash = "36110a2e35197b90ec00c7e6f296416da2619bcd2a29a8e621a4da649ca9de7f"
 
@@ -142,11 +150,6 @@ metafile = true
 [[files]]
 file = "mods/corgilib-neoforge-1-21-1-5-0-0-10.pw.toml"
 hash = "e199f7fdeb152babd24bce135d5ce4306a42e772d74af7c4f8b063505fed2346"
-metafile = true
-
-[[files]]
-file = "mods/corpse-neoforge-1-21-1-1-1-21.pw.toml"
-hash = "1a57acdda39d65cf48b6210dd671d1ebfb104842b22472f624801fc2290f68aa"
 metafile = true
 
 [[files]]
@@ -350,6 +353,11 @@ hash = "673c12e28d104d607efdc7eec34d15b1962f9839d72d23e5fbdac3b952c01f85"
 metafile = true
 
 [[files]]
+file = "mods/kotlinlangforge-2-15-0-k2-4-21-3-0-neoforge.pw.toml"
+hash = "d1e1e0e56c922d3f8fe8ed49a6c6654625eaa29584efcb6242ccea0cd96cd151"
+metafile = true
+
+[[files]]
 file = "mods/kubejs-neoforge-2101-7-2-build-377.pw.toml"
 hash = "e48a446d1210844669e696a6d036610709114b9685632da426fa923f45071497"
 metafile = true
@@ -505,6 +513,11 @@ hash = "4dbf6265b20a945f67babc52ede3a5470cb0dfe5796f391f083667e25e5a58b9"
 metafile = true
 
 [[files]]
+file = "mods/veinminer-neoforge-2-11-2-1-21-1.pw.toml"
+hash = "43d692735db9c891ebec5a5ea13774caefd68957a46ab9f5881c1cd26aacb72f"
+metafile = true
+
+[[files]]
 file = "mods/voicechat-neoforge-1-21-1-2-6-22.pw.toml"
 hash = "4c66de4cf9fb7d0b6522595ede9152692341b462d75a56af02fd25ff01ec7346"
 metafile = true
@@ -517,6 +530,16 @@ metafile = true
 [[files]]
 file = "mods/xaeroworldmap-neoforge-1-21-1-1-47-0.pw.toml"
 hash = "33c27e6f1dd029f31cab90820a995ec6e45bd91ba76b98f9646f7d7d8562594b"
+metafile = true
+
+[[files]]
+file = "mods/xmmp-1-2-2-1-21-1-neoforge.pw.toml"
+hash = "6281c8c821eaf9b96da6b39539a20a24d0f5ad6106c96be9bc2db6e13c3c1007"
+metafile = true
+
+[[files]]
+file = "mods/yet-another-config-lib-v3-3-8-2-1-21-1-neoforge.pw.toml"
+hash = "c80d24335728615f05ed573c834e154b10d5eff74d34f8d63c2e8b257ce57630"
 metafile = true
 
 [[files]]
