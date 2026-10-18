@@ -1,0 +1,8 @@
+name = "structures-1.2.jar"
+filename = "structures-1.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/PZIWeQhv/versions/JWhmlx4p/structures-1.2.jar"
+hash-format = "sha512"
+hash = "07f1daa1aacf89d2eda2ba308fceaf271eced0df5c226486fae091fc7d93febf297b2d21c97bfc4c0a6521a8ba537ff9f12c5e832d647aac702d9eac2b242235"

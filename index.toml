@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/fallingtree.json"
+hash = "152830fbd3483f9e253f1d8c161a8b6d0d0d22f0a312f5f858b0157656916a08"
+
+[[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
 
@@ -62,7 +66,7 @@ hash = "a15eb0a666dcad3d937db91430eccd0c3cea3f16dae306f0e79f9bf8975ca3a7"
 
 [[files]]
 file = "config/lostcities/profiles/horror.json"
-hash = "7cf5b39b89ec2f215a327e3eea75d3b57ce97423958f3e632c7c4ed975f449b6"
+hash = "e7ccaea6beb8762517787007e46af4e997ebdbe801a7479a0ad5d7c6bd30a8c7"
 
 [[files]]
 file = "config/xaero/lib/common.cfg"
@@ -157,8 +161,23 @@ hash = "bdc25ea7b9482667b5410cea67d6e8241b7c30ad620c06e591e52f4e005b7017"
 metafile = true
 
 [[files]]
+file = "mods/create-ltab-4-1-0.pw.toml"
+hash = "d11e3422599186b13c78722d7acafc18889ef37cff4b93a3114bf4298ae9f938"
+metafile = true
+
+[[files]]
 file = "mods/create-power-loader-2-0-5-mc1-21-1.pw.toml"
 hash = "6b2ffd7b00e3c5f4b8c7562c6b0c97a598cf78b0a1453f987c82a63178d3631b"
+metafile = true
+
+[[files]]
+file = "mods/create-rustic-structures-1-0-1-neoforge-1-21-1.pw.toml"
+hash = "6bce54275affe1cc3a7cd8d6a72669e2ac0dc1c349bd433fbd4cd54954875277"
+metafile = true
+
+[[files]]
+file = "mods/create-structures-arise-1-21-1-neoforge-176-49-49.pw.toml"
+hash = "6b5d637d6764d48d8de5c29ee7998ab09202edd67e243f2622c95180cdd63e9f"
 metafile = true
 
 [[files]]
@@ -454,6 +473,11 @@ metafile = true
 [[files]]
 file = "mods/sporeinquisition-4-5.pw.toml"
 hash = "affffec40eb8b057012a761b45a69897e81c97edd48fd74381daa76499ca316e"
+metafile = true
+
+[[files]]
+file = "mods/structures-1-2.pw.toml"
+hash = "734e155b3016c152cb8a7f2198af300a64baa02ce23e7341d90513a236fd2eb8"
 metafile = true
 
 [[files]]
