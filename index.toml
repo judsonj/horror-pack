@@ -570,11 +570,6 @@ hash = "1aba834ebd81e21b0746925fcf7326921258cd94542ca3b6fd42f457f262cf52"
 metafile = true
 
 [[files]]
-file = "mods/goofy-horror-mod-6-0-0-neoforge-1-21-1.pw.toml"
-hash = "44602ac12b919e025388ea98ed1fe27ed82fc304538ca293220d44b4dfd8ec21"
-metafile = true
-
-[[files]]
 file = "mods/guardvillagers-2-4-12-1-21-1.pw.toml"
 hash = "ad840f07f37e9fc1266b3cf85ad5642f105611832926322ea9f5bc534aab0dca"
 metafile = true
