@@ -9,6 +9,10 @@ file = "config/Veinminer/settings.json"
 hash = "bc292631834b645457da2f800afebb01d7b994dbb5e39c33d76867e39543d636"
 
 [[files]]
+file = "config/create_cities_subways/example_preset.json"
+hash = "8a1f8bea44b2074d2e7eb415d775242df63ae2c90774798626b6424f25703ac1"
+
+[[files]]
 file = "config/fallingtree.json"
 hash = "152830fbd3483f9e253f1d8c161a8b6d0d0d22f0a312f5f858b0157656916a08"
 
