@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ch0"
-	group: ""
+	group: "151E3065A6314194"
 	icon: { id: "minecraft:lantern" }
 	id: "4DB226BD3A09B8E8"
 	order_index: 0
@@ -34,26 +34,26 @@
 			rewards: [{ id: "5265C98A61AB2EFD", type: "item", item: { count: 1, id: "minecraft:shield" } }]
 		}
 		{
-			id: "62670F45399130E7"
+			id: "7C354DBEC8EEE180"
 			x: 2d
 			y: 1.5d
 			dependencies: ["6BFB5539D1CEC86A"]
-			tasks: [{ id: "158313D23B3EF0AF", type: "item", item: { count: 1, id: "sophisticatedbackpacks:backpack" } }]
-			rewards: [{ id: "6BD41D3AAA5FFC5A", type: "random", table_id: 8760363617949925918L }]
-		}
-		{
-			id: "7C354DBEC8EEE180"
-			x: 4d
-			y: 1.5d
-			dependencies: ["62670F45399130E7"]
 			tasks: [{ id: "334D9093A3091231", type: "checkmark" }]
 			rewards: [{ id: "3D5215F72E34FA64", type: "xp_levels", xp_levels: 3 }]
+		}
+		{
+			id: "4CC4F9D09F1DDAA7"
+			x: 4d
+			y: 1.5d
+			dependencies: ["7C354DBEC8EEE180"]
+			tasks: [{ id: "32A3870DFA0B1DEA", type: "checkmark" }]
+			rewards: [{ id: "163F13DF113E3ED6", type: "random", table_id: 8760363617949925918L }]
 		}
 		{
 			id: "405BCA1705D5D5C2"
 			x: 7d
 			y: 0d
-			dependencies: ["08794E63595E59BC" "7C354DBEC8EEE180"]
+			dependencies: ["08794E63595E59BC" "4CC4F9D09F1DDAA7"]
 			shape: "gear"
 			size: 2.0d
 			tasks: [{ id: "69087244C15025E7", type: "checkmark" }]

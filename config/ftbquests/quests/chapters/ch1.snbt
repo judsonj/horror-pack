@@ -2,8 +2,8 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ch1"
-	group: ""
-	icon: { id: "create:cogwheel" }
+	group: "151E3065A6314194"
+	icon: { id: "minecraft:lantern" }
 	id: "7E45EDCAAD68086A"
 	order_index: 1
 	quest_links: [ ]
@@ -18,36 +18,28 @@
 			rewards: [{ id: "6A1B7F9377C2FD06", type: "xp_levels", xp_levels: 3 }]
 		}
 		{
-			id: "5A4A0B7DF4784B7E"
+			id: "137D6F7597708837"
 			x: 2d
 			y: -1.5d
 			dependencies: ["3C776AC2E9F16693"]
-			tasks: [{ id: "04E131F50E805609", type: "item", item: { count: 1, id: "create:andesite_alloy" } }]
-			rewards: [{ id: "15A78398C9CF8445", type: "item", item: { count: 1, id: "create:shaft" }, count: 4 }]
+			tasks: [{ id: "1E9DE6544EC1AEDC", type: "item", item: { count: 1, id: "survivors:settlement_beacon" } }]
+			rewards: [{ id: "5A991C122662274B", type: "random", table_id: 8760363617949925918L }]
 		}
 		{
-			id: "5584D611223D744A"
+			id: "21BF5EF159226398"
 			x: 4d
 			y: -1.5d
-			dependencies: ["5A4A0B7DF4784B7E"]
-			tasks: [{ id: "45DAC22373AC4D92", type: "item", item: { count: 1, id: "create:cogwheel" }, count: 4L }]
-			rewards: [{ id: "4FA7271562E67568", type: "xp_levels", xp_levels: 2 }]
+			dependencies: ["137D6F7597708837"]
+			tasks: [{ id: "24380B94950B0857", type: "checkmark" }]
+			rewards: [{ id: "3D2298A2BDB613AB", type: "item", item: { count: 1, id: "minecraft:bread" }, count: 16 }]
 		}
 		{
-			id: "31D27DBA25D73C48"
-			x: 6d
-			y: -1.5d
-			dependencies: ["5584D611223D744A"]
-			tasks: [{ id: "77CDBBEE9FF1832A", type: "item", item: { count: 1, id: "create:water_wheel" } }]
-			rewards: [{ id: "265E73CE0998969B", type: "random", table_id: 8760363617949925918L }]
-		}
-		{
-			id: "7FF8B824E03C98EF"
-			x: 8d
-			y: -1.5d
-			dependencies: ["31D27DBA25D73C48"]
-			tasks: [{ id: "03D88A2552AD058F", type: "item", item: { count: 1, id: "minecraft:redstone_lamp" }, count: 4L }]
-			rewards: [{ id: "1161267B3A9A4CA0", type: "item", item: { count: 1, id: "minecraft:lantern" }, count: 16 }]
+			id: "12D403627C0AEF51"
+			x: 4d
+			y: 0d
+			dependencies: ["137D6F7597708837"]
+			tasks: [{ id: "41012C070CC919FB", type: "item", item: { count: 1, id: "minecraft:lantern" }, count: 16L }]
+			rewards: [{ id: "68999BFFA3C54F33", type: "random", table_id: 8760363617949925918L }]
 		}
 		{
 			id: "0D0ADCDCEBD811C1"
@@ -58,22 +50,14 @@
 			rewards: [{ id: "1A4E4164AC923135", type: "xp_levels", xp_levels: 5 }]
 		}
 		{
-			id: "50A01628A298C883"
-			x: 4d
-			y: 1.5d
-			dependencies: ["0D0ADCDCEBD811C1"]
-			tasks: [{ id: "5F97FE6A8651D1A2", type: "checkmark" }]
-			rewards: [{ id: "2C3E8372F94B7AFC", type: "xp_levels", xp_levels: 5 }]
-		}
-		{
 			id: "7D0BC39519E50BC5"
-			x: 11d
+			x: 7d
 			y: 0d
-			dependencies: ["7FF8B824E03C98EF" "50A01628A298C883"]
+			dependencies: ["21BF5EF159226398" "12D403627C0AEF51" "0D0ADCDCEBD811C1"]
 			shape: "gear"
 			size: 2.0d
 			tasks: [{ id: "2C8F6516450F60AD", type: "checkmark" }]
-			rewards: [{ id: "354A809A65C2CF06", type: "random", table_id: 5557977682739783447L } { id: "662B3003E046FB6F", type: "item", item: { count: 1, id: "create:track_station" } }]
+			rewards: [{ id: "354A809A65C2CF06", type: "random", table_id: 5557977682739783447L } { id: "662B3003E046FB6F", type: "item", item: { count: 1, id: "create:andesite_alloy" }, count: 16 }]
 		}
 	]
 }

@@ -2,60 +2,74 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ch4"
-	group: ""
+	group: "151E3065A6314194"
 	icon: { id: "minecraft:ender_eye" }
 	id: "1974464A24A05158"
 	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
-			id: "7A7A2ABF199241D6"
+			id: "7F67B3AD904BA91C"
 			x: 0d
-			y: -2d
+			y: 0d
 			dependencies: ["3982EBB723ECD32B"]
 			hide_until_deps_complete: true
+			tasks: [{ id: "08175F59E05AAA7E", type: "checkmark" }]
+			rewards: [{ id: "66CB75FC5E551707", type: "random", table_id: 5557977682739783447L }]
+		}
+		{
+			id: "7A7A2ABF199241D6"
+			x: 2d
+			y: -2d
+			dependencies: ["7F67B3AD904BA91C"]
 			tasks: [{ id: "36DA95802A094C88", type: "dimension", dimension: "twilightforest:twilight_forest" }]
 			rewards: [{ id: "6974B5E02728C90D", type: "random", table_id: 5557977682739783447L }]
 		}
 		{
 			id: "1E34D759428F025C"
-			x: 2d
-			y: -2d
+			x: 4d
+			y: -3d
 			dependencies: ["7A7A2ABF199241D6"]
 			optional: true
 			tasks: [{ id: "6630818F16310EEB", type: "kill", entity: "twilightforest:naga", value: 1L }]
 			rewards: [{ id: "43BAFFFA624AB256", type: "random", table_id: 2893836879149437615L }]
 		}
 		{
+			id: "03C973DA0DB6534E"
+			x: 4d
+			y: -1d
+			dependencies: ["7A7A2ABF199241D6"]
+			tasks: [{ id: "31A909FA3544749D", type: "dimension", dimension: "minecraft:the_nether" }]
+			rewards: [{ id: "15C3C6F597C3C2BA", type: "random", table_id: 5557977682739783447L }]
+		}
+		{
 			id: "3EA616D994247713"
-			x: 0d
-			y: 0d
-			dependencies: ["3982EBB723ECD32B"]
-			hide_until_deps_complete: true
+			x: 6d
+			y: -1d
+			dependencies: ["03C973DA0DB6534E"]
 			tasks: [{ id: "4F1B320EFFA5CBB4", type: "dimension", dimension: "aether:the_aether" }]
 			rewards: [{ id: "6181480BC8AC34D7", type: "random", table_id: 5557977682739783447L }]
 		}
 		{
 			id: "58E40364210E9089"
-			x: 0d
-			y: 2d
-			dependencies: ["3982EBB723ECD32B"]
-			hide_until_deps_complete: true
+			x: 8d
+			y: 0d
+			dependencies: ["3EA616D994247713"]
 			tasks: [{ id: "28C8CAA746FCCAEC", type: "dimension", dimension: "undergarden:undergarden" }]
-			rewards: [{ id: "33CE5E69FCDD11CA", type: "random", table_id: 5557977682739783447L }]
+			rewards: [{ id: "33CE5E69FCDD11CA", type: "random", table_id: 2893836879149437615L }]
 		}
 		{
 			id: "4DCCAC87EF742EDA"
 			x: 2d
-			y: 0d
-			dependencies: ["3EA616D994247713"]
+			y: 2d
+			dependencies: ["7F67B3AD904BA91C"]
 			optional: true
 			tasks: [{ id: "38DA4A7F3F1E6301", type: "kill", entity: "mowziesmobs:frostmaw", value: 1L }]
 			rewards: [{ id: "4938E03F60FF65FE", type: "random", table_id: 2893836879149437615L }]
 		}
 		{
 			id: "3450C0960C7F9112"
-			x: 5d
+			x: 10d
 			y: 0d
 			dependencies: ["7A7A2ABF199241D6" "3EA616D994247713" "58E40364210E9089"]
 			shape: "gear"

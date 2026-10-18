@@ -18,31 +18,47 @@ hash = "152830fbd3483f9e253f1d8c161a8b6d0d0d22f0a312f5f858b0157656916a08"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
+hash = "358b42a1e89bd82a67a7a9ec4db675a318d61ef4302e5a77a764bb1eb05bde91"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch0.snbt"
-hash = "7a90dbd0876e1cdcef226623a3f89976f41e34c32fa036a6c437c6bdd51d026c"
+hash = "7f8fcd3ad2802755c8fbab11d70269a0096840780d9bc4f36af159fd00c8a427"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch1.snbt"
-hash = "01aa4b142eaad93c196f23a92d5800a21ff6f774f9319fb3dab4c2cdaa7d3e6f"
+hash = "33406ab4d357e21168ffe9bc5890d588919a2507768c68fe7febcce2f8a8b893"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch2.snbt"
-hash = "ccc000527b898f8c995f05368f5434e93671f1b5bcdd8df65014a520e059b633"
+hash = "dab1aa302e528690dbbb837fadb1864116730419f2972f379529dfa271d617fc"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch3.snbt"
-hash = "4d24f0b5737bff95a52b82f9b0e3d536752a91dd2c1abefdf34f12211a27b562"
+hash = "d2cdb37dacc4b7e92845ac360c0d0b10e18e129221bf5fdbb97408d24756bc6a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch4.snbt"
-hash = "5ccef89d0957661113f9112d3ca9a75d3917431f975e8ff811909a0b814f5905"
+hash = "205a63f49e9c1a71a2739b76c9d6cef39ab14402e0e1904e3df92487c59e47ac"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch5.snbt"
-hash = "2a382d45a57fee4aae6af1697b17f66be16c5f6abad32a6a6150d5e4dd0cc85f"
+hash = "a5573dbdfb2b72910f13d031c255ca35e4033fdf57d73367e9b049a3ed589406"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/g_create.snbt"
+hash = "f2f5649c554341fc50eb0f512d6268d75f5b40b45c43eee3be0026723177d783"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/g_horrors.snbt"
+hash = "6a36470fca9d71aae12932726256a47b5d1c2e2cfebefcb051eb72c6e3daa349"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/g_spore.snbt"
+hash = "dff787d40974554f6c473bef1dfe019892dc142e0dc8758fcd348e93945a7e70"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/g_survivors.snbt"
+hash = "09a2ae3e6ea66e1d352d82867f4731aff835ad2a2ae1ac0b62699049db06201a"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -50,7 +66,7 @@ hash = "65a9535f763cc9487e646c28afd72713ee5acf7e8113eb951f8adb28ba58aa55"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "451425285bd45eb1277edcf03f5f0aa599c47c98133ce2eac88d02435d882323"
+hash = "844818f3f797472c57f028b3ac5a93a03fc8bb69b53a825d12b3a1727d1c8184"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/common.snbt"

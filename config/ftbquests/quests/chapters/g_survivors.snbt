@@ -1,0 +1,59 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "g_survivors"
+	group: "3095EA91149B5FEF"
+	icon: { id: "survivors:settlement_beacon" }
+	id: "08818A63B866F9C2"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0C8CE3E83291AEEB"
+			x: 0d
+			y: 0d
+			tasks: [{ id: "786B72C202D1844B", type: "checkmark" }]
+			rewards: [{ id: "6FFF7788282C3005", type: "xp_levels", xp_levels: 2 }]
+		}
+		{
+			id: "201CFB685EC22A4C"
+			x: 2d
+			y: 0d
+			dependencies: ["0C8CE3E83291AEEB"]
+			tasks: [{ id: "7883517B527BD6D2", type: "checkmark" }]
+			rewards: [{ id: "4E6F9CAF38595115", type: "xp_levels", xp_levels: 2 }]
+		}
+		{
+			id: "0BB47AB5BB349F1C"
+			x: 4d
+			y: 0d
+			dependencies: ["201CFB685EC22A4C"]
+			tasks: [{ id: "40F6C101AB53E654", type: "checkmark" }]
+			rewards: [{ id: "4E62439FC56D28D1", type: "random", table_id: 8760363617949925918L }]
+		}
+		{
+			id: "1EA0D0D0D0CCD83B"
+			x: 6d
+			y: -1d
+			dependencies: ["0BB47AB5BB349F1C"]
+			tasks: [{ id: "690FEEA887F3921B", type: "checkmark" }]
+			rewards: [{ id: "7A3620DCD747819C", type: "random", table_id: 8760363617949925918L }]
+		}
+		{
+			id: "5A9BC6F6A674D18A"
+			x: 8d
+			y: -1d
+			dependencies: ["1EA0D0D0D0CCD83B"]
+			tasks: [{ id: "40510E6C360F0504", type: "checkmark" }]
+			rewards: [{ id: "0E32BFCA749095E4", type: "random", table_id: 5557977682739783447L }]
+		}
+		{
+			id: "3A3C79C53B1E41FC"
+			x: 4d
+			y: 2d
+			dependencies: ["0C8CE3E83291AEEB"]
+			tasks: [{ id: "442BD1B602C9F85D", type: "checkmark" }]
+			rewards: [{ id: "72B72B474134C906", type: "xp_levels", xp_levels: 2 }]
+		}
+	]
+}

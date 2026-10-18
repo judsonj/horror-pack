@@ -1,0 +1,54 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "g_horrors"
+	group: "3095EA91149B5FEF"
+	icon: { id: "minecraft:skeleton_skull" }
+	id: "60BB903992A168B6"
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			id: "2D07C5846DE20D19"
+			x: 0d
+			y: -2d
+			tasks: [{ id: "3667DBDB7A03EED4", type: "checkmark" }]
+			rewards: [{ id: "167A6C51596548A6", type: "xp_levels", xp_levels: 3 }]
+		}
+		{
+			id: "4327BAF852CCF176"
+			x: 0d
+			y: 0d
+			tasks: [{ id: "06D34D315DF023E8", type: "checkmark" }]
+			rewards: [{ id: "1CBE48A1E177D2D6", type: "xp_levels", xp_levels: 3 }]
+		}
+		{
+			id: "071CBECFD52B939C"
+			x: 0d
+			y: 2d
+			tasks: [{ id: "33BFA68DCA071639", type: "checkmark" }]
+			rewards: [{ id: "6CD8D197E6F9B2BA", type: "xp_levels", xp_levels: 3 }]
+		}
+		{
+			id: "3528E3F6A212D15C"
+			x: 2d
+			y: -1d
+			tasks: [{ id: "7E332F14D0854B55", type: "checkmark" }]
+			rewards: [{ id: "29DE775F1188B573", type: "xp_levels", xp_levels: 3 }]
+		}
+		{
+			id: "1D9E3D56B93511C0"
+			x: 2d
+			y: 1d
+			tasks: [{ id: "04D5A26F7CF4CADA", type: "checkmark" }]
+			rewards: [{ id: "02F9D8F93FD42747", type: "xp_levels", xp_levels: 3 }]
+		}
+		{
+			id: "1AB47B6183704461"
+			x: 4d
+			y: 0d
+			tasks: [{ id: "78ED15811B52CEA9", type: "checkmark" }]
+			rewards: [{ id: "7DC43CCD7095CFF8", type: "xp_levels", xp_levels: 3 }]
+		}
+	]
+}

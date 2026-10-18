@@ -2,48 +2,33 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ch5"
-	group: ""
+	group: "151E3065A6314194"
 	icon: { id: "create:propeller" }
 	id: "2FDC441E816C66D8"
 	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
-			id: "6C534E757D9A0FE8"
+			id: "03622A4EF48DF367"
 			x: 0d
 			y: 0d
 			dependencies: ["3450C0960C7F9112"]
 			hide_until_deps_complete: true
-			tasks: [{ id: "53EF2058D5560F12", type: "item", item: { count: 1, id: "create:propeller" } }]
-			rewards: [{ id: "0B0BBD060D7E76D6", type: "xp_levels", xp_levels: 4 }]
-		}
-		{
-			id: "03622A4EF48DF367"
-			x: 2d
-			y: 0d
-			dependencies: ["6C534E757D9A0FE8"]
 			tasks: [{ id: "45D25BEEBD14F354", type: "checkmark" }]
 			rewards: [{ id: "231BE46AD75C32DD", type: "random", table_id: 2893836879149437615L }]
 		}
 		{
-			id: "2CE34496659452AF"
-			x: 4d
-			y: -1.5d
-			dependencies: ["03622A4EF48DF367"]
-			tasks: [{ id: "5F6D5A1A2BB09109", type: "item", item: { count: 1, id: "createbigcannons:cannon_mount" } }]
-			rewards: [{ id: "4A277C14217E517E", type: "random", table_id: 5557977682739783447L }]
-		}
-		{
 			id: "37521462F21C1396"
-			x: 4d
+			x: 2d
 			y: 1.5d
-			dependencies: ["03622A4EF48DF367"]
+			dependencies: ["3450C0960C7F9112"]
+			hide_until_deps_complete: true
 			tasks: [{ id: "4A6B4150D05A6185", type: "item", item: { count: 1, id: "ad_astra:tier_1_rocket" } }]
 			rewards: [{ id: "659CF2F9F1E4CD5B", type: "random", table_id: 2893836879149437615L }]
 		}
 		{
 			id: "2572FA76C9A64D4E"
-			x: 6d
+			x: 4d
 			y: 1.5d
 			dependencies: ["37521462F21C1396"]
 			tasks: [{ id: "3D88351E95E9A580", type: "dimension", dimension: "ad_astra:moon" }]
@@ -51,7 +36,7 @@
 		}
 		{
 			id: "253B69673D87FB1D"
-			x: 8d
+			x: 6d
 			y: 1.5d
 			dependencies: ["2572FA76C9A64D4E"]
 			optional: true
@@ -60,9 +45,9 @@
 		}
 		{
 			id: "13EDA76AF227D376"
-			x: 8d
-			y: -1.5d
-			dependencies: ["2CE34496659452AF" "2572FA76C9A64D4E"]
+			x: 6d
+			y: -1d
+			dependencies: ["03622A4EF48DF367" "2572FA76C9A64D4E"]
 			shape: "gear"
 			size: 2.0d
 			tasks: [{ id: "0F636280D5FF0846", type: "checkmark" }]

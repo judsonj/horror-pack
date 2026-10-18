@@ -1,0 +1,118 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "g_spore"
+	group: "3095EA91149B5FEF"
+	icon: { id: "spore:mutated_fiber" }
+	id: "25B77CDE329F5438"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			id: "62D341191A8C2B01"
+			x: 0d
+			y: 0d
+			tasks: [{ id: "647A76A4FF46C2EE", type: "advancement", advancement: "spore:inf_mobs", criterion: "" }]
+			rewards: [{ id: "3822C5DB4E11C5AD", type: "xp_levels", xp_levels: 3 }]
+		}
+		{
+			id: "32E2D7B5160D5AA5"
+			x: 2d
+			y: 0d
+			dependencies: ["62D341191A8C2B01"]
+			tasks: [{ id: "15A82FA2E36EB138", type: "item", item: { count: 1, id: "spore:mutated_fiber" }, count: 8L } { id: "1CC4B1F1E9A63485", type: "item", item: { count: 1, id: "spore:claw_fragment" }, count: 2L }]
+			rewards: [{ id: "2F1F24C250DA2B75", type: "random", table_id: 8760363617949925918L }]
+		}
+		{
+			id: "7FD40EEA4B925728"
+			x: 4d
+			y: 0d
+			dependencies: ["32E2D7B5160D5AA5"]
+			tasks: [{ id: "08E10CA5F1A3778C", type: "item", item: { count: 1, id: "spore:compound_plate" } }]
+			rewards: [{ id: "2170C1641386C1FB", type: "xp_levels", xp_levels: 3 }]
+		}
+		{
+			id: "4079353A1FC1DDC3"
+			x: 6d
+			y: 0d
+			dependencies: ["7FD40EEA4B925728"]
+			tasks: [{ id: "4468B9B29A8CB6B4", type: "item", item: { count: 1, id: "spore:surgery_table" } }]
+			rewards: [{ id: "69840D00D9C26528", type: "random", table_id: 5557977682739783447L }]
+		}
+		{
+			id: "5FB2E35C7EFC093A"
+			x: 8d
+			y: 0d
+			dependencies: ["4079353A1FC1DDC3"]
+			tasks: [{ id: "1D8A20CAE6EEDF1A", type: "item", item: { count: 1, id: "spore:living_core" } }]
+			rewards: [{ id: "1DBAD7DCFCF3FECF", type: "xp_levels", xp_levels: 4 }]
+		}
+		{
+			id: "0408B65C8C597F09"
+			x: 10d
+			y: -1.5d
+			dependencies: ["5FB2E35C7EFC093A"]
+			tasks: [{ id: "59988968BA4226CF", type: "item", item: { count: 1, id: "spore:cleaver" } }]
+			rewards: [{ id: "3BCDC85FC628455E", type: "random", table_id: 5557977682739783447L }]
+		}
+		{
+			id: "0BD78C385D754CE9"
+			x: 10d
+			y: 1.5d
+			dependencies: ["5FB2E35C7EFC093A"]
+			tasks: [{ id: "1A90E5661F330CC4", type: "item", item: { count: 1, id: "spore:plated_chest" } }]
+			rewards: [{ id: "2B94D9947B7EA1B5", type: "random", table_id: 5557977682739783447L }]
+		}
+		{
+			id: "52ED0EC9AD284615"
+			x: 6d
+			y: 2.5d
+			dependencies: ["7FD40EEA4B925728"]
+			tasks: [{ id: "0662BC309FCA2E87", type: "item", item: { count: 1, id: "spore:scanner" } }]
+			rewards: [{ id: "6890208F672F228E", type: "xp_levels", xp_levels: 5 }]
+		}
+		{
+			id: "6EAAA80B8271EADD"
+			x: 6d
+			y: -2.5d
+			dependencies: ["7FD40EEA4B925728"]
+			tasks: [{ id: "2AF01C4A40B599CC", type: "item", item: { count: 1, id: "spore:cdu" } }]
+			rewards: [{ id: "12869E739706715F", type: "random", table_id: 2893836879149437615L }]
+		}
+		{
+			id: "3B06108519BAEA55"
+			x: 2d
+			y: 2d
+			dependencies: ["62D341191A8C2B01"]
+			tasks: [{ id: "58F93C0F51DB31A0", type: "item", item: { count: 1, id: "spore:gas_mask" } }]
+			rewards: [{ id: "4F03EA492CEB2C8E", type: "xp_levels", xp_levels: 3 }]
+		}
+		{
+			id: "22752B4DD6E870A5"
+			x: 2d
+			y: -2d
+			dependencies: ["62D341191A8C2B01"]
+			optional: true
+			tasks: [{ id: "59B328D6B652D870", type: "advancement", advancement: "spore:lore1", criterion: "" }]
+			rewards: [{ id: "37DAA5D07D1C3F23", type: "random", table_id: 5557977682739783447L }]
+		}
+		{
+			id: "4529D0EC8EB16883"
+			x: 8d
+			y: 2.5d
+			dependencies: ["52ED0EC9AD284615"]
+			tasks: [{ id: "27AD108841FFB20C", type: "item", item: { count: 1, id: "spore:zoaholic" } }]
+			rewards: [{ id: "2FBDDBD687856FF3", type: "random", table_id: 5557977682739783447L }]
+		}
+		{
+			id: "20FED50174954243"
+			x: 12d
+			y: 0d
+			dependencies: ["0408B65C8C597F09" "0BD78C385D754CE9" "4529D0EC8EB16883"]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{ id: "7CA322C124557324", type: "kill", entity: "spore:proto", value: 1L }]
+			rewards: [{ id: "0DAC1B20A4C40746", type: "random", table_id: 2893836879149437615L }]
+		}
+	]
+}

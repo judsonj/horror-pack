@@ -1,106 +1,178 @@
 {
 	chapter.0750595BB1E99F0F.chapter_subtitle: ["Act 2. The subways. Something lives down there."]
 	chapter.0750595BB1E99F0F.title: "Below the Line"
-	chapter.1974464A24A05158.chapter_subtitle: ["Act 4. The Builders didn't all leave by rail."]
+	chapter.08818A63B866F9C2.chapter_subtitle: ["People to find, keep alive, and put to work."]
+	chapter.08818A63B866F9C2.title: "Survivors & Camps"
+	chapter.1974464A24A05158.chapter_subtitle: ["Act 4. Where the Builders fled, and when you are ready to follow."]
 	chapter.1974464A24A05158.title: "Other Doors"
-	chapter.2FDC441E816C66D8.chapter_subtitle: ["Act 5. Airships, cannons, and the stars."]
+	chapter.1E78474C245FD8CA.chapter_subtitle: ["Create, one machine at a time. Trains and airships at the end."]
+	chapter.1E78474C245FD8CA.title: "The Builders' Craft"
+	chapter.25B77CDE329F5438.chapter_subtitle: ["How the fungus grows, and how to turn its body against it."]
+	chapter.25B77CDE329F5438.title: "The Infection"
+	chapter.2FDC441E816C66D8.chapter_subtitle: ["Act 5. Airships, rockets, and the end of the line."]
 	chapter.2FDC441E816C66D8.title: "Above"
 	chapter.4DB226BD3A09B8E8.chapter_subtitle: ["The last train dropped you here. It left without you."]
 	chapter.4DB226BD3A09B8E8.title: "Arrival"
-	chapter.5829F60643377E5B.chapter_subtitle: ["Act 3. The grid fails. The infection spreads. Hold the line."]
+	chapter.5829F60643377E5B.chapter_subtitle: ["Act 3. The infection spreads. Hold the line."]
 	chapter.5829F60643377E5B.title: "Lights Out"
-	chapter.7E45EDCAAD68086A.chapter_subtitle: ["Act 1. The machines still turn. Learn why."]
+	chapter.60BB903992A168B6.chapter_subtitle: ["Each one has rules. Learn them before they learn you."]
+	chapter.60BB903992A168B6.title: "Know Your Horrors"
+	chapter.7E45EDCAAD68086A.chapter_subtitle: ["Act 1. Make a home. Light a district."]
 	chapter.7E45EDCAAD68086A.title: "The Platform"
-	quest.03622A4EF48DF367.quest_desc: ["Build a working airship with &eCreate Aeronautics&r and fly it over the city. Check this once you are off the ground."]
-	quest.03622A4EF48DF367.title: "Airship"
-	quest.08794E63595E59BC.quest_desc: ["Find walls, a door and a bed before the first night.\\n\\nSomething may knock. &cDo not answer.&r"]
+	chapter_group.151E3065A6314194.title: "The Line"
+	chapter_group.3095EA91149B5FEF.title: "Field Guides"
+	quest.03622A4EF48DF367.quest_desc: ["Get off the ground: a Create Aeronautics airship (see &eThe Builders' Craft&r). Check this once you are flying over the city."]
+	quest.03622A4EF48DF367.title: "Airborne"
+	quest.03C973DA0DB6534E.quest_desc: ["Obsidian frame (needs a diamond pickaxe), light it. Bring back &eglowstone dust&r: you need it for the next door."]
+	quest.03C973DA0DB6534E.title: "2. The Burning Below"
+	quest.0408B65C8C597F09.quest_desc: ["Your first infected weapon: the &eCleaver&r (fleshy bone + fleshy claw + living core). Infected weapons hit infected hard."]
+	quest.0408B65C8C597F09.title: "Fight Fire With Flesh"
+	quest.06012264A7AEEF88.quest_desc: ["Fungus is spreading out of the deep places, turning everything it touches. This one you &ecan&r fight, and you should, early.\\n\\nOpen &eThe Infection&r guide. It explains how it grows and how you turn its own body against it."]
+	quest.06012264A7AEEF88.title: "It Spreads"
+	quest.071CBECFD52B939C.quest_desc: ["They move only when unseen. Keep eyes on them, back away, break them with a pickaxe. Never blink near one."]
+	quest.071CBECFD52B939C.title: "Weeping Angels"
+	quest.08794E63595E59BC.quest_desc: ["Walls, a door and a bed before the first night. Something may knock. &cDo not answer.&r"]
 	quest.08794E63595E59BC.title: "Somewhere To Hide"
-	quest.0A344FDEFF65DB42.quest_desc: ["Deep in a cave, a giant suit of armor still guards whatever it was told to guard. Hit it from behind."]
-	quest.0A344FDEFF65DB42.title: "The Iron Guardian"
-	quest.0B9F12FC3A0D76DB.quest_desc: ["Deep in a station office, a logbook:\\n&o\"Day 41. The things from below follow the dark. We're moving everyone out by rail. The Engine at the end of the line will hold them back as long as it turns. Don't let it stop.\"&r\\n\\nThe last entry is just one word, written over and over: &cLIGHTS&r."]
+	quest.0B9F12FC3A0D76DB.quest_desc: ["Deep in a station office, a logbook:\\n&o\"Day 41. The things from below follow the dark. We're moving everyone out by rail. The Engine at the end of the line holds them back as long as it turns.\"&r\\n\\nThe last entry is one word, over and over: &cLIGHTS&r."]
 	quest.0B9F12FC3A0D76DB.quest_subtitle: "Chapter Gate"
 	quest.0B9F12FC3A0D76DB.title: "The Evacuation Log"
-	quest.0BF299613535445C.quest_desc: ["Statues in the archives. They only move when nobody is looking.\\n\\n&cDo not charge these.&r Keep eyes on them, never turn your back, and break them with a pickaxe."]
+	quest.0BB47AB5BB349F1C.quest_desc: ["Lead a follower near your Settlement Beacon and they move in. Right-click the beacon to see who lives there."]
+	quest.0BB47AB5BB349F1C.title: "Bring Them Home"
+	quest.0BD78C385D754CE9.quest_desc: ["Armor plates (fragment + fiber + nerves) make &eplated armor&r. Later it grafts with flesh armor into Living armor."]
+	quest.0BD78C385D754CE9.title: "Plated"
+	quest.0BF299613535445C.quest_desc: ["Statues that only move when nobody looks. &cDo not charge these.&r Keep eyes on them and break them with a pickaxe."]
 	quest.0BF299613535445C.title: "Don't Blink"
-	quest.0D0ADCDCEBD811C1.quest_desc: ["You will start to see &esomeone&r at the edge of your vision. Standing still. Closer each day.\\n\\nThat is &cKenny&r. He does not stop. He gets bolder every night. Check this the first time you see him, and &onever&r go out alone after that."]
+	quest.0C8CE3E83291AEEB.quest_desc: ["Survivors hear you. Speak near one, by &evoice&r or chat; say their name to talk to one in a crowd. They answer out loud."]
+	quest.0C8CE3E83291AEEB.title: "Just Talk"
+	quest.0D0ADCDCEBD811C1.quest_desc: ["Someone at the edge of your vision. Standing still. Closer each day. That is &cKenny&r.\\n\\nThe &eKnow Your Horrors&r guide has the rules for each of them."]
 	quest.0D0ADCDCEBD811C1.title: "Being Watched"
-	quest.1300434F59C13300.quest_desc: ["Train controls. Casing, a seat, controls, a bogey on the rails, and you have a train."]
+	quest.12D403627C0AEF51.quest_desc: ["A Builder note, scratched into a wall: &o\"They don't come where the lights are on. KEEP IT LIT.\"&r\\n\\nLight up your camp. Lanterns, torches, anything."]
+	quest.12D403627C0AEF51.title: "Keep It Lit"
+	quest.1300434F59C13300.quest_desc: ["Casing, a seat, controls and a bogey on the rails make a train. Assemble it at the station."]
 	quest.1300434F59C13300.title: "Driver's Seat"
-	quest.13EDA76AF227D376.quest_desc: ["From the sky you can finally see it: the capital, and the &eEngine&r at the end of every rail line, barely turning.\\n\\n&7The final chapter (the Engine, the Sunbreaker, and what you choose to do) arrives in a future update.&r"]
+	quest.1371453DC1ED0B74.quest_desc: ["A press over a depot flattens ingots into &esheets&r. Iron sheets go into almost every machine."]
+	quest.1371453DC1ED0B74.title: "The Press"
+	quest.137D6F7597708837.quest_desc: ["A &eSettlement Beacon&r founds a camp: lantern on top, planks + campfire + planks, three cobblestone underneath. Rename it on an anvil.\\n\\nSurvivors who follow you there will move in and work."]
+	quest.137D6F7597708837.title: "Plant a Flag"
+	quest.13EDA76AF227D376.quest_desc: ["From the sky you can finally see it: the capital, and the &eEngine&r at the end of every rail line, barely turning.\\n\\n&7The final chapter arrives in a future update.&r"]
 	quest.13EDA76AF227D376.quest_subtitle: "Chapter Gate"
 	quest.13EDA76AF227D376.title: "The End of the Line"
-	quest.17417239150B9BF0.quest_desc: ["The subway tunnels under the city still have &eworking Create track&r. Patch the gaps and the old lines run again."]
+	quest.17417239150B9BF0.quest_desc: ["Track is made in a press, or pried out of the subways (much faster)."]
 	quest.17417239150B9BF0.title: "Lay Track"
-	quest.18B606392431482E.quest_desc: ["The moon goes red and everything comes at once. Survive a &cBlood Moon&r with your group, then check this.\\n\\nEvery blood moon is a &eHorror Night&r. Your base is what they come for."]
+	quest.18B606392431482E.quest_desc: ["The moon goes red and everything comes at once. Survive a &cBlood Moon&r together, then check this. Your camp is what they come for."]
 	quest.18B606392431482E.title: "Blood Moon"
-	quest.1E34D759428F025C.quest_desc: ["Something huge coils in the courtyard ruins."]
+	quest.1AB47B6183704461.quest_desc: ["The one you fight. See &eThe Infection&r guide."]
+	quest.1AB47B6183704461.title: "The Infection"
+	quest.1D9E3D56B93511C0.quest_desc: ["It creeps up while you're not looking. Keep checking behind you, and stick with your group."]
+	quest.1D9E3D56B93511C0.title: "The Obsessed"
+	quest.1E34D759428F025C.quest_desc: ["Something huge coils in the courtyard ruins. The first Twilight boss."]
 	quest.1E34D759428F025C.title: "The Serpent"
-	quest.20BC1DE9290ABEE6.quest_desc: ["A schedule makes a train run without a driver, like the ghost trains still circling the city.\\n\\nWho wrote theirs? And why do they all stop &oonce&r, in the deepest tunnel, for exactly one minute?"]
+	quest.1EA0D0D0D0CCD83B.quest_desc: ["Ask for things in plain words: &e\"get 32 wood\"&r, &e\"make a chest\"&r, &e\"build a shelter around me\"&r, &e\"light up the camp\"&r."]
+	quest.1EA0D0D0D0CCD83B.title: "Put Them to Work"
+	quest.201CFB685EC22A4C.quest_desc: ["&e\"Follow me\"&r, &e\"wait here\"&r, &e\"go home\"&r. Add &e\"everyone\"&r to order the whole group."]
+	quest.201CFB685EC22A4C.title: "Orders"
+	quest.20BC1DE9290ABEE6.quest_desc: ["A schedule runs a train with no driver, like the ghost trains still circling the city."]
 	quest.20BC1DE9290ABEE6.title: "On Schedule"
-	quest.2227FE9F824CE158.quest_desc: ["Copper and zinc, mixed with heat. The Builders made their trains from brass."]
+	quest.20FED50174954243.quest_desc: ["A &cProto Hivemind&r runs the outbreak around it. Kill it and that infection loses its mind. Go together, fully geared."]
+	quest.20FED50174954243.title: "Something Once Great"
+	quest.21BF5EF159226398.quest_desc: ["Find a wandering survivor and say &e\"follow me\"&r. Lead them home. Check this when someone lives at your camp."]
+	quest.21BF5EF159226398.title: "Safety in Numbers"
+	quest.2227FE9F824CE158.quest_desc: ["Copper + zinc in a heated mixer. Brass is the jump from simple machines to trains."]
 	quest.2227FE9F824CE158.title: "Brass"
+	quest.22752B4DD6E870A5.quest_desc: ["Find one of the corrupted records in infected ruins. Somebody saw this coming."]
+	quest.22752B4DD6E870A5.title: "Fragments of the Past"
 	quest.253B69673D87FB1D.quest_desc: ["They got this far. Then the logs stop."]
 	quest.253B69673D87FB1D.title: "Mars"
 	quest.2572FA76C9A64D4E.quest_desc: ["An empty Builder outpost. Signs of a hasty departure. A logbook pointing further out."]
 	quest.2572FA76C9A64D4E.title: "The Moon"
-	quest.2CE34496659452AF.quest_desc: ["Big cannons on a mount. On an airship, they recoil for real. Aim well."]
+	quest.2728033B3A3B1410.quest_desc: ["The tunnels still have &eCreate track&r. Pry some up with a pickaxe. It is worth a lot, and it is how you will build lines later."]
+	quest.2728033B3A3B1410.title: "Scavenge the Depot"
+	quest.2CE34496659452AF.quest_desc: ["Big cannons on a mount. On an airship they recoil for real."]
 	quest.2CE34496659452AF.title: "Broadside"
-	quest.31D27DBA25D73C48.quest_desc: ["A water wheel in flowing water makes rotation for free. The Builders put them in every canal."]
-	quest.31D27DBA25D73C48.title: "Find the Current"
-	quest.3450C0960C7F9112.quest_desc: ["Every way out you have found, the Builders found first. None of them were far enough.\\n\\nThe rails to the capital were cut. The only way left is &eup&r."]
+	quest.2D07C5846DE20D19.quest_desc: ["The figure at the edge of your vision. He watches, whispers, follows. Stay together after dark."]
+	quest.2D07C5846DE20D19.title: "Kenny"
+	quest.31D27DBA25D73C48.quest_desc: ["A water wheel in flowing water spins forever. Your first power source. Hook a shaft to it."]
+	quest.31D27DBA25D73C48.title: "Free Power"
+	quest.32E2D7B5160D5AA5.quest_desc: ["They drop body parts: &emutated fiber&r, claw fragments, hearts. Keep everything. It is your crafting material from here on."]
+	quest.32E2D7B5160D5AA5.title: "Harvest"
+	quest.3450C0960C7F9112.quest_desc: ["Every way out you found, the Builders found first. None of them were far enough.\\n\\nThe rails to the capital were cut. The only way left is &eup&r."]
 	quest.3450C0960C7F9112.quest_subtitle: "Chapter Gate"
 	quest.3450C0960C7F9112.title: "Every Door Leads Back"
-	quest.37521462F21C1396.quest_desc: ["The Builders' last project: rockets. Something up there was supposed to help."]
+	quest.3528E3F6A212D15C.quest_desc: ["Tunnels and caves. It stalks, then runs. Light the way, don't go down alone."]
+	quest.3528E3F6A212D15C.title: "The Cave Dweller"
+	quest.37521462F21C1396.quest_desc: ["The Builders' last project. Read the &eAstrodux&r (Ad Astra's own guidebook) for the steps: steel, a rocket, fuel, an oxygen loader and a space suit."]
 	quest.37521462F21C1396.title: "Higher Still"
-	quest.3982EBB723ECD32B.quest_desc: ["Your settlement made it through the dark.\\n\\nOn a dead radio in the Builders' signal tower, a repeating message: &o\"...doors open beyond the forest, beyond the sky... the Engine is at the end of the line... if you can hear this, &lfinish what we started&r&o.\""]
+	quest.3982EBB723ECD32B.quest_desc: ["Your settlement made it through the dark.\\n\\nOn a dead radio, a repeating message: &o\"...doors open beyond the forest, beyond the sky... the Engine is at the end of the line...\"&r"]
 	quest.3982EBB723ECD32B.quest_subtitle: "Chapter Gate"
 	quest.3982EBB723ECD32B.title: "We Hold"
-	quest.3C776AC2E9F16693.quest_desc: ["Walk into the ruined city. Towers, streets, stations, all of it empty.\\n\\nThe Builders left in a hurry. Doors open, tables set. &7Journals tell you the city was evacuated &oby rail&r&7, district by district."]
+	quest.3A3C79C53B1E41FC.quest_desc: ["&e/claude <question>&r answers questions about the pack in chat. &e/report <problem>&r goes straight to the developer."]
+	quest.3A3C79C53B1E41FC.title: "Ask the Pack"
+	quest.3B06108519BAEA55.quest_desc: ["Black wool, iron, a sponge. Spores and gas clouds can't get you."]
+	quest.3B06108519BAEA55.title: "Breathe Easy"
+	quest.3C776AC2E9F16693.quest_desc: ["Walk into the ruined city. Doors open, tables set. &7Journals say it was evacuated by rail, district by district.&r\\n\\nCities are full of chests. Loot first, build later."]
 	quest.3C776AC2E9F16693.title: "The Endless City"
-	quest.3EA616D994247713.quest_desc: ["Others went up, to islands above the sky. &7(A glowstone portal frame, lit with water.)&r"]
-	quest.3EA616D994247713.title: "Above the Clouds"
-	quest.400E1D5A58994D60.quest_desc: ["A tesla coil zaps anything that gets close. The Builders lined their stations with them. Most are dead now. Yours won't be."]
-	quest.400E1D5A58994D60.title: "Lightning in a Box"
-	quest.405BCA1705D5D5C2.quest_desc: ["Check this once the sun comes up.\\n\\nThe ruins on the horizon go on forever. Somebody built all of this. Somebody ran those trains.\\n\\n&7Where did they go?&r"]
+	quest.3EA616D994247713.quest_desc: ["A frame of &eglowstone blocks&r, lit with a &ewater bucket&r. Islands above the sky, gentle until they are not. Don't fall."]
+	quest.3EA616D994247713.title: "3. Above the Clouds"
+	quest.405BCA1705D5D5C2.quest_desc: ["Check this once the sun comes up.\\n\\nThe ruins on the horizon go on forever. Somebody built all of this. Somebody ran those trains. &7Where did they go?&r"]
 	quest.405BCA1705D5D5C2.quest_subtitle: "Chapter Gate"
 	quest.405BCA1705D5D5C2.title: "Survive the First Night"
-	quest.47A3E909D9DFB68F.quest_desc: ["A fungus is spreading out of the deep places, turning everything it touches. It grows. It &olearns&r.\\n\\nThis one you &ecan&r fight. Charge in, together. Burn it back."]
-	quest.47A3E909D9DFB68F.title: "The Infection"
+	quest.4079353A1FC1DDC3.quest_desc: ["Compound plate, crafting table, iron sword and axe, a bottle. All infected gear is made here, from their own organs."]
+	quest.4079353A1FC1DDC3.title: "The Surgery Table"
+	quest.4327BAF852CCF176.quest_desc: ["Knocking at night, when everyone is home. &cNever open the door.&r Light, locks, company."]
+	quest.4327BAF852CCF176.title: "The Knocker"
+	quest.4529D0EC8EB16883.quest_desc: ["The &eZoaholic&r points you to the nearest hivemind, the brain of an outbreak."]
+	quest.4529D0EC8EB16883.title: "Hivemind Radar"
+	quest.4CC4F9D09F1DDAA7.quest_desc: ["There are other survivors out here. Talk to one: just speak (voice or chat) when you are close.\\n\\nThe &eSurvivors & Camps&r guide explains what they can do for you."]
+	quest.4CC4F9D09F1DDAA7.title: "You Are Not Alone"
 	quest.4DCCAC87EF742EDA.quest_desc: ["A beast sleeps in the ice. Wake it only if you're ready."]
 	quest.4DCCAC87EF742EDA.title: "The Frostmaw"
-	quest.50A01628A298C883.quest_desc: ["Knocking at the door, in the middle of the night, when everyone is home.\\n\\nThat is &cthe Knocker&r. Light, locked doors, company. Check this once you have heard it and lived."]
-	quest.50A01628A298C883.title: "Do Not Answer"
-	quest.51AD8034176BFA4A.quest_desc: ["A chunk loader keeps your trains running when nobody is near them. The Builders' trains never stopped. Now you know why."]
+	quest.51AD8034176BFA4A.quest_desc: ["A chunk loader keeps your line running when nobody is near."]
 	quest.51AD8034176BFA4A.title: "Keep Them Running"
-	quest.5511EC0E407018FF.quest_desc: ["First rule of this place: &ethe dark is not empty&r.\\n\\nThings out here hunt where the light does not reach. Keep torches on you. Always."]
+	quest.52ED0EC9AD284615.quest_desc: ["Circuit board + compound plate + lever + observer. Scan the parts you collect to learn the creatures (Spore's own advancements track this)."]
+	quest.52ED0EC9AD284615.title: "Scanning Time"
+	quest.5511EC0E407018FF.quest_desc: ["The dark is not empty. Things hunt where the light does not reach. Keep torches on you. Always."]
 	quest.5511EC0E407018FF.title: "Light Is Life"
-	quest.552775E8592A7452.quest_desc: ["Wall in your settlement. Gates you can close. Light on every corner."]
+	quest.552775E8592A7452.quest_desc: ["Wall in your camp. A gate you can close. Light on every corner. Your survivors can help: ask one to &e\"build a wall around camp\"&r."]
 	quest.552775E8592A7452.title: "Walls"
-	quest.5584D611223D744A.quest_desc: ["Cogwheels carry rotation. Everything here runs on &erotation&r: the doors, the lights, the trains."]
+	quest.5584D611223D744A.quest_desc: ["Shafts and cogwheels carry &erotation&r. Everything in Create runs on it."]
 	quest.5584D611223D744A.title: "Things That Turn"
-	quest.58E40364210E9089.quest_desc: ["And some went down. Too far down. This is where the things below came from."]
-	quest.58E40364210E9089.title: "Under Everything"
-	quest.5A4A0B7DF4784B7E.quest_desc: ["Andesite and iron nuggets make &eandesite alloy&r, the base of every Builder machine. Mix it in a crafting grid to start."]
+	quest.58E40364210E9089.quest_desc: ["&cThe dangerous one.&r A &eCatalyst&r (copper, stone, an ender pearl) used on a stone-brick frame.\\n\\nThis is where the things below came from. Go in full gear, together."]
+	quest.58E40364210E9089.title: "4. Under Everything"
+	quest.5A4A0B7DF4784B7E.quest_desc: ["Andesite + iron nuggets = &eandesite alloy&r, the base of nearly everything here."]
 	quest.5A4A0B7DF4784B7E.title: "Builder Metal"
-	quest.62670F45399130E7.quest_desc: ["A backpack holds what you cannot carry. If you die, your things stay on your &ecorpse&r. Go back for them... carefully."]
-	quest.62670F45399130E7.title: "Pack Light, Pack Smart"
-	quest.64F936ADB8D3EDAE.quest_desc: ["In the tunnels: footsteps that stop when yours stop. A shape that runs on all fours.\\n\\nThat is &cthe Cave Dweller&r. It hunts in the dark under the city. Check this when you have seen it and gotten away."]
+	quest.5A9BC6F6A674D18A.quest_desc: ["Settled survivors plan the day each morning and work on camp projects (walls, light) by themselves."]
+	quest.5A9BC6F6A674D18A.title: "Camp Projects"
+	quest.5FB2E35C7EFC093A.quest_desc: ["Armor fragment + fiber + mutated heart at the surgery table. Almost every infected weapon needs one."]
+	quest.5FB2E35C7EFC093A.title: "A Living Core"
+	quest.62D341191A8C2B01.quest_desc: ["Infected are people and animals the fungus took. &eThe rules:&r\\n- Every kill they get makes them &cevolve&r into worse forms. Don't feed them: no lone fights, no dying out there.\\n- They are weak to &bcold&r and starve over time.\\n- It only spreads where players are. Burn it back early."]
+	quest.62D341191A8C2B01.title: "First Contact"
+	quest.64F936ADB8D3EDAE.quest_desc: ["Footsteps that stop when yours stop. A shape that runs on all fours. That is &cthe Cave Dweller&r. Don't stay in the dark. Check this when you have seen it and gotten away."]
 	quest.64F936ADB8D3EDAE.title: "The Dweller"
-	quest.6BFB5539D1CEC86A.quest_desc: ["You wake on a cold platform. The train that brought you is already pulling away, &oon schedule&r, with no driver.\\n\\nThis book is your journal. The story is in here, a little at a time.\\n\\nClick the checkmark to begin."]
+	quest.68BC051601868010.quest_desc: ["Place a station on the track. Every train is assembled here."]
+	quest.68BC051601868010.title: "A Station"
+	quest.6BA10BBEC0AC73D5.quest_desc: ["City streets have stairways down to the old subway. Find one and go in. &eBring light and a friend.&r\\n\\nYou can walk the tunnels. A train is faster, but not required."]
+	quest.6BA10BBEC0AC73D5.title: "Into the Tunnels"
+	quest.6BFB5539D1CEC86A.quest_desc: ["You wake on a cold platform. The train that brought you is already pulling away, &oon schedule&r, with no driver.\\n\\nThis book is your journal. &eThe Line&r is the story: where to go next. The &eField Guides&r teach the mods (Create, the Infection, survivors, the horrors). Do those in any order.\\n\\nClick the checkmark to begin."]
 	quest.6BFB5539D1CEC86A.title: "Last Stop"
-	quest.6C534E757D9A0FE8.quest_desc: ["Propellers, balloons, a frame. The Builders flew before they fell."]
+	quest.6C534E757D9A0FE8.quest_desc: ["Propellers + a frame + Create Aeronautics = an &eairship&r. The Line's last act needs one."]
 	quest.6C534E757D9A0FE8.title: "Lift"
-	quest.6E36006FC0490D84.quest_desc: ["Build and assemble a train at a station. Check this when it moves.\\n\\nTrains are how you travel here. &7There are no teleports. There is no shortcut.&r"]
+	quest.6E36006FC0490D84.quest_desc: ["Check this when your train moves."]
 	quest.6E36006FC0490D84.title: "Your Own Train"
-	quest.7A7A2ABF199241D6.quest_desc: ["Some Builders fled into a forest where it is always dusk. Find their way in. &7(A portal of flowers around a pool of water, and a diamond thrown in.)&r"]
-	quest.7A7A2ABF199241D6.title: "The Forest at Dusk"
-	quest.7C354DBEC8EEE180.quest_desc: ["Hover any item and press &eR&r for its recipe, &eU&r for its uses. Press &eM&r for the map. There is no minimap here. &7Nobody should know exactly where they are.&r\\n\\nTalk with your friends using &eproximity voice chat&r: they only hear you when you are close. So does everything else."]
-	quest.7C354DBEC8EEE180.title: "Read the Signs"
-	quest.7D0BC39519E50BC5.quest_desc: ["Your first district has power and light. Others will gather here.\\n\\nA timetable on the station wall still lists every stop. One line is crossed out in red: &c\"BELOW. DO NOT SERVICE.\"&r"]
+	quest.6EAAA80B8271EADD.quest_desc: ["The &eC.D.U.&r freezes everything around it. The infection hates cold: put one at the edge of your camp."]
+	quest.6EAAA80B8271EADD.title: "Local Ice Age"
+	quest.76016D8C7E4E16A2.quest_desc: ["A mixer over a basin. Heated with a blaze burner later, it makes &ebrass&r."]
+	quest.76016D8C7E4E16A2.title: "Mixing"
+	quest.7A7A2ABF199241D6.quest_desc: ["&eEasiest first.&r Dig a 2x2 pool of water, ring it with flowers, throw in a &ediamond&r.\\n\\nIt is always dusk there. Follow the Magic Map to the bosses in order. Some Builders hid here."]
+	quest.7A7A2ABF199241D6.title: "1. The Forest at Dusk"
+	quest.7C354DBEC8EEE180.quest_desc: ["&eHold `&r (left of 1) while mining: whole vein.\\n&eCaps Lock&r: talk (proximity voice; things hear you too).\\n&eB&r backpack, &eM&r map, &eR/U&r on an item: recipe/uses.\\n\\nA survivor will also walk you through these the first time you meet one."]
+	quest.7C354DBEC8EEE180.title: "Your Keys"
+	quest.7D0BC39519E50BC5.quest_desc: ["You have a home, people, and light.\\n\\nNext: &eBelow the Line&r. If you want trains and machines, start &eThe Builders' Craft&r now. It runs alongside the story; the story never waits on it."]
 	quest.7D0BC39519E50BC5.quest_subtitle: "Chapter Gate"
 	quest.7D0BC39519E50BC5.title: "District One Is Lit"
-	quest.7FF8B824E03C98EF.quest_desc: ["A Builder note, scratched into a wall:\\n&o\"They don't come where the lights are on. Keep the district lit. KEEP IT LIT.\"&r\\n\\nLight up a safe zone around your base."]
-	quest.7FF8B824E03C98EF.title: "Power Is Safety"
+	quest.7F67B3AD904BA91C.quest_desc: ["Before any other world: &eiron armor or better&r, a stack of food, a bed at home, torches, and a friend. You can always come back.\\n\\nGo in this order. Each one is harder than the last."]
+	quest.7F67B3AD904BA91C.title: "Ready Check"
+	quest.7FD40EEA4B925728.quest_desc: ["Amethyst dust + sugar = &eCompound&r. Smelt it into a &eCompound Plate&r, the Builders' anti-infection material."]
+	quest.7FD40EEA4B925728.title: "Compound Plate"
 	reward_table.2828F94F33A092AF.title: "Line Authority Vault"
 	reward_table.4D21E7414940E717.title: "Builder Cache"
 	reward_table.7993104BCF29421E.title: "Scavenged Supplies"
