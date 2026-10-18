@@ -122,7 +122,7 @@ key_key.jei.nextCategory:key.keyboard.page.down:SHIFT
 key_key.jei.closeRecipeGui:key.keyboard.escape
 key_key.jei.copy.recipe.id:key.keyboard.unknown
 key_key.kubejs.kubedex:key.keyboard.unknown
-key_key.push_to_talk:key.keyboard.unknown
+key_key.push_to_talk:key.keyboard.caps.lock
 key_key.whisper:key.keyboard.unknown
 key_key.mute_microphone:key.keyboard.keypad.multiply
 key_key.disable_voice_chat:key.keyboard.n
@@ -175,5 +175,5 @@ key_key.ad_astra.toggle_suit_flight:key.keyboard.j
 key_key.ad_astra.open_radio:key.keyboard.unknown
 key_key.entityculling.toggle:key.keyboard.unknown
 key_key.veinminer_client.hold:key.keyboard.grave.accent
-key_key.veinminer_client.toggle:key.keyboard.backslash
+key_key.veinminer_client.toggle:key.keyboard.unknown
 key_key.veinminer_client.config:key.keyboard.o

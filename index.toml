@@ -754,8 +754,8 @@ hash = "734e155b3016c152cb8a7f2198af300a64baa02ce23e7341d90513a236fd2eb8"
 metafile = true
 
 [[files]]
-file = "mods/survivors-0.9.0.jar"
-hash = "df471df1172ce93cf6c338652ee601a396fd81a7fb05afb552d6442883a5902a"
+file = "mods/survivors-0.9.1.jar"
+hash = "184da8cbddb48efdf5a5ceb38d817a10f4e4d4a120f7341ad3d9a3ba89bbf890"
 
 [[files]]
 file = "mods/t-and-t-fabric-neoforge-1-13-11.pw.toml"
@@ -844,7 +844,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "217b181370afff5a46fc93403668a68b2a9e80a5d2abec0f2b4ea04a37f79aa3"
+hash = "49c9e75edee057d956afa602e2b2176fb0c68fe60bd1bec58a69ebab1e6628fb"
 preserve = true
 
 [[files]]
