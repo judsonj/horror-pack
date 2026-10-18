@@ -98,7 +98,7 @@ hash = "f6f36cf3da1e6e09ad195fc171902701214f7988832c5bee1767dde4ce54b4aa"
 
 [[files]]
 file = "config/weeping_angels-common.toml"
-hash = "f0b2ac23b62f1cddee7dbe5e56e4d847d6e9058ed6ee58ed5fc05b036dbcf5b7"
+hash = "431f0ba58f5db4873325844840c9f308787d0125505ec131f05226b6961938b0"
 
 [[files]]
 file = "config/xaero/lib/common.cfg"

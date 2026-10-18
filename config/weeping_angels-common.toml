@@ -18,12 +18,12 @@
 	#Determines the range that a player can be teleported from their current location
 	# Default: 400
 	# Range: > 1
-	teleport_range = 64
+	teleport_range = 2
 	#Determines whether angels can teleport players across dimensions
 	interdimensional_teleporting = false
 	#Determines the chance a player will be teleported
 	# Default: 50
 	# Range: 1 ~ 100
-	teleport_chance = 10
+	teleport_chance = 1
 	#A list of Dimensions that angels cannot teleport players to
 	banned_dimensions = ["minecraft:the_end"]
