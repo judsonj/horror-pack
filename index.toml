@@ -248,8 +248,8 @@ hash = "29633e9b1c86b78bf6ecff0e4cb538b65b627596228a70caacf8c4757c04d988"
 metafile = true
 
 [[files]]
-file = "mods/iris-neoforge-1-8-12-mc1-21-1.pw.toml"
-hash = "b2f83b07f34ea3f5185b99ea16eb3e6411161a591a6aaf659e08f5274dab854f"
+file = "mods/iris-neoforge-1-8-14-beta-1-mc1-21-1.pw.toml"
+hash = "6b5cc1ad27fb96018689d42f73e6ed8f8ef111bcbce37246bd8a47bbfd314fd8"
 metafile = true
 
 [[files]]
