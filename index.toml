@@ -54,7 +54,7 @@ hash = "efe0c30620affee4a63c94309643da1b5a10d9b411d292f1394bd233489a7334"
 
 [[files]]
 file = "config/kenny.json"
-hash = "57ea33f5f232c29de1e84c94f8142b9fceff777c910cf8cf600762d223f60c21"
+hash = "edce16d74b997ef1e21e46e09a6c25747036154a77a159273266a46e6d9bbe1d"
 
 [[files]]
 file = "config/lostcities/common.toml"
@@ -63,6 +63,18 @@ hash = "a15eb0a666dcad3d937db91430eccd0c3cea3f16dae306f0e79f9bf8975ca3a7"
 [[files]]
 file = "config/lostcities/profiles/horror.json"
 hash = "7cf5b39b89ec2f215a327e3eea75d3b57ce97423958f3e632c7c4ed975f449b6"
+
+[[files]]
+file = "config/xaero/lib/common.cfg"
+hash = "d46dfe4bfd416bfcdd2b757d33744b4e4595f489b6507eae3c62f5389b11a7c1"
+
+[[files]]
+file = "config/xaero/minimap/default_radar_categories_client.json"
+hash = "5f03f63202624e8fe6d890d5a003894038480f8a4c13c3891f62cca77c4dbc71"
+
+[[files]]
+file = "config/xaero/minimap/profiles/default.cfg"
+hash = "4991e399d360cb2342b2c483c3f95873c6d21c9852d344cfec7e3e5610f29e2d"
 
 [[files]]
 file = "mods/adastra-1-21-1-1-16-26-neoforge.pw.toml"
@@ -210,8 +222,23 @@ hash = "ca3b4f17039539828f008ff134e48b5258fef868f56eba25b96278755cee9469"
 metafile = true
 
 [[files]]
+file = "mods/entity-model-features-3-3-12-1-21-neoforge.pw.toml"
+hash = "ee34eaad795e29a3ff15792fcbb7a8531bbb2d2c5222d86f87c272a495e87583"
+metafile = true
+
+[[files]]
+file = "mods/entity-texture-features-7-2-6-1-21-neoforge.pw.toml"
+hash = "afd2c8fc2b16dcb9af967a7cd83fc841c5209546abe6b4cc7c683eca5598e72c"
+metafile = true
+
+[[files]]
 file = "mods/entityculling-neoforge-1-11-3-mc1-21-1.pw.toml"
 hash = "2f6748be75ddc2b94923101b303726eb25676c357b52e365f7d5870c2b00a4b7"
+metafile = true
+
+[[files]]
+file = "mods/fallingtree-1-21-1-1-21-1-11.pw.toml"
+hash = "94b1c169f4c0c5364521e279583fb2f9a7b04058a38de1125a26db5c9405149c"
 metafile = true
 
 [[files]]
@@ -342,6 +369,11 @@ metafile = true
 [[files]]
 file = "mods/mowziesmobs-1-21-1-1-8-2.pw.toml"
 hash = "072a396a61c1778be234fb91eb5727efb1546c6d117668700f20e708f8e3ba73"
+metafile = true
+
+[[files]]
+file = "mods/notenoughanimations-neoforge-1-12-6-mc1-21-1.pw.toml"
+hash = "273a5dc39d71894bfe86b5725089847569f1138711456640503e624738d72807"
 metafile = true
 
 [[files]]
@@ -477,6 +509,16 @@ metafile = true
 [[files]]
 file = "mods/yungsbetterstrongholds-1-21-1-neoforge-5-1-3.pw.toml"
 hash = "c3ddc64f330a489713d9e64262c6395e773eb97da606bc2028968d21f1f329d2"
+metafile = true
+
+[[files]]
+file = "options.txt"
+hash = "58f7297ff1e132c2b39fe6776d40eb12c53b28af34d3c5adad8f48e7ce4a4456"
+preserve = true
+
+[[files]]
+file = "resourcepacks/freshanimations-v1-10-4-zip.pw.toml"
+hash = "0824cf4c916dbab124008b7fcbff550027b1f16183f10932d7ce2df1db7e9e15"
 metafile = true
 
 [[files]]
