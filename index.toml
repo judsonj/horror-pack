@@ -198,6 +198,11 @@ hash = "2f6748be75ddc2b94923101b303726eb25676c357b52e365f7d5870c2b00a4b7"
 metafile = true
 
 [[files]]
+file = "mods/ferritecore-7-0-3-neoforge.pw.toml"
+hash = "e241427695078c38c13b89aa4b127c10b978daf52c336c00ae953d7ef13c1ecc"
+metafile = true
+
+[[files]]
 file = "mods/forge-weeping-angels-mc1-21-v1-0-5-forge.pw.toml"
 hash = "a127067354db59cbc976338630c00aad4d3c5ae5f40f8aa2d3f73b3419ca1de0"
 metafile = true
