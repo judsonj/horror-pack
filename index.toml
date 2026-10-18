@@ -81,6 +81,10 @@ file = "config/xaero/minimap/profiles/default.cfg"
 hash = "4991e399d360cb2342b2c483c3f95873c6d21c9852d344cfec7e3e5610f29e2d"
 
 [[files]]
+file = "kubejs/server_scripts/starter_kit.js"
+hash = "36110a2e35197b90ec00c7e6f296416da2619bcd2a29a8e621a4da649ca9de7f"
+
+[[files]]
 file = "mods/adastra-1-21-1-1-16-26-neoforge.pw.toml"
 hash = "ee4d6514a8431b06d2ac5f6220d94dd34e9f0eea6c2dc384ba3d6098acf8d64b"
 metafile = true
