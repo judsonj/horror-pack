@@ -1,0 +1,14 @@
+{
+ "structures": [
+  {
+   "structure": "create_rustic_structures:rustic_windmill",
+   "weight": 1
+  }
+ ],
+ "placement": {
+  "type": "minecraft:random_spread",
+  "spacing": 12,
+  "separation": 6,
+  "salt": 1297317345
+ }
+}

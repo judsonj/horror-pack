@@ -1,0 +1,14 @@
+{
+ "structures": [
+  {
+   "structure": "create_structures_arise:create_bastion",
+   "weight": 1
+  }
+ ],
+ "placement": {
+  "type": "minecraft:random_spread",
+  "spacing": 50,
+  "separation": 5,
+  "salt": 1649910749
+ }
+}

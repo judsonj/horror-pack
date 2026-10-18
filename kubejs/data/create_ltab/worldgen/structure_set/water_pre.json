@@ -1,0 +1,18 @@
+{
+ "structures": [
+  {
+   "structure": "create_ltab:water_pre",
+   "weight": 2
+  },
+  {
+   "structure": "create_ltab:oil_rig",
+   "weight": 1
+  }
+ ],
+ "placement": {
+  "type": "minecraft:random_spread",
+  "spacing": 30,
+  "separation": 5,
+  "salt": 711266687
+ }
+}

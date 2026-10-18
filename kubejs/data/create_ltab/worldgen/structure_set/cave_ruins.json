@@ -1,0 +1,14 @@
+{
+ "structures": [
+  {
+   "structure": "create_ltab:cave_ruins",
+   "weight": 1
+  }
+ ],
+ "placement": {
+  "type": "minecraft:random_spread",
+  "spacing": 15,
+  "separation": 1,
+  "salt": 77928767
+ }
+}

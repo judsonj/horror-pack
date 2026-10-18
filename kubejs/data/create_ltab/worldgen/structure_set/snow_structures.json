@@ -1,0 +1,18 @@
+{
+ "structures": [
+  {
+   "structure": "create_ltab:snow_fort",
+   "weight": 1
+  },
+  {
+   "structure": "create_ltab:dungeon_snow",
+   "weight": 1
+  }
+ ],
+ "placement": {
+  "type": "minecraft:random_spread",
+  "spacing": 30,
+  "separation": 5,
+  "salt": 281224036
+ }
+}

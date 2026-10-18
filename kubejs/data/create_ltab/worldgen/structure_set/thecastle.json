@@ -1,0 +1,24 @@
+{
+ "structures": [
+  {
+   "structure": "create_ltab:thecastle",
+   "weight": 10
+  },
+  {
+   "structure": "create_ltab:kings_castle",
+   "weight": 1
+  }
+ ],
+ "placement": {
+  "type": "minecraft:random_spread",
+  "spacing": 35,
+  "separation": 10,
+  "salt": 774649767,
+  "frequency_reduction_method": "legacy_type_3",
+  "frequency": 0.5,
+  "exclusion_zone": {
+   "other_set": "create_ltab:plains_structures",
+   "chunk_count": 16
+  }
+ }
+}

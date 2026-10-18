@@ -1,0 +1,14 @@
+{
+ "structures": [
+  {
+   "structure": "create_ltab:dark_forest_house",
+   "weight": 1
+  }
+ ],
+ "placement": {
+  "type": "minecraft:random_spread",
+  "spacing": 14,
+  "separation": 2,
+  "salt": 2077731838
+ }
+}

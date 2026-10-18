@@ -1,0 +1,14 @@
+{
+ "structures": [
+  {
+   "structure": "create_rustic_structures:rustic_barn",
+   "weight": 1
+  }
+ ],
+ "placement": {
+  "type": "minecraft:random_spread",
+  "spacing": 16,
+  "separation": 8,
+  "salt": 1218093568
+ }
+}

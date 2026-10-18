@@ -1,0 +1,14 @@
+{
+ "structures": [
+  {
+   "structure": "create_structures_arise:darkcastle",
+   "weight": 1
+  }
+ ],
+ "placement": {
+  "type": "minecraft:random_spread",
+  "spacing": 50,
+  "separation": 35,
+  "salt": 151039667
+ }
+}

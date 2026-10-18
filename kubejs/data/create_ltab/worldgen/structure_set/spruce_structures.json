@@ -1,0 +1,14 @@
+{
+ "structures": [
+  {
+   "structure": "create_ltab:spruce_structures",
+   "weight": 1
+  }
+ ],
+ "placement": {
+  "type": "minecraft:random_spread",
+  "spacing": 18,
+  "separation": 2,
+  "salt": 920751271
+ }
+}

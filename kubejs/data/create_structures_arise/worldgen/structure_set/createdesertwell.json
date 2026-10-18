@@ -1,0 +1,14 @@
+{
+ "structures": [
+  {
+   "structure": "create_structures_arise:createdesertwell",
+   "weight": 1
+  }
+ ],
+ "placement": {
+  "type": "minecraft:random_spread",
+  "spacing": 60,
+  "separation": 1,
+  "salt": 1840894041
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "structures": [
+  {
+   "structure": "morestructures:hotairballoon",
+   "weight": 1
+  }
+ ],
+ "placement": {
+  "type": "minecraft:random_spread",
+  "separation": 25,
+  "spacing": 32,
+  "salt": 4608234
+ }
+}

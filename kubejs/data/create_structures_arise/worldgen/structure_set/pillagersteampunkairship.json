@@ -1,0 +1,14 @@
+{
+ "structures": [
+  {
+   "structure": "create_structures_arise:pillagersteampunkairship",
+   "weight": 1
+  }
+ ],
+ "placement": {
+  "type": "minecraft:random_spread",
+  "spacing": 75,
+  "separation": 25,
+  "salt": 921203622
+ }
+}

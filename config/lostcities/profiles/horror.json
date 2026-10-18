@@ -16,7 +16,7 @@
     "cityLevel1Height": 83,
     "cityStyleThreshold": -1.0,
     "cityLevel5Height": 115,
-    "cityChance": 0.002,
+    "cityChance": 0.0004,
     "cityThreshold": 0.2,
     "cityStyleAlternative": "",
     "cityPerlinInnerScale": 0.1,

@@ -74,7 +74,7 @@ hash = "a15eb0a666dcad3d937db91430eccd0c3cea3f16dae306f0e79f9bf8975ca3a7"
 
 [[files]]
 file = "config/lostcities/profiles/horror.json"
-hash = "e7ccaea6beb8762517787007e46af4e997ebdbe801a7479a0ad5d7c6bd30a8c7"
+hash = "05dcaf3cfbdbcb7931929499546cf21f1687a0936fcd7ce232219e334d08a760"
 
 [[files]]
 file = "config/survivors/claude_context.md"
@@ -99,6 +99,210 @@ hash = "5f03f63202624e8fe6d890d5a003894038480f8a4c13c3891f62cca77c4dbc71"
 [[files]]
 file = "config/xaero/minimap/profiles/default.cfg"
 hash = "4991e399d360cb2342b2c483c3f95873c6d21c9852d344cfec7e3e5610f29e2d"
+
+[[files]]
+file = "kubejs/data/create_ltab/worldgen/structure_set/birch_structures.json"
+hash = "b55d298208e627069cee70df74db2aad55d9f15642b1ed784122e81aea1ce8e9"
+
+[[files]]
+file = "kubejs/data/create_ltab/worldgen/structure_set/cave_ruins.json"
+hash = "17e135e2d2d9d127f547466a56ae9febfcdec39f79621e8d56b2f6540d01a9e0"
+
+[[files]]
+file = "kubejs/data/create_ltab/worldgen/structure_set/cherry_house.json"
+hash = "8c38b4d352f680321f3c93fbdc86d378fa22dceae441e96f82e4e2ff4a302bf8"
+
+[[files]]
+file = "kubejs/data/create_ltab/worldgen/structure_set/dark_forest_house.json"
+hash = "b0a2a7e34c08ceb6d87a90940df1fab66255c7c311c6183b7e0342776e02fda4"
+
+[[files]]
+file = "kubejs/data/create_ltab/worldgen/structure_set/desert_structures.json"
+hash = "ec1e31c89abd2ed6f8d089eaefb6ea22ba4a5ce572a4871087984e63d5881d0c"
+
+[[files]]
+file = "kubejs/data/create_ltab/worldgen/structure_set/grot.json"
+hash = "ba4def46d7ac4957e3ee461b3bb5a465820a0587343e04a0169119d7fa1756d5"
+
+[[files]]
+file = "kubejs/data/create_ltab/worldgen/structure_set/jungle_structures.json"
+hash = "36381ed2a5bd1651b3a98091e2e484431487b50a9149007923328ce27a05d301"
+
+[[files]]
+file = "kubejs/data/create_ltab/worldgen/structure_set/mangrove_structures.json"
+hash = "98a359c6cd0a2f937f2d5070d5f7d118730dda224fb815d99d87b32b8854a0a1"
+
+[[files]]
+file = "kubejs/data/create_ltab/worldgen/structure_set/nether_roof_house.json"
+hash = "d048474fae501decafa77cb226fc12d2458a98ef0890a38595ddd73339c05a86"
+
+[[files]]
+file = "kubejs/data/create_ltab/worldgen/structure_set/pillage.json"
+hash = "506839f3501af4ad7c79212d9e774838576a5e852b050910934868f3b12f9123"
+
+[[files]]
+file = "kubejs/data/create_ltab/worldgen/structure_set/plains_structures.json"
+hash = "d579f85372de8479718e92a7bb515f539bc8cdeb244e63dfaa663da5f62b6d19"
+
+[[files]]
+file = "kubejs/data/create_ltab/worldgen/structure_set/quarry.json"
+hash = "baa6edde21fd06a5081d36c09564687329d84b9ecf1a748ebf30543977b92e4e"
+
+[[files]]
+file = "kubejs/data/create_ltab/worldgen/structure_set/ruins.json"
+hash = "c93dd20bf1072d809a5dbf61bd4bfce870a71358711dd23538b3a043197f8468"
+
+[[files]]
+file = "kubejs/data/create_ltab/worldgen/structure_set/snow_structures.json"
+hash = "a06d74baaf803b71164e77166498b2a9218d54645e82e79f3e69f68b83ceea7b"
+
+[[files]]
+file = "kubejs/data/create_ltab/worldgen/structure_set/spruce_structures.json"
+hash = "da0a9e5c546ceaedcd017fd9945a26155b8143798fe1af76931b489c8240780d"
+
+[[files]]
+file = "kubejs/data/create_ltab/worldgen/structure_set/thecastle.json"
+hash = "b96897c515e377f02202c1b769977a59f8c2181a860e831e7c25d88829f28c88"
+
+[[files]]
+file = "kubejs/data/create_ltab/worldgen/structure_set/water_pre.json"
+hash = "51f7543c656727c0fa2c9cd356cbd7d59ca9f84fe2fdfe705788fe7dda7623c5"
+
+[[files]]
+file = "kubejs/data/create_rustic_structures/worldgen/structure_set/rustic_barn.json"
+hash = "16c76d157c9990b8eb4569790ea6345aecb4862507ca0caccd500087d6497aa0"
+
+[[files]]
+file = "kubejs/data/create_rustic_structures/worldgen/structure_set/rustic_smithy.json"
+hash = "5d94b4c832f679076da65d9f689d35a725b5ffaf084339b9e1e44ff6a690b97d"
+
+[[files]]
+file = "kubejs/data/create_rustic_structures/worldgen/structure_set/rustic_well.json"
+hash = "0f40c3d3792bcd581d2db7ee914cc2aca2130fca93bb8163de619b2a6903fb6a"
+
+[[files]]
+file = "kubejs/data/create_rustic_structures/worldgen/structure_set/rustic_windmill.json"
+hash = "4b90da655e94fa7b8f06f0e7f5dcbaedf55af070b4c117f860f5ba93556d0438"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/chocolate_pit.json"
+hash = "2dbb536f33e86ace30155ef603e679e604fc97ede5e60932d9c7f0d3a3b01a32"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/create_bastion.json"
+hash = "9b1caa1f709359fe813b26601b88d81c96cb9714c144758f5a4d9925d00351cd"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/create_copper_statue.json"
+hash = "c4aa0b9805e4eea6947e3ea27a163e64034886e4068f40d5f2ef5a4de4263df4"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/create_dungeon_base.json"
+hash = "2a552a7c72f8d6c5f2fb2eed89d6c96b1fd63f702cd4ce92c8524decb5410af6"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/create_ruined_castle.json"
+hash = "6bee7d8f97a5c6441cb7b62e4f090aae5a5a2a460a5ec1c8739a7faf1155345d"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/createairdrop.json"
+hash = "1f7bfeb77d5781deeee2d0665a274feeed10d758df4d9c23f008ec167c46eda7"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/createcontainer.json"
+hash = "81c55a1f9989002dbd2aa6534a334f2f19be2fdd06406bde3d36a9c8312a4576"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/createcushercrane.json"
+hash = "ba0758cd4aeaf6884d911f0e5e75bc5d66a7231fa579d42e19eef0e305a70674"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/createdesertwell.json"
+hash = "5ec2f1c8e15d5f4c95c7770d8fbe4ede979d0ee2efc40d4fffac0b08cdc5d257"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/createfluidtank.json"
+hash = "0341c9f19e759be8d8c6ba01b517b85ba01188a662bb68c5649aeaa760a7fe68"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/createhouse.json"
+hash = "21832603e0f4c36c0d883e5f0f5f06c0341d2f3c973f4a3380bf753e7115c31b"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/createlittleman.json"
+hash = "752cb8839294eb4d9578d59108a80b228b20073138e94a73faba514675bc1b5c"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/createlosttrainstation.json"
+hash = "62f8a6132f52fe8d50668addc7c872e96722bca647ab175a3fde4dd3a7ac624c"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/createminiskyvillage.json"
+hash = "addbf69d57d8bc9c53b4c0ae689606cc24d0fc1caaed05b92ce8bda991b0027c"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/createmonsterroom.json"
+hash = "1abccea4b35210ba8cb6503e1c5b693dae634131b2628bf9350d6dd845273711"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/createoldruine.json"
+hash = "b36d8c7164b71aa37c7047fc2ef4f6d16cc6461156735fd7be76919512b23289"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/createpickaxestatue.json"
+hash = "4e8ed88de8e565f6bd89cde42240c4f3694458411bfaa1faf981ba8bf150b2fd"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/createwitchhut.json"
+hash = "a39dfb895416a1d652fff5922136dd5557e6f3966ff7bf0c5afdc2b7c88718b1"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/crimsite_tower.json"
+hash = "f45627dfc90008340c33cfdc42db46a55694d1a04fb38b5c0d188517158177ad"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/darkcastle.json"
+hash = "5bbb6c130f98dad27ee2eaec1f17816c2ea361259df8bfb8f88e2773516310e2"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/deadlordshouse.json"
+hash = "e17bd36845728b427c9248ee2e385d848970a4ab0320e9a7bf8f614a130cfa5b"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/honey_pit.json"
+hash = "c151f447e18cf4f14f9b8daec1825ede219103b33e3973ca72fdff49d23cd5b8"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/minetrain.json"
+hash = "10c76683358102537a964fee13945a0d84b53cbd385af18359b185d94ce8815b"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/obsidiantemple.json"
+hash = "6fb537b7048b6cad209cc569b81fc42ec97e4785c815cca14829d9e0577a03d9"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/pillager_boat.json"
+hash = "9db7fdf0b8cdc51f438657ac59afc32ff77da65570fc16b98555730ac0c6c464"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/pillagersteampunkairship.json"
+hash = "2f357c4ac8d8183d6f6edf0d4e736db39b4998a5b531721909982c0f512ad2af"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/towerofochrum.json"
+hash = "65c2015ac1c38a60b235c56d2d5065c6a4fd4bc12e1e965576f9220eca0e00ae"
+
+[[files]]
+file = "kubejs/data/create_structures_arise/worldgen/structure_set/windmill.json"
+hash = "d365ad58f970139662bf092b3b03cb9aa73dfd9fadae26bb378dc670448a9007"
+
+[[files]]
+file = "kubejs/data/morestructures/worldgen/structure_set/brokenhotairballoon.json"
+hash = "08761b150fb74158657251af9015cb9512f6fe6b52ac825cfb258001ab7ab0a1"
+
+[[files]]
+file = "kubejs/data/morestructures/worldgen/structure_set/hotairballoon.json"
+hash = "94e83e46f288be10be66d43cd399a4a618a4a8cd4241180fda9e9344ad84a81b"
 
 [[files]]
 file = "kubejs/server_scripts/faces_daylight.js"
@@ -523,8 +727,8 @@ hash = "734e155b3016c152cb8a7f2198af300a64baa02ce23e7341d90513a236fd2eb8"
 metafile = true
 
 [[files]]
-file = "mods/survivors-0.2.0.jar"
-hash = "d31f391ae4749e6d0846f2c85e4779500bac2e83e738ca9e79c4e1ed8fd3e6d1"
+file = "mods/survivors-0.3.0.jar"
+hash = "311a5a0a7da9aba6da4d19a55d0dfa95e73d9ff8da140d9d208c10023a01a2b8"
 
 [[files]]
 file = "mods/t-and-t-fabric-neoforge-1-13-11.pw.toml"

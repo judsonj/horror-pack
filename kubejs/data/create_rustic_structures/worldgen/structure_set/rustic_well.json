@@ -1,0 +1,14 @@
+{
+ "structures": [
+  {
+   "structure": "create_rustic_structures:rustic_well",
+   "weight": 1
+  }
+ ],
+ "placement": {
+  "type": "minecraft:random_spread",
+  "spacing": 8,
+  "separation": 4,
+  "salt": 1221516354
+ }
+}

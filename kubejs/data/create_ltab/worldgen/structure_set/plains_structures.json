@@ -1,0 +1,30 @@
+{
+ "structures": [
+  {
+   "structure": "create_ltab:railroad",
+   "weight": 1
+  },
+  {
+   "structure": "create_ltab:oak_house",
+   "weight": 1
+  },
+  {
+   "structure": "create_ltab:big_windmill",
+   "weight": 1
+  },
+  {
+   "structure": "create_ltab:dungeon_plains",
+   "weight": 3
+  },
+  {
+   "structure": "create_ltab:plains_small",
+   "weight": 7
+  }
+ ],
+ "placement": {
+  "type": "minecraft:random_spread",
+  "spacing": 24,
+  "separation": 1,
+  "salt": 3246632
+ }
+}
