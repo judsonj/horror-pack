@@ -1,0 +1,8 @@
+name = "borderless-neoforge-1.21.1-1.7.5_1-all.jar"
+filename = "borderless-neoforge-1.21.1-1.7.5_1-all.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/CnalMsa0/versions/fAp1G5Ro/borderless-neoforge-1.21.1-1.7.5_1-all.jar"
+hash-format = "sha512"
+hash = "8914975ee00914a7b14ecbd5da9ca3952ed4c4f8a559f6cb2d3de4b577dde5dfa8d89acde277498b922accc76669ac9095269b5e5322045e79624e0a2c94d2af"
