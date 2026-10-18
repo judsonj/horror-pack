@@ -5,6 +5,6 @@ ServerEvents.tick(event => {
   const level = server.overworld()
   if (!level.isDay()) return
   level.getEntities().forEach(entity => {
-    if (String(entity.type).startsWith('goofy_horror_mod:') && level.canSeeSky(entity.blockPosition())) entity.discard()
+    if (String(entity.getEncodeId()).startsWith('goofy_horror_mod:') && level.canSeeSky(entity.blockPosition())) entity.discard()
   })
 })

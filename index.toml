@@ -66,7 +66,7 @@ hash = "efe0c30620affee4a63c94309643da1b5a10d9b411d292f1394bd233489a7334"
 
 [[files]]
 file = "config/kenny.json"
-hash = "edce16d74b997ef1e21e46e09a6c25747036154a77a159273266a46e6d9bbe1d"
+hash = "f4e28e1e7a5eaf76f3c309c964933f1ab396b16e4098ad9e6806fa483ed8475e"
 
 [[files]]
 file = "config/lostcities/common.toml"
@@ -75,6 +75,14 @@ hash = "a15eb0a666dcad3d937db91430eccd0c3cea3f16dae306f0e79f9bf8975ca3a7"
 [[files]]
 file = "config/lostcities/profiles/horror.json"
 hash = "e7ccaea6beb8762517787007e46af4e997ebdbe801a7479a0ad5d7c6bd30a8c7"
+
+[[files]]
+file = "config/weeping-angels-spawns.toml"
+hash = "f6f36cf3da1e6e09ad195fc171902701214f7988832c5bee1767dde4ce54b4aa"
+
+[[files]]
+file = "config/weeping_angels-common.toml"
+hash = "f0b2ac23b62f1cddee7dbe5e56e4d847d6e9058ed6ee58ed5fc05b036dbcf5b7"
 
 [[files]]
 file = "config/xaero/lib/common.cfg"
@@ -90,7 +98,11 @@ hash = "4991e399d360cb2342b2c483c3f95873c6d21c9852d344cfec7e3e5610f29e2d"
 
 [[files]]
 file = "kubejs/server_scripts/faces_daylight.js"
-hash = "89bf900d51514bed5dba5db9403ad0292613147f3255264edd75df0aa7577fa9"
+hash = "00cfeb6f331fa5d9f9e175e03ebc8ab68cf45bbc47fa985e606eaf750a5a0adb"
+
+[[files]]
+file = "kubejs/server_scripts/horror_grace.js"
+hash = "b74609ba6dde4bda2714d2394d7f93951b0e5610f05eddf31a44debf7f7b11cf"
 
 [[files]]
 file = "kubejs/server_scripts/starter_kit.js"
@@ -317,6 +329,11 @@ hash = "44602ac12b919e025388ea98ed1fe27ed82fc304538ca293220d44b4dfd8ec21"
 metafile = true
 
 [[files]]
+file = "mods/guardvillagers-2-4-12-1-21-1.pw.toml"
+hash = "ad840f07f37e9fc1266b3cf85ad5642f105611832926322ea9f5bc534aab0dca"
+metafile = true
+
+[[files]]
 file = "mods/immediatelyfast-neoforge-1-6-15-1-21-1.pw.toml"
 hash = "591bb4602b6adb55de7a7614263c50cb1b705ae1d1706c7a098551a6409d73fc"
 metafile = true
@@ -500,6 +517,10 @@ metafile = true
 file = "mods/structures-1-2.pw.toml"
 hash = "734e155b3016c152cb8a7f2198af300a64baa02ce23e7341d90513a236fd2eb8"
 metafile = true
+
+[[files]]
+file = "mods/survivors-0.1.0.jar"
+hash = "6192b1efe7266eb444cde6dab594434e18439363fdd5c4f5755b45f82ca9db69"
 
 [[files]]
 file = "mods/t-and-t-fabric-neoforge-1-13-11.pw.toml"
