@@ -53,6 +53,10 @@ file = "config/iris.properties"
 hash = "efe0c30620affee4a63c94309643da1b5a10d9b411d292f1394bd233489a7334"
 
 [[files]]
+file = "config/kenny.json"
+hash = "57ea33f5f232c29de1e84c94f8142b9fceff777c910cf8cf600762d223f60c21"
+
+[[files]]
 file = "mods/adastra-1-21-1-1-16-26-neoforge.pw.toml"
 hash = "ee4d6514a8431b06d2ac5f6220d94dd34e9f0eea6c2dc384ba3d6098acf8d64b"
 metafile = true
