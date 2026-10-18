@@ -1,0 +1,41 @@
+[Spawning]
+	#You can boost the frequency of the obsessed stalking its targets by increasing this number (4,000 default), or decrease it by lowering it (minimum=0, maximum effect=6000)
+	"Stalk Frequency" = 4000.0
+	#You can boost the frequency of the original targeting version of the obsessed by increasing this number (2400 default), or decrease it by lowering it (minimum=0, maximum effect=4600)
+	"Natural Targeter Spawnrate" = 2400.0
+	#If a player is not targeted within X seconds of world spawn, targeting will be forced (3600 by default, equivalent to an hour). Set to an extreme high number to effectively disable.
+	"Guaranteed Initial Targeting Time" = 3600.0
+
+[Difficulty]
+	#Minimum 1.0, default 5.0. Controls how many obsessed spawns occur before each time its mood decreases automatically. E.g. with default value of 10.0, every eight times it spawns, it will decrease its mood by 1 point (mood range is -5 to 5).
+	"Obsessed Patience" = 16.0
+
+[Other]
+	#Set to false to disable the initial welcome text shown to players on first world load
+	"Splash Text" = true
+	#Allow multiple players to be targeted, or only one per world? Set to true if you would like to allow multiple obsessions at a time.
+	"Allow Multiple Targets" = false
+	#Set to false to disable hallucination entities/jumpscares. This includes the bed version, block breaking version, targeter popup, and various spider versions
+	"Enable Hallucination Entities" = true
+	#FALSE by default. If you set this to true, it is recommended to also set Allow Multiple Targets to true. Enables creative/spectator mode players to retain obsessed targeting.
+	"Allow Targeting Creative/Spectator Players" = false
+	#Enabled by default. The Obsessed can open wooden doors, replace regular torches with redstone equivalents, and plant wither roses in intruder mode, and break leaves, non-stained glass, and doors when abducting or in certain spider modes. Plus it places blocks sometimes in the mimicking mode. Set to false to prevent these
+	"Allow Obsessed Griefing" = false
+	#If you do not have the above 'allow multiple targets' mode enabled, the obsessed will lose interest after X amount of seconds of its target player not being on the server while other players are present, or being in a non-overworld dimension continuously. 2400 seconds by default (60 minutes).
+	"Seconds before losing interest in single target mode" = 3600.0
+	#If you would like to add more items that can be given to the obsessed as gifts, simply add their item IDs to this list (mod items will require the mod part, e.g. arphex:scorched_soup).
+	"Customise gifts" = ["gift:id (add as many as you want)", "gift:id"]
+	#The Obsessed can mimic chat messages and remember things you said. This is uncommon and often has a cooldown of up to 2.5 minutes, even if it doesn't answer. Set to false to disable that cooldown.
+	"Chat cooldown" = true
+	#By default, the obsessed is an arachnoid entity, and can transform into its spider form, making up a major portion of the mod's horror aspects. Set to false to disable all spider forms.
+	"Allow arachnophobia elements" = true
+	#Add names of any mobs here that you don't want the obsessed to be able to attack (IDs of mobs from summon command, or just include mod ID to protect all mobs from that mod)
+	"Whitelist mobs" = ["minecraft:villager", "modname: (another option - ignores all mobs from a particular mod)", "(add as many as you need, replace this)"]
+	#The intruder mode version can rarely steal an item from your chests (one item at a time max, and only from chests' top left slot). You'll later get it back as a deposit gift, with all attributes of the item preserved. Set to false to disable this mechanic.
+	"Allow Item Stealing" = true
+	#Set to false to disable the entity from building structures in your world, including copying yours
+	"Allow Building Structures" = true
+	#If set to true, the obsessed can attempt to steal tamed horses and ride off with them for a short period.
+	"Horse Stealing" = true
+	#With this config file, you can make the Obsessed attack any specified mobs on sight from any mod, simply by adding their registry IDs in this list. It triggers attacks from flee modes, and will not attack invulnerable or invisible mobs. You can target all mobs from a mod by adding an entry like: arphex-
+	"Mobs to attack on sight" = ["the_knocker-", "man_from_the_shadow-"]

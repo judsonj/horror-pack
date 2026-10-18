@@ -1,0 +1,8 @@
+name = "GooberArsenal-Neoforge-1.1.1.jar"
+filename = "GooberArsenal-Neoforge-1.1.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/UYEqSNWz/versions/scR2Ht5i/GooberArsenal-Neoforge-1.1.1.jar"
+hash-format = "sha512"
+hash = "f9c90e28ea5130834229a19ee7b17cb5ce21e57164badc285404f4f4d5a4f4c2ff1c98f94c30c24694b8c68cf9a484a0fa5abc05adf7c13aeefc3179781de2de"

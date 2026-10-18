@@ -1,0 +1,8 @@
+name = "CreateRackets-NeoForge-1.2.2.jar"
+filename = "CreateRackets-NeoForge-1.2.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/6ZnQV8UM/versions/D8QoSbIs/CreateRackets-NeoForge-1.2.2.jar"
+hash-format = "sha512"
+hash = "31a453331d4e7056eca4c7ca46578a205bfd6c9d4169719636f0c36533326fc4c15651a71e016c2aaf38cf284ce430d8f4a481e2ab0b6ce3caa23086b1d14ec3"

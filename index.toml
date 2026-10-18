@@ -74,7 +74,7 @@ hash = "efe0c30620affee4a63c94309643da1b5a10d9b411d292f1394bd233489a7334"
 
 [[files]]
 file = "config/kenny.json"
-hash = "f4e28e1e7a5eaf76f3c309c964933f1ab396b16e4098ad9e6806fa483ed8475e"
+hash = "3a468824521ad294e0663f31bd437fb42d12650399b5f4dfd8fc7aa7ee1281e0"
 
 [[files]]
 file = "config/lostcities/common.toml"
@@ -83,6 +83,10 @@ hash = "a15eb0a666dcad3d937db91430eccd0c3cea3f16dae306f0e79f9bf8975ca3a7"
 [[files]]
 file = "config/lostcities/profiles/horror.json"
 hash = "05dcaf3cfbdbcb7931929499546cf21f1687a0936fcd7ce232219e334d08a760"
+
+[[files]]
+file = "config/obsessed_configurations.toml"
+hash = "e498404a96316c6c9db4d5b81f906b118f22ea607988ce56d3b4a1598bcbf298"
 
 [[files]]
 file = "config/survivors/claude_context.md"
@@ -435,6 +439,11 @@ hash = "440a648530b2b98521bc160cb0f95695baab6cf56c49012d4cb727ab2ede5168"
 metafile = true
 
 [[files]]
+file = "mods/createrackets-neoforge-1-2-2.pw.toml"
+hash = "59989406376bd21a3932547a26133de8e5fb854af15511655a194883458edf13"
+metafile = true
+
+[[files]]
 file = "mods/creativecore-neoforge-v2-13-51-mc1-21-1.pw.toml"
 hash = "2ad323b8a051bbe01f2673c399d2a76fe497b1f24ea50d4b33de7c4fbed40554"
 metafile = true
@@ -537,6 +546,11 @@ metafile = true
 [[files]]
 file = "mods/geckolib-neoforge-1-21-1-4-9-3.pw.toml"
 hash = "2235674a1bfadd9df6bf13dde98368ed1be96406809968541e292c36a9b1b771"
+metafile = true
+
+[[files]]
+file = "mods/gooberarsenal-neoforge-1-1-1.pw.toml"
+hash = "1aba834ebd81e21b0746925fcf7326921258cd94542ca3b6fd42f457f262cf52"
 metafile = true
 
 [[files]]
@@ -695,6 +709,11 @@ hash = "44d8808acb558a329e9f36f8b4fb18614ff74177ed30e648dee3e19e899d6705"
 metafile = true
 
 [[files]]
+file = "mods/silly-weapons-1-2-0-neoforge-1-21-1.pw.toml"
+hash = "19483318934ffdf1679345bfe8356dea7fc87a768c523523015638c145dd8efd"
+metafile = true
+
+[[files]]
 file = "mods/sodium-neoforge-0-8-13-mc1-21-1.pw.toml"
 hash = "d230543a7196d4b2c9ae5165aac9122f3a0ca08883b0c171f2c3f4871b7b7e0a"
 metafile = true
@@ -735,8 +754,8 @@ hash = "734e155b3016c152cb8a7f2198af300a64baa02ce23e7341d90513a236fd2eb8"
 metafile = true
 
 [[files]]
-file = "mods/survivors-0.7.0.jar"
-hash = "87d27122141fc7ae664f9e02ef9ffc936bc4a526bd5849524af1ecce4e9915ba"
+file = "mods/survivors-0.7.1.jar"
+hash = "a250ca320ed3710a4cf91f5a5fbfbcbe4ac49387825e5ac3cfaa3f9338e28df6"
 
 [[files]]
 file = "mods/t-and-t-fabric-neoforge-1-13-11.pw.toml"
@@ -746,6 +765,11 @@ metafile = true
 [[files]]
 file = "mods/the-knocker-1-5-2-neoforge-1-21-1.pw.toml"
 hash = "6d5d2ea479efeb3a8817614482eba57322c0b1001d471cd70146ffc649fee775"
+metafile = true
+
+[[files]]
+file = "mods/the-obsessed-1-5-2g-neoforge-1-21-1.pw.toml"
+hash = "5f8cdeff573f472d9494c02211a415369150677d2dea48d622b3362936ff1248"
 metafile = true
 
 [[files]]

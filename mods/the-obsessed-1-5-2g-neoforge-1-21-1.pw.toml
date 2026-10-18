@@ -1,0 +1,8 @@
+name = "the_obsessed-1.5.2g-neoforge-1.21.1.jar"
+filename = "the_obsessed-1.5.2g-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/e2UrUTKG/versions/rsG7Bv6I/the_obsessed-1.5.2g-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "f72176f1cca7b7e3531662d8e444f6c081531c0a2e3e4c01aeeabcce7ece7b271a43247edb86cd94cb244ddea86e55d902a58e8a87c0cf3678a3c9d119ffce73"
