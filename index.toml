@@ -57,6 +57,14 @@ file = "config/kenny.json"
 hash = "57ea33f5f232c29de1e84c94f8142b9fceff777c910cf8cf600762d223f60c21"
 
 [[files]]
+file = "config/lostcities/common.toml"
+hash = "a15eb0a666dcad3d937db91430eccd0c3cea3f16dae306f0e79f9bf8975ca3a7"
+
+[[files]]
+file = "config/lostcities/profiles/horror.json"
+hash = "7cf5b39b89ec2f215a327e3eea75d3b57ce97423958f3e632c7c4ed975f449b6"
+
+[[files]]
 file = "mods/adastra-1-21-1-1-16-26-neoforge.pw.toml"
 hash = "ee4d6514a8431b06d2ac5f6220d94dd34e9f0eea6c2dc384ba3d6098acf8d64b"
 metafile = true
