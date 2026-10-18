@@ -77,6 +77,10 @@ file = "config/lostcities/profiles/horror.json"
 hash = "e7ccaea6beb8762517787007e46af4e997ebdbe801a7479a0ad5d7c6bd30a8c7"
 
 [[files]]
+file = "config/survivors/claude_context.md"
+hash = "d5038d37913169a178e71e8125c18cfeacd5cf3ebf22451c1118f6a9e3fcda2d"
+
+[[files]]
 file = "config/weeping-angels-spawns.toml"
 hash = "f6f36cf3da1e6e09ad195fc171902701214f7988832c5bee1767dde4ce54b4aa"
 
@@ -520,7 +524,7 @@ metafile = true
 
 [[files]]
 file = "mods/survivors-0.1.0.jar"
-hash = "6192b1efe7266eb444cde6dab594434e18439363fdd5c4f5755b45f82ca9db69"
+hash = "900382baf0c2cd6f8fe7573a429eec11ccc756c61fcfdd992d5d45d1d0bc8737"
 
 [[files]]
 file = "mods/t-and-t-fabric-neoforge-1-13-11.pw.toml"
