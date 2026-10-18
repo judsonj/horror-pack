@@ -1,0 +1,13 @@
+name = "create-lost-cities-subways-1.21.1-1.1.2.jar"
+filename = "create-lost-cities-subways-1.21.1-1.1.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6133995e8e5bef6cb02154b166b3c18a25938ef6"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8526351
+project-id = 1585303

@@ -1,0 +1,8 @@
+name = "goofy_horror_mod-6.0.0-neoforge-1.21.1.jar"
+filename = "goofy_horror_mod-6.0.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/GJrNpXGG/versions/udvvKrHB/goofy_horror_mod-6.0.0-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "09d55823d08b49ed8a8195576dc481d78bf84fcc7b80f9aa6af2727b7f1bd30ddc0579066796ab75994f7d9aef3921c23840fb18cea0fcc599529d1af3c9b87b"

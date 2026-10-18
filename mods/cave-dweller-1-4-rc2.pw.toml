@@ -1,0 +1,8 @@
+name = "cave_dweller-1.4-rc2.jar"
+filename = "cave_dweller-1.4-rc2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/82njC4TT/versions/bdzL1Nsp/cave_dweller-1.4-rc2.jar"
+hash-format = "sha512"
+hash = "03eb32133de06dab595320fc0ffb109a8141c173dbcbdb3b4b17b61cf603bada7162c7044d9baa282422401afa7cbf1ccc4373c339965336e6f1ffce97e6dcbf"

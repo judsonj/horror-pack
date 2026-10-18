@@ -1,0 +1,8 @@
+name = "sporeinquisition-4.5.jar"
+filename = "sporeinquisition-4.5.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/GJBRv9tX/versions/2mI1XQta/sporeinquisition-4.5.jar"
+hash-format = "sha512"
+hash = "1f82f14cb38a98d94b5b7895b8938974d874016bde1253ecafd79139468065f52f6d0dec8e66f2a32743dc229af75707c167da0f26e0a03dff32eebdc35c86c9"

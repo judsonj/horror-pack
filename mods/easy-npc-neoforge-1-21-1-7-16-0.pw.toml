@@ -1,0 +1,8 @@
+name = "easy_npc-neoforge-1.21.1-7.16.0.jar"
+filename = "easy_npc-neoforge-1.21.1-7.16.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Epm6R3P2/versions/JgVXyplm/easy_npc-neoforge-1.21.1-7.16.0.jar"
+hash-format = "sha512"
+hash = "c410a1b5459ce65701aeb12e424277d1069b8a8b0c13c5d6d556f50d705ea648169eec044cbf1adcf70904c698164ff295484af21026a484bcf4c7174736828d"

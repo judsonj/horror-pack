@@ -1,0 +1,8 @@
+name = "forge-weeping_angels-mc1.21-v1.0.5-forge.jar"
+filename = "forge-weeping_angels-mc1.21-v1.0.5-forge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/TEzJJY7H/versions/gkP5Pj73/forge-weeping_angels-mc1.21-v1.0.5-forge.jar"
+hash-format = "sha512"
+hash = "fb4a2a79924d857ff710450e6f636a4cab694e29d93566292b7f8dd7300a9cf3e8d2b38b1a52c360118c891c998fb4b35fb2c8bc384fb03fd01f1f454e5c6343"

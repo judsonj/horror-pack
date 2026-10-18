@@ -1,0 +1,8 @@
+name = "the_knocker-1.5.2-neoforge-1.21.1.jar"
+filename = "the_knocker-1.5.2-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/hTju2zcV/versions/JnhR7dWq/the_knocker-1.5.2-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "074df56e2158a39e9c5e1ae91f5809e50495ec8864e74b0f15a834b82c0bcf294da4b689f8fa1f5378a92c85ad5d3bead52aa30359c17a12c26b77ad806252bd"

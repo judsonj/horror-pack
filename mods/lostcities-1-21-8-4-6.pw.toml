@@ -1,0 +1,8 @@
+name = "lostcities-1.21-8.4.6.jar"
+filename = "lostcities-1.21-8.4.6.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/8VDCUS3b/versions/jqhDeD82/lostcities-1.21-8.4.6.jar"
+hash-format = "sha512"
+hash = "3bb4085104a816190ae0f1139a32be4c49049b3f927b16c705c6cebb1e63a590d97813dd753588a02cf97af402ce2aa40443413bfadb2bbaba18bc0cea2d4b9f"

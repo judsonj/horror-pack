@@ -1,0 +1,8 @@
+name = "easy_npc_config_ui-neoforge-1.21.1-7.16.0.jar"
+filename = "easy_npc_config_ui-neoforge-1.21.1-7.16.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/uTGjf7vA/versions/XL6nv37h/easy_npc_config_ui-neoforge-1.21.1-7.16.0.jar"
+hash-format = "sha512"
+hash = "37e537f3e3ad7fe60f2e2cc21cff2f3452511e240b86115d9a097cb85a1ea0a3dbce0339637f546198af1b5436e629fa68a6430d8e1fdd17373b99ffa0a2dca2"

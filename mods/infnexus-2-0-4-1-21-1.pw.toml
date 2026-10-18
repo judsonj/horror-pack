@@ -1,0 +1,13 @@
+name = "Infnexus-2.0.4-1.21.1.jar"
+filename = "Infnexus-2.0.4-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0824040e5927297bef4672d2edea0428b193fa8e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8674335
+project-id = 1543648
