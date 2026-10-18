@@ -122,6 +122,11 @@ hash = "b564fce6cf82663276510cc15a675c419744173ce129fcdcb533dd9d987ff869"
 metafile = true
 
 [[files]]
+file = "mods/balm-neoforge-1-21-1-21-0-66.pw.toml"
+hash = "d8677c117c2a1e2aba2b4abc5d77b32a1bba1a0d5a2b62ef769e0514adb30198"
+metafile = true
+
+[[files]]
 file = "mods/better-advanced-tooltips-2101-1-0-build-5.pw.toml"
 hash = "0d57f6ea17e0c85871a5d10449f48175c09816b1497d1a7411e1cabd11f7c27b"
 metafile = true
@@ -509,6 +514,11 @@ metafile = true
 [[files]]
 file = "mods/the-undergarden-1-21-1-0-9-6.pw.toml"
 hash = "ec97da2f53b3199ca8ab295239138d3cee5690fbaee71f914373ee9fab4f3a6c"
+metafile = true
+
+[[files]]
+file = "mods/trashslot-neoforge-1-21-1-21-1-11.pw.toml"
+hash = "4925abc6626da4dafcba7f28472d5993430ca13ce6fe581926682e6a14cd25a1"
 metafile = true
 
 [[files]]
