@@ -135,3 +135,35 @@ Nothing has been merged to `main` in either repo and nothing is on the DatHost s
   `/damage <survivor> 5 minecraft:mob_attack by <zombie>` is the quickest way to fire the hurt/panic path.
 - `make_packwiz.py` deletes everything but `.git` and `README.md` in its output folder: point `build/packwiz` at a
   clone of the public repo on a branch, and restore `docs/` afterwards (`git checkout -- docs`).
+
+---
+
+# Round two (same evening, later): story finale, horror director, colony threat, arcs and rescues, trains, first hour, diagnostics
+
+Everything below is on dev branch **`claude/integration2`** (built on round one's `claude/integration`, 89+ files, ~9,800 lines over `main`, compiles clean, jar rebuilt in `build/extra_jars`). Per-feature branches for review: `claude/story-finale`, `claude/horror-director`, `claude/colony-threat`, `claude/survivor-arcs`, `claude/trains-spine`, `claude/first-hour`, `claude/diagnostics`, `claude/engine-director-bridge`. The operator's budget ran low at the end, so **round two is compiled but NOT live-tested and NOT staged into the public pack**: do not ship it on top of round one until the "fix now" items in `REVIEW_FIXES_2026-10-19.md` are done and a bench session has run.
+
+## What's in it (one line each; details in each branch's commit and `Build State.md`)
+- **Act 6, The Engine** (quests ch6, `kubejs/server_scripts/engine.js`, hidden advancements under `kubejs/data/horrorpack/`): build the Engine from a blueprint at the end of a rail line, four minutes of turning under infected waves, then one server-wide choice: Keep It Lit (horrors never spawn in light or near the Engine) or Let It Rest (infection recedes, dark gets bolder). Flags in KubeJS server data; bridged into the director by commands.
+- **Horror director** (`horror/Director.java`, role cards in `config/survivors/director.json`): one gate on every horror join; one headline scare per group per night, ambient budget, quiet nights after a rough one, 20-minute warm-up, staged first sightings, lone-player targeting; grace lives here now (`horror_grace.js` is a fallback when the mod is absent). `/director status|force|quiet|flag|engine|grace`.
+- **Colony threat, provoked only** (`colony/Heat.java`, `Threat.java`, `Wave.java`): heat rises only from player actions (kills near town, clearing nests, holding a blood moon, lighting the district, quest gates), never time; telegraphed a night ahead; three waves from the dark sides only; recoverable losses; one MineColonies call (`setPassThroughRaid`) so citizens shelter, behind `threatUseColonyRaid`. `/threat status|heat|raid now|off`.
+- **Survivor arcs and rescues** (`entity/Arc.java`, `colony/Rescue.java`, `config/survivors/arcs.json`): four trust-gated beats per persona (memory, request chest, taught skill, closing change); rare staged rescues in the ruined cities. `/survivors arcs <name>`.
+- **Trains as the spine** (`rail/`, `settlement/ArrivalPlatform.java`): arrival platform at spawn with a departures board, ghost trains you hear near track, lit stations as shelter; **confirmed generated subways contain Create track** (2,484 blocks in 149 chunks of the test world).
+- **First hour** (`settlement/Conductor.java`): the Conductor on the platform with event-triggered beats, `/keys`, a shared waypoint to the nearest stairway down, the spawn chest stocked automatically. About five chat lines in the first hour.
+- **Diagnostics**: see the bottom of `Build State.md` and `build/diagnostics/2026-10-19/`.
+- **Shared horror list** (`horror/Horrors.java`): crew fear, threat heat, senses, shelter and the director now agree on which mobs are horrors (Kenny's real id is `kenny:`).
+
+## Verified vs not
+- Verified: Gradle build of the whole merge; quest book validates (11 chapters, 107 quests); scripts pass `node --check`; the Engine flow and director bridge were exercised in a node harness against game stand-ins; diagnostics ran on the real server.
+- Not verified at all (the test server was busy with diagnostics the whole round): booting with round two's jar and scripts, every `/director`, `/threat`, `/conductor`, `/survivors platform|ghosttrain|scan|arcs` command, the Engine in game, rescues, arcs, the Conductor's beats, the raid waves.
+- Known gaps the agents named: `the_obsessed` has no director card; `faces_daylight.js` is dead (Horror Faces was removed) so half of Let It Rest's "dark gets bolder" does nothing; engine.js's infection purge also removes Protos; the Act 6 parts quest needs a few early Create pieces.
+
+## Operator decisions
+1. **Lost Cities city radius**: diagnostics measured `cityMaxRadius` 110 -> 60 cutting Lost Cities' worldgen CPU by 46%; it would also change the edges of already-generated cities on `world_pine`. Reverted on the branch; apply it on the next fresh world or accept the edge cut.
+2. **Distant Horizons on the server**: its server side was the second-largest worldgen cost; removing it was not tested. Decide.
+3. **Live server**: set `max-tick-time=-1` (or >= 180000), confirm the staged `spore-startup.toml` is actually on DatHost (the test server still had old values), and pregenerate the colony area with Chunky.
+
+## Next session (Sonnet, medium)
+1. Read `REVIEW_FIXES_2026-10-19.md`; do the "fix now" items on `claude/integration2`, compile after each.
+2. Boot the test server with round two's jar + `build/overrides/config` + `kubejs` (recipe in section 6 of this file and `/home/user/testserver/README_AGENTS.md` if that box still exists; otherwise rebuild it from the recipe) and run each feature's bench steps listed in the agents' notes (`Build State.md` bottom sections).
+3. Only then regenerate the pack (`make_quests.py && make_mrpack.py <ver> && make_packwiz.py <ver>`) as 0.4.35-alpha and ship per section 3, uploading in addition `kubejs/data/horrorpack/`, `engine.js`, `horror_grace.js`, `config/survivors/director.json`, `arcs.json`, `conductor.json`, and the infnexus config.
+Round one (0.4.34-alpha, already staged) can ship on its own first; round two layers on top.
