@@ -745,11 +745,6 @@ hash = "ae2418ecbeb59b0f3bde7eae69ebff665271e4b3412a9411cbef21ddb5dc2054"
 metafile = true
 
 [[files]]
-file = "mods/scpslmod-1-4-2-neoforge-1-21-1.pw.toml"
-hash = "bf8d0b172d636719dd1f286f7a1e05eff49c2e75509c08ef10d023fbbb21dc25"
-metafile = true
-
-[[files]]
 file = "mods/searchables-neoforge-1-21-1-1-0-2.pw.toml"
 hash = "44d8808acb558a329e9f36f8b4fb18614ff74177ed30e648dee3e19e899d6705"
 metafile = true
