@@ -122,7 +122,7 @@
 	quest.4327BAF852CCF176.title: "The Knocker"
 	quest.4529D0EC8EB16883.quest_desc: ["The &eZoaholic&r points you to the nearest hivemind, the brain of an outbreak."]
 	quest.4529D0EC8EB16883.title: "Hivemind Radar"
-	quest.487EB68DB375CFD4.quest_desc: ["Mark a spot: on the big map (&eM&r) right-click and pick &eCreate Waypoint&r, or press the &e' (apostrophe)&r key where you stand.\\n\\nTo give it to everyone: open your waypoints (&eU&r), select it, press &eShare&r. It shows up in chat, and anyone can click it to add it to their own map. Your friends already show on your map."]
+	quest.487EB68DB375CFD4.quest_desc: ["Mark a spot: on the big map (&eM&r) right-click and pick &eCreate Waypoint&r, or press the &e' (apostrophe)&r key where you stand.\\n\\nEvery waypoint you make shows up on the other players' maps by itself, labelled with your name. Start a name with &e!&r to keep it private. Your friends show on your map too."]
 	quest.487EB68DB375CFD4.title: "Share the Map"
 	quest.4CC4F9D09F1DDAA7.quest_desc: ["There are other survivors out here. Talk to one: just speak (voice or chat) when you are close.\\n\\nThe &eSurvivors and Camps&r guide explains what they can do for you."]
 	quest.4CC4F9D09F1DDAA7.title: "You Are Not Alone"
