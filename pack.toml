@@ -1,12 +1,12 @@
 name = "Horror Pack"
 author = "Claude & friends"
-version = "0.4.15-alpha"
+version = "0.4.16-alpha"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "4a7d695475bf43469dc89353dd194e6b64f150aa4a66a009e62e549e1657b1da"
+hash = "b387a0d18764bdae5eed1e3361d95c8d2091ac191a3f4ae3ace9a22f691596d4"
 
 [versions]
 minecraft = "1.21.1"

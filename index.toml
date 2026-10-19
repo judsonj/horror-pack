@@ -370,6 +370,11 @@ hash = "b564fce6cf82663276510cc15a675c419744173ce129fcdcb533dd9d987ff869"
 metafile = true
 
 [[files]]
+file = "mods/arphex-5-0-2-neoforge-1-21-1.pw.toml"
+hash = "55b83539250ce31a767ca24a202ca133a927cab15cc5c4d9b2a15cdcb94d5596"
+metafile = true
+
+[[files]]
 file = "mods/balm-neoforge-1-21-1-21-0-66.pw.toml"
 hash = "d8677c117c2a1e2aba2b4abc5d77b32a1bba1a0d5a2b62ef769e0514adb30198"
 metafile = true
@@ -675,6 +680,11 @@ hash = "273a5dc39d71894bfe86b5725089847569f1138711456640503e624738d72807"
 metafile = true
 
 [[files]]
+file = "mods/nyfsspiders-neoforge-1-21-1-3-0-2.pw.toml"
+hash = "2f156884ca37186f217f05ffe8e3ac9f3c7df4c7efea09e5ae1c724f967fa859"
+metafile = true
+
+[[files]]
 file = "mods/owo-lib-neoforge-0-12-15-6-beta-1-1-21.pw.toml"
 hash = "74777623da6e65f49128359328319e8e6c72efdce249f998fb40600d52c0a7b0"
 metafile = true
@@ -786,6 +796,11 @@ metafile = true
 [[files]]
 file = "mods/the-undergarden-1-21-1-0-9-6.pw.toml"
 hash = "ec97da2f53b3199ca8ab295239138d3cee5690fbaee71f914373ee9fab4f3a6c"
+metafile = true
+
+[[files]]
+file = "mods/the-watcher-0-2-1-1-21-1-neoforge.pw.toml"
+hash = "3ba3ef89ed3af3d93081ea51755f88e2f40ce51446e9eb1f1e66345312cdbbc7"
 metafile = true
 
 [[files]]

@@ -1,0 +1,8 @@
+name = "the-watcher-0.2.1-1.21.1-neoforge.jar"
+filename = "the-watcher-0.2.1-1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/HwOQ2AOb/versions/SidTjvtc/the-watcher-0.2.1-1.21.1-neoforge.jar"
+hash-format = "sha512"
+hash = "78f8f82dc801d171d1fbe8a31329760d7dcfff430474b14439d3ce3d7c43084ae7a1c5ee96734ddac2f0527fa46ad262442a74ec774b192d14b4a650396cda61"
