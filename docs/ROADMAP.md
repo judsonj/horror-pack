@@ -1,5 +1,9 @@
 # Horror Pack roadmap: work orders (October 2026)
 
+> **Status 2026-10-19 evening: all nine orders (A-I) are implemented, compiled and live-tested as Survivors 0.20.0 /
+> pack 0.4.34-alpha, staged but not shipped. See `docs/HANDOFF.md` for what was verified, the ship steps, and the next
+> fan-out list.** The text below is the original specification the work was done from.
+
 Written so a cheaper model can take one work order at a time without the planning conversation.
 Each order says what to build, where, how to check it for free, and which model and effort to use.
 
