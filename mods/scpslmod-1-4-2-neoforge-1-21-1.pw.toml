@@ -1,0 +1,8 @@
+name = "scpslmod-1.4.2-neoforge-1.21.1.jar"
+filename = "scpslmod-1.4.2-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/J2ANpMuR/versions/cK7qej0p/scpslmod-1.4.2-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "675553fdaa4a40b5b1fcb1601554115f9c435f0b705881e1e666e61b92535e6ef5a5d49e3d336658089085f99bba68f59f4fd955eee7f3b07866690760f18db4"

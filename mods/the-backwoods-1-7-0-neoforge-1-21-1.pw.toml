@@ -1,0 +1,8 @@
+name = "the_backwoods-1.7.0-neoforge-1.21.1.jar"
+filename = "the_backwoods-1.7.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/vOBTyVQ6/versions/fpHqAaAq/the_backwoods-1.7.0-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "7a26beec278500cda484f58396b5e25254fceb2d36d8f564bb2f207cc9a1ffd8d2ccbbfc14f138cc140ed236779f3d8bfdec4b1babf9ff0254ea3183ba44d549"

@@ -90,7 +90,7 @@ hash = "efe0c30620affee4a63c94309643da1b5a10d9b411d292f1394bd233489a7334"
 
 [[files]]
 file = "config/kenny.json"
-hash = "3a468824521ad294e0663f31bd437fb42d12650399b5f4dfd8fc7aa7ee1281e0"
+hash = "af7fea8fe5ab9f334f10b99af20539b9387d24ea7325abadf3223a9d5ec18991"
 
 [[files]]
 file = "config/lostcities/common.toml"
@@ -729,6 +729,11 @@ hash = "ae2418ecbeb59b0f3bde7eae69ebff665271e4b3412a9411cbef21ddb5dc2054"
 metafile = true
 
 [[files]]
+file = "mods/scpslmod-1-4-2-neoforge-1-21-1.pw.toml"
+hash = "bf8d0b172d636719dd1f286f7a1e05eff49c2e75509c08ef10d023fbbb21dc25"
+metafile = true
+
+[[files]]
 file = "mods/searchables-neoforge-1-21-1-1-0-2.pw.toml"
 hash = "44d8808acb558a329e9f36f8b4fb18614ff74177ed30e648dee3e19e899d6705"
 metafile = true
@@ -779,12 +784,22 @@ hash = "734e155b3016c152cb8a7f2198af300a64baa02ce23e7341d90513a236fd2eb8"
 metafile = true
 
 [[files]]
-file = "mods/survivors-0.13.0.jar"
-hash = "716d5001541553b3d85d85ac4981c934b6f702975f8cbfddede8ee000433acd8"
+file = "mods/survivors-0.14.0.jar"
+hash = "ef8ed6dd8387c3b32a63ecec5c77689dcd812f8e458426f6e48a1d1b09305f96"
 
 [[files]]
 file = "mods/t-and-t-fabric-neoforge-1-13-11.pw.toml"
 hash = "2783b36075835cf3fb13f1164bbe8305dc06d4d289fbcb61d2380b56cd72f782"
+metafile = true
+
+[[files]]
+file = "mods/the-backwoods-1-7-0-neoforge-1-21-1.pw.toml"
+hash = "edc7e73a3a0c01be2ca52f3e2d7d35d17cb21393f8df412525d5c747e59c0516"
+metafile = true
+
+[[files]]
+file = "mods/the-boy-and-the-bath-4-0-1-neoforge-1-21-1.pw.toml"
+hash = "c3ea4bde412b04c539562a2a8334f532c58a7cca8762019122c50b81e222a99d"
 metafile = true
 
 [[files]]

@@ -1,0 +1,8 @@
+name = "the_boy_and_the_bath-4.0.1-neoforge-1.21.1.jar"
+filename = "the_boy_and_the_bath-4.0.1-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/UqwJzAeJ/versions/bSmVEOt6/the_boy_and_the_bath-4.0.1-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "2c69ef007d10c541f033b3ca492d9c9386691e2829ace0ce49d0d6f9df4d35a1773ff21a07640e6c276624e57bc7a880c0638a7d7158de150595ed20b6781bfb"
