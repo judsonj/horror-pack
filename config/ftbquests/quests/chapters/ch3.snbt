@@ -46,6 +46,7 @@
 			x: 6d
 			y: 0d
 			dependencies: ["552775E8592A7452" "06012264A7AEEF88" "0BF299613535445C"]
+			min_required_dependencies: 2
 			shape: "gear"
 			size: 2.0d
 			tasks: [{ id: "5B20A4A407692A4B", type: "checkmark" }]

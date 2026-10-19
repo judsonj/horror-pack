@@ -71,7 +71,8 @@
 			id: "3450C0960C7F9112"
 			x: 10d
 			y: 0d
-			dependencies: ["7A7A2ABF199241D6" "3EA616D994247713" "58E40364210E9089"]
+			dependencies: ["7A7A2ABF199241D6" "03C973DA0DB6534E" "3EA616D994247713" "58E40364210E9089"]
+			min_required_dependencies: 2
 			shape: "gear"
 			size: 2.0d
 			tasks: [{ id: "22B264CE5D831524", type: "checkmark" }]

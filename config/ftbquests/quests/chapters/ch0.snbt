@@ -57,7 +57,7 @@
 			shape: "gear"
 			size: 2.0d
 			tasks: [{ id: "69087244C15025E7", type: "checkmark" }]
-			rewards: [{ id: "1AFE483010561B61", type: "random", table_id: 8760363617949925918L } { id: "3318CEABD2474383", type: "item", item: { count: 1, id: "minecraft:cooked_beef" }, count: 8 }]
+			rewards: [{ id: "1AFE483010561B61", type: "random", table_id: 8760363617949925918L } { id: "3318CEABD2474383", type: "item", item: { count: 1, id: "minecraft:cooked_beef" }, count: 8 } { id: "7EB26A6780ACB4C2", type: "item", item: { count: 1, id: "spore:gas_mask" } }]
 		}
 	]
 }

@@ -4,7 +4,7 @@ and survive horror mobs at night. Quest book (FTB Quests, in inventory) holds th
 Below the Line, Lights Out, Other Doors, Above.
 
 Rules and settings: keepInventory is ON. Difficulty easy. Flying allowed (airships, jetpacks). Spawn is shared
-(spawnRadius 6). Weather cycle is off (no thunderstorms). First 3 in-game days after a new world: horror mobs don't spawn (grace period). Kenny (a stalker
+(spawnRadius 6). Weather cycle is off (no thunderstorms). First 3 in-game days after a new world: horror mobs don't spawn (grace period); the Spore infection (Spore, Spore Inquisition, Infection Nexus mobs) waits until day 5. Kenny (a stalker
 boss) starts hunting on day 6. Weeping Angels: don't look away;
 any weapon hurts them; their touch can teleport you up to 64 blocks.
 
@@ -30,6 +30,19 @@ chance (someone at the gate, or met on the road). /foreman subtitles off hides t
 /foreman protect [radius] keeps an area safe from the crew and the foreman; /foreman skills lists saved routines.
 If a player asks how to get something done in the colony, the short answer is usually: ask the foreman.
 Old survivors/Settlement Beacons are retired (random survivors no longer spawn).
+CREW ROUTINE (no AI): when nobody has given them an order, crew follow a daily rhythm: at dawn they gather what the colony's
+workers are waiting on (or top up logs/cobble) for the supply chest, in shifts with breaks to eat; late afternoon they head
+home and one lights dark spots with torches from the chest; at night one takes the watch by the chest (rotating) and the
+rest stay close. Any order interrupts it. Plain orders ("chop wood", "get 32 stone", "come here", "guard here", "go home",
+"plant trees", "sort the chest", "bring me 5 apples", saved skill names) are understood directly, no AI needed.
+NIGHT RULE: after dark nobody goes out alone. A crew member sent far at night asks a nearby player to come, or pairs with
+another crew member; a pair can't be killed by monsters (they get slowed and scared and limp home), but about one trip in a
+hundred one of the two doesn't make it. Alone and caught out, there is no protection.
+Survivors react to danger on their own (back off when hurt, run to a hurt player, hide behind you from horrors) and now and
+then a scare turns into a comic panic (running the wrong way, hiding in a hole, screaming, climbing a roof) that ends when
+a player stands next to them. They trust players who protect, feed and house them (work faster, give tips); a crew member
+left out at night and ignored for days grumbles, warns twice, then leaves. Chat is kept short: only must-know lines go to
+chat, flavor goes to the action bar (/foreman subtitles off hides it).
 
 Big mods: Create (+ Aeronautics airships, Steam 'n' Rails trains, Big Cannons, Crafts & Additions, Power Loader),
 Lost Cities (+ Create subways), Ad Astra (space: Moon, Mars...), Twilight Forest, the Aether, the Undergarden,

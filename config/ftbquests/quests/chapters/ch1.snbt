@@ -6,7 +6,9 @@
 	icon: { id: "minecraft:lantern" }
 	id: "7E45EDCAAD68086A"
 	order_index: 1
-	quest_links: [ ]
+	quest_links: [
+		{ id: "46A75E96A3FA888F", linked_quest: "1305B2D2B4C15A61", x: 7d, y: 2.5d }
+	]
 	quests: [
 		{
 			id: "3C776AC2E9F16693"
@@ -57,7 +59,7 @@
 			shape: "gear"
 			size: 2.0d
 			tasks: [{ id: "2C8F6516450F60AD", type: "checkmark" }]
-			rewards: [{ id: "354A809A65C2CF06", type: "random", table_id: 5557977682739783447L } { id: "662B3003E046FB6F", type: "item", item: { count: 1, id: "create:andesite_alloy" }, count: 16 }]
+			rewards: [{ id: "354A809A65C2CF06", type: "random", table_id: 5557977682739783447L } { id: "662B3003E046FB6F", type: "item", item: { count: 1, id: "create:andesite_alloy" }, count: 16 } { id: "4F6F25409819CA44", type: "item", item: { count: 1, id: "sporeinquisition:cryogenic_grenade" }, count: 4 }]
 		}
 	]
 }

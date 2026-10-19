@@ -30,6 +30,7 @@
 			x: 2d
 			y: 1.5d
 			dependencies: ["6BA10BBEC0AC73D5"]
+			optional: true
 			tasks: [{ id: "63D40BFECF313CDA", type: "item", item: { count: 1, id: "create:track" }, count: 16L }]
 			rewards: [{ id: "75FA6DB9033E9E8D", type: "random", table_id: 5557977682739783447L }]
 		}
@@ -37,7 +38,7 @@
 			id: "0B9F12FC3A0D76DB"
 			x: 5d
 			y: 0d
-			dependencies: ["64F936ADB8D3EDAE" "2728033B3A3B1410"]
+			dependencies: ["64F936ADB8D3EDAE" "6BA10BBEC0AC73D5"]
 			shape: "gear"
 			size: 2.0d
 			tasks: [{ id: "53F9D6BD881D074D", type: "checkmark" }]
