@@ -803,8 +803,8 @@ file = "mods/structurize-1.0.835-1.21.1-snapshot.jar"
 hash = "3550454615510a141b92b0f78fa39dbf8bef81361ecd2974a431978fd7d181ad"
 
 [[files]]
-file = "mods/survivors-0.15.1.jar"
-hash = "71588ef804839a5687728a5aa7cf5f23b0e4eb8bd08a6d495bb6aad8872fc658"
+file = "mods/survivors-0.16.0.jar"
+hash = "57804559adbf25ddee650c369a2b22ae4ad204c0e9124fcab2814a4d431d1e5f"
 
 [[files]]
 file = "mods/t-and-t-fabric-neoforge-1-13-11.pw.toml"
