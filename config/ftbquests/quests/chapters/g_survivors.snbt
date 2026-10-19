@@ -55,5 +55,13 @@
 			tasks: [{ id: "442BD1B602C9F85D", type: "checkmark" }]
 			rewards: [{ id: "72B72B474134C906", type: "xp_levels", xp_levels: 2 }]
 		}
+		{
+			id: "487EB68DB375CFD4"
+			x: 6d
+			y: 2d
+			dependencies: ["0C8CE3E83291AEEB"]
+			tasks: [{ id: "3B13B55E91D91309", type: "checkmark" }]
+			rewards: [{ id: "0C598C18D0C18E0A", type: "xp_levels", xp_levels: 2 }]
+		}
 	]
 }

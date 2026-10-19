@@ -58,7 +58,7 @@ hash = "dff787d40974554f6c473bef1dfe019892dc142e0dc8758fcd348e93945a7e70"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/g_survivors.snbt"
-hash = "09a2ae3e6ea66e1d352d82867f4731aff835ad2a2ae1ac0b62699049db06201a"
+hash = "397515fcfe6351778e90e2abc1e02875a6549690c5d05c4a465626d37d95611a"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -66,7 +66,7 @@ hash = "65a9535f763cc9487e646c28afd72713ee5acf7e8113eb951f8adb28ba58aa55"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "aecdd88e84537e42820f5a53418f3984321599360520c61119fd1a47428e96ab"
+hash = "d6570735855e1cd0ca629d75b59411ec696d218283f5ce8ca3e96aa779fd5be1"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/common.snbt"
@@ -784,8 +784,8 @@ hash = "734e155b3016c152cb8a7f2198af300a64baa02ce23e7341d90513a236fd2eb8"
 metafile = true
 
 [[files]]
-file = "mods/survivors-0.14.0.jar"
-hash = "7fc808cbdbc1d414c685c1b888c78a6177f3079eed5e1d3a39cea93236d1425c"
+file = "mods/survivors-0.15.0.jar"
+hash = "eca18e1b99715e334464524dd45d756ee51a3d08855a099a09d8bf524f968733"
 
 [[files]]
 file = "mods/t-and-t-fabric-neoforge-1-13-11.pw.toml"
