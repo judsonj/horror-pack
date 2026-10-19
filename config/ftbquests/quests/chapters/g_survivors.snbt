@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "g_survivors"
 	group: "3095EA91149B5FEF"
-	icon: { id: "survivors:settlement_beacon" }
+	icon: { id: "minecolonies:blockhuttownhall" }
 	id: "08818A63B866F9C2"
 	order_index: 8
 	quest_links: [ ]
@@ -20,7 +20,7 @@
 			x: 2d
 			y: 0d
 			dependencies: ["0C8CE3E83291AEEB"]
-			tasks: [{ id: "7883517B527BD6D2", type: "checkmark" }]
+			tasks: [{ id: "7883517B527BD6D2", type: "item", item: { count: 1, id: "minecolonies:blockhutbuilder" } }]
 			rewards: [{ id: "4E6F9CAF38595115", type: "xp_levels", xp_levels: 2 }]
 		}
 		{
@@ -44,7 +44,7 @@
 			x: 8d
 			y: -1d
 			dependencies: ["1EA0D0D0D0CCD83B"]
-			tasks: [{ id: "40510E6C360F0504", type: "checkmark" }]
+			tasks: [{ id: "40510E6C360F0504", type: "item", item: { count: 1, id: "minecolonies:blockhutwarehouse" } }]
 			rewards: [{ id: "0E32BFCA749095E4", type: "random", table_id: 5557977682739783447L }]
 		}
 		{

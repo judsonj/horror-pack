@@ -1,8 +1,8 @@
 {
 	chapter.0750595BB1E99F0F.chapter_subtitle: ["Act 2. The subways. Something lives down there."]
 	chapter.0750595BB1E99F0F.title: "Below the Line"
-	chapter.08818A63B866F9C2.chapter_subtitle: ["People to find, keep alive, and put to work."]
-	chapter.08818A63B866F9C2.title: "Survivors and Camps"
+	chapter.08818A63B866F9C2.chapter_subtitle: ["MineColonies, one step at a time. Citizens do the work."]
+	chapter.08818A63B866F9C2.title: "Your Colony"
 	chapter.1974464A24A05158.chapter_subtitle: ["Act 4. Where the Builders fled, and when you are ready to follow."]
 	chapter.1974464A24A05158.title: "Other Doors"
 	chapter.1E78474C245FD8CA.chapter_subtitle: ["Create, one machine at a time. Trains and airships at the end."]
@@ -36,30 +36,30 @@
 	quest.0B9F12FC3A0D76DB.quest_desc: ["Deep in a station office, a logbook:\\n&o\"Day 41. The things from below follow the dark. We're moving everyone out by rail. The Engine at the end of the line holds them back as long as it turns.\"&r\\n\\nThe last entry is one word, over and over: &cLIGHTS&r."]
 	quest.0B9F12FC3A0D76DB.quest_subtitle: "Chapter Gate"
 	quest.0B9F12FC3A0D76DB.title: "The Evacuation Log"
-	quest.0BB47AB5BB349F1C.quest_desc: ["Lead a follower near your Settlement Beacon and they move in. Right-click the beacon to see who lives there."]
-	quest.0BB47AB5BB349F1C.title: "Bring Them Home"
+	quest.0BB47AB5BB349F1C.quest_desc: ["When the Builder's Hut is done, right-click the &eTown Hall&r block and press &eBuild&r. The builder works on one thing at a time."]
+	quest.0BB47AB5BB349F1C.title: "Build the Town Hall"
 	quest.0BD78C385D754CE9.quest_desc: ["Armor plates (fragment + fiber + nerves) make &eplated armor&r. Later it grafts with flesh armor into Living armor."]
 	quest.0BD78C385D754CE9.title: "Plated"
 	quest.0BF299613535445C.quest_desc: ["Statues that only move when nobody looks. &cDo not charge these.&r Keep eyes on them and break them with a pickaxe."]
 	quest.0BF299613535445C.title: "Don't Blink"
-	quest.0C8CE3E83291AEEB.quest_desc: ["Survivors hear you. Speak near one, by &evoice&r or chat; say their name to talk to one in a crowd. They answer out loud."]
-	quest.0C8CE3E83291AEEB.title: "Just Talk"
+	quest.0C8CE3E83291AEEB.quest_desc: ["Place the &eSupply Camp&r, open its chest, place the &eTown Hall&r block. Right-click it and create your colony.\\n\\nPlacing any hut only puts down one block. The building itself comes later, from your builder."]
+	quest.0C8CE3E83291AEEB.title: "Town Hall"
 	quest.0D0ADCDCEBD811C1.quest_desc: ["Someone at the edge of your vision. Standing still. Closer each day. That is &cKenny&r.\\n\\nThe &eKnow Your Horrors&r guide has the rules for each of them."]
 	quest.0D0ADCDCEBD811C1.title: "Being Watched"
-	quest.12D403627C0AEF51.quest_desc: ["A Builder note, scratched into a wall: &o\"They don't come where the lights are on. KEEP IT LIT.\"&r\\n\\nLight up your camp. Lanterns, torches, anything."]
+	quest.12D403627C0AEF51.quest_desc: ["A Builder note, scratched into a wall: &o\"They don't come where the lights are on. KEEP IT LIT.\"&r\\n\\nLight up your colony. Lanterns, torches, anything."]
 	quest.12D403627C0AEF51.title: "Keep It Lit"
 	quest.1300434F59C13300.quest_desc: ["Casing, a seat, controls and a bogey on the rails make a train. Assemble it at the station."]
 	quest.1300434F59C13300.title: "Driver's Seat"
 	quest.1371453DC1ED0B74.quest_desc: ["A press over a depot flattens ingots into &esheets&r. Iron sheets go into almost every machine."]
 	quest.1371453DC1ED0B74.title: "The Press"
-	quest.137D6F7597708837.quest_desc: ["A &eSettlement Beacon&r founds a camp: lantern on top, planks + campfire + planks, three cobblestone underneath. Rename it on an anvil.\\n\\nSurvivors who follow you there will move in and work."]
-	quest.137D6F7597708837.title: "Plant a Flag"
+	quest.137D6F7597708837.quest_desc: ["Get a &eBuilder's Hut&r. With it in your inventory, right-click the ground with the &eBuild Tool&r, pick it, place it, then right-click the hut block and press &eBuild&r. Your builder builds their own hut first."]
+	quest.137D6F7597708837.title: "Hire a Builder"
 	quest.13EDA76AF227D376.quest_desc: ["From the sky you can finally see it: the capital, and the &eEngine&r at the end of every rail line, barely turning.\\n\\n&7The final chapter arrives in a future update.&r"]
 	quest.13EDA76AF227D376.quest_subtitle: "Chapter Gate"
 	quest.13EDA76AF227D376.title: "The End of the Line"
 	quest.17417239150B9BF0.quest_desc: ["Track is made in a press, or pried out of the subways (much faster)."]
 	quest.17417239150B9BF0.title: "Lay Track"
-	quest.18B606392431482E.quest_desc: ["The moon goes red and everything comes at once. Survive a &cBlood Moon&r together, then check this. Your camp is what they come for."]
+	quest.18B606392431482E.quest_desc: ["The moon goes red and everything comes at once. Survive a &cBlood Moon&r together, then check this. Your colony is what they come for."]
 	quest.18B606392431482E.title: "Blood Moon"
 	quest.1AB47B6183704461.quest_desc: ["The one you fight. See &eThe Infection&r guide."]
 	quest.1AB47B6183704461.title: "The Infection"
@@ -67,16 +67,16 @@
 	quest.1D9E3D56B93511C0.title: "The Obsessed"
 	quest.1E34D759428F025C.quest_desc: ["Something huge coils in the courtyard ruins. The first Twilight boss."]
 	quest.1E34D759428F025C.title: "The Serpent"
-	quest.1EA0D0D0D0CCD83B.quest_desc: ["Ask for things in plain words: &e\"get 32 wood\"&r, &e\"make a chest\"&r, &e\"build a shelter around me\"&r, &e\"light up the camp\"&r."]
-	quest.1EA0D0D0D0CCD83B.title: "Put Them to Work"
-	quest.201CFB685EC22A4C.quest_desc: ["&e\"Follow me\"&r, &e\"wait here\"&r, &e\"go home\"&r. Add &e\"everyone\"&r to order the whole group."]
-	quest.201CFB685EC22A4C.title: "Orders"
+	quest.1EA0D0D0D0CCD83B.quest_desc: ["A builder out of materials shows a speech bubble. Right-click the &eBuilder's Hut&r block to see the list, and put the items in its storage. They fetch them from there."]
+	quest.1EA0D0D0D0CCD83B.title: "What They Need"
+	quest.201CFB685EC22A4C.quest_desc: ["Hold the &eBuilder's Hut&r, right-click the ground with the &eBuild Tool&r, pick it, move the preview, confirm. Right-click the hut block and press &eBuild&r. A citizen becomes your builder and builds this hut first."]
+	quest.201CFB685EC22A4C.title: "Your Builder"
 	quest.20BC1DE9290ABEE6.quest_desc: ["A schedule runs a train with no driver, like the ghost trains still circling the city."]
 	quest.20BC1DE9290ABEE6.title: "On Schedule"
 	quest.20FED50174954243.quest_desc: ["A &cProto Hivemind&r runs the outbreak around it. Kill it and that infection loses its mind. Go together, fully geared."]
 	quest.20FED50174954243.title: "Something Once Great"
-	quest.21BF5EF159226398.quest_desc: ["Find a wandering survivor and say &e\"follow me\"&r. Lead them home. Check this when someone lives at your camp."]
-	quest.21BF5EF159226398.title: "Safety in Numbers"
+	quest.21BF5EF159226398.quest_desc: ["Citizens need a &eResidence&r. Place one with the Build Tool and press Build on it. More homes, more citizens."]
+	quest.21BF5EF159226398.title: "A Roof for Everyone"
 	quest.2227FE9F824CE158.quest_desc: ["Copper + zinc in a heated mixer. Brass is the jump from simple machines to trains."]
 	quest.2227FE9F824CE158.title: "Brass"
 	quest.22752B4DD6E870A5.quest_desc: ["Find one of the corrupted records in infected ruins. Somebody saw this coming."]
@@ -124,8 +124,8 @@
 	quest.4529D0EC8EB16883.title: "Hivemind Radar"
 	quest.487EB68DB375CFD4.quest_desc: ["Mark a spot: on the big map (&eM&r) right-click and pick &eCreate Waypoint&r, or press the &e' (apostrophe)&r key where you stand.\\n\\nEvery waypoint you make shows up on the other players' maps by itself, labelled with your name. Start a name with &e!&r to keep it private. Your friends show on your map too."]
 	quest.487EB68DB375CFD4.title: "Share the Map"
-	quest.4CC4F9D09F1DDAA7.quest_desc: ["There are other survivors out here. Talk to one: just speak (voice or chat) when you are close.\\n\\nThe &eSurvivors and Camps&r guide explains what they can do for you."]
-	quest.4CC4F9D09F1DDAA7.title: "You Are Not Alone"
+	quest.4CC4F9D09F1DDAA7.quest_desc: ["You will need people. Place a &eSupply Camp&r (craft one: press R on it) next to your base: move the preview, then confirm. Open its chest, place the &eTown Hall&r block, right-click it and name your colony. Citizens arrive.\\n\\nThe &eYour Colony&r guide walks you through the rest."]
+	quest.4CC4F9D09F1DDAA7.title: "Found a Colony"
 	quest.4DCCAC87EF742EDA.quest_desc: ["A beast sleeps in the ice. Wake it only if you're ready."]
 	quest.4DCCAC87EF742EDA.title: "The Frostmaw"
 	quest.51AD8034176BFA4A.quest_desc: ["A chunk loader keeps your line running when nobody is near."]
@@ -134,7 +134,7 @@
 	quest.52ED0EC9AD284615.title: "Scanning Time"
 	quest.5511EC0E407018FF.quest_desc: ["The dark is not empty. Things hunt where the light does not reach. Keep torches on you. Always."]
 	quest.5511EC0E407018FF.title: "Light Is Life"
-	quest.552775E8592A7452.quest_desc: ["Wall in your camp. A gate you can close. Light on every corner. Your survivors can help: ask one to &e\"build a wall around camp\"&r."]
+	quest.552775E8592A7452.quest_desc: ["Wall in your camp. A gate you can close. Light on every corner. Your builder can help, and a &eGuard Tower&r puts a guard on watch."]
 	quest.552775E8592A7452.title: "Walls"
 	quest.5584D611223D744A.quest_desc: ["Shafts and cogwheels carry &erotation&r. Everything in Create runs on it."]
 	quest.5584D611223D744A.title: "Things That Turn"
@@ -142,8 +142,8 @@
 	quest.58E40364210E9089.title: "4. Under Everything"
 	quest.5A4A0B7DF4784B7E.quest_desc: ["Andesite + iron nuggets = &eandesite alloy&r, the base of nearly everything here."]
 	quest.5A4A0B7DF4784B7E.title: "Builder Metal"
-	quest.5A9BC6F6A674D18A.quest_desc: ["Settled survivors plan the day each morning and work on camp projects (walls, light) by themselves."]
-	quest.5A9BC6F6A674D18A.title: "Camp Projects"
+	quest.5A9BC6F6A674D18A.quest_desc: ["Add huts the same way: &eResidence&r (more citizens), &eForester's Hut&r (wood), &eWarehouse&r + &eCourier's Hut&r (storage and deliveries), &eGuard Tower&r (defence). Each hut's menu lets you hire and upgrade."]
+	quest.5A9BC6F6A674D18A.title: "Grow the Colony"
 	quest.5FB2E35C7EFC093A.quest_desc: ["Armor fragment + fiber + mutated heart at the surgery table. Almost every infected weapon needs one."]
 	quest.5FB2E35C7EFC093A.title: "A Living Core"
 	quest.62D341191A8C2B01.quest_desc: ["Infected are people and animals the fungus took. &eThe rules:&r\\n- Every kill they get makes them &cevolve&r into worse forms. Don't feed them: no lone fights, no dying out there.\\n- They are weak to &bcold&r and starve over time.\\n- It only spreads where players are. Burn it back early."]
@@ -154,19 +154,19 @@
 	quest.68BC051601868010.title: "A Station"
 	quest.6BA10BBEC0AC73D5.quest_desc: ["City streets have stairways down to the old subway. Find one and go in. &eBring light and a friend.&r\\n\\nYou can walk the tunnels. A train is faster, but not required."]
 	quest.6BA10BBEC0AC73D5.title: "Into the Tunnels"
-	quest.6BFB5539D1CEC86A.quest_desc: ["You wake on a cold platform. The train that brought you is already pulling away, &oon schedule&r, with no driver.\\n\\nThis book is your journal. &eThe Line&r is the story: where to go next. The &eField Guides&r teach the mods (Create, the Infection, survivors, the horrors). Do those in any order.\\n\\nClick the checkmark to begin."]
+	quest.6BFB5539D1CEC86A.quest_desc: ["You wake on a cold platform. The train that brought you is already pulling away, &oon schedule&r, with no driver.\\n\\nThis book is your journal. &eThe Line&r is the story: where to go next. The &eField Guides&r teach the mods (Create, the Infection, your colony, the horrors). Do those in any order.\\n\\nClick the checkmark to begin."]
 	quest.6BFB5539D1CEC86A.title: "Last Stop"
 	quest.6C534E757D9A0FE8.quest_desc: ["Propellers + a frame + Create Aeronautics = an &eairship&r. The Line's last act needs one."]
 	quest.6C534E757D9A0FE8.title: "Lift"
 	quest.6E36006FC0490D84.quest_desc: ["Check this when your train moves."]
 	quest.6E36006FC0490D84.title: "Your Own Train"
-	quest.6EAAA80B8271EADD.quest_desc: ["The &eC.D.U.&r freezes everything around it. The infection hates cold: put one at the edge of your camp."]
+	quest.6EAAA80B8271EADD.quest_desc: ["The &eC.D.U.&r freezes everything around it. The infection hates cold: put one at the edge of your colony."]
 	quest.6EAAA80B8271EADD.title: "Local Ice Age"
 	quest.76016D8C7E4E16A2.quest_desc: ["A mixer over a basin. Heated with a blaze burner later, it makes &ebrass&r."]
 	quest.76016D8C7E4E16A2.title: "Mixing"
 	quest.7A7A2ABF199241D6.quest_desc: ["&eEasiest first.&r Dig a 2x2 pool of water, ring it with flowers, throw in a &ediamond&r.\\n\\nIt is always dusk there. Follow the Magic Map to the bosses in order. Some Builders hid here."]
 	quest.7A7A2ABF199241D6.title: "1. The Forest at Dusk"
-	quest.7C354DBEC8EEE180.quest_desc: ["&eHold `&r (left of 1) while mining: whole vein.\\n&eCaps Lock&r: talk (proximity voice; things hear you too).\\n&eB&r backpack, &eM&r map, &eR/U&r on an item: recipe/uses.\\n\\nA survivor will also walk you through these the first time you meet one."]
+	quest.7C354DBEC8EEE180.quest_desc: ["&eHold `&r (left of 1) while mining: whole vein.\\n&eCaps Lock&r: talk (proximity voice; things hear you too).\\n&eB&r backpack, &eM&r map, &eR/U&r on an item: recipe/uses."]
 	quest.7C354DBEC8EEE180.title: "Your Keys"
 	quest.7D0BC39519E50BC5.quest_desc: ["You have a home, people, and light.\\n\\nNext: &eBelow the Line&r. If you want trains and machines, start &eThe Builders' Craft&r now. It runs alongside the story; the story never waits on it."]
 	quest.7D0BC39519E50BC5.quest_subtitle: "Chapter Gate"

@@ -22,7 +22,7 @@
 			x: 2d
 			y: -1.5d
 			dependencies: ["3C776AC2E9F16693"]
-			tasks: [{ id: "1E9DE6544EC1AEDC", type: "item", item: { count: 1, id: "survivors:settlement_beacon" } }]
+			tasks: [{ id: "1E9DE6544EC1AEDC", type: "item", item: { count: 1, id: "minecolonies:blockhutbuilder" } }]
 			rewards: [{ id: "5A991C122662274B", type: "random", table_id: 8760363617949925918L }]
 		}
 		{
@@ -30,7 +30,7 @@
 			x: 4d
 			y: -1.5d
 			dependencies: ["137D6F7597708837"]
-			tasks: [{ id: "24380B94950B0857", type: "checkmark" }]
+			tasks: [{ id: "24380B94950B0857", type: "item", item: { count: 1, id: "minecolonies:blockhutcitizen" } }]
 			rewards: [{ id: "3D2298A2BDB613AB", type: "item", item: { count: 1, id: "minecraft:bread" }, count: 16 }]
 		}
 		{
