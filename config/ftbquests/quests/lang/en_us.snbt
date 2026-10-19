@@ -2,7 +2,7 @@
 	chapter.0750595BB1E99F0F.chapter_subtitle: ["Act 2. The subways. Something lives down there."]
 	chapter.0750595BB1E99F0F.title: "Below the Line"
 	chapter.08818A63B866F9C2.chapter_subtitle: ["People to find, keep alive, and put to work."]
-	chapter.08818A63B866F9C2.title: "Survivors & Camps"
+	chapter.08818A63B866F9C2.title: "Survivors and Camps"
 	chapter.1974464A24A05158.chapter_subtitle: ["Act 4. Where the Builders fled, and when you are ready to follow."]
 	chapter.1974464A24A05158.title: "Other Doors"
 	chapter.1E78474C245FD8CA.chapter_subtitle: ["Create, one machine at a time. Trains and airships at the end."]
@@ -122,7 +122,7 @@
 	quest.4327BAF852CCF176.title: "The Knocker"
 	quest.4529D0EC8EB16883.quest_desc: ["The &eZoaholic&r points you to the nearest hivemind, the brain of an outbreak."]
 	quest.4529D0EC8EB16883.title: "Hivemind Radar"
-	quest.4CC4F9D09F1DDAA7.quest_desc: ["There are other survivors out here. Talk to one: just speak (voice or chat) when you are close.\\n\\nThe &eSurvivors & Camps&r guide explains what they can do for you."]
+	quest.4CC4F9D09F1DDAA7.quest_desc: ["There are other survivors out here. Talk to one: just speak (voice or chat) when you are close.\\n\\nThe &eSurvivors and Camps&r guide explains what they can do for you."]
 	quest.4CC4F9D09F1DDAA7.title: "You Are Not Alone"
 	quest.4DCCAC87EF742EDA.quest_desc: ["A beast sleeps in the ice. Wake it only if you're ready."]
 	quest.4DCCAC87EF742EDA.title: "The Frostmaw"

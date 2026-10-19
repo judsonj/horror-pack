@@ -66,7 +66,7 @@ hash = "65a9535f763cc9487e646c28afd72713ee5acf7e8113eb951f8adb28ba58aa55"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "844818f3f797472c57f028b3ac5a93a03fc8bb69b53a825d12b3a1727d1c8184"
+hash = "aecdd88e84537e42820f5a53418f3984321599360520c61119fd1a47428e96ab"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/common.snbt"
@@ -107,6 +107,10 @@ hash = "e498404a96316c6c9db4d5b81f906b118f22ea607988ce56d3b4a1598bcbf298"
 [[files]]
 file = "config/survivors/claude_context.md"
 hash = "d5038d37913169a178e71e8125c18cfeacd5cf3ebf22451c1118f6a9e3fcda2d"
+
+[[files]]
+file = "config/thewatcher/common.properties"
+hash = "9655232df8b7bec5b0269c086fd5a66205b5d71b4f68616b02aeeb12a6995ba4"
 
 [[files]]
 file = "config/weeping-angels-spawns.toml"
