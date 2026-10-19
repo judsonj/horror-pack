@@ -106,7 +106,7 @@ hash = "e498404a96316c6c9db4d5b81f906b118f22ea607988ce56d3b4a1598bcbf298"
 
 [[files]]
 file = "config/survivors/claude_context.md"
-hash = "d5038d37913169a178e71e8125c18cfeacd5cf3ebf22451c1118f6a9e3fcda2d"
+hash = "1e2f20d5959e88f4d4dcea0e7f6d75677e9d1007b245d1d1f0a0febf70c401d3"
 
 [[files]]
 file = "config/thewatcher/common.properties"
@@ -803,8 +803,8 @@ file = "mods/structurize-1.0.835-1.21.1-snapshot.jar"
 hash = "3550454615510a141b92b0f78fa39dbf8bef81361ecd2974a431978fd7d181ad"
 
 [[files]]
-file = "mods/survivors-0.16.0.jar"
-hash = "57804559adbf25ddee650c369a2b22ae4ad204c0e9124fcab2814a4d431d1e5f"
+file = "mods/survivors-0.18.0.jar"
+hash = "27254116d6def2abbd5aab305282fb884fd20b1de6a9a609c2c9426d906a7bfb"
 
 [[files]]
 file = "mods/t-and-t-fabric-neoforge-1-13-11.pw.toml"
