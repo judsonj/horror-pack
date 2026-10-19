@@ -46,10 +46,14 @@
 	quest.0C8CE3E83291AEEB.title: "Town Hall"
 	quest.0D0ADCDCEBD811C1.quest_desc: ["Someone at the edge of your vision. Standing still. Closer each day. That is &cKenny&r.\\n\\nThe &eKnow Your Horrors&r guide has the rules for each of them."]
 	quest.0D0ADCDCEBD811C1.title: "Being Watched"
+	quest.0E6E06DCBF855D4D.quest_desc: ["Compound plate + a &eredstone block&r + redstone. The base of every Cryo piece."]
+	quest.0E6E06DCBF855D4D.title: "Reinforced Plate"
 	quest.12D403627C0AEF51.quest_desc: ["A Builder note, scratched into a wall: &o\"They don't come where the lights are on. KEEP IT LIT.\"&r\\n\\nLight up your colony. Lanterns, torches, anything."]
 	quest.12D403627C0AEF51.title: "Keep It Lit"
 	quest.1300434F59C13300.quest_desc: ["Casing, a seat, controls and a bogey on the rails make a train. Assemble it at the station."]
 	quest.1300434F59C13300.title: "Driver's Seat"
+	quest.1305B2D2B4C15A61.quest_desc: ["The infection only grows where players are, but it grows fast. Do these early:\\n1. A &eGas Mask&r.\\n2. &bCryo-Combat boots&r: they clear spore plants as you walk.\\n3. &bIce bombs&r to push it back.\\n4. A &bC.D.U.&r at the edge of the colony.\\n&cNever let infected get kills&r: every kill makes them evolve."]
+	quest.1305B2D2B4C15A61.title: "Before It's Too Late"
 	quest.1371453DC1ED0B74.quest_desc: ["A press over a depot flattens ingots into &esheets&r. Iron sheets go into almost every machine."]
 	quest.1371453DC1ED0B74.title: "The Press"
 	quest.137D6F7597708837.quest_desc: ["Get a &eBuilder's Hut&r. With it in your inventory, right-click the ground with the &eBuild Tool&r, pick it, place it, then right-click the hut block and press &eBuild&r. Your builder builds their own hut first."]
@@ -69,6 +73,8 @@
 	quest.1E34D759428F025C.title: "The Serpent"
 	quest.1EA0D0D0D0CCD83B.quest_desc: ["A builder out of materials shows a speech bubble. Right-click the &eBuilder's Hut&r block to see the list, and put the items in its storage. They fetch them from there."]
 	quest.1EA0D0D0D0CCD83B.title: "What They Need"
+	quest.1F0641D17582BAE9.quest_desc: ["A red, infected-player boss that turns up near Protos and in the last ordeal. It drops a lot of reforged biomass of all three kinds."]
+	quest.1F0641D17582BAE9.title: "The FIXER"
 	quest.201CFB685EC22A4C.quest_desc: ["Hold the &eBuilder's Hut&r, right-click the ground with the &eBuild Tool&r, pick it, move the preview, confirm. Right-click the hut block and press &eBuild&r. A citizen becomes your builder and builds this hut first."]
 	quest.201CFB685EC22A4C.title: "Your Builder"
 	quest.20BC1DE9290ABEE6.quest_desc: ["A schedule runs a train with no driver, like the ghost trains still circling the city."]
@@ -89,8 +95,12 @@
 	quest.2728033B3A3B1410.title: "Scavenge the Depot"
 	quest.2CE34496659452AF.quest_desc: ["Big cannons on a mount. On an airship they recoil for real."]
 	quest.2CE34496659452AF.title: "Broadside"
+	quest.2CF20EADF8DBB3B0.quest_desc: ["One of each kind of &eReforged Biomass&r. This is what the strongest weapons are made from."]
+	quest.2CF20EADF8DBB3B0.title: "Reforged"
 	quest.2D07C5846DE20D19.quest_desc: ["The figure at the edge of your vision. He watches, whispers, follows. Stay together after dark."]
 	quest.2D07C5846DE20D19.title: "Kenny"
+	quest.2F112779CCC1397F.quest_desc: ["Dispenser + compound plate + iron trapdoor + iron. Put the &bC.D.U.&r between the infection and your colony. Your crew can &eguard&r it too (\"everyone, guard the east side\")."]
+	quest.2F112779CCC1397F.title: "Hold the Border"
 	quest.31D27DBA25D73C48.quest_desc: ["A water wheel in flowing water spins forever. Your first power source. Hook a shaft to it."]
 	quest.31D27DBA25D73C48.title: "Free Power"
 	quest.32E2D7B5160D5AA5.quest_desc: ["They drop body parts: &emutated fiber&r, claw fragments, hearts. Keep everything. It is your crafting material from here on."]
@@ -98,6 +108,8 @@
 	quest.3450C0960C7F9112.quest_desc: ["Every way out you found, the Builders found first. None of them were far enough.\\n\\nThe rails to the capital were cut. The only way left is &eup&r."]
 	quest.3450C0960C7F9112.quest_subtitle: "Chapter Gate"
 	quest.3450C0960C7F9112.title: "Every Door Leads Back"
+	quest.34A77DF2BB0A6AAC.quest_desc: ["Protos send raids as the world's corruption rises: Dawn, Noon, Dusk, Midnight, each once. On this server they come later than normal. Keep the border frozen and they come later still."]
+	quest.34A77DF2BB0A6AAC.title: "The Ordeals"
 	quest.3528E3F6A212D15C.quest_desc: ["Tunnels and caves. It stalks, then runs. Light the way, don't go down alone."]
 	quest.3528E3F6A212D15C.title: "The Cave Dweller"
 	quest.37521462F21C1396.quest_desc: ["The Builders' last project. Read the &eAstrodux&r (Ad Astra's own guidebook) for the steps: steel, a rocket, fuel, an oxygen loader and a space suit."]
@@ -107,10 +119,14 @@
 	quest.3982EBB723ECD32B.title: "We Hold"
 	quest.3A3C79C53B1E41FC.quest_desc: ["&e/claude <question>&r answers questions about the pack in chat. &e/report <problem>&r goes straight to the developer."]
 	quest.3A3C79C53B1E41FC.title: "Ask the Pack"
+	quest.3A6CCC71E1786C1D.quest_desc: ["Compound plate + redstone + ice canister = a &bCryo Grenade&r. Throw it: infected blocks turn to frozen biomass and infected freeze. Keep a few on you."]
+	quest.3A6CCC71E1786C1D.title: "Cold Snap"
 	quest.3B06108519BAEA55.quest_desc: ["Black wool, iron, a sponge. Spores and gas clouds can't get you."]
 	quest.3B06108519BAEA55.title: "Breathe Easy"
 	quest.3C776AC2E9F16693.quest_desc: ["Walk into the ruined city. Doors open, tables set. &7Journals say it was evacuated by rail, district by district.&r\\n\\nCities are full of chests. Loot first, build later."]
 	quest.3C776AC2E9F16693.title: "The Endless City"
+	quest.3D4CB510549656C2.quest_desc: ["With reforged biomass and organs, the &4Mimicry&r line of weapons opens up: knife, sword, pickaxe, bow, axe, scythe... Their advancement tab shows each recipe. The strongest things in the pack."]
+	quest.3D4CB510549656C2.title: "Mimicry"
 	quest.3EA616D994247713.quest_desc: ["A frame of &eglowstone blocks&r, lit with a &ewater bucket&r. Islands above the sky, gentle until they are not. Don't fall."]
 	quest.3EA616D994247713.title: "3. Above the Clouds"
 	quest.405BCA1705D5D5C2.quest_desc: ["Check this once the sun comes up.\\n\\nThe ruins on the horizon go on forever. Somebody built all of this. Somebody ran those trains. &7Where did they go?&r"]
@@ -124,14 +140,24 @@
 	quest.4529D0EC8EB16883.title: "Hivemind Radar"
 	quest.487EB68DB375CFD4.quest_desc: ["Mark a spot: on the big map (&eM&r) right-click and pick &eCreate Waypoint&r, or press the &e' (apostrophe)&r key where you stand.\\n\\nEvery waypoint you make shows up on the other players' maps by itself, labelled with your name. Start a name with &e!&r to keep it private. Your friends show on your map too."]
 	quest.487EB68DB375CFD4.title: "Share the Map"
+	quest.4AC69566DB743EAE.quest_desc: ["Craft the &bCryo-Combat boots&r: compound plate + reinforced plate + iron boots. They clear dangerous spore foliage around you. Wear them whenever you go near infection.\\n\\nThe rest of the set: leggings (slow nearby infected), chestplate (freeze anything close, glide), mask (spot infected in a 32x32 area). Check the advancement tab &eAnti-spore equipment&r for the recipes."]
+	quest.4AC69566DB743EAE.title: "Cold Feet"
 	quest.4CC4F9D09F1DDAA7.quest_desc: ["You will need people. Place a &eSupply Camp&r (craft one: press R on it) next to your base: move the preview, then confirm. Open its chest, place the &eTown Hall&r block, right-click it and name your colony. Citizens arrive.\\n\\nThe &eYour Colony&r guide walks you through the rest."]
 	quest.4CC4F9D09F1DDAA7.title: "Found a Colony"
 	quest.4DCCAC87EF742EDA.quest_desc: ["A beast sleeps in the ice. Wake it only if you're ready."]
 	quest.4DCCAC87EF742EDA.title: "The Frostmaw"
+	quest.50FA11EB4D798388.quest_desc: ["Special meals dropped onto &ebiomass blocks&r give rare items and buffs, but they feed the infection. The third one (&eDesertum ultimum&r: 3 cakes, 3 dragon breath, 3 enchanted golden apples, biomass) gives the FIXER's loot. See the advancement tab."]
+	quest.50FA11EB4D798388.title: "Divine Offerings"
+	quest.5165942DBFBF9A95.quest_desc: ["The first time a Spore mob kills you, you won't just respawn. Take what you can from where you wake up. You leave by dying again (keepInventory is on: you keep everything), or ask an op."]
+	quest.5165942DBFBF9A95.title: "If You Fall"
 	quest.51AD8034176BFA4A.quest_desc: ["A chunk loader keeps your line running when nobody is near."]
 	quest.51AD8034176BFA4A.title: "Keep Them Running"
 	quest.52ED0EC9AD284615.quest_desc: ["Circuit board + compound plate + lever + observer. Scan the parts you collect to learn the creatures (Spore's own advancements track this)."]
 	quest.52ED0EC9AD284615.title: "Scanning Time"
+	quest.5316978AECD45C60.quest_desc: ["A flamethrower that shoots cold. Freezes whole hordes. Refuel with ice canisters: hold &eshift + right-click&r."]
+	quest.5316978AECD45C60.title: "Frostwerfer"
+	quest.53DD3D9328D45727.quest_desc: ["&bBlue ice&r + an iron nugget. Ammo for the cold: grenades and the Frostwerfer use it."]
+	quest.53DD3D9328D45727.title: "Bottled Winter"
 	quest.5511EC0E407018FF.quest_desc: ["The dark is not empty. Things hunt where the light does not reach. Keep torches on you. Always."]
 	quest.5511EC0E407018FF.title: "Light Is Life"
 	quest.552775E8592A7452.quest_desc: ["Wall in your camp. A gate you can close. Light on every corner. Your builder can help, and a &eGuard Tower&r puts a guard on watch."]
@@ -140,10 +166,14 @@
 	quest.5584D611223D744A.title: "Things That Turn"
 	quest.58E40364210E9089.quest_desc: ["&cThe dangerous one.&r A &eCatalyst&r (copper, stone, an ender pearl) used on a stone-brick frame.\\n\\nThis is where the things below came from. Go in full gear, together."]
 	quest.58E40364210E9089.title: "4. Under Everything"
+	quest.599545F9AA9AB953.quest_desc: ["The giant ones: &cSieger, Gazenbreacher, Hindenburg, Howitzer, Hohlfresser&r. Break parts off them for &eReforged Biomass&r: terrestrial, aquatic and airborne kinds, one per body type. Go together."]
+	quest.599545F9AA9AB953.title: "Calamity"
 	quest.5A4A0B7DF4784B7E.quest_desc: ["Andesite + iron nuggets = &eandesite alloy&r, the base of nearly everything here."]
 	quest.5A4A0B7DF4784B7E.title: "Builder Metal"
 	quest.5A9BC6F6A674D18A.quest_desc: ["Add huts the same way: &eResidence&r (more citizens), &eForester's Hut&r (wood), &eWarehouse&r + &eCourier's Hut&r (storage and deliveries), &eGuard Tower&r (defence). Each hut's menu lets you hire and upgrade."]
 	quest.5A9BC6F6A674D18A.title: "Grow the Colony"
+	quest.5B2B9E2A25EC7C42.quest_desc: ["Compound plate + reinforced plate + a diamond. With &dbudding amethyst&r it upgrades every Cryo piece to &bSubZero&r (SubZero boots also clear bile)."]
+	quest.5B2B9E2A25EC7C42.title: "Diamond Plate"
 	quest.5FB2E35C7EFC093A.quest_desc: ["Armor fragment + fiber + mutated heart at the surgery table. Almost every infected weapon needs one."]
 	quest.5FB2E35C7EFC093A.title: "A Living Core"
 	quest.62D341191A8C2B01.quest_desc: ["Infected are people and animals the fungus took. &eThe rules:&r\\n- Every kill they get makes them &cevolve&r into worse forms. Don't feed them: no lone fights, no dying out there.\\n- They are weak to &bcold&r and starve over time.\\n- It only spreads where players are. Burn it back early."]

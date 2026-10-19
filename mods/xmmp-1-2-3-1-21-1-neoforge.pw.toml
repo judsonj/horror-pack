@@ -1,0 +1,8 @@
+name = "xmmp-1.2.3+1.21.1-neoforge.jar"
+filename = "xmmp-1.2.3+1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/stTaMuWa/versions/LCM2lLx1/xmmp-1.2.3%2B1.21.1-neoforge.jar"
+hash-format = "sha512"
+hash = "dee95ac9f116b9563c6567eeb466fbb485fc6438097be41ceca512f47bb3395230f966a8a733617b964f090b7429b88f430ea646b626108d470598a1ba899ba6"

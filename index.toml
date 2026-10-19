@@ -54,7 +54,7 @@ hash = "6a36470fca9d71aae12932726256a47b5d1c2e2cfebefcb051eb72c6e3daa349"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/g_spore.snbt"
-hash = "dff787d40974554f6c473bef1dfe019892dc142e0dc8758fcd348e93945a7e70"
+hash = "0a2fcc44c5c0eefda03899e0c04aa9ea45e48ea050f15783c1f9c4c544a6ff74"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/g_survivors.snbt"
@@ -66,7 +66,7 @@ hash = "65a9535f763cc9487e646c28afd72713ee5acf7e8113eb951f8adb28ba58aa55"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "152d5e225955634106146233cf8812ba054302fbdc735188a55c575d10baf9c1"
+hash = "411e2b70c0e1bfc5211ae2b4fc559fc9d08526b9161548efc9ffb976d2aae86e"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/common.snbt"
@@ -359,8 +359,8 @@ hash = "69638899e556b30a44f8808c542a29a82eefc59bdfdcffcb4b47c83520f896b5"
 metafile = true
 
 [[files]]
-file = "mods/ambientsounds-neoforge-v6-3-10-mc1-21-1.pw.toml"
-hash = "3a4f6b23e939519b514e345b53ba833f17fdaa289b6a09b3cc6788b48a642d18"
+file = "mods/ambientsounds-neoforge-v6-3-11-mc1-21-1.pw.toml"
+hash = "b00ed5a082f6abd9f91c79a1025257c8620745741fca90119040d75fec43e7e7"
 metafile = true
 
 [[files]]
@@ -803,6 +803,11 @@ file = "mods/structurize-1.0.835-1.21.1-snapshot.jar"
 hash = "3550454615510a141b92b0f78fa39dbf8bef81361ecd2974a431978fd7d181ad"
 
 [[files]]
+file = "mods/superbwarfare-0-8-9-2-mc1-21-1-c22d98c2.pw.toml"
+hash = "e7a291039cc34913e50364dc206339f651769aa0f17ce6ec53087b764ca2aea8"
+metafile = true
+
+[[files]]
 file = "mods/survivors-0.18.0.jar"
 hash = "27254116d6def2abbd5aab305282fb884fd20b1de6a9a609c2c9426d906a7bfb"
 
@@ -877,8 +882,8 @@ hash = "33c27e6f1dd029f31cab90820a995ec6e45bd91ba76b98f9646f7d7d8562594b"
 metafile = true
 
 [[files]]
-file = "mods/xmmp-1-2-2-1-21-1-neoforge.pw.toml"
-hash = "6281c8c821eaf9b96da6b39539a20a24d0f5ad6106c96be9bc2db6e13c3c1007"
+file = "mods/xmmp-1-2-3-1-21-1-neoforge.pw.toml"
+hash = "11c5eb077a16dfea00e5d867bbdbc1c875666d211c7cfac1f0efe3dd2ec7a339"
 metafile = true
 
 [[files]]
@@ -912,8 +917,8 @@ hash = "49c9e75edee057d956afa602e2b2176fb0c68fe60bd1bec58a69ebab1e6628fb"
 preserve = true
 
 [[files]]
-file = "resourcepacks/freshanimations-v1-10-4-zip.pw.toml"
-hash = "0824cf4c916dbab124008b7fcbff550027b1f16183f10932d7ce2df1db7e9e15"
+file = "resourcepacks/freshanimations-v1-11-1-20-zip.pw.toml"
+hash = "f800c2f9922c730656b8bbfadd8d118690c240f0e6e817c0c8a265f6fb76177c"
 metafile = true
 
 [[files]]

@@ -1,8 +1,0 @@
-name = "xmmp-1.2.2+1.21.1-neoforge.jar"
-filename = "xmmp-1.2.2+1.21.1-neoforge.jar"
-side = "both"
-
-[download]
-url = "https://cdn.modrinth.com/data/stTaMuWa/versions/uKcnI7GC/xmmp-1.2.2%2B1.21.1-neoforge.jar"
-hash-format = "sha512"
-hash = "e09c7bf37fcb9d60414fc0e6c54563f459181f1a6306e1eb0ad869af2359f90e575693f198464e6946dedfe3ff06d1fe8325c1e8f2721d4908099d4320c4e9c9"

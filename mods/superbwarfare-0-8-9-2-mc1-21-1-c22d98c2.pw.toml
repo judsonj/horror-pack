@@ -1,0 +1,8 @@
+name = "superbwarfare-0.8.9.2-mc1.21.1-c22d98c2.jar"
+filename = "superbwarfare-0.8.9.2-mc1.21.1-c22d98c2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Cd3DYqzn/versions/bl7W8fjU/superbwarfare-0.8.9.2-mc1.21.1-c22d98c2.jar"
+hash-format = "sha512"
+hash = "fb035d68d6ee30c17e8eade8de6e2019ccf9f3e517fa467be59441a397553c81bd29778f92fa0406f1ac3aa73f68ad522aed5d65825336c36686714c900877a5"
