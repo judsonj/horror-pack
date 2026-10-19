@@ -15,7 +15,15 @@
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{ id: "3BFCC66343FB410D", type: "checkmark" }]
-			rewards: [{ id: "4E2F7BDCA92BDA59", type: "item", item: { count: 1, id: "minecraft:bread" }, count: 4 } { id: "38D5B0F02FE3EDC7", type: "item", item: { count: 1, id: "minecraft:torch" }, count: 8 }]
+			rewards: [{ id: "4E2F7BDCA92BDA59", type: "item", item: { count: 1, id: "minecraft:bread" }, count: 4 } { id: "38D5B0F02FE3EDC7", type: "item", item: { count: 1, id: "minecraft:torch" }, count: 8 } { id: "64AB9EB1C681E6A8", type: "command", command: "/conductor beat {p} book", elevate_perms: true, silent: true, auto: "invisible" }]
+		}
+		{
+			id: "6B05E2C27F75F606"
+			x: 1d
+			y: 1.5d
+			dependencies: ["6BFB5539D1CEC86A"]
+			tasks: [{ id: "74A0007798D165E2", type: "checkmark" }]
+			rewards: [{ id: "76D40B957065D46A", type: "item", item: { count: 1, id: "minecraft:torch" }, count: 8 }]
 		}
 		{
 			id: "5511EC0E407018FF"
@@ -35,15 +43,15 @@
 		}
 		{
 			id: "7C354DBEC8EEE180"
-			x: 2d
+			x: 3d
 			y: 1.5d
-			dependencies: ["6BFB5539D1CEC86A"]
+			dependencies: ["6B05E2C27F75F606"]
 			tasks: [{ id: "334D9093A3091231", type: "checkmark" }]
 			rewards: [{ id: "3D5215F72E34FA64", type: "xp_levels", xp_levels: 3 }]
 		}
 		{
 			id: "4CC4F9D09F1DDAA7"
-			x: 4d
+			x: 5d
 			y: 1.5d
 			dependencies: ["7C354DBEC8EEE180"]
 			tasks: [{ id: "32A3870DFA0B1DEA", type: "checkmark" }]
@@ -57,7 +65,7 @@
 			shape: "gear"
 			size: 2.0d
 			tasks: [{ id: "69087244C15025E7", type: "checkmark" }]
-			rewards: [{ id: "1AFE483010561B61", type: "random", table_id: 8760363617949925918L } { id: "3318CEABD2474383", type: "item", item: { count: 1, id: "minecraft:cooked_beef" }, count: 8 } { id: "7EB26A6780ACB4C2", type: "item", item: { count: 1, id: "spore:gas_mask" } }]
+			rewards: [{ id: "1AFE483010561B61", type: "random", table_id: 8760363617949925918L } { id: "3318CEABD2474383", type: "item", item: { count: 1, id: "minecraft:cooked_beef" }, count: 8 } { id: "7EB26A6780ACB4C2", type: "item", item: { count: 1, id: "spore:gas_mask" } } { id: "44DDCD1C7E993C37", type: "command", command: "/conductor beat {p} night", elevate_perms: true, silent: true, auto: "invisible" }]
 		}
 	]
 }

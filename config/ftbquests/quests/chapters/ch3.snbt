@@ -42,6 +42,15 @@
 			rewards: [{ id: "798C436A4A911088", type: "random", table_id: 5557977682739783447L }]
 		}
 		{
+			id: "67EF9B6315A83728"
+			x: 4d
+			y: -2d
+			dependencies: ["18B606392431482E"]
+			optional: true
+			tasks: [{ id: "39D06C36DD97CDA2", type: "advancement", advancement: "survivors:held_the_line", criterion: "" }]
+			rewards: [{ id: "1FF672BB30FE49AF", type: "random", table_id: 5557977682739783447L }]
+		}
+		{
 			id: "3982EBB723ECD32B"
 			x: 6d
 			y: 0d
@@ -50,7 +59,7 @@
 			shape: "gear"
 			size: 2.0d
 			tasks: [{ id: "5B20A4A407692A4B", type: "checkmark" }]
-			rewards: [{ id: "14A02A0A9719CB42", type: "random", table_id: 2893836879149437615L }]
+			rewards: [{ id: "14A02A0A9719CB42", type: "random", table_id: 2893836879149437615L } { id: "6B828397811F8F5F", type: "command", command: "/threat heat quest gate3 10", elevate_perms: true, silent: true, auto: "invisible" }]
 		}
 	]
 }

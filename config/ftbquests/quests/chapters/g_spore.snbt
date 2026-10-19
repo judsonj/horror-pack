@@ -5,7 +5,7 @@
 	group: "3095EA91149B5FEF"
 	icon: { id: "spore:mutated_fiber" }
 	id: "25B77CDE329F5438"
-	order_index: 7
+	order_index: 8
 	quest_links: [ ]
 	quests: [
 		{

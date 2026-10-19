@@ -5,13 +5,21 @@
 	group: "3095EA91149B5FEF"
 	icon: { id: "create:cogwheel" }
 	id: "1E78474C245FD8CA"
-	order_index: 6
+	order_index: 7
 	quest_links: [ ]
 	quests: [
+		{
+			id: "724A72FEF87C257E"
+			x: -2d
+			y: 0d
+			tasks: [{ id: "0BD0E99ADE7DAAC4", type: "checkmark" }]
+			rewards: [{ id: "34037A8F31C05F26", type: "item", item: { count: 1, id: "minecraft:torch" }, count: 16 }]
+		}
 		{
 			id: "5A4A0B7DF4784B7E"
 			x: 0d
 			y: 0d
+			dependencies: ["724A72FEF87C257E"]
 			tasks: [{ id: "04E131F50E805609", type: "item", item: { count: 1, id: "create:andesite_alloy" } }]
 			rewards: [{ id: "15A78398C9CF8445", type: "item", item: { count: 1, id: "create:andesite_alloy" }, count: 8 }]
 		}

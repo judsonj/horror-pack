@@ -15,7 +15,7 @@
 	bossBarByDefault = false
 	#Keep the area around a Nexus chunk-loaded so it keeps
 	#developing even when no players are nearby.
-	keepNexusLoaded = true
+	keepNexusLoaded = false
 	#Radius in chunks the Nexus force-loads when keepNexusLoaded
 	#is on. Higher = more remote growth, but more server load.
 	#Note: the default 2 only force-loads ~40 blocks out, well short of the
@@ -47,7 +47,7 @@
 	#Independent of nexusKeepChunksLoaded: that one holds a fixed
 	#area open for good, this one is a window that moves and lets go
 	#behind itself, and either can be used without the other.
-	frontChunkLoading = true
+	frontChunkLoading = false
 	#Leave a biomass corpse where the Nexus fell instead of having it
 	#vanish without a trace.
 	biomassOnDeath = true

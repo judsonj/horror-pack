@@ -5,7 +5,7 @@
 	group: "3095EA91149B5FEF"
 	icon: { id: "minecolonies:blockhuttownhall" }
 	id: "08818A63B866F9C2"
-	order_index: 8
+	order_index: 9
 	quest_links: [ ]
 	quests: [
 		{
@@ -62,6 +62,22 @@
 			dependencies: ["0C8CE3E83291AEEB"]
 			tasks: [{ id: "3B13B55E91D91309", type: "checkmark" }]
 			rewards: [{ id: "0C598C18D0C18E0A", type: "xp_levels", xp_levels: 2 }]
+		}
+		{
+			id: "224F2A5123C5E4F8"
+			x: 8d
+			y: 1d
+			dependencies: ["1EA0D0D0D0CCD83B"]
+			tasks: [{ id: "51B155690C5E9EF9", type: "checkmark" }]
+			rewards: [{ id: "1DAF52A9FCDD053F", type: "xp_levels", xp_levels: 2 }]
+		}
+		{
+			id: "11980281AE97CA15"
+			x: 10d
+			y: -1d
+			dependencies: ["5A9BC6F6A674D18A"]
+			tasks: [{ id: "3DC822BB240F1947", type: "checkmark" }]
+			rewards: [{ id: "00922E4A5CD15162", type: "xp_levels", xp_levels: 2 }]
 		}
 	]
 }

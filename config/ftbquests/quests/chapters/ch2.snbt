@@ -42,7 +42,7 @@
 			shape: "gear"
 			size: 2.0d
 			tasks: [{ id: "53F9D6BD881D074D", type: "checkmark" }]
-			rewards: [{ id: "3676B7BF5B5728B0", type: "random", table_id: 5557977682739783447L }]
+			rewards: [{ id: "3676B7BF5B5728B0", type: "random", table_id: 5557977682739783447L } { id: "639C389821EC1834", type: "command", command: "/threat heat quest gate2 10", elevate_perms: true, silent: true, auto: "invisible" }]
 		}
 	]
 }

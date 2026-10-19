@@ -1,10 +1,10 @@
 {
     "profile": "horror",
-    "description": "Horror Pack: scattered ruined cities with wild land between (this file overrides lostcities/common.toml on every boot)",
+    "description": "Horror Pack: scattered ruined cities with wild land between (this file overrides lostcities/common.toml on every boot). 2026-10-19: cityMaxRadius 110 -> 60 (Lost Cities planning was 43% of worldgen CPU; see Build State)",
     "settings": {
         "cityChance": 0.0004,
         "cityMinRadius": 60,
-        "cityMaxRadius": 110,
+        "cityMaxRadius": 60,
         "generateLighting": true,
         "generateSpawners": false,
         "ruinChance": 0.05

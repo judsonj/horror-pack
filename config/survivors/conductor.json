@@ -1,0 +1,26 @@
+{
+  "_about": "The Conductor's canned lines (settlement/Conductor.java). Each beat fires once per player: one short action-bar line (bar) and at most one chat line (chat). Edit freely, then /conductor reload. No AI key is used.",
+  "name": "The Conductor",
+  "beats": {
+    "arrive":  { "bar": "Last stop. Welcome. The book is in your pack: open it." },
+    "book":    { "bar": "Good. Come and see me. Right-click me and I will show you the keys." },
+    "keys":    { "bar": "Two keys matter this hour: hold ` to mine a whole vein, and M for the map." },
+    "torch":   { "bar": "Light first. Torches behind you, always." },
+    "bed":     { "bar": "A bed. Good. Walls, a roof, a door. Then wait." },
+    "supply":  { "bar": "The Supply Camp. Put it down near here and the colony begins." },
+    "dusk":    { "bar": "Dusk.", "chat": "Inside. Now. Don't answer the door." },
+    "dawn":    { "bar": "Morning.", "chat": "You made it. The city's that way. Take the stairs down only with a friend." },
+    "night":   { "bar": "The Line is on your map. Take a friend.", "bar_none": "The city is further than I can point. Follow the rails." }
+  },
+  "keys": {
+    "chat": "Keys: B backpack | M map | U waypoints | ` (hold) vein-mine, \\ toggle it, O pattern | K shaders (off if Ponder goes black) | V voice menu | trash slot and sort button in your inventory.",
+    "bar": "Hold ` to vein-mine. M opens the map."
+  },
+  "hints": {
+    "torch": "Place a torch. Light is the first rule.",
+    "bed": "Find a bed, walls and a door before dark.",
+    "supply": "The Supply Camp is in the chest by the fire. Take it.",
+    "night": "Get through the night. I will point the way after.",
+    "done": "The city is that way. Take a friend."
+  }
+}

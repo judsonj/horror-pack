@@ -1,0 +1,883 @@
+{
+ "_readme": "Story arcs for survivors. Edit freely; /survivors arcs reload applies it live (or restart). personas: keyed by persona number 0-9 (see Personas.java). Each persona has 4 beats in order: memory, request, skill, closing. A beat unlocks at its trust (45/60/75/90 by default) AND its trigger: talk (small talk while the survivor is idle at home), watch (after a night on guard), protected (a player stood by them when scared, or they were just rescued), quest:day:N (world day), quest:dims:N (N other dimensions visited). Lines are cut at 130 chars. {name} = the survivor's name. request beats: place.where = rail | building | basement | city (where in the ruins the chest goes); item/item_name = the keepsake to hand back; reward = items in the chest (id*count). skill: steps are crew actions (gather, stock_up, make, build, dig, farm, light_up, store, pick_up...). closing effect: lantern | surname | avoid (namespace of a horror mod).",
+ "rescue": {
+  "hints": [
+   "...anyone... fourth floor... they're on the stairs...",
+   "...can anyone hear this... the door won't hold... please...",
+   "...east stairwell... three of them... I can hear them breathing...",
+   "...is this thing on... I'm alone in here... they know I'm in here...",
+   "...station office... barricaded... it's quiet now, and that's worse..."
+  ],
+  "freed": [
+   "You came. You actually came.",
+   "I thought the stairs were the end. Get me out of here.",
+   "Don't let go of the light. I'll follow you."
+  ],
+  "arrive_crew": [
+   "Walls. A door. I'll earn my place, I swear.",
+   "Lights on, all of them. I'll never complain about a lantern again."
+  ],
+  "arrive_guest": [
+   "Not much room, but a roof. I'll stay out of the way.",
+   "I'll sleep by the door. If there's a spare corner, I'll take it."
+  ],
+  "gone": [
+   "The signal went quiet. Whoever it was, they're gone.",
+   "...static. Nothing on the line now."
+  ]
+ },
+ "personas": {
+  "0": {
+   "role": "train conductor",
+   "last_name": "Halloran",
+   "beats": [
+    {
+     "trust": 45,
+     "trigger": "talk",
+     "lines": [
+      "Day forty-one. The whistle blew and the platform filled. I checked every ticket. Every one.",
+      "Forty trains left that night, on time. I stamped the last. Then the tunnel behind it went dark.",
+      "The Engine turns at the end of the line. I know because the trains stopped coming back."
+     ],
+     "gist": "You told them about the night of the evacuation: forty trains left on time, then the tunnel went dark."
+    },
+    {
+     "trust": 60,
+     "trigger": "watch",
+     "lines": [
+      "There's a ticket punch in my station office, line four. My father's. I won't leave it down there.",
+      "It's marked on your map. Mind the stairs."
+     ],
+     "gist": "You asked them to fetch your father's ticket punch from a station office; they did.",
+     "thanks": [
+      "My father's punch. Click, click, like the old days. You ride free, anywhere on the line.",
+      "Passage anywhere. I'll write it on a ticket."
+     ],
+     "reminder": [
+      "Line four, the station office. The punch has my father's initials.",
+      "No hurry. The office has waited this long."
+     ],
+     "place": {
+      "where": "rail",
+      "name": "{name}'s ticket punch",
+      "item": "minecraft:shears",
+      "item_name": "Father's ticket punch",
+      "reward": [
+       "minecraft:powered_rail*4",
+       "minecraft:iron_ingot*6",
+       "minecraft:golden_apple*1"
+      ]
+     }
+    },
+    {
+     "trust": 75,
+     "trigger": "quest:dims:1",
+     "lines": [
+      "Nobody runs late with a timetable. I wrote the crew one.",
+      "Wood, torches, lights on. In that order, every day."
+     ],
+     "gist": "You taught the crew a daily timetable routine.",
+     "skill": {
+      "name": "{name}'s timetable",
+      "description": "gather wood, stock torches, light the camp",
+      "steps": [
+       {
+        "action": "gather",
+        "input": {
+         "resource": "wood",
+         "amount": 16
+        }
+       },
+       {
+        "action": "stock_up",
+        "input": {
+         "item": "torch",
+         "amount": 16
+        }
+       },
+       {
+        "action": "light_up",
+        "input": {}
+       }
+      ]
+     }
+    },
+    {
+     "trust": 90,
+     "trigger": "protected",
+     "lines": [
+      "I'll keep a lamp lit by the gate. A signal for anyone still out there.",
+      "Every line needs a light at the end."
+     ],
+     "gist": "You keep a lantern lit by the gate every night, as a signal for anyone still out there.",
+     "effect": {
+      "type": "lantern"
+     }
+    }
+   ]
+  },
+  "1": {
+   "role": "nervous mechanic",
+   "last_name": "Pelham",
+   "beats": [
+    {
+     "trust": 45,
+     "trigger": "talk",
+     "lines": [
+      "Ha. Haha. Sorry. I kept the pumps running under the station. Forty-one days, never a leak.",
+      "Then every gauge dropped at once. The lamps went out one tunnel at a time. Ha.",
+      "I climbed out through the vents. I didn't look back. I never look back."
+     ],
+     "gist": "You told them you ran the station pumps until every gauge dropped and the tunnel lamps went out."
+    },
+    {
+     "trust": 60,
+     "trigger": "protected",
+     "lines": [
+      "I left my wrench roll in the pump room. Basement, under a station. I can't go back alone. Ha.",
+      "It's marked. Please. Bring it up."
+     ],
+     "gist": "You asked them to bring your wrench roll up from a pump room under a station; they did.",
+     "thanks": [
+      "My wrench roll! Every size, still oiled. Ha! Free repairs for life.",
+      "I'm not crying. That's gear oil."
+     ],
+     "reminder": [
+      "The pump room, under the station. Third door, the one that hums.",
+      "Take your time. Ha. No. Not too much time."
+     ],
+     "place": {
+      "where": "basement",
+      "name": "{name}'s wrench roll",
+      "item": "create:wrench",
+      "item_name": "Wrench roll",
+      "reward": [
+       "minecraft:iron_ingot*6",
+       "minecraft:redstone*12",
+       "minecraft:copper_ingot*6"
+      ]
+     }
+    },
+    {
+     "trust": 75,
+     "trigger": "talk",
+     "lines": [
+      "Fine. Machines run on routine. Here's mine, for the crew.",
+      "Tools first, then chests. Nothing rusts on my watch."
+     ],
+     "gist": "You taught the crew a tune-up routine: tools first, then the chests.",
+     "skill": {
+      "name": "{name}'s tune-up",
+      "description": "make spare stone tools and store them",
+      "steps": [
+       {
+        "action": "make",
+        "input": {
+         "item": "stone pickaxe",
+         "amount": 2
+        }
+       },
+       {
+        "action": "make",
+        "input": {
+         "item": "stone axe",
+         "amount": 2
+        }
+       },
+       {
+        "action": "store",
+        "input": {}
+       }
+      ]
+     }
+    },
+    {
+     "trust": 90,
+     "trigger": "watch",
+     "lines": [
+      "I heard it down there. Breathing in the pipes.",
+      "I'm not going near the Cave Dweller again. Don't ask me to. Ha."
+     ],
+     "gist": "You will never go near the Cave Dweller again; you heard it breathing in the pipes.",
+     "effect": {
+      "type": "avoid",
+      "namespace": "cave_dweller"
+     }
+    }
+   ]
+  },
+  "2": {
+   "role": "cynical scavenger",
+   "last_name": "Rook",
+   "beats": [
+    {
+     "trust": 45,
+     "trigger": "talk",
+     "lines": [
+      "What's in it for me? Fine. I picked the Fall clean. Warehouses, flats, the lot.",
+      "Found a train once, doors open, seats still warm. Nobody aboard. I took the shoes and ran.",
+      "Funny thing about the evacuation. They left their bags. Every single one."
+     ],
+     "gist": "You told them you scavenged the empty city, and that evacuees left every bag behind."
+    },
+    {
+     "trust": 60,
+     "trigger": "watch",
+     "lines": [
+      "I stashed my good satchel under a stairwell in the old district. Fetch it and we're even.",
+      "Marked. Don't open it first. I count everything."
+     ],
+     "gist": "You asked them to retrieve your good satchel from under a stairwell; they did.",
+     "thanks": [
+      "Huh. You brought it. All of it. Fine. We're even. Mostly.",
+      "...Thanks. Don't tell anyone I said that."
+     ],
+     "reminder": [
+      "Under a stairwell, old district. Look for the scratched door.",
+      "Still waiting. Not that I care."
+     ],
+     "place": {
+      "where": "building",
+      "name": "{name}'s satchel",
+      "item": "minecraft:leather",
+      "item_name": "Scavenger's satchel",
+      "reward": [
+       "minecraft:emerald*3",
+       "minecraft:iron_ingot*6",
+       "minecraft:golden_apple*1"
+      ]
+     }
+    },
+    {
+     "trust": 75,
+     "trigger": "quest:day:5",
+     "lines": [
+      "You want my trick? Pick up everything that isn't nailed down.",
+      "Then check the pockets. Twice."
+     ],
+     "gist": "You taught the crew your sweep routine: pick everything up, then store it.",
+     "skill": {
+      "name": "{name}'s sweep",
+      "description": "pick up loose items and store them",
+      "steps": [
+       {
+        "action": "pick_up",
+        "input": {
+         "where": "near_you"
+        }
+       },
+       {
+        "action": "store",
+        "input": {}
+       }
+      ]
+     }
+    },
+    {
+     "trust": 90,
+     "trigger": "talk",
+     "lines": [
+      "That tall thing in the treeline. I watched it follow us all night.",
+      "I'm done with Kenny. I won't go near him again, whatever you offer."
+     ],
+     "gist": "You will never go near Kenny again after he followed the group all night.",
+     "effect": {
+      "type": "avoid",
+      "namespace": "kenny"
+     }
+    }
+   ]
+  },
+  "3": {
+   "role": "cheerful baker",
+   "last_name": "Bellweather",
+   "beats": [
+    {
+     "trust": 45,
+     "trigger": "talk",
+     "lines": [
+      "I baked all night when they evacuated. Two hundred loaves. Nobody was hungry, but they took them anyway.",
+      "A little girl held one on the platform like a teddy bear. The train pulled out. She was still holding it.",
+      "So I keep baking. Somebody out there might want a loaf."
+     ],
+     "gist": "You told them about baking two hundred loaves the night of the evacuation, and the little girl who held one."
+    },
+    {
+     "trust": 60,
+     "trigger": "talk",
+     "lines": [
+      "My mother's sourdough starter is in a crock in a bakery by the old market. I left it on the shelf.",
+      "It's still alive, I can feel it. Marked on your map."
+     ],
+     "gist": "You asked them to fetch your mother's sourdough starter from a bakery in the ruins; they did.",
+     "thanks": [
+      "It's bubbling! Oh, you wonderful people. Fresh bread tomorrow, I promise.",
+      "Every loaf carries a bit of the old city now."
+     ],
+     "reminder": [
+      "The bakery by the old market. The crock has a blue lid.",
+      "It's a stubborn starter. It'll wait."
+     ],
+     "place": {
+      "where": "building",
+      "name": "{name}'s starter crock",
+      "item": "minecraft:honey_bottle",
+      "item_name": "Mother's sourdough starter",
+      "reward": [
+       "minecraft:bread*8",
+       "minecraft:cake*1",
+       "minecraft:golden_carrot*3"
+      ]
+     }
+    },
+    {
+     "trust": 75,
+     "trigger": "protected",
+     "lines": [
+      "You kept me safe, so here's my best secret: bake in bulk.",
+      "Grow it, gather it, stock it. Nobody goes hungry."
+     ],
+     "gist": "You taught the crew your batch routine: gather crops and stock bread.",
+     "skill": {
+      "name": "{name}'s batch",
+      "description": "gather crops and stock bread",
+      "steps": [
+       {
+        "action": "gather",
+        "input": {
+         "resource": "crops",
+         "amount": 24
+        }
+       },
+       {
+        "action": "stock_up",
+        "input": {
+         "item": "bread",
+         "amount": 16
+        }
+       }
+      ]
+     }
+    },
+    {
+     "trust": 90,
+     "trigger": "quest:day:6",
+     "lines": [
+      "We never kept last names, we just said 'the baker.' Put down Bellweather.",
+      "My mother's name. The bread deserves it."
+     ],
+     "gist": "You took the last name Bellweather, your mother's name.",
+     "effect": {
+      "type": "surname",
+      "name": "Bellweather"
+     }
+    }
+   ]
+  },
+  "4": {
+   "role": "retired street preacher",
+   "last_name": "Thorne",
+   "beats": [
+    {
+     "trust": 45,
+     "trigger": "talk",
+     "lines": [
+      "I preached on the platform that night. 'The dark has teeth,' I said. They called me mad. Then it bit.",
+      "I carried the chapel lamp down the tunnel. It burned three days. I swear it did.",
+      "The scripture is made up, friend. The dark is not. That part I did not make up."
+     ],
+     "gist": "You told them you warned the platform that the dark had teeth, and carried the chapel lamp through the tunnel."
+    },
+    {
+     "trust": 60,
+     "trigger": "protected",
+     "lines": [
+      "The chapel lamp still hangs where I left it, in the vestry. Bring it home and the dark will hesitate.",
+      "Marked on your map. May light go before you."
+     ],
+     "gist": "You asked them to bring the chapel lamp home from a vestry in the ruins; they did.",
+     "thanks": [
+      "The lamp! It still burns! Do you see? Light is the only scripture.",
+      "Bless your boots, friend."
+     ],
+     "reminder": [
+      "The vestry, behind the altar. Follow the smell of lamp oil.",
+      "The lamp waits. It is more patient than I am."
+     ],
+     "place": {
+      "where": "building",
+      "name": "{name}'s chapel lamp",
+      "item": "minecraft:lantern",
+      "item_name": "The chapel lamp",
+      "reward": [
+       "minecraft:torch*16",
+       "minecraft:golden_apple*1",
+       "minecraft:lantern*2"
+      ]
+     }
+    },
+    {
+     "trust": 75,
+     "trigger": "watch",
+     "lines": [
+      "Keep vigil with me a night and I'll show you the oldest rite: light every dark corner.",
+      "Torches, torches, torches. That is the whole sermon."
+     ],
+     "gist": "You taught the crew a vigil routine: light the camp and stock torches.",
+     "skill": {
+      "name": "{name}'s vigil",
+      "description": "light dark spots and stock torches",
+      "steps": [
+       {
+        "action": "light_up",
+        "input": {}
+       },
+       {
+        "action": "stock_up",
+        "input": {
+         "item": "torch",
+         "amount": 16
+        }
+       }
+      ]
+     }
+    },
+    {
+     "trust": 90,
+     "trigger": "quest:dims:2",
+     "lines": [
+      "I will keep a lantern lit at the gate every night, until the dark learns manners.",
+      "Do not put it out. That is the one commandment."
+     ],
+     "gist": "You keep a lantern lit by the gate every night.",
+     "effect": {
+      "type": "lantern"
+     }
+    }
+   ]
+  },
+  "5": {
+   "role": "teenage tinkerer",
+   "last_name": "Kettle",
+   "beats": [
+    {
+     "trust": 45,
+     "trigger": "talk",
+     "lines": [
+      "Everyone says 'before the Fall' like it was a place. I only know what the walls remember.",
+      "My dad left me a radio. It only plays static. But at night the static counts backwards.",
+      "Day forty-one. That's what it says. Over and over. Does that mean anything to you?"
+     ],
+     "gist": "You told them about your father's radio, which counts down to 'day forty-one' in the static."
+    },
+    {
+     "trust": 60,
+     "trigger": "quest:day:3",
+     "lines": [
+      "I hid my best gadget in a ventilation duct. Brass thing, tick-tock. A flat in the city, second floor.",
+      "It's marked. Watch for loose floors. I mean it."
+     ],
+     "gist": "You asked them to fetch your brass gadget from a ventilation duct in the city; they did.",
+     "thanks": [
+      "It still ticks! Okay, that's a little emotional. Don't look at me.",
+      "Here, take this. I mean the spare gear. It's lucky. Probably."
+     ],
+     "reminder": [
+      "Second floor, a flat with a green door. The duct's behind the stove.",
+      "It's fine, it's a very patient gadget."
+     ],
+     "place": {
+      "where": "building",
+      "name": "{name}'s brass gadget",
+      "item": "minecraft:clock",
+      "item_name": "Brass gadget",
+      "reward": [
+       "minecraft:redstone*12",
+       "minecraft:iron_ingot*4",
+       "create:andesite_alloy*8",
+       "minecraft:copper_ingot*6"
+      ]
+     }
+    },
+    {
+     "trust": 75,
+     "trigger": "talk",
+     "lines": [
+      "Okay, so I built a trick for furnaces and chests. Wanna see?",
+      "It's not magic. It's doing things in the right order."
+     ],
+     "gist": "You taught the crew a gadget run: build a furnace and a couple of chests.",
+     "skill": {
+      "name": "{name}'s gadget run",
+      "description": "make a furnace and two chests",
+      "steps": [
+       {
+        "action": "make",
+        "input": {
+         "item": "furnace",
+         "amount": 1
+        }
+       },
+       {
+        "action": "make",
+        "input": {
+         "item": "chest",
+         "amount": 2
+        }
+       }
+      ]
+     }
+    },
+    {
+     "trust": 90,
+     "trigger": "protected",
+     "lines": [
+      "People keep asking my last name. I never had one. I want Kettle.",
+      "It's loud, it whistles, it keeps warm things warm. That's me."
+     ],
+     "gist": "You took the last name Kettle, because it whistles and keeps warm things warm.",
+     "effect": {
+      "type": "surname",
+      "name": "Kettle"
+     }
+    }
+   ]
+  },
+  "6": {
+   "role": "former city guard",
+   "last_name": "Marrow",
+   "beats": [
+    {
+     "trust": 45,
+     "trigger": "talk",
+     "lines": [
+      "Squad of eight. Nine with the dog. We held the east gate until the horn.",
+      "Last order was 'fall back to the platform.' I fell back. They didn't.",
+      "I keep count. Forty-one so far. Squad would say go for fifty."
+     ],
+     "gist": "You told them your squad of eight held the east gate and you were the only one who fell back to the platform."
+    },
+    {
+     "trust": 60,
+     "trigger": "watch",
+     "lines": [
+      "My squad badge is on the guardhouse desk at the east gate. Third floor, gray door.",
+      "Marked. No fuss. Just bring it."
+     ],
+     "gist": "You asked them to bring back your squad badge from the east gate guardhouse; they did.",
+     "thanks": [
+      "That's it. Third squad, east gate. Thank you. That's... thank you.",
+      "I'll watch your back from now on. Not a promise. An order."
+     ],
+     "reminder": [
+      "East gate guardhouse. Third floor. Gray door.",
+      "Still there, I'd bet. Nobody steals a badge."
+     ],
+     "place": {
+      "where": "building",
+      "name": "{name}'s squad badge",
+      "item": "minecraft:gold_nugget",
+      "item_name": "Squad badge",
+      "reward": [
+       "minecraft:iron_ingot*6",
+       "minecraft:arrow*16",
+       "minecraft:cooked_beef*6",
+       "minecraft:shield*1"
+      ]
+     }
+    },
+    {
+     "trust": 75,
+     "trigger": "protected",
+     "lines": [
+      "Perimeter's a habit. Fence, lights, eyes open.",
+      "Do it every night and nothing walks in."
+     ],
+     "gist": "You taught the crew a perimeter routine: a tall fence and lights.",
+     "skill": {
+      "name": "{name}'s perimeter",
+      "description": "fence a ring around the spot and light it",
+      "steps": [
+       {
+        "action": "build",
+        "input": {
+         "shape": "ring",
+         "block": "oak fence",
+         "size": 7,
+         "height": 2,
+         "where": "around_me"
+        }
+       },
+       {
+        "action": "light_up",
+        "input": {}
+       }
+      ]
+     }
+    },
+    {
+     "trust": 90,
+     "trigger": "quest:day:5",
+     "lines": [
+      "Angels. I saw one move when my squad blinked.",
+      "I'm never going near one again. Court-martial me."
+     ],
+     "gist": "You will never go near a Weeping Angel again; you saw one move when your squad blinked.",
+     "effect": {
+      "type": "avoid",
+      "namespace": "weeping_angels"
+     }
+    }
+   ]
+  },
+  "7": {
+   "role": "disgraced scientist",
+   "last_name": "Voss",
+   "beats": [
+    {
+     "trust": 45,
+     "trigger": "talk",
+     "lines": [
+      "I can't say what I worked on. Only that it hummed. Low. Under the capital.",
+      "We called it the Engine. Clean power, we said. The night it switched on, the dark started to come up.",
+      "Day forty-one, I signed the evacuation order myself. I don't tell people that."
+     ],
+     "gist": "You told them the Engine hummed under the capital and that you signed the evacuation order."
+    },
+    {
+     "trust": 60,
+     "trigger": "quest:day:5",
+     "lines": [
+      "My notebook is in the lab sublevel, under a desk with a cracked leg. The Engine's specs.",
+      "Marked. Bring it to me before someone reads it. Don't read it."
+     ],
+     "gist": "You asked them to bring back your lab notebook with the Engine's specs; they did and did not read it.",
+     "thanks": [
+      "Ah. It's all here. The numbers don't lie, they only judge.",
+      "You didn't read it. I can tell. Thank you."
+     ],
+     "reminder": [
+      "The lab sublevel. The desk with the cracked leg.",
+      "Please. I'd rather it were in my hands than anyone else's."
+     ],
+     "place": {
+      "where": "basement",
+      "name": "{name}'s lab notebook",
+      "item": "minecraft:writable_book",
+      "item_name": "Lab notebook",
+      "reward": [
+       "minecraft:redstone*16",
+       "minecraft:experience_bottle*4",
+       "minecraft:iron_ingot*6"
+      ]
+     }
+    },
+    {
+     "trust": 75,
+     "trigger": "watch",
+     "lines": [
+      "Core samples. Dig small, learn big.",
+      "Careful where you sink it. Some things sink back."
+     ],
+     "gist": "You taught the crew a core-sample routine: dig a narrow hole and store the finds.",
+     "skill": {
+      "name": "{name}'s core samples",
+      "description": "dig a narrow shaft and store what comes up",
+      "steps": [
+       {
+        "action": "dig",
+        "input": {
+         "shape": "hole",
+         "width": 1,
+         "depth": 6
+        }
+       },
+       {
+        "action": "store",
+        "input": {}
+       }
+      ]
+     }
+    },
+    {
+     "trust": 90,
+     "trigger": "quest:dims:2",
+     "lines": [
+      "I've seen the Nexus. It's the Engine's shadow, grown up wrong.",
+      "I'm not going near it again. I made enough mistakes."
+     ],
+     "gist": "You will never go near the Infection Nexus again; you think it is the Engine's shadow.",
+     "effect": {
+      "type": "avoid",
+      "namespace": "infnexus"
+     }
+    }
+   ]
+  },
+  "8": {
+   "role": "traveling musician",
+   "last_name": "Larkin",
+   "beats": [
+    {
+     "trust": 45,
+     "trigger": "talk",
+     "lines": [
+      "I played the platform that last night. Nobody applauded. They kept getting on the trains.",
+      "The lute cracked when the crowd pushed. I kept playing four strings. The dark didn't care.",
+      "Somewhere in the tunnels a whistle blew in B-flat. I've been trying to find that note since."
+     ],
+     "gist": "You told them you played the platform on the last night and that a whistle in B-flat still haunts you."
+    },
+    {
+     "trust": 60,
+     "trigger": "protected",
+     "lines": [
+      "My lute case is in the cloakroom at the old station. Line four, left lockers. The letter inside, I never sent.",
+      "It's marked. Not the lute. The letter."
+     ],
+     "gist": "You asked them to bring back an unsent letter from a locker at the old station; they did.",
+     "thanks": [
+      "Ah. Her handwriting, my handwriting. I'll read it to the stars.",
+      "Thank you. This verse is yours."
+     ],
+     "reminder": [
+      "Line four, left lockers. The case has a green strap.",
+      "It's waited this long. So have I."
+     ],
+     "place": {
+      "where": "rail",
+      "name": "{name}'s unsent letter",
+      "item": "minecraft:paper",
+      "item_name": "Unsent letter",
+      "reward": [
+       "minecraft:music_disc_cat*1",
+       "minecraft:gold_ingot*4",
+       "minecraft:bread*6"
+      ]
+     }
+    },
+    {
+     "trust": 75,
+     "trigger": "talk",
+     "lines": [
+      "Work goes faster with a tune. I wrote one for the crew.",
+      "Wood, then stone, one verse each."
+     ],
+     "gist": "You taught the crew a work song: wood, then stone.",
+     "skill": {
+      "name": "{name}'s work song",
+      "description": "gather wood, then stone",
+      "steps": [
+       {
+        "action": "gather",
+        "input": {
+         "resource": "wood",
+         "amount": 32
+        }
+       },
+       {
+        "action": "gather",
+        "input": {
+         "resource": "stone",
+         "amount": 32
+        }
+       }
+      ]
+     }
+    },
+    {
+     "trust": 90,
+     "trigger": "watch",
+     "lines": [
+      "I always signed Larkin on my posters. Nobody remembers them. I do.",
+      "Let the name be spelled right this time."
+     ],
+     "gist": "You took the last name Larkin, the one you signed on your posters.",
+     "effect": {
+      "type": "surname",
+      "name": "Larkin"
+     }
+    }
+   ]
+  },
+  "9": {
+   "role": "farmer",
+   "last_name": "Thistlewood",
+   "beats": [
+    {
+     "trust": 45,
+     "trigger": "talk",
+     "lines": [
+      "My fields went under the concrete in one season. The city just grew over them.",
+      "Wheat came up through the cracks that first spring. I cried. Then I harvested.",
+      "Forty-one days of food on those trains. I grew some of it."
+     ],
+     "gist": "You told them your fields were paved over by the city, and that wheat still came up through the cracks."
+    },
+    {
+     "trust": 60,
+     "trigger": "watch",
+     "lines": [
+      "My old plowshare is in a shed under the overpass, where the market was. Rusty. Good.",
+      "It's marked on your map."
+     ],
+     "gist": "You asked them to bring back your plowshare from a shed under an overpass; they did.",
+     "thanks": [
+      "The old share, still sharp! Good iron doesn't forget.",
+      "First furrow's yours."
+     ],
+     "reminder": [
+      "The shed under the overpass. By the old market.",
+      "Rain's coming, I can smell it. But it'll keep."
+     ],
+     "place": {
+      "where": "city",
+      "name": "{name}'s plowshare",
+      "item": "minecraft:iron_hoe",
+      "item_name": "Plowshare",
+      "reward": [
+       "minecraft:wheat_seeds*16",
+       "minecraft:carrot*8",
+       "minecraft:bone_meal*8",
+       "minecraft:bread*6"
+      ]
+     }
+    },
+    {
+     "trust": 75,
+     "trigger": "talk",
+     "lines": [
+      "Plant what you eat. Eat what you plant. Walk the rows twice.",
+      "That's the whole trick."
+     ],
+     "gist": "You taught the crew a planting routine: tend the fields.",
+     "skill": {
+      "name": "{name}'s planting",
+      "description": "tend the farm for a while",
+      "steps": [
+       {
+        "action": "farm",
+        "input": {
+         "radius": 6,
+         "minutes": 5
+        }
+       }
+      ]
+     }
+    },
+    {
+     "trust": 90,
+     "trigger": "quest:day:3",
+     "lines": [
+      "A farmer keeps a light on for whoever's late home.",
+      "I'll keep a lantern at the gate. If you're out in the dark, look for it."
+     ],
+     "gist": "You keep a lantern lit by the gate every night for anyone late home.",
+     "effect": {
+      "type": "lantern"
+     }
+    }
+   ]
+  }
+ }
+}

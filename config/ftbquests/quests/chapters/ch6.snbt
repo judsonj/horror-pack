@@ -1,0 +1,129 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ch6"
+	group: "151E3065A6314194"
+	icon: { id: "minecraft:beacon" }
+	id: "4DB557D8844B1D84"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			id: "353080D1B6B05A49"
+			x: 0d
+			y: 0d
+			dependencies: ["13EDA76AF227D376"]
+			hide_until_deps_complete: true
+			tasks: [{ id: "72BA7F4953DB2294", type: "checkmark" }]
+			rewards: [{ id: "6D6464711A1EA5B0", type: "random", table_id: 2893836879149437615L }]
+		}
+		{
+			id: "7212199C40E6A57E"
+			x: 2d
+			y: -1.5d
+			dependencies: ["353080D1B6B05A49"]
+			shape: "hexagon"
+			tasks: [{ id: "763FEA474DAC6D19", type: "checkmark" }]
+			rewards: [{ id: "1DA222B081B19AE3", type: "xp_levels", xp_levels: 5 }]
+		}
+		{
+			id: "009EFC3604D9FFD1"
+			x: 2d
+			y: 1.5d
+			dependencies: ["353080D1B6B05A49"]
+			tasks: [{ id: "3C09FBB2D9FA1E09", type: "checkmark" }]
+			rewards: [{ id: "4373040C30CCDEB2", type: "item", item: { count: 1, id: "minecraft:beacon" } }]
+		}
+		{
+			id: "2B743B01E796CAA4"
+			x: 4d
+			y: 0d
+			dependencies: ["7212199C40E6A57E" "009EFC3604D9FFD1"]
+			shape: "hexagon"
+			tasks: [{ id: "55FAEB3A27F06C11", type: "checkmark" }]
+			rewards: [{ id: "153BE6D02FB1D6DB", type: "xp_levels", xp_levels: 5 }]
+		}
+		{
+			id: "461BC305191C4372"
+			x: 6d
+			y: 0d
+			dependencies: ["2B743B01E796CAA4"]
+			tasks: [{ id: "3608F0C1DC7EFDB1", type: "item", item: { count: 1, id: "minecraft:iron_block" }, count: 9L } { id: "12335BB1FD07972B", type: "item", item: { count: 1, id: "create:cogwheel" }, count: 4L } { id: "255A365B5A03F3B3", type: "item", item: { count: 1, id: "create:andesite_casing" }, count: 4L } { id: "7D222D4484312E37", type: "item", item: { count: 1, id: "create:hand_crank" } } { id: "0E1B1021DC4776E3", type: "item", item: { count: 1, id: "create:track" } }]
+			rewards: [{ id: "40E73F2F7191E2C7", type: "random", table_id: 5557977682739783447L }]
+		}
+		{
+			id: "7B91185463CC20A0"
+			x: 8d
+			y: 0d
+			dependencies: ["461BC305191C4372"]
+			tasks: [{ id: "7FA37C05141F427D", type: "advancement", advancement: "horrorpack:engine_seated", criterion: "" }]
+			rewards: [{ id: "050A1AB7B80E01CE", type: "random", table_id: 5557977682739783447L }]
+		}
+		{
+			id: "6B5362DA4D03BA83"
+			x: 10d
+			y: -1.5d
+			dependencies: ["7B91185463CC20A0"]
+			shape: "hexagon"
+			tasks: [{ id: "08F882CBF003C321", type: "checkmark" }]
+			rewards: [{ id: "1066747B416C1C6B", type: "xp_levels", xp_levels: 5 }]
+		}
+		{
+			id: "27684B7B1DD726AE"
+			x: 10d
+			y: 0d
+			dependencies: ["7B91185463CC20A0"]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{ id: "5E9B4443A1C0815F", type: "advancement", advancement: "horrorpack:engine_awake", criterion: "" }]
+			rewards: [{ id: "105CABB2985CAA1B", type: "random", table_id: 2893836879149437615L }]
+		}
+		{
+			id: "70A326F4FA46F353"
+			x: 12d
+			y: 0d
+			dependencies: ["27684B7B1DD726AE"]
+			shape: "hexagon"
+			tasks: [{ id: "0485568354E022C0", type: "checkmark" }]
+			rewards: [{ id: "3C7E5640C5728EC4", type: "xp_levels", xp_levels: 5 }]
+		}
+		{
+			id: "50BA7E2434443BCC"
+			x: 14d
+			y: -1.5d
+			dependencies: ["70A326F4FA46F353"]
+			tasks: [{ id: "18819AD661711520", type: "advancement", advancement: "horrorpack:engine_turning", criterion: "" }]
+			rewards: [{ id: "1B7C61D58C368519", type: "random", table_id: 2893836879149437615L }]
+		}
+		{
+			id: "2AF367471295A5FB"
+			x: 14d
+			y: 1.5d
+			dependencies: ["70A326F4FA46F353"]
+			tasks: [{ id: "0EB933041B20AFC4", type: "advancement", advancement: "horrorpack:engine_stopped", criterion: "" }]
+			rewards: [{ id: "01E59FE6F04CC186", type: "random", table_id: 2893836879149437615L }]
+		}
+		{
+			id: "26AFBD76102107E5"
+			x: 16d
+			y: -1.5d
+			dependencies: ["50BA7E2434443BCC"]
+			hide_until_deps_complete: true
+			shape: "gear"
+			size: 2.0d
+			tasks: [{ id: "6215CD4EC210663E", type: "checkmark" }]
+			rewards: [{ id: "44F153E6881D7AA5", type: "random", table_id: 2893836879149437615L } { id: "77333D06A16B7BB1", type: "item", item: { count: 1, id: "create:steam_whistle" } }]
+		}
+		{
+			id: "7EC4EE217864875C"
+			x: 16d
+			y: 1.5d
+			dependencies: ["2AF367471295A5FB"]
+			hide_until_deps_complete: true
+			shape: "gear"
+			size: 2.0d
+			tasks: [{ id: "770A2F5FBBF67371", type: "checkmark" }]
+			rewards: [{ id: "7FC9AD0E33287175", type: "random", table_id: 2893836879149437615L } { id: "29276DE7C02D5FC0", type: "item", item: { count: 1, id: "minecraft:totem_of_undying" } }]
+		}
+	]
+}

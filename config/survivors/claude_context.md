@@ -1,7 +1,8 @@
 Horror Pack: 3-8 friends on a paid server (ziggy.dathost.net:17772). Story: years ago "the Fall" emptied the great
 cities; their trains and machines still run. Players explore ruined Lost Cities, rebuild with Create, rescue survivors,
 and survive horror mobs at night. Quest book (FTB Quests, in inventory) holds the story: Arrival, The Platform,
-Below the Line, Lights Out, Other Doors, Above.
+Below the Line, Lights Out, Other Doors, Above, The Engine.
+Act 6 "The Engine" is the final act: the group builds and wakes the Engine and makes one server-wide choice; never spoil what it is, the choice or the endings (point to the quest book).
 
 Rules and settings: keepInventory is ON. Difficulty easy. Flying allowed (airships, jetpacks). Spawn is shared
 (spawnRadius 6). Weather cycle is off (no thunderstorms). First 3 in-game days after a new world: horror mobs don't spawn (grace period); the Spore infection (Spore, Spore Inquisition, Infection Nexus mobs) waits until day 5. Kenny (a stalker
@@ -12,6 +13,7 @@ Controls: B backpack, M world map, U waypoints, Y minimap settings, ` (backtick)
 \ toggle vein-mining, O vein-mine pattern, K toggle shaders (turn off if Ponder goes black), J Ad Astra suit flight,
 V voice chat menu. Trash slot in the inventory. Inventory sort button (Inventory Profiles Next).
 Trees: break one log of a natural tree and it all falls (sneak to break one log).
+THE CONDUCTOR: a fixed, immortal non-crew survivor on the arrival platform at Camp Ember. He never follows, never joins the crew and only says scripted lines (the controls via his second line or /keys, torch/bed/supply tips, a warning at dusk of day 1, and at dawn of day 2: the city is that way, take the stairs down only with a friend). Never contradict him: don't claim to be him, don't tell players he can be hired, and don't repeat his lines word for word; point new players to him.
 
 COLONY (MineColonies): the players' town is "Bonertopolis" (colony 1, mayor New_Indixico, officer ItsWeabooJones), next to spawn
 (-2144, 96, -606, world "world_frost"). Huts are blocks; a Builder builds/upgrades them from work orders. Workers post
@@ -30,6 +32,8 @@ chance (someone at the gate, or met on the road). /foreman subtitles off hides t
 /foreman protect [radius] keeps an area safe from the crew and the foreman; /foreman skills lists saved routines.
 If a player asks how to get something done in the colony, the short answer is usually: ask the foreman.
 Old survivors/Settlement Beacons are retired (random survivors no longer spawn).
+STORY ARCS: crew who trust the players open up in four canned beats each (a memory of the Fall, a favour that marks a case in the ruins on the map, a routine they teach, one lasting change); they only come from talking to an idle crew member, and no others exist. Don't invent arcs or backstories beyond what a survivor already said.
+RESCUES: rarely, deep in a ruined city at night or underground, a radio call marks a barricaded survivor on the map (fences to break, a few mobs at the door); bring them home and they join the crew or stay as a guest. Calls are rare (hours apart), go quiet after ~20 minutes, and nothing else spawns survivors.
 CREW ROUTINE (no AI): when nobody has given them an order, crew follow a daily rhythm: at dawn they gather what the colony's
 workers are waiting on (or top up logs/cobble) for the supply chest, in shifts with breaks to eat; late afternoon they head
 home and one lights dark spots with torches from the chest; at night one takes the watch by the chest (rotating) and the
