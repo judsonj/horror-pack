@@ -389,9 +389,8 @@ hash = "0d57f6ea17e0c85871a5d10449f48175c09816b1497d1a7411e1cabd11f7c27b"
 metafile = true
 
 [[files]]
-file = "mods/blockui-1-0-212-1-21-1-snapshot.pw.toml"
-hash = "2c8bb661d37a6019d9099289a4feab11b20b7474c314cc8ab06bb8a6ec1a40d1"
-metafile = true
+file = "mods/blockui-1.0.212-1.21.1-snapshot.jar"
+hash = "b7bab58b5f3d8eb722609005d628a0094d9220eb3b7edf4e0acd4ee9d592dca4"
 
 [[files]]
 file = "mods/borderless-neoforge-1-21-1-1-7-5-1-all.pw.toml"
@@ -494,9 +493,8 @@ hash = "ffca99ba87a85fc2a04ee89eac5fe8b5386ff634e12243d0e007ec0953a42e53"
 metafile = true
 
 [[files]]
-file = "mods/domum-ornamentum-1-0-236-snapshot-main.pw.toml"
-hash = "29453051ee37840601ff774de387eccc9abd149680303eda9810c7f58abb25c4"
-metafile = true
+file = "mods/domum-ornamentum-1.0.236-snapshot-main.jar"
+hash = "fcf875b183f9096b868b527837dfb677e397a11510cec79bdb01c7268b918f27"
 
 [[files]]
 file = "mods/dungeons-and-taverns-v4-4-4.pw.toml"
@@ -674,9 +672,8 @@ hash = "f35e16a61de4dc9296428546d843173c81409779db4ea651feb503b0459429fd"
 metafile = true
 
 [[files]]
-file = "mods/minecolonies-1-1-1403-1-21-1.pw.toml"
-hash = "7f5b83e4aec287df67c924ebf5ac0c39f6e3923556fb79b2c0e14b60fabae2c1"
-metafile = true
+file = "mods/minecolonies-1.1.1403-1.21.1.jar"
+hash = "c8d4373ffc8a76638c8edf2bb6716f9209599032209c48d0d559b787f69a0561"
 
 [[files]]
 file = "mods/modernfix-neoforge-5-27-26-mc1-21-1.pw.toml"
@@ -694,9 +691,8 @@ hash = "072a396a61c1778be234fb91eb5727efb1546c6d117668700f20e708f8e3ba73"
 metafile = true
 
 [[files]]
-file = "mods/multipiston-1-2-58-1-21-1.pw.toml"
-hash = "0476fb49174ff2770f797e892e4c8cc47b020379f6cd34acfc88febd63cd5ba7"
-metafile = true
+file = "mods/multipiston-1.2.58-1.21.1.jar"
+hash = "7ca26db4648589b7f76694c249d5096c0c0afb7615fe6adf9f638c6c825c15e7"
 
 [[files]]
 file = "mods/notenoughanimations-neoforge-1-12-6-mc1-21-1.pw.toml"
@@ -804,9 +800,8 @@ hash = "734e155b3016c152cb8a7f2198af300a64baa02ce23e7341d90513a236fd2eb8"
 metafile = true
 
 [[files]]
-file = "mods/structurize-1-0-835-1-21-1-snapshot.pw.toml"
-hash = "92d2be67eb709f31230e8e2a864dd6dfdbafc074686f2b9745a56cf455fda9ce"
-metafile = true
+file = "mods/structurize-1.0.835-1.21.1-snapshot.jar"
+hash = "3550454615510a141b92b0f78fa39dbf8bef81361ecd2974a431978fd7d181ad"
 
 [[files]]
 file = "mods/survivors-0.15.1.jar"
