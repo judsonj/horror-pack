@@ -109,8 +109,8 @@ file = "config/survivors/claude_context.md"
 hash = "1e2f20d5959e88f4d4dcea0e7f6d75677e9d1007b245d1d1f0a0febf70c401d3"
 
 [[files]]
-file = "config/thewatcher/common.properties"
-hash = "9655232df8b7bec5b0269c086fd5a66205b5d71b4f68616b02aeeb12a6995ba4"
+file = "config/thewatcher-common.properties"
+hash = "d891e250e0ded79529a51f49debe7a978ef8604837689119161759118825ad62"
 
 [[files]]
 file = "config/weeping-angels-spawns.toml"
