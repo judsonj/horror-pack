@@ -114,7 +114,7 @@ hash = "36326bc819c1e11c55835e5b03513171a0c253dc8bdb568edf79a3561d67ec3f"
 
 [[files]]
 file = "config/survivors/claude_context.md"
-hash = "9867b08602a88656c4cf15ddfd33f8266bc9a1f4111081f7c76edc36391a2a44"
+hash = "8f55c530258edb550cc3f8477be541d84d75fd2d685730e04089f635255ba755"
 
 [[files]]
 file = "config/survivors/conductor.json"
@@ -844,8 +844,8 @@ hash = "e7a291039cc34913e50364dc206339f651769aa0f17ce6ec53087b764ca2aea8"
 metafile = true
 
 [[files]]
-file = "mods/survivors-0.21.0.jar"
-hash = "526dbf915a2d361ea8668fcb587c2718a07829e6fb6585ef7620faca65e27987"
+file = "mods/survivors-0.22.0.jar"
+hash = "d498beb177a1eec33ba96d4a478ee3499a75b5309a7993135475da45ae3c6860"
 
 [[files]]
 file = "mods/t-and-t-fabric-neoforge-1-13-11.pw.toml"
