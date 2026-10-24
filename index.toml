@@ -114,7 +114,7 @@ hash = "36326bc819c1e11c55835e5b03513171a0c253dc8bdb568edf79a3561d67ec3f"
 
 [[files]]
 file = "config/survivors/claude_context.md"
-hash = "8f55c530258edb550cc3f8477be541d84d75fd2d685730e04089f635255ba755"
+hash = "cf3b15a318dcde1c6174a9a5ec7371f2980a18e189435905ede5f0d39c0aa038"
 
 [[files]]
 file = "config/survivors/conductor.json"
@@ -443,6 +443,14 @@ hash = "77ac8f0f49d17ed89e29404192c515cfaaef95ce014a9c39afce84645484b705"
 [[files]]
 file = "kubejs/server_scripts/super_weapons.js"
 hash = "efe9653e2ca255015e4011c758473c7f3f0574580565eac86aa2f9cb8bebbc6b"
+
+[[files]]
+file = "kubejs/server_scripts/survivor_call.js"
+hash = "b274a397ffdeb9bb04483cf0538940035377ff1aef16809cac97d5e2b6a5d511"
+
+[[files]]
+file = "kubejs/server_scripts/world_move.js"
+hash = "6d2c1dec9343293123b16c405439809b817ae43ef106e1e69b4b3608f99ebd1e"
 
 [[files]]
 file = "kubejs/startup_scripts/horror_items.js"
@@ -923,8 +931,8 @@ hash = "e7a291039cc34913e50364dc206339f651769aa0f17ce6ec53087b764ca2aea8"
 metafile = true
 
 [[files]]
-file = "mods/survivors-0.23.0.jar"
-hash = "2fc5bfdd0e9f30da11d10037344e6d5a7292a34a90c70956cd7d0daac1560798"
+file = "mods/survivors-0.24.0.jar"
+hash = "419fde735c04126fe89dc2fa0cbcf6d3ce37322ccede474af629a63f8b8e2afe"
 
 [[files]]
 file = "mods/t-and-t-fabric-neoforge-1-13-11.pw.toml"
