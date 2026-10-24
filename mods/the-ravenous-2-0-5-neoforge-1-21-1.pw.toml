@@ -1,0 +1,8 @@
+name = "the_ravenous-2.0.5-neoforge-1.21.1.jar"
+filename = "the_ravenous-2.0.5-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/INs9o4St/versions/bOVYh26Q/the_ravenous-2.0.5-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "7d05e084e2a1ce7a842647188fee070927bcbafe17de17a9a6b69008f64f81fe822556db606925be16420e7b976f16414a6792442f27c417158fe2b03282a4b7"

@@ -1,0 +1,8 @@
+name = "WhisperingSpirits-neoforge-1.21.1-v1.4.0.jar"
+filename = "WhisperingSpirits-neoforge-1.21.1-v1.4.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/EVn5o9hS/versions/TVANdRak/WhisperingSpirits-neoforge-1.21.1-v1.4.0.jar"
+hash-format = "sha512"
+hash = "93223e731fb4c69e694922dbda633016db72e7c057dfc4a49313649b6e63e0ef909cef1fdb0c1471da4806aae18cf8a939cc695c79cd3b824cb36fba552de15e"

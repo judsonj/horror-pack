@@ -149,6 +149,10 @@ file = "config/xaero/minimap/profiles/default.cfg"
 hash = "4991e399d360cb2342b2c483c3f95873c6d21c9852d344cfec7e3e5610f29e2d"
 
 [[files]]
+file = "kubejs/assets/horrorpack/lang/en_us.json"
+hash = "49cc6912adbae2ff461bf0a9b4c90e5aec694adc7cbc328f4af8be9631af787d"
+
+[[files]]
 file = "kubejs/data/create_ltab/worldgen/structure_set/birch_structures.json"
 hash = "b55d298208e627069cee70df74db2aad55d9f15642b1ed784122e81aea1ce8e9"
 
@@ -361,6 +365,46 @@ file = "kubejs/data/horrorpack/advancement/engine_turning.json"
 hash = "c1f548ee8ab90649eae4eddd58d24df8f3aebcdb4cf674e79caaf022762b60e2"
 
 [[files]]
+file = "kubejs/data/horrorpack/loot_modifiers/armoury_city.json"
+hash = "e7eb7670de6a5cbe2b546b57c2f98db1e0fb688af6d9d2e2a19ec51864659100"
+
+[[files]]
+file = "kubejs/data/horrorpack/loot_modifiers/armoury_rail.json"
+hash = "9b550ad87c80e775586236bdbb751d09fd13c9f25538a1f1ff0000af0adfb996"
+
+[[files]]
+file = "kubejs/data/horrorpack/loot_table/chests/armoury_city.json"
+hash = "b1c86a280a4ec68f7dbc6f56f556a451f7b15d6c67e6c647aaffe2bb27b02bdb"
+
+[[files]]
+file = "kubejs/data/horrorpack/loot_table/chests/armoury_rail.json"
+hash = "3d7aaccbf10eb6599ee65a6d8e7c4458e2310adb35b9702e2f55ba8aa6daf9f2"
+
+[[files]]
+file = "kubejs/data/horrorpack/recipe/ammo_handgun.json"
+hash = "c66cb271f8719754774213fbc29043b12c70c05c147ff6b558bdabe55b6ee35a"
+
+[[files]]
+file = "kubejs/data/horrorpack/recipe/ammo_rifle.json"
+hash = "bd1147d4c2cdbb0a5fc3f0e1e66894d0e0b5395fdf7c68134a43f362d8394870"
+
+[[files]]
+file = "kubejs/data/horrorpack/recipe/ammo_shotgun.json"
+hash = "8ebdecab3748296566e0cfd15850afa4f62a64066d03548763a2ba7f7c03b228"
+
+[[files]]
+file = "kubejs/data/horrorpack/recipe/last_whistle.json"
+hash = "13f1ab0328e64ed79cbd83d3c125c0a34f63f045d21b01a2c24e30ab8a22559d"
+
+[[files]]
+file = "kubejs/data/horrorpack/recipe/rail_lance.json"
+hash = "a6b862ffbcdab42f1ead58179794f90bc2ca22d9382984fa3ae2a06a652a5624"
+
+[[files]]
+file = "kubejs/data/horrorpack/recipe/sunbreaker.json"
+hash = "bece55dafa1f8fa506b6070686aaf90e8d8a23434c55dec58f4b8f67ccbcef36"
+
+[[files]]
 file = "kubejs/data/morestructures/worldgen/structure_set/brokenhotairballoon.json"
 hash = "08761b150fb74158657251af9015cb9512f6fe6b52ac825cfb258001ab7ab0a1"
 
@@ -369,8 +413,12 @@ file = "kubejs/data/morestructures/worldgen/structure_set/hotairballoon.json"
 hash = "94e83e46f288be10be66d43cd399a4a618a4a8cd4241180fda9e9344ad84a81b"
 
 [[files]]
+file = "kubejs/data/neoforge/loot_modifiers/global_loot_modifiers.json"
+hash = "f65a86e683000a3475fd6cdd20464e3a776a7d9dad1da3e119c0db4d4f2e9786"
+
+[[files]]
 file = "kubejs/server_scripts/engine.js"
-hash = "d38342f4f8fdc0bd77006e410a9627433e56b3915c93b89df90b302225e1050b"
+hash = "d44ac9129d237c791e3fa57f15e59a742e397dfeecdb2a97a1c6d25abe276208"
 
 [[files]]
 file = "kubejs/server_scripts/faces_daylight.js"
@@ -381,8 +429,24 @@ file = "kubejs/server_scripts/horror_grace.js"
 hash = "d7076f13e6141b02a4be8085f438675640cf73f27f6c242679f92f76cf855e24"
 
 [[files]]
+file = "kubejs/server_scripts/regions.js"
+hash = "bceeb32a52bfc48ee75e5744eb294a51888883e79e4ae64a8a12f24580f78ab3"
+
+[[files]]
+file = "kubejs/server_scripts/safety.js"
+hash = "3edacbf5cb79385dadcc3ecdeba309d7627984992e05879ae260f2edfac0a6e1"
+
+[[files]]
 file = "kubejs/server_scripts/starter_kit.js"
-hash = "36110a2e35197b90ec00c7e6f296416da2619bcd2a29a8e621a4da649ca9de7f"
+hash = "77ac8f0f49d17ed89e29404192c515cfaaef95ce014a9c39afce84645484b705"
+
+[[files]]
+file = "kubejs/server_scripts/super_weapons.js"
+hash = "efe9653e2ca255015e4011c758473c7f3f0574580565eac86aa2f9cb8bebbc6b"
+
+[[files]]
+file = "kubejs/startup_scripts/horror_items.js"
+hash = "b84c10cce7d0f3e042df45ee0f4f33b57776727b906a894117db7fb4d0d51df8"
 
 [[files]]
 file = "mods/adastra-1-21-1-1-16-26-neoforge.pw.toml"
@@ -446,6 +510,11 @@ metafile = true
 [[files]]
 file = "mods/common-storage-lib-neoforge-1-21-1-0-0-10.pw.toml"
 hash = "d2281532dcb0abb20f5c997881fab761d11fcb2327d6c8ac13728dfce9da8b60"
+metafile = true
+
+[[files]]
+file = "mods/contraption-lights-neoforge-1-21-1-1-5-3.pw.toml"
+hash = "64e8fc46a7f72f724fb949963aa9d334d7272d105650a2db18971dee02173789"
 metafile = true
 
 [[files]]
@@ -712,6 +781,11 @@ file = "mods/minecolonies-1.1.1403-1.21.1.jar"
 hash = "c8d4373ffc8a76638c8edf2bb6716f9209599032209c48d0d559b787f69a0561"
 
 [[files]]
+file = "mods/mnightmares-1-0-neoforge-1-21-1.pw.toml"
+hash = "91f7bab66b6e7eda995301b6950f1333a24d1f80bcb2cc37bfdf54162e4ad532"
+metafile = true
+
+[[files]]
 file = "mods/modernfix-neoforge-5-27-26-mc1-21-1.pw.toml"
 hash = "a2e6a34f3b13500f8a1bd969dff40c9b05d6704f35daf5dc9b500b538656bad7"
 metafile = true
@@ -820,6 +894,11 @@ hash = "7475cc2e09342ac598526307326375317c085f191f85c315ad24f1fbbda8bf5e"
 metafile = true
 
 [[files]]
+file = "mods/spookydoors-neoforge-1-21-1-21-1-14.pw.toml"
+hash = "a5a0b2909d33b431abe8d81eaf0e295a269db8438b3fff88173595f382fc9a6c"
+metafile = true
+
+[[files]]
 file = "mods/spore-1-21-1-2-2-0j-neo.pw.toml"
 hash = "07707b853839836f11927d5e0a1bde30f22ba8b176eefeb401da8b09c599528b"
 metafile = true
@@ -845,7 +924,7 @@ metafile = true
 
 [[files]]
 file = "mods/survivors-0.23.0.jar"
-hash = "c08601f6ef04e15ca8c504d8dd98fc9b1b595c3861b84bc461c98e80a84338de"
+hash = "2fc5bfdd0e9f30da11d10037344e6d5a7292a34a90c70956cd7d0daac1560798"
 
 [[files]]
 file = "mods/t-and-t-fabric-neoforge-1-13-11.pw.toml"
@@ -870,6 +949,11 @@ metafile = true
 [[files]]
 file = "mods/the-obsessed-1-5-2g-neoforge-1-21-1.pw.toml"
 hash = "5f8cdeff573f472d9494c02211a415369150677d2dea48d622b3362936ff1248"
+metafile = true
+
+[[files]]
+file = "mods/the-ravenous-2-0-5-neoforge-1-21-1.pw.toml"
+hash = "89304eec0a920dc090d67be6ecdc0cd4da793b048fd8196a9dd148d87bf9c0bc"
 metafile = true
 
 [[files]]
@@ -905,6 +989,11 @@ metafile = true
 [[files]]
 file = "mods/voicechat-neoforge-1-21-1-2-6-22.pw.toml"
 hash = "4c66de4cf9fb7d0b6522595ede9152692341b462d75a56af02fd25ff01ec7346"
+metafile = true
+
+[[files]]
+file = "mods/whisperingspirits-neoforge-1-21-1-v1-4-0.pw.toml"
+hash = "4ee585681e00f4f559717c7edb27476040e550ae14e41f02b822233320595cf8"
 metafile = true
 
 [[files]]
@@ -956,6 +1045,10 @@ preserve = true
 file = "resourcepacks/freshanimations-v1-11-1-20-zip.pw.toml"
 hash = "f800c2f9922c730656b8bbfadd8d118690c240f0e6e817c0c8a265f6fb76177c"
 metafile = true
+
+[[files]]
+file = "shaderpacks/ComplementaryReimagined_r5.9.3.zip.txt"
+hash = "eba8a3635b42022f8d4e64b210b7dce63446c04208cf793fddfd622979f7ba55"
 
 [[files]]
 file = "shaderpacks/complementaryreimagined-r5-9-3-zip.pw.toml"

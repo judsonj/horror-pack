@@ -1,0 +1,8 @@
+name = "mnightmares-1.0+neoforge.1.21.1.jar"
+filename = "mnightmares-1.0+neoforge.1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/1sbqFSzs/versions/e3ExtS3K/mnightmares-1.0%2Bneoforge.1.21.1.jar"
+hash-format = "sha512"
+hash = "d0fd4a9dacc76a9bf94908593b516d5524a5dd5f2fa88634cb7d742fe7ce8a949c19e5357b82be48d3d0db3e87cc4b74d654dd1c05a1edfaa97d4ec58c1d36cd"

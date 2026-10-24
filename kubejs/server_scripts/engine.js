@@ -19,6 +19,8 @@
 //   engine_x/y/z (int), engine_dim (string) where the heart sits
 //   engine_wake    seconds of turning so far while waking
 //   engine_ending_day  overworld day number the choice was made on
+//   engine_still   seconds the Engine's chunk has been loaded with no cog turning (Keep It Lit upkeep, below)
+//   engine_hungry  1 while the Engine has stood still a full in-game day: the light rule is off until it turns again
 // With the Survivors mod loaded its horror director is the only spawn gate, so the ending's spawn rules live there:
 // engDirector() hands it the Engine (/director engine <dim> <x> <y> <z>) and the ending (/director flag engine_turning|
 // engine_stopped on) when the choice is made and again on the first tick after every start (idempotent, so an existing
@@ -179,7 +181,7 @@ function engDirector(server, data) {
   if (ending !== 'turning' && ending !== 'stopped') return
   const pos = engPos(data)
   if (pos.dim !== '') server.runCommandSilent('director engine ' + pos.dim + ' ' + pos.x + ' ' + pos.y + ' ' + pos.z)
-  server.runCommandSilent('director flag engine_turning ' + (ending === 'turning' ? 'on' : 'off'))
+  server.runCommandSilent('director flag engine_turning ' + (ending === 'turning' && data.getInt('engine_hungry') !== 1 ? 'on' : 'off'))
   server.runCommandSilent('director flag engine_stopped ' + (ending === 'stopped' ? 'on' : 'off'))
   console.info('[engine] director told: ending ' + ending + (pos.dim !== '' ? ' at ' + pos.dim + ' ' + pos.x + ' ' + pos.y + ' ' + pos.z : ''))
 }
@@ -366,6 +368,40 @@ function engDarkTick(server) {
   })
 }
 
+// Keep It Lit upkeep ("it will want feeding"): only while the Engine's chunk is loaded. A full in-game day (1200 s)
+// with no cog turning and the Engine goes hungry: the director's light rule switches off and the trains stop driving
+// horrors away. Any cog turning again feeds it and the rule comes back.
+const ENG_HUNGRY_SECONDS = 1200
+function engHungerTick(server, data) {
+  const pos = engPos(data)
+  const level = engLevel(server, pos.dim)
+  if (!level) return
+  let loaded = false
+  try { loaded = level.hasChunk(pos.x >> 4, pos.z >> 4) } catch (err) { loaded = false }
+  if (!loaded) return
+  const turning = ENG_SIDES.some(s => engSpinning(level, pos.x + s[0], pos.y, pos.z + s[1]))
+  const hungry = data.getInt('engine_hungry') === 1
+  if (turning) {
+    data.putInt('engine_still', 0)
+    if (hungry) {
+      data.putInt('engine_hungry', 0)
+      engDirector(server, data)
+      engTell(server, '@a', ENG_S + '6The Engine turns again.' + ENG_S + '7 The light holds.')
+      console.info('[engine] fed again: light rule back on')
+    }
+    return
+  }
+  const still = data.getInt('engine_still') + 20
+  data.putInt('engine_still', still)
+  if (!hungry && still >= ENG_HUNGRY_SECONDS) {
+    data.putInt('engine_hungry', 1)
+    engDirector(server, data)
+    engTell(server, '@a', ENG_S + '4The Engine has stood still a whole day.' + ENG_S + '7 It wants feeding. The dark has noticed.')
+    engSoundAll(server, 'minecraft:block.beacon.deactivate', 1, 0.5)
+    console.info('[engine] hungry: light rule off until a cog turns')
+  }
+}
+
 // ------------------------------------------------------------------ events
 ServerEvents.tick(event => {
   const server = event.server
@@ -380,7 +416,8 @@ ServerEvents.tick(event => {
   const data = server.persistentData
   if (data.getString('engine_state') === 'waking' && data.getString('engine_ending') === '') engWakeTick(server, data)
   const ending = data.getString('engine_ending')
-  if (ending === 'turning' && server.tickCount % 100 === 0) engTrainsTick(server)
+  if (ending === 'turning' && server.tickCount % 100 === 0 && data.getInt('engine_hungry') !== 1) engTrainsTick(server)
+  if (ending === 'turning' && server.tickCount % 400 === 0) engHungerTick(server, data)
   if (ending === 'stopped' && server.tickCount % 1200 === 0) engDarkTick(server)
 })
 

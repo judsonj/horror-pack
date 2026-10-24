@@ -1,0 +1,8 @@
+name = "spookydoors-neoforge-1.21.1-21.1.14.jar"
+filename = "spookydoors-neoforge-1.21.1-21.1.14.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/j5axkwld/versions/wn7ONwoH/spookydoors-neoforge-1.21.1-21.1.14.jar"
+hash-format = "sha512"
+hash = "42c22424556739fe29ad2af62d9ac564b114cb91ffc2f4be08969165d6b771fca45daf9e948e77e88490667eaaad445133cf40345cc1135a93b0f2b4e64c4c93"

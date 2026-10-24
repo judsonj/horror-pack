@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "create:steam_whistle"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    },
+    "B": {
+      "tag": "c:ingots/brass"
+    }
+  },
+  "pattern": [
+    " W ",
+    "BPB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "horrorpack:last_whistle"
+  }
+}

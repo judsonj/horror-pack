@@ -1,0 +1,34 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "create:electron_tube"
+    },
+    "B": {
+      "tag": "c:ingots/brass"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    },
+    "S": {
+      "item": "create:shaft"
+    },
+    "A": {
+      "item": "minecraft:amethyst_block"
+    }
+  },
+  "pattern": [
+    "  E  ",
+    " BPB ",
+    "SSASS",
+    " BPB ",
+    "  E  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "horrorpack:rail_lance"
+  },
+  "show_notification": true
+}

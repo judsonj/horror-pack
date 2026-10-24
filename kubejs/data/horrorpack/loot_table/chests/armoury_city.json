@@ -1,0 +1,120 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.25
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "superbwarfare:m_1911",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "superbwarfare:glock_17",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "superbwarfare:homemade_shotgun",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "superbwarfare:hunting_rifle",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "superbwarfare:k_98",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "superbwarfare:mosin_nagant",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "superbwarfare:sks",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "superbwarfare:mp_5",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "superbwarfare:crowbar",
+          "weight": 4
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "superbwarfare:handgun_ammo",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 8,
+                "max": 24
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "superbwarfare:shotgun_ammo",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 6,
+                "max": 16
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "superbwarfare:rifle_ammo",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 6,
+                "max": 16
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "superbwarfare:handgun_ammo_box",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

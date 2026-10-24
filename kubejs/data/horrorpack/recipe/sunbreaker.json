@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "create:brass_casing"
+    },
+    "G": {
+      "item": "minecraft:glowstone"
+    },
+    "B": {
+      "item": "create:blaze_burner"
+    },
+    "S": {
+      "item": "minecraft:beacon"
+    }
+  },
+  "pattern": [
+    "CGC",
+    "BSB",
+    "CGC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "horrorpack:sunbreaker"
+  },
+  "show_notification": true
+}
