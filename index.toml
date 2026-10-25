@@ -721,6 +721,11 @@ hash = "29633e9b1c86b78bf6ecff0e4cb538b65b627596228a70caacf8c4757c04d988"
 metafile = true
 
 [[files]]
+file = "mods/inventoryessentials-neoforge-1-21-1-21-1-20.pw.toml"
+hash = "9a8ca92b24f19f48cec4f8bb1d27c72c63e303ac9c2e834ce8782f57142e6fd9"
+metafile = true
+
+[[files]]
 file = "mods/iris-neoforge-1-8-14-beta-1-mc1-21-1.pw.toml"
 hash = "6b5cc1ad27fb96018689d42f73e6ed8f8ef111bcbce37246bd8a47bbfd314fd8"
 metafile = true
