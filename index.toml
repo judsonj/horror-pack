@@ -721,11 +721,6 @@ hash = "29633e9b1c86b78bf6ecff0e4cb538b65b627596228a70caacf8c4757c04d988"
 metafile = true
 
 [[files]]
-file = "mods/inventoryprofilesnext-neoforge-1-21-1-2-2-5.pw.toml"
-hash = "89897bac44ecfced7c4cf4e2630e1bd5b0a596ba2eab25b6f1d62f82b7b36f62"
-metafile = true
-
-[[files]]
 file = "mods/iris-neoforge-1-8-14-beta-1-mc1-21-1.pw.toml"
 hash = "6b5cc1ad27fb96018689d42f73e6ed8f8ef111bcbce37246bd8a47bbfd314fd8"
 metafile = true
@@ -758,11 +753,6 @@ metafile = true
 [[files]]
 file = "mods/kubejs-neoforge-2101-7-2-build-377.pw.toml"
 hash = "e48a446d1210844669e696a6d036610709114b9685632da426fa923f45071497"
-metafile = true
-
-[[files]]
-file = "mods/libipn-neoforge-1-21-1-6-6-3.pw.toml"
-hash = "2f27035bddcff2c313812d74a4d99bce56cf7bed8f075778cc841b885419f22e"
 metafile = true
 
 [[files]]
