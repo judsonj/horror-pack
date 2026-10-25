@@ -14,8 +14,8 @@ function shelvesAround(level, x, y, z) {
     for (let dz = -2; dz <= 2; dz++) {
       if (Math.abs(dx) !== 2 && Math.abs(dz) !== 2) continue
       for (let dy = 0; dy <= 1; dy++) {
-        if (!level.getBlock(x + Math.trunc(dx / 2), y + dy, z + Math.trunc(dz / 2)).blockState.is(ENCH_BlockTags.ENCHANTMENT_POWER_TRANSMITTER)) continue
-        if (level.getBlock(x + dx, y + dy, z + dz).blockState.is(ENCH_BlockTags.ENCHANTMENT_POWER_PROVIDER)) count++
+        if (!level.getBlock(x + Math.trunc(dx / 2), y + dy, z + Math.trunc(dz / 2)).blockState['is(net.minecraft.tags.TagKey)'](ENCH_BlockTags.ENCHANTMENT_POWER_TRANSMITTER)) continue
+        if (level.getBlock(x + dx, y + dy, z + dz).blockState['is(net.minecraft.tags.TagKey)'](ENCH_BlockTags.ENCHANTMENT_POWER_PROVIDER)) count++
       }
     }
   }
@@ -39,17 +39,17 @@ ServerEvents.tick(event => {
       for (let y = py - 4; y <= py + 4; y++) {
         for (let z = pz - REROLL_RADIUS; z <= pz + REROLL_RADIUS; z++) {
           if (level.getBlock(x, y, z).id !== 'minecraft:enchanting_table') continue
-          const key = dim + '|' + x + ',' + y + ',' + z
+          var key = dim + '|' + x + ',' + y + ',' + z
           if (seen[key]) continue
           seen[key] = true
-          const count = shelvesAround(level, x, y, z)
-          const before = shelfCounts[key]
+          var count = shelvesAround(level, x, y, z)
+          var before = shelfCounts[key]
           shelfCounts[key] = count
           if (before === undefined || before === count) continue
           // The shelves changed: every player near this table gets a fresh roll.
           players.forEach(p => {
             if (String(p.level.dimension) !== dim) return
-            const d = Math.abs(p.x - x) + Math.abs(p.y - y) + Math.abs(p.z - z)
+            var d = Math.abs(p.x - x) + Math.abs(p.y - y) + Math.abs(p.z - z)
             if (d > REROLL_RADIUS * 2) return
             // 1.21.1 has no setEnchantmentSeed; this is vanilla's own re-roll (costs 0 levels here).
             p.minecraftPlayer.onEnchantmentPerformed(ENCH_ItemStack.EMPTY, 0)

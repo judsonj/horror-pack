@@ -414,7 +414,7 @@ hash = "f65a86e683000a3475fd6cdd20464e3a776a7d9dad1da3e119c0db4d4f2e9786"
 
 [[files]]
 file = "kubejs/server_scripts/enchant_reroll.js"
-hash = "14b8889836586ddd02f81cad490d44505dacd84b2a398dff743c4f085fa0dec8"
+hash = "9269acb4bd5066fd9f837e0e0e74914a53e7ecb39eb6e2638b17ee05dbbd89c6"
 
 [[files]]
 file = "kubejs/server_scripts/engine.js"
