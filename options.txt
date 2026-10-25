@@ -4,7 +4,7 @@ renderDistance:12
 simulationDistance:10
 guiScale:0
 renderClouds:"false"
-resourcePacks:["vanilla","mod_resources","file/FreshAnimations_v1.10.4.zip"]
+resourcePacks:["vanilla","mod_resources","file/FreshAnimations_v1.11_1.20+.zip","file/Fusion Connected Glass v1.0.1 for Minecraft 1.20-1.21.8.zip"]
 incompatibleResourcePacks:[]
 soundCategory_master:0.6
 soundCategory_music:0.3

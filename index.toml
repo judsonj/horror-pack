@@ -685,6 +685,11 @@ hash = "5eddf89a8068a799bba39307ee663a5bc21dd38dd54839ca9e9275489665edb2"
 metafile = true
 
 [[files]]
+file = "mods/fusion-1-3-16-neoforge-mc1-21-1.pw.toml"
+hash = "f063bc1ca1619e85dc08987fa6aa9fef8287798f70886acad9ec8051f720e4e2"
+metafile = true
+
+[[files]]
 file = "mods/fzzy-config-0-7-7-1-21-neoforge.pw.toml"
 hash = "cf6aaba72dd7082b1b244f765ce395492a9c03f428df3c3f970063bb363c19b4"
 metafile = true
@@ -1046,12 +1051,17 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "49c9e75edee057d956afa602e2b2176fb0c68fe60bd1bec58a69ebab1e6628fb"
+hash = "cc916d082738f49f1bb132ce60a3638d5d1f78dadd12150d3465703adad19ecc"
 preserve = true
 
 [[files]]
 file = "resourcepacks/freshanimations-v1-11-1-20-zip.pw.toml"
 hash = "f800c2f9922c730656b8bbfadd8d118690c240f0e6e817c0c8a265f6fb76177c"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fusion-connected-glass-v1-0-1-for-minecraft-1-20-1-21-8-zip.pw.toml"
+hash = "25fb279caee35d2b1be11d10c3d626661f7cdaf3641096ae80a80518c8f43f89"
 metafile = true
 
 [[files]]
