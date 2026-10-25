@@ -457,6 +457,11 @@ file = "kubejs/startup_scripts/horror_items.js"
 hash = "b84c10cce7d0f3e042df45ee0f4f33b57776727b906a894117db7fb4d0d51df8"
 
 [[files]]
+file = "mods/accessories-neoforge-1-1-0-beta-54-1-21-1.pw.toml"
+hash = "7702b55bb12dc0df1a3c5b209d3255e1ddeb0eb696fe2b067b5b320826b08608"
+metafile = true
+
+[[files]]
 file = "mods/adastra-1-21-1-1-16-26-neoforge.pw.toml"
 hash = "ee4d6514a8431b06d2ac5f6220d94dd34e9f0eea6c2dc384ba3d6098acf8d64b"
 metafile = true
@@ -936,8 +941,8 @@ hash = "e7a291039cc34913e50364dc206339f651769aa0f17ce6ec53087b764ca2aea8"
 metafile = true
 
 [[files]]
-file = "mods/survivors-0.24.0.jar"
-hash = "419fde735c04126fe89dc2fa0cbcf6d3ce37322ccede474af629a63f8b8e2afe"
+file = "mods/survivors-0.24.1.jar"
+hash = "f97b05257c7db47d792690f60bde11e1e90507bb70006806ff8c238758bf7043"
 
 [[files]]
 file = "mods/t-and-t-fabric-neoforge-1-13-11.pw.toml"
