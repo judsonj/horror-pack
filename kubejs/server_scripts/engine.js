@@ -370,7 +370,6 @@ function engDarkTick(server) {
     if (engDim(engLvl(p)) !== 'minecraft:overworld') return
     if (p.block.blockLight >= 4 || Math.random() > 0.35) return
     server.runCommandSilent('effect give ' + p.username + ' minecraft:darkness 5 0 true')
-    server.runCommandSilent('execute as ' + p.username + ' at @s run playsound minecraft:ambient.cave master @s ~ ~ ~ 1 0.6')
   })
 }
 

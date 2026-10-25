@@ -418,7 +418,7 @@ hash = "f65a86e683000a3475fd6cdd20464e3a776a7d9dad1da3e119c0db4d4f2e9786"
 
 [[files]]
 file = "kubejs/server_scripts/engine.js"
-hash = "66c7ad1dc649987b4552b539dd747eb847b9bffd6c93b21c835c1b0f2fce6fcb"
+hash = "dce70949daefe463f5ccf50762fca019f14e5bb9c4acd515390babcfb2606a2b"
 
 [[files]]
 file = "kubejs/server_scripts/faces_daylight.js"
@@ -434,7 +434,7 @@ hash = "3da6bdcced942ab1b12e08aa2093e672d1408d634b83b3eb44d4c6b01d682dcf"
 
 [[files]]
 file = "kubejs/server_scripts/safety.js"
-hash = "26dde10e81c4e38947b6ef5add3f1ca3ca7af6df0413b7149378313999861566"
+hash = "e816e9cdf0d0bd2de51b9f61341d2745e6952f77f007ada1b20d4013a19e8c5d"
 
 [[files]]
 file = "kubejs/server_scripts/starter_kit.js"

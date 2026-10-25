@@ -230,7 +230,7 @@ function safLightsOutPulse(server, player, place) {
   if (!hpLightsOut(server) || place.powered > 0 || place.light < 6 || Math.random() > 0.35) return
   let name = String(player.username)
   hpCmd(server, 'effect give ' + name + ' minecraft:darkness 4 0 true')
-  hpSound(server, name, 'minecraft:block.fire.extinguish', 0.5, 0.6)
+  // (repeating fizz sound removed 2026-10-25 at the operator's request)
 }
 
 function safHunters(server, player, st) {
