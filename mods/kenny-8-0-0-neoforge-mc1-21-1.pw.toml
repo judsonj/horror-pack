@@ -1,8 +1,0 @@
-name = "Kenny-8.0.0-NeoForge+mc1.21.1.jar"
-filename = "Kenny-8.0.0-NeoForge+mc1.21.1.jar"
-side = "both"
-
-[download]
-url = "https://cdn.modrinth.com/data/1qMrluiH/versions/dDIMqzmd/Kenny-8.0.0-NeoForge%2Bmc1.21.1.jar"
-hash-format = "sha512"
-hash = "6f561beb4cc69763a0adf463945d12d281f98be1c2169016c92a747421654728d4876fcad9f76364f457f0efea42f7824e7f2b02729e87fe2b170e855bd1ee8f"

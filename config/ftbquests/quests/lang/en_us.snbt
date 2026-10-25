@@ -48,7 +48,7 @@
 	quest.0BF299613535445C.title: "Don't Blink"
 	quest.0C8CE3E83291AEEB.quest_desc: ["Place the &eSupply Camp&r, open its chest, place the &eTown Hall&r block. Right-click it and create your colony.", "", "Placing any hut only puts down one block. The building itself comes later, from your builder."]
 	quest.0C8CE3E83291AEEB.title: "Town Hall"
-	quest.0D0ADCDCEBD811C1.quest_desc: ["Someone at the edge of your vision. Standing still. Closer each day. That is &cKenny&r.", "", "The &eKnow Your Horrors&r guide has the rules for each of them."]
+	quest.0D0ADCDCEBD811C1.quest_desc: ["Someone at the edge of your vision. Standing still. Gone when you look again.", "", "The &eKnow Your Horrors&r guide has the rules for each of them."]
 	quest.0D0ADCDCEBD811C1.title: "Being Watched"
 	quest.0E6E06DCBF855D4D.quest_desc: ["Compound plate + a &eredstone block&r + redstone. The base of every Cryo piece."]
 	quest.0E6E06DCBF855D4D.title: "Reinforced Plate"
@@ -113,8 +113,8 @@
 	quest.2CE34496659452AF.title: "Broadside"
 	quest.2CF20EADF8DBB3B0.quest_desc: ["One of each kind of &eReforged Biomass&r. This is what the strongest weapons are made from."]
 	quest.2CF20EADF8DBB3B0.title: "Reforged"
-	quest.2D07C5846DE20D19.quest_desc: ["The figure at the edge of your vision. He watches, whispers, follows. Stay together after dark."]
-	quest.2D07C5846DE20D19.title: "Kenny"
+	quest.2D07C5846DE20D19.quest_desc: ["Whatever hunts out here goes for whoever walks alone. Travel in pairs after dark."]
+	quest.2D07C5846DE20D19.title: "Stay Together"
 	quest.2F112779CCC1397F.quest_desc: ["Dispenser + compound plate + iron trapdoor + iron. Put the &bC.D.U.&r between the infection and your colony. Your crew can &eguard&r it too (\"everyone, guard the east side\")."]
 	quest.2F112779CCC1397F.title: "Hold the Border"
 	quest.31D27DBA25D73C48.quest_desc: ["A water wheel in flowing water spins forever. Your first power source. Hook a shaft to it."]

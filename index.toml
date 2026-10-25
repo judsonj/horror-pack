@@ -70,7 +70,7 @@ hash = "65a9535f763cc9487e646c28afd72713ee5acf7e8113eb951f8adb28ba58aa55"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "c705b06da5f8878d31d616125bf2b2692c6d57fc59fe58c112e2bb2b85769065"
+hash = "1e5f362c6b5a0d1d4c585abf67d3b68ef9e102911c553b0b44df21794c94ca74"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/common.snbt"
@@ -93,10 +93,6 @@ file = "config/iris.properties"
 hash = "efe0c30620affee4a63c94309643da1b5a10d9b411d292f1394bd233489a7334"
 
 [[files]]
-file = "config/kenny.json"
-hash = "af7fea8fe5ab9f334f10b99af20539b9387d24ea7325abadf3223a9d5ec18991"
-
-[[files]]
 file = "config/lostcities/common.toml"
 hash = "a15eb0a666dcad3d937db91430eccd0c3cea3f16dae306f0e79f9bf8975ca3a7"
 
@@ -114,7 +110,7 @@ hash = "36326bc819c1e11c55835e5b03513171a0c253dc8bdb568edf79a3561d67ec3f"
 
 [[files]]
 file = "config/survivors/claude_context.md"
-hash = "cf3b15a318dcde1c6174a9a5ec7371f2980a18e189435905ede5f0d39c0aa038"
+hash = "b85cd42e60c228676e43632f85a7ade6e8bf237ba7dc615a982a425863403ad4"
 
 [[files]]
 file = "config/survivors/conductor.json"
@@ -747,11 +743,6 @@ metafile = true
 [[files]]
 file = "mods/jei-1-21-1-neoforge-19-64-0-455.pw.toml"
 hash = "51c7a4018a7c7219e40bd319703361c133f5912d609db77e5c7bcda5b754c367"
-metafile = true
-
-[[files]]
-file = "mods/kenny-8-0-0-neoforge-mc1-21-1.pw.toml"
-hash = "842f17173b03766c5dfe47fce081b7d6987d6ff75239f4ff93f23d54ef62837d"
 metafile = true
 
 [[files]]

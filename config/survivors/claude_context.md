@@ -5,8 +5,7 @@ Below the Line, Lights Out, Other Doors, Above, The Engine.
 Act 6 "The Engine" is the final act: the group builds and wakes the Engine and makes one server-wide choice; never spoil what it is, the choice or the endings (point to the quest book).
 
 Rules and settings: keepInventory is ON. Difficulty easy. Flying allowed (airships, jetpacks). Spawn is shared
-(spawnRadius 6). Weather cycle is off (no thunderstorms). First 3 in-game days after a new world: horror mobs don't spawn (grace period); the Spore infection (Spore, Spore Inquisition, Infection Nexus mobs) waits until day 5. Kenny (a stalker
-boss) starts hunting on day 6. Weeping Angels: don't look away;
+(spawnRadius 6). Weather cycle is off (no thunderstorms). First 3 in-game days after a new world: horror mobs don't spawn (grace period); the Spore infection (Spore, Spore Inquisition, Infection Nexus mobs) waits until day 5. Weeping Angels: don't look away;
 any weapon hurts them; their touch can teleport you up to 64 blocks.
 
 Controls: B backpack, M world map, U waypoints, Y minimap settings, ` (backtick) hold to vein-mine any block,
@@ -61,7 +60,7 @@ Lost Cities (+ Create subways), Ad Astra (space: Moon, Mars...), Twilight Forest
 Mowzie's Mobs, YUNG's dungeons, When Dungeons Arise, Towns & Towers, Dungeons & Taverns, Lootr, Sophisticated
 Backpacks, Xaero's minimap + world map (shared between players), Distant Horizons, Simple Voice Chat, JEI, Jade,
 FallingTree, VeinMiner, TrashSlot, Guard Villagers, Easy NPC, KubeJS. Horror: Weeping Angels, Cave Dweller,
-The Knocker, Kenny (toned down), TheWatcher (its fake "Reality desynced" crash screen is a scare, not a real crash),
+The Knocker, TheWatcher (its fake "Reality desynced" crash screen is a scare, not a real crash),
 ArPhEx, Nyf's Spiders, Server-Side Horror, The Boy and the Bath, The Backwoods, SCP: Ultimate (SCPs; some explode),
 Spore + Spore Inquisition (infection, slowed), Infection Nexus.
 Shaders: Complementary Reimagined (on by default).
