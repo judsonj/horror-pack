@@ -123,7 +123,7 @@ function swSunTick(server) {
       }
     })
     server.players.forEach(p => {
-      if (hpDim(p.level()) === zn.dim && (p.x - zn.x) * (p.x - zn.x) + (p.z - zn.z) * (p.z - zn.z) <= zn.r * zn.r)
+      if (hpDim(hpLvl(p)) === zn.dim && (p.x - zn.x) * (p.x - zn.x) + (p.z - zn.z) * (p.z - zn.z) <= zn.r * zn.r)
         hpCmd(server, 'effect give ' + p.username + ' minecraft:night_vision 15 0 true')
     })
   })
@@ -216,7 +216,7 @@ BlockEvents.rightClicked(event => {
   }
   p.persistentData.putInt('hp_sun_day', Math.max(1, hpDay(server)))
   let b = event.block
-  swSunStart(server, p.level(), b.x + 0.5, b.y + 1, b.z + 0.5, name)
+  swSunStart(server, hpLvl(p), b.x + 0.5, b.y + 1, b.z + 0.5, name)
 })
 
 ItemEvents.rightClicked(event => {
@@ -230,7 +230,7 @@ ItemEvents.rightClicked(event => {
       hpBar(server, name, 'Rail Lance: ' + p.persistentData.getInt('hp_lance_charge') + '%. Charge it on a turning shaft or cog.', 'yellow'); return
     }
     p.persistentData.putInt('hp_lance_charge', 0)
-    swLanceFire(server, p.level(), p.x, p.y + p.getEyeHeight(), p.z, Number(p.yRot), Number(p.xRot), p)
+    swLanceFire(server, hpLvl(p), p.x, p.y + p.getEyeHeight(), p.z, Number(p.yRot), Number(p.xRot), p)
     return
   }
   let last = swLastUse[name + '/whistle'] || -SW_WHISTLE_COOLDOWN
@@ -238,7 +238,7 @@ ItemEvents.rightClicked(event => {
     hpBar(server, name, 'The Whistle needs ' + Math.ceil((SW_WHISTLE_COOLDOWN - (server.tickCount - last)) / 20) + ' s of steam.', 'gray'); return
   }
   swLastUse[name + '/whistle'] = server.tickCount
-  swWhistle(server, p.level(), p.x, p.y, p.z, p.vehicle ? 40 : 20, name)
+  swWhistle(server, hpLvl(p), p.x, p.y, p.z, p.vehicle ? 40 : 20, name)
 })
 
 ServerEvents.tick(event => {

@@ -418,7 +418,7 @@ hash = "f65a86e683000a3475fd6cdd20464e3a776a7d9dad1da3e119c0db4d4f2e9786"
 
 [[files]]
 file = "kubejs/server_scripts/engine.js"
-hash = "d44ac9129d237c791e3fa57f15e59a742e397dfeecdb2a97a1c6d25abe276208"
+hash = "66c7ad1dc649987b4552b539dd747eb847b9bffd6c93b21c835c1b0f2fce6fcb"
 
 [[files]]
 file = "kubejs/server_scripts/faces_daylight.js"
@@ -426,15 +426,15 @@ hash = "d7d85b6d6580316fa1bb12a561d681871db0469c92a5a6c3b92f1a37a0efa17b"
 
 [[files]]
 file = "kubejs/server_scripts/horror_grace.js"
-hash = "d7076f13e6141b02a4be8085f438675640cf73f27f6c242679f92f76cf855e24"
+hash = "9868ce84bcfddc6d853b3f47ce4b3aee09c98b20af91974582e76b900368b855"
 
 [[files]]
 file = "kubejs/server_scripts/regions.js"
-hash = "bceeb32a52bfc48ee75e5744eb294a51888883e79e4ae64a8a12f24580f78ab3"
+hash = "dee0b18ed3485272cce4c323edbec6af7bb1f0c3c2b70f2c8880fb2449a82d26"
 
 [[files]]
 file = "kubejs/server_scripts/safety.js"
-hash = "3edacbf5cb79385dadcc3ecdeba309d7627984992e05879ae260f2edfac0a6e1"
+hash = "26dde10e81c4e38947b6ef5add3f1ca3ca7af6df0413b7149378313999861566"
 
 [[files]]
 file = "kubejs/server_scripts/starter_kit.js"
@@ -442,11 +442,11 @@ hash = "77ac8f0f49d17ed89e29404192c515cfaaef95ce014a9c39afce84645484b705"
 
 [[files]]
 file = "kubejs/server_scripts/super_weapons.js"
-hash = "efe9653e2ca255015e4011c758473c7f3f0574580565eac86aa2f9cb8bebbc6b"
+hash = "923b68fb7fdb09d433311f38f04dbce8e8fa0af1186d60646ec1278ed61431f1"
 
 [[files]]
 file = "kubejs/server_scripts/survivor_call.js"
-hash = "b274a397ffdeb9bb04483cf0538940035377ff1aef16809cac97d5e2b6a5d511"
+hash = "045c3d54df32d67d3876c5156e54019f03eb86424dc979451a51ec1bf07be670"
 
 [[files]]
 file = "kubejs/server_scripts/world_move.js"

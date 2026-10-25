@@ -26,7 +26,8 @@ if (!Platform.isLoaded('survivors')) {
   })
 
   function graceNearEngine(event, data, r) {
-    if (String(event.level.dimension().location()) !== data.getString('engine_dim')) return false
+    const d = event.level.dimension, key = typeof d === 'function' ? event.level.dimension() : d
+    if (String(typeof key.location === 'function' ? key.location() : key.location || key) !== data.getString('engine_dim')) return false
     const e = event.entity
     const dx = e.x - data.getInt('engine_x'), dz = e.z - data.getInt('engine_z')
     return dx * dx + dz * dz <= r * r

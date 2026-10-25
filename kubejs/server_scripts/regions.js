@@ -56,25 +56,28 @@ function regAt(server, level, x, y, z, under) {
 ServerEvents.tick(event => {
   let server = event.server
   if (server.tickCount % 40 !== 7) return
-  server.players.forEach(p => {
-    let level = p.level()
-    if (hpDim(level) !== 'minecraft:overworld') return
-    let name = String(p.username)
-    let st = safState[name]
-    let underLine = !!(st && st.under && st.track >= 3)
-    let r = regAt(server, level, p.x, p.y, p.z, underLine)
-    if (underLine && Math.random() < 0.6)
-      hpCmd(server, 'execute as ' + name + ' at @s run particle minecraft:white_ash ~ ~1 ~ 6 2 6 0 50 normal @s')
-    if (regSeen[name] === r.key) return
-    let first = regSeen[name] === undefined
-    regSeen[name] = r.key
-    if (first) return  // no card on login, only on travel
-    hpCmd(server, 'title ' + name + ' times 15 50 25')
-    hpCmd(server, 'title ' + name + ' subtitle ' + JSON.stringify({ text: '' }))
-    hpCmd(server, 'title ' + name + ' title ' + JSON.stringify({ text: r.name, color: 'gray', italic: true }))
-    hpSound(server, name, REG_KINDS[r.kind].sound, 0.8, 0.8)
-  })
+  server.players.forEach(p => regTickPlayer(server, p))
 })
+
+// One player's region card and subway fog (also run by /hpworld playertest with a stand-in player).
+function regTickPlayer(server, p) {
+  let level = hpLvl(p)
+  if (hpDim(level) !== 'minecraft:overworld') return
+  let name = String(p.username)
+  let st = safState[name]
+  let underLine = !!(st && st.under && st.track >= 3)
+  let r = regAt(server, level, p.x, p.y, p.z, underLine)
+  if (underLine && Math.random() < 0.6)
+    hpCmd(server, 'execute as ' + name + ' at @s run particle minecraft:white_ash ~ ~1 ~ 6 2 6 0 50 normal @s')
+  if (regSeen[name] === r.key) return
+  let first = regSeen[name] === undefined
+  regSeen[name] = r.key
+  if (first) return  // no card on login, only on travel
+  hpCmd(server, 'title ' + name + ' times 15 50 25')
+  hpCmd(server, 'title ' + name + ' subtitle ' + JSON.stringify({ text: '' }))
+  hpCmd(server, 'title ' + name + ' title ' + JSON.stringify({ text: r.name, color: 'gray', italic: true }))
+  hpSound(server, name, REG_KINDS[r.kind].sound, 0.8, 0.8)
+}
 
 // Runs before safety.js's spawn hook (files load in name order), which marks allowed mobs hp_seen.
 EntityEvents.spawned(event => {

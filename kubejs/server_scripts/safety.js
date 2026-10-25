@@ -50,6 +50,11 @@ let safTrains = []      // [{dim, x, y, z}] carriages seen in the last scans
 let safLastNight = -1   // overworld day whose dusk was handled
 
 // ------------------------------------------------------------------ small helpers (hp* are used by the other scripts too)
+// A player's (or any entity's) level. On a live ServerPlayer Rhino exposes `level` as a property, not the level() method,
+// so p.level() threw for real players (it worked in command tests with no player online). Use this everywhere.
+function hpLvl(e) { const l = e.level; return typeof l === 'function' ? e.level() : l }
+// The online player with this name, or null (server.getPlayer wants a UUID string here).
+function hpPlayer(server, name) { let out = null; server.players.forEach(p => { if (String(p.username) === name) out = p }); return out }
 // Rhino shows ServerLevel.dimension() as a property on some objects and a method on others: handle both.
 function hpDim(level) {
   let d = level.dimension
@@ -108,7 +113,7 @@ function hpChunk(level, cx, cz) {
 function hpLightsOut(server) { return server.persistentData.getInt('hp_lightsout_day') === hpDay(server) + 1 && hpIsNight(server) }
 function hpAddNoise(server, dim, x, y, z, r, amount) {
   server.players.forEach(p => {
-    if (hpDim(p.level()) !== dim || hpDist2(p, x, y, z) > r * r) return
+    if (hpDim(hpLvl(p)) !== dim || hpDist2(p, x, y, z) > r * r) return
     let st = safState[String(p.username)]
     if (st) st.noise = Math.min(100, st.noise + amount)
   })
@@ -163,7 +168,7 @@ function safScore(server, level, x, y, z, place, player, st) {
   let near = 0, far = true
   server.players.forEach(p => {
     if (player && String(p.username) === String(player.username)) return
-    if (hpDim(p.level()) !== dim) return
+    if (hpDim(hpLvl(p)) !== dim) return
     let d2 = hpDist2(p, x, y, z)
     if (d2 <= 144) near++
     if (d2 <= 48 * 48) far = false
@@ -191,7 +196,7 @@ function safScore(server, level, x, y, z, place, player, st) {
 
 function safScanPlayer(server, player) {
   let name = String(player.username)
-  let level = player.level()
+  let level = hpLvl(player)
   let st = safState[name] || (safState[name] = { score: 50, parts: [], noise: 0, band: '', bandAt: 0 })
   st.noise = Math.max(0, st.noise - 4)
   let place = safScanPlace(level, player.x, player.y, player.z)
@@ -257,7 +262,7 @@ const SAF_SUPPLY = ['8x minecraft:bread', '16x minecraft:torch', '4x minecraft:c
 
 function safMaybeRefuge(server, player, place) {
   if (!place.kineticAt || place.lit === 0) return
-  let dim = hpDim(player.level())
+  let dim = hpDim(hpLvl(player))
   let list = hpJson(server, 'hp_refuges')
   let k = place.kineticAt
   if (list.some(f => f.dim === dim && hpDist2(f, k.x, k.y, k.z) < 64 * 64)) return
@@ -293,7 +298,7 @@ function safCheckRefuges(server, all) {
     let level = hpLevel(server, f.dim)
     if (!level) return
     let watched = false
-    server.players.forEach(p => { if (hpDim(p.level()) === f.dim && hpDist2(p, f.x, f.y, f.z) <= 96 * 96) watched = true })
+    server.players.forEach(p => { if (hpDim(hpLvl(p)) === f.dim && hpDist2(p, f.x, f.y, f.z) <= 96 * 96) watched = true })
     if (!watched && !all) return
     let place = safScanPlace(level, f.x + 0.5, f.y, f.z + 0.5)
     let active = place.kinetic > 0 && place.lit > 0
@@ -301,7 +306,7 @@ function safCheckRefuges(server, all) {
       f.active = active
       changed = true
       server.players.forEach(p => {
-        if (hpDim(p.level()) === f.dim && hpDist2(p, f.x, f.y, f.z) <= 48 * 48)
+        if (hpDim(hpLvl(p)) === f.dim && hpDist2(p, f.x, f.y, f.z) <= 48 * 48)
           hpBar(server, String(p.username), active ? f.name + ' holds again.' : f.name + ' has gone dark.', active ? 'gold' : 'dark_red')
       })
     }
@@ -340,7 +345,7 @@ EntityEvents.spawned(event => {
   else if (horror && server.tickCount > safAllowUntil) {
     let best = null, bestD = 48 * 48
     server.players.forEach(p => {
-      if (hpDim(p.level()) !== dim) return
+      if (hpDim(hpLvl(p)) !== dim) return
       let d2 = hpDist2(p, e.x, e.y, e.z)
       if (d2 <= bestD) { bestD = d2; best = p }
     })
@@ -375,7 +380,7 @@ ServerEvents.tick(event => {
   }
   if (safQueue.length > 0) {
     let name = safQueue.shift()
-    let p = server.getPlayer(name)
+    let p = hpPlayer(server, name)
     if (p) { try { safScanPlayer(server, p) } catch (e) { console.warn('[safety] scan failed for ' + name + ': ' + e) } }
   }
   if (server.tickCount % 200 === 50) { try { safCheckRefuges(server) } catch (e) { console.warn('[safety] refuge check: ' + e) } }
@@ -450,6 +455,30 @@ ServerEvents.commandRegistry(event => {
       return say(ctx, 'made ' + f.name)
     }))))
     .then(Commands.literal('refuge_check').executes(ctx => { safCheckRefuges(ctx.source.server, true); return say(ctx, 'refuges rechecked') }))
+    .then(Commands.literal('playertest').then(Commands.argument('pos', Arguments.BLOCK_POS.create(event)).executes(ctx => hpTry(ctx, () => {
+      // every per-player path with a real ServerPlayer object (a NeoForge FakePlayer): the case the no-player tests missed
+      let pos = Arguments.BLOCK_POS.getResult(ctx, 'pos')
+      let server = ctx.source.server, level = ctx.source.level
+      let Fake = Java.loadClass('net.neoforged.neoforge.common.util.FakePlayerFactory')
+      let Profile = Java.loadClass('com.mojang.authlib.GameProfile')
+      let JUUID = Java.loadClass('java.util.UUID')
+      let p = Fake.get(level, new Profile(JUUID.fromString('00000000-0000-4000-8000-00000000beef'), 'hp_tester'))
+      p.teleportTo(pos.x + 0.5, pos.y, pos.z + 0.5)
+      let out = []
+      let step = (label, fn) => { try { fn(); out.push(label + ' ok') } catch (e) { out.push(label + ' FAIL ' + e) } }
+      step('level', () => { if (hpDim(hpLvl(p)) !== hpDim(level)) throw 'wrong level' })
+      step('scan', () => safScanPlayer(server, p))
+      let st = safState[String(p.username)]
+      out.push('score ' + (st ? st.score + ' [' + st.parts.map(x => x[0] + ' ' + x[1]).join(', ') + ']' : 'none'))
+      step('region', () => regTickPlayer(server, p))
+      step('whistle', () => swWhistle(server, hpLvl(p), p.x, p.y, p.z, p.vehicle ? 40 : 20, String(p.username)))
+      step('lance', () => swLanceFire(server, hpLvl(p), p.x, p.y + p.getEyeHeight(), p.z, Number(p.yRot), Number(p.xRot), p))
+      step('callsurvivor-count', () => hpEntitiesNear(hpLvl(p), p.x, p.y, p.z, 12, 8).filter(e => String(e.type) === 'survivors:survivor').length)
+      step('engine-lvl', () => engDim(engLvl(p)))
+      step('lookup', () => { if (hpPlayer(server, 'nobody_here_x') !== null) throw 'false hit' })
+      delete safState[String(p.username)]
+      return say(ctx, 'playertest: ' + out.join(' | '))
+    }))))
     .then(Commands.literal('reset').executes(ctx => {
       let d = ctx.source.server.persistentData
       ;['hp_refuges', 'hp_zones'].forEach(k => d.putString(k, '[]'))

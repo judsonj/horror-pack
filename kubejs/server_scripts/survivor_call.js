@@ -12,13 +12,13 @@ ServerEvents.commandRegistry(event => {
     const server = ctx.source.server
     const name = String(p.username)
     if (!Platform.isLoaded('survivors')) { p.tell(Text.red('Survivors are not on this server.')); return 0 }
-    if (hpDim(p.level()) !== 'minecraft:overworld') { p.tell(Text.gray('Nobody is hiding out here. Try the overworld.')); return 0 }
+    if (hpDim(hpLvl(p)) !== 'minecraft:overworld') { p.tell(Text.gray('Nobody is hiding out here. Try the overworld.')); return 0 }
     const day = hpDay(server)
     if (p.persistentData.getInt('hp_call_day') === day + 1) { p.tell(Text.gray('You already called someone today. Try again tomorrow.')); return 0 }
     const data = server.persistentData
     if (data.getInt('hp_call_server_day') !== day + 1) { data.putInt('hp_call_server_day', day + 1); data.putInt('hp_call_count', 0) }
     if (data.getInt('hp_call_count') >= CALL_DAILY_CAP) { p.tell(Text.gray('No one else answers today.')); return 0 }
-    const count = () => hpEntitiesNear(p.level(), p.x, p.y, p.z, 12, 8).filter(e => String(e.type) === 'survivors:survivor').length
+    const count = () => hpEntitiesNear(hpLvl(p), p.x, p.y, p.z, 12, 8).filter(e => String(e.type) === 'survivors:survivor').length
     const before = count()
     server.runCommandSilent('execute as ' + name + ' at @s run survivors spawn')
     if (count() <= before) { p.tell(Text.gray('No one could get to you here. Try open ground.')); return 0 }

@@ -59,8 +59,14 @@ let engSpeedWarned = false
 let engDirectorSynced = false  // engDirector() runs once on the first tick after a start
 
 // ------------------------------------------------------------------ helpers
+// See safety.js hpLvl: on a live ServerPlayer `level` is a property, not a method.
+function engLvl(e) { const l = e.level; return typeof l === 'function' ? e.level() : l }
+
 function engDim(level) {
-  return String(level.dimension().location())
+  // dimension is a property on some level objects and a method on others (see safety.js hpDim)
+  const d = level.dimension
+  const key = typeof d === 'function' ? level.dimension() : d
+  return String(typeof key.location === 'function' ? key.location() : key.location || key)
 }
 
 function engId(level, x, y, z) {
@@ -102,7 +108,7 @@ function engLevel(server, dim) {
 function engNearby(server, dim, x, y, z, r) {
   const out = []
   server.players.forEach(p => {
-    if (engDim(p.level()) !== dim) return
+    if (engDim(engLvl(p)) !== dim) return
     const dx = p.x - (x + 0.5), dy = p.y - y, dz = p.z - (z + 0.5)
     if (dx * dx + dy * dy + dz * dz <= r * r) out.push(p)
   })
@@ -361,7 +367,7 @@ function engDarkTick(server) {
   const level = server.overworld()
   if (level.isDay()) return
   server.players.forEach(p => {
-    if (engDim(p.level()) !== 'minecraft:overworld') return
+    if (engDim(engLvl(p)) !== 'minecraft:overworld') return
     if (p.block.blockLight >= 4 || Math.random() > 0.35) return
     server.runCommandSilent('effect give ' + p.username + ' minecraft:darkness 5 0 true')
     server.runCommandSilent('execute as ' + p.username + ' at @s run playsound minecraft:ambient.cave master @s ~ ~ ~ 1 0.6')
