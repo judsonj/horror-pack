@@ -1010,11 +1010,6 @@ hash = "4c66de4cf9fb7d0b6522595ede9152692341b462d75a56af02fd25ff01ec7346"
 metafile = true
 
 [[files]]
-file = "mods/whisperingspirits-neoforge-1-21-1-v1-4-0.pw.toml"
-hash = "4ee585681e00f4f559717c7edb27476040e550ae14e41f02b822233320595cf8"
-metafile = true
-
-[[files]]
 file = "mods/xaerominimap-neoforge-1-21-1-26-6-0.pw.toml"
 hash = "145aa79ddf204cd34375b123ea5a73c90d88b8fb6d3f332d5486adcebc7023bb"
 metafile = true
