@@ -14,7 +14,7 @@ hash = "e70ee844fdaca99e28e9b63fd87efce4e52d97be19c67f7c5de5e4cf845e3f73"
 
 [[files]]
 file = "config/fallingtree.json"
-hash = "152830fbd3483f9e253f1d8c161a8b6d0d0d22f0a312f5f858b0157656916a08"
+hash = "0ff0318e33bcbd0fddf0d0f7b396111768f053a4733e289c3199ca40da2c8a71"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
@@ -70,7 +70,7 @@ hash = "65a9535f763cc9487e646c28afd72713ee5acf7e8113eb951f8adb28ba58aa55"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "7b190d4bd6186ffd2f1637cda4f35d4549a31ffcc021aa255a1635ff2e51ec2d"
+hash = "c705b06da5f8878d31d616125bf2b2692c6d57fc59fe58c112e2bb2b85769065"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/common.snbt"
@@ -430,7 +430,7 @@ hash = "9868ce84bcfddc6d853b3f47ce4b3aee09c98b20af91974582e76b900368b855"
 
 [[files]]
 file = "kubejs/server_scripts/regions.js"
-hash = "dee0b18ed3485272cce4c323edbec6af7bb1f0c3c2b70f2c8880fb2449a82d26"
+hash = "3da6bdcced942ab1b12e08aa2093e672d1408d634b83b3eb44d4c6b01d682dcf"
 
 [[files]]
 file = "kubejs/server_scripts/safety.js"

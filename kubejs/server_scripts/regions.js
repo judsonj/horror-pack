@@ -4,8 +4,8 @@
 // belong there. A headline horror trying to join somewhere it doesn't own is turned away REG_STRANGER_CANCEL of the
 // time, so each place keeps its own fear without starving the director. Ambient horrors (Watcher, Whispering Spirits,
 // SCP ambient) are never touched here.
-// Also: fog in the subways (ash drifting around players underground near track, seen only by them), and a per-kind
-// ambient sound on entering. Needs safety.js (hpDim, hpCmd, hpSound, safState).
+// (The subway ash fog and per-kind entry sounds were removed 2026-10-25; the sound fields below are unused.)
+// Needs safety.js (hpDim, hpCmd, hpLvl).
 // Op command: /hpworld region <x z> prints the name, kind and owners there (the batch test uses it).
 
 const REG_CELL = 640
@@ -64,11 +64,10 @@ function regTickPlayer(server, p) {
   let level = hpLvl(p)
   if (hpDim(level) !== 'minecraft:overworld') return
   let name = String(p.username)
-  let st = safState[name]
-  let underLine = !!(st && st.under && st.track >= 3)
-  let r = regAt(server, level, p.x, p.y, p.z, underLine)
-  if (underLine && Math.random() < 0.6)
-    hpCmd(server, 'execute as ' + name + ' at @s run particle minecraft:white_ash ~ ~1 ~ 6 2 6 0 50 normal @s')
+  // Cards follow the surface square only. The Under-Line used to count as its own region, so stepping under a roof or
+  // past track flipped it back and forth, replaying a card + mood sound every 2 s. Subway ash fog and the mood sounds
+  // were removed at the operator's request (2026-10-25: "soul sand" particles, a sound that kept going off).
+  let r = regAt(server, level, p.x, p.y, p.z, false)
   if (regSeen[name] === r.key) return
   let first = regSeen[name] === undefined
   regSeen[name] = r.key
@@ -76,7 +75,6 @@ function regTickPlayer(server, p) {
   hpCmd(server, 'title ' + name + ' times 15 50 25')
   hpCmd(server, 'title ' + name + ' subtitle ' + JSON.stringify({ text: '' }))
   hpCmd(server, 'title ' + name + ' title ' + JSON.stringify({ text: r.name, color: 'gray', italic: true }))
-  hpSound(server, name, REG_KINDS[r.kind].sound, 0.8, 0.8)
 }
 
 // Runs before safety.js's spawn hook (files load in name order), which marks allowed mobs hp_seen.
