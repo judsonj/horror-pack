@@ -433,6 +433,10 @@ file = "kubejs/server_scripts/idle_freeze.js"
 hash = "3d98a79859b561ad7f7e6f7787fdd020152b5f9bd460fe884d05499fb46514bc"
 
 [[files]]
+file = "kubejs/server_scripts/pace_spore.js"
+hash = "d97209309db33306a0f258a45cc003255304bf5589c4a74108d0b41456b9d97c"
+
+[[files]]
 file = "kubejs/server_scripts/regions.js"
 hash = "3da6bdcced942ab1b12e08aa2093e672d1408d634b83b3eb44d4c6b01d682dcf"
 
