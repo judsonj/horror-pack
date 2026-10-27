@@ -46,13 +46,16 @@ ServerEvents.tick(event => {
           var before = shelfCounts[key]
           shelfCounts[key] = count
           if (before === undefined || before === count) continue
+          console.info('[enchant_reroll] table ' + key + ' shelves ' + before + ' -> ' + count)
           // The shelves changed: every player near this table gets a fresh roll.
           players.forEach(p => {
             if (String(p.level.dimension) !== dim) return
             var d = Math.abs(p.x - x) + Math.abs(p.y - y) + Math.abs(p.z - z)
             if (d > REROLL_RADIUS * 2) return
             // 1.21.1 has no setEnchantmentSeed; this is vanilla's own re-roll (costs 0 levels here).
-            p.minecraftPlayer.onEnchantmentPerformed(ENCH_ItemStack.EMPTY, 0)
+            // KubeJS 2101 hands scripts the real ServerPlayer, so call it directly (no minecraftPlayer wrapper).
+            p.onEnchantmentPerformed(ENCH_ItemStack.EMPTY, 0)
+            console.info('[enchant_reroll] re-rolled ' + p.username)
           })
         }
       }

@@ -414,7 +414,7 @@ hash = "f65a86e683000a3475fd6cdd20464e3a776a7d9dad1da3e119c0db4d4f2e9786"
 
 [[files]]
 file = "kubejs/server_scripts/enchant_reroll.js"
-hash = "9269acb4bd5066fd9f837e0e0e74914a53e7ecb39eb6e2638b17ee05dbbd89c6"
+hash = "876ec03c6407aefdcda656ec0ca848d961d0c6992e7a06fc7f79779c0a323336"
 
 [[files]]
 file = "kubejs/server_scripts/engine.js"
@@ -427,6 +427,10 @@ hash = "d7d85b6d6580316fa1bb12a561d681871db0469c92a5a6c3b92f1a37a0efa17b"
 [[files]]
 file = "kubejs/server_scripts/horror_grace.js"
 hash = "9868ce84bcfddc6d853b3f47ce4b3aee09c98b20af91974582e76b900368b855"
+
+[[files]]
+file = "kubejs/server_scripts/idle_freeze.js"
+hash = "3d98a79859b561ad7f7e6f7787fdd020152b5f9bd460fe884d05499fb46514bc"
 
 [[files]]
 file = "kubejs/server_scripts/regions.js"
@@ -451,6 +455,14 @@ hash = "045c3d54df32d67d3876c5156e54019f03eb86424dc979451a51ec1bf07be670"
 [[files]]
 file = "kubejs/server_scripts/world_move.js"
 hash = "6d2c1dec9343293123b16c405439809b817ae43ef106e1e69b4b3608f99ebd1e"
+
+[[files]]
+file = "kubejs/server_scripts/zz_fluff_mobs.js"
+hash = "4fd9bf1cf375c747c02a4ca3cf8661c6f327da115025823395fd61ec9c656f2d"
+
+[[files]]
+file = "kubejs/server_scripts/zz_fluff_scares.js"
+hash = "f1f2394de55e2f790206f5ee08d57fd2409310eff6dad2cb49207107938b863f"
 
 [[files]]
 file = "kubejs/startup_scripts/horror_items.js"
