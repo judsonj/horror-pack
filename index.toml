@@ -947,8 +947,8 @@ hash = "e7a291039cc34913e50364dc206339f651769aa0f17ce6ec53087b764ca2aea8"
 metafile = true
 
 [[files]]
-file = "mods/survivors-0.24.1.jar"
-hash = "f97b05257c7db47d792690f60bde11e1e90507bb70006806ff8c238758bf7043"
+file = "mods/survivors-0.24.2.jar"
+hash = "e3cbfe1ee74eb96312f238c8bf1c821833334ccb72dabd78d4c88d4b8c910b84"
 
 [[files]]
 file = "mods/t-and-t-fabric-neoforge-1-13-11.pw.toml"
