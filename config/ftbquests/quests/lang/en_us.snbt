@@ -198,6 +198,8 @@
 	quest.5B2B9E2A25EC7C42.title: "Diamond Plate"
 	quest.5FB2E35C7EFC093A.quest_desc: ["Armor fragment + fiber + mutated heart at the surgery table. Almost every infected weapon needs one."]
 	quest.5FB2E35C7EFC093A.title: "A Living Core"
+	quest.62B48BF4175155F9.quest_desc: ["The Builders never walked to the capital. They &eflew through the fire&r: one block in the Nether is eight up here.", "", "Build a &enether portal wide enough for your ship&r (obsidian frames go up to 23x23). Your ship has to fit through the opening. The far side gets a portal the same size.", "", "Check this once it is lit."]
+	quest.62B48BF4175155F9.title: "A Door Big Enough"
 	quest.62D341191A8C2B01.quest_desc: ["Infected are people and animals the fungus took. &eThe rules:&r", "- Every kill they get makes them &cevolve&r into worse forms. Don't feed them: no lone fights, no dying out there.", "- They are weak to &bcold&r and starve over time.", "- It only spreads where players are. Burn it back early."]
 	quest.62D341191A8C2B01.title: "First Contact"
 	quest.64F936ADB8D3EDAE.quest_desc: ["Footsteps that stop when yours stop. A shape that runs on all fours. That is &cthe Cave Dweller&r. Don't stay in the dark. Check this when you have seen it and gotten away."]
@@ -216,6 +218,8 @@
 	quest.6BFB5539D1CEC86A.title: "Last Stop"
 	quest.6C534E757D9A0FE8.quest_desc: ["Propellers + a frame + Create Aeronautics = an &eairship&r. The Line's last act needs one."]
 	quest.6C534E757D9A0FE8.title: "Lift"
+	quest.6CBC9732078BA896.quest_desc: ["From the air the Nether is a map: lava seas, fortress walls, and the old Builder roads running straight toward where the capital stands above.", "", "Find a &efortress&r without touching the ground. Ghasts will see you coming."]
+	quest.6CBC9732078BA896.title: "Over the Lava Sea"
 	quest.6E36006FC0490D84.quest_desc: ["Check this when your train moves."]
 	quest.6E36006FC0490D84.title: "Your Own Train"
 	quest.6EAAA80B8271EADD.quest_desc: ["The &eC.D.U.&r freezes everything around it. The infection hates cold: put one at the edge of your colony."]
@@ -226,8 +230,12 @@
 	quest.7212199C40E6A57E.title: "Platform Zero"
 	quest.724A72FEF87C257E.quest_desc: ["Walk to the &earrival platform&r beside your camp: a few rails, a station block, a departures board under a lit lamp. Read the board. Every train is &oon time&r. None will ever come.", "", "The trains still run, with no one to drive them. Listen for them near track, and underground. Check this once you have read the board."]
 	quest.724A72FEF87C257E.title: "Catch the Line"
+	quest.733C295A6FE4F1AA.quest_desc: ["Fly the airship into the portal. Ship, crew, seats and cargo all go through together. &cMobs and dropped items stay behind.&r", "", "Each trip costs about a tenth of your speed. The far side is cleared so you don't land in basalt.", "", "&7Back up the world before your first crossing: airship physics can break.&r"]
+	quest.733C295A6FE4F1AA.title: "Through the Fire"
 	quest.76016D8C7E4E16A2.quest_desc: ["A mixer over a basin. Heated with a blaze burner later, it makes &ebrass&r."]
 	quest.76016D8C7E4E16A2.title: "Mixing"
+	quest.78EED41DDBE9C532.quest_desc: ["Fly back out through a portal with the ship in one piece.", "", "&eShortcut:&r eight blocks of the Nether is a long way over the city. Build a second big portal at the far end of a Nether flight and you can cross the overworld in minutes."]
+	quest.78EED41DDBE9C532.title: "Bring Her Home"
 	quest.7A7A2ABF199241D6.quest_desc: ["&eEasiest first.&r Dig a 2x2 pool of water, ring it with flowers, throw in a &ediamond&r.", "", "It is always dusk there. Follow the Magic Map to the bosses in order. Some Builders hid here."]
 	quest.7A7A2ABF199241D6.title: "1. The Forest at Dusk"
 	quest.7B91185463CC20A0.quest_desc: ["Build it where the rail stops. Get a cog turning, then right-click the heart with an &eempty hand&r. If anything is missing, it will tell you what.", "", "&cBefore you do:&r everyone geared, everyone there. Whatever lives under the capital has been listening for that sound for a hundred years."]
