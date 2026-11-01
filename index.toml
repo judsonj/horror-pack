@@ -567,6 +567,11 @@ hash = "cc6986f4d33d80335f57b2b13e5d64f10f33d2769bf132cde1c1a8cc2100096e"
 metafile = true
 
 [[files]]
+file = "mods/create-enchantment-industry-2-5-4b.pw.toml"
+hash = "93a8da604cfd90d2abcbca430438c9fbf7c84f3ed20fd605fe913ce694a638d6"
+metafile = true
+
+[[files]]
 file = "mods/create-lost-cities-subways-1-21-1-1-1-2.pw.toml"
 hash = "bdc25ea7b9482667b5410cea67d6e8241b7c30ad620c06e591e52f4e005b7017"
 metafile = true
@@ -599,6 +604,11 @@ metafile = true
 [[files]]
 file = "mods/createbigcannons-5-11-7-mc-1-21-1.pw.toml"
 hash = "440a648530b2b98521bc160cb0f95695baab6cf56c49012d4cb727ab2ede5168"
+metafile = true
+
+[[files]]
+file = "mods/createdragonsplus-1-11-9.pw.toml"
+hash = "0ac5bdf3e30fcbbce41fe86b5182ed38583c65f687b033f404a08514645f7502"
 metafile = true
 
 [[files]]
@@ -778,6 +788,11 @@ metafile = true
 [[files]]
 file = "mods/kubejs-neoforge-2101-7-2-build-377.pw.toml"
 hash = "e48a446d1210844669e696a6d036610709114b9685632da426fa923f45071497"
+metafile = true
+
+[[files]]
+file = "mods/lambdynamiclights-4-8-11-1-21-1.pw.toml"
+hash = "369fbebc402e64abcfd4eb44ebaf47d0044f3933b88ea4e95917c0052c5cd95c"
 metafile = true
 
 [[files]]
