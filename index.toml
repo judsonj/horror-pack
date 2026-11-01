@@ -908,6 +908,11 @@ hash = "da2928c96d9f9f37004bb7ab9771d1addcd763af2a6b5aec169d00640033e4e4"
 metafile = true
 
 [[files]]
+file = "mods/sophisticatedstorage-1-21-1-1-6-8-2196.pw.toml"
+hash = "1bebd91daf4c87253fbf440003001a3cc34f68c389c147ebdf8e7edebbd27bcb"
+metafile = true
+
+[[files]]
 file = "mods/sound-physics-remastered-neoforge-1-21-1-1-5-1.pw.toml"
 hash = "0ae88d228e9bb27d3c82e9269070cc8889a013ec9f7f2b3640b7f79d40f1ff0e"
 metafile = true
