@@ -345,6 +345,14 @@ file = "kubejs/data/create_structures_arise/worldgen/structure_set/windmill.json
 hash = "d365ad58f970139662bf092b3b03cb9aa73dfd9fadae26bb378dc670448a9007"
 
 [[files]]
+file = "kubejs/data/enhancedcelestials/enhancedcelestials/lunar/event/blood_moon.json"
+hash = "9e1ac81dd9051538aeaa6d7ffdfbf0096735096f9ba6ce6390b04ffde02cc27f"
+
+[[files]]
+file = "kubejs/data/enhancedcelestials/enhancedcelestials/lunar/event/super_blood_moon.json"
+hash = "19b40713854131c52ebf6f15fdf5a3a278105f57a18fc6a4329e03c480318c91"
+
+[[files]]
 file = "kubejs/data/horrorpack/advancement/engine_awake.json"
 hash = "c1f548ee8ab90649eae4eddd58d24df8f3aebcdb4cf674e79caaf022762b60e2"
 
@@ -584,6 +592,11 @@ metafile = true
 [[files]]
 file = "mods/create-power-loader-2-0-5-mc1-21-1.pw.toml"
 hash = "6b2ffd7b00e3c5f4b8c7562c6b0c97a598cf78b0a1453f987c82a63178d3631b"
+metafile = true
+
+[[files]]
+file = "mods/create-quarry-1-1-0.pw.toml"
+hash = "8f8fa5d2531b1f50319ddd387f03010bbdc1794b6c5b818698727cae80fb5116"
 metafile = true
 
 [[files]]
@@ -854,6 +867,11 @@ hash = "2f156884ca37186f217f05ffe8e3ac9f3c7df4c7efea09e5ae1c724f967fa859"
 metafile = true
 
 [[files]]
+file = "mods/open-parties-and-claims-neoforge-1-21-1-0-33-0.pw.toml"
+hash = "af9dc3d91b85e448d822d35fe42e40ce9f47871ac1dddf7027fffd1be54b35df"
+metafile = true
+
+[[files]]
 file = "mods/owo-lib-neoforge-0-12-15-6-beta-1-1-21.pw.toml"
 hash = "74777623da6e65f49128359328319e8e6c72efdce249f998fb40600d52c0a7b0"
 metafile = true
@@ -920,6 +938,11 @@ metafile = true
 [[files]]
 file = "mods/sophisticatedcore-1-21-1-1-5-14-2413.pw.toml"
 hash = "da2928c96d9f9f37004bb7ab9771d1addcd763af2a6b5aec169d00640033e4e4"
+metafile = true
+
+[[files]]
+file = "mods/sophisticatedinventoryinteractions-1-21-1-0-1-15-233.pw.toml"
+hash = "bb3718f93d34fd2b8d20c164e92e7df9adb4ebb9aff5e014c5ec55bd52fa859a"
 metafile = true
 
 [[files]]

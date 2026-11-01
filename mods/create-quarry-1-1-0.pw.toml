@@ -1,0 +1,8 @@
+name = "create_quarry-1.1.0.jar"
+filename = "create_quarry-1.1.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/gLTAirKi/versions/ZWQs6qLV/create_quarry-1.1.0.jar"
+hash-format = "sha512"
+hash = "56d8c50c46c48fa5edd939aa1c5783de0330eb9403894e137ea58c343931c5a4863a041656a0dfdf317e8c70df36ea1d126078b55711df162baf9699e4b547cc"
