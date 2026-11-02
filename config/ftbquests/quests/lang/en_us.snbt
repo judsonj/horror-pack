@@ -198,7 +198,7 @@
 	quest.5B2B9E2A25EC7C42.title: "Diamond Plate"
 	quest.5FB2E35C7EFC093A.quest_desc: ["Armor fragment + fiber + mutated heart at the surgery table. Almost every infected weapon needs one."]
 	quest.5FB2E35C7EFC093A.title: "A Living Core"
-	quest.62B48BF4175155F9.quest_desc: ["The Builders never walked to the capital. They &eflew through the fire&r: one block in the Nether is eight up here.", "", "Build a &enether portal wide enough for your ship&r (obsidian frames go up to 23x23). Your ship has to fit through the opening. The far side gets a portal the same size.", "", "Check this once it is lit."]
+	quest.62B48BF4175155F9.quest_desc: ["The Builders never walked to the capital. They &eflew through the fire&r: one block in the Nether is eight up here.", "", "You need an airship first (see &eThe Builders' Craft&r). Then build a &enether portal wide enough for your ship&r (obsidian frames go up to 23x23). Your ship has to fit through the opening. The far side gets a portal the same size.", "", "Check this once it is lit."]
 	quest.62B48BF4175155F9.title: "A Door Big Enough"
 	quest.62D341191A8C2B01.quest_desc: ["Infected are people and animals the fungus took. &eThe rules:&r", "- Every kill they get makes them &cevolve&r into worse forms. Don't feed them: no lone fights, no dying out there.", "- They are weak to &bcold&r and starve over time.", "- It only spreads where players are. Burn it back early."]
 	quest.62D341191A8C2B01.title: "First Contact"

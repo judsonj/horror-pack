@@ -18,42 +18,6 @@
 			rewards: [{ id: "231BE46AD75C32DD", type: "random", table_id: 2893836879149437615L }]
 		}
 		{
-			id: "62B48BF4175155F9"
-			x: -2d
-			y: -2d
-			dependencies: ["03622A4EF48DF367"]
-			optional: true
-			tasks: [{ id: "76E9DBF1B64C62BA", type: "checkmark" }]
-			rewards: [{ id: "7B0314DF13ED3A67", type: "random", table_id: 5557977682739783447L }]
-		}
-		{
-			id: "733C295A6FE4F1AA"
-			x: -2d
-			y: -4d
-			dependencies: ["62B48BF4175155F9"]
-			optional: true
-			tasks: [{ id: "3AC4D23B74230E7B", type: "dimension", dimension: "minecraft:the_nether" }]
-			rewards: [{ id: "0393806101AFA438", type: "random", table_id: 2893836879149437615L }]
-		}
-		{
-			id: "6CBC9732078BA896"
-			x: 0d
-			y: -5d
-			dependencies: ["733C295A6FE4F1AA"]
-			optional: true
-			tasks: [{ id: "4926212D9CF76052", type: "advancement", advancement: "minecraft:nether/find_fortress", criterion: "" }]
-			rewards: [{ id: "22AB999DA1610419", type: "random", table_id: 2893836879149437615L }]
-		}
-		{
-			id: "78EED41DDBE9C532"
-			x: -4d
-			y: -5d
-			dependencies: ["733C295A6FE4F1AA"]
-			optional: true
-			tasks: [{ id: "26A8EE94AC09C11F", type: "checkmark" }]
-			rewards: [{ id: "6F6E61D527353462", type: "random", table_id: 2893836879149437615L }]
-		}
-		{
 			id: "37521462F21C1396"
 			x: 2d
 			y: 1.5d
