@@ -149,6 +149,18 @@ file = "kubejs/assets/horrorpack/lang/en_us.json"
 hash = "49cc6912adbae2ff461bf0a9b4c90e5aec694adc7cbc328f4af8be9631af787d"
 
 [[files]]
+file = "kubejs/assets/scp_ultimate/models/block/reinforced_glass.json"
+hash = "4dbe42b7ef0b8e35e2f8159aa0123e582f15aef35a9a97fa0f451c3d83fc8770"
+
+[[files]]
+file = "kubejs/assets/scp_ultimate/textures/block/reinforced_glass_connected.png"
+hash = "e7e5d0e877d61b394e06baaf6b6b72aa72535af4118c9ff2f05c3c5e16d19edb"
+
+[[files]]
+file = "kubejs/assets/scp_ultimate/textures/block/reinforced_glass_connected.png.mcmeta"
+hash = "f7d805fe9c69922f3e2396cb4e420cc1c9e02b5028ffa2b6b1bc71159645f63d"
+
+[[files]]
 file = "kubejs/data/create_ltab/worldgen/structure_set/birch_structures.json"
 hash = "b55d298208e627069cee70df74db2aad55d9f15642b1ed784122e81aea1ce8e9"
 
@@ -765,11 +777,6 @@ metafile = true
 [[files]]
 file = "mods/infnexus-2-0-4-1-21-1.pw.toml"
 hash = "29633e9b1c86b78bf6ecff0e4cb538b65b627596228a70caacf8c4757c04d988"
-metafile = true
-
-[[files]]
-file = "mods/inventoryessentials-neoforge-1-21-1-21-1-20.pw.toml"
-hash = "9a8ca92b24f19f48cec4f8bb1d27c72c63e303ac9c2e834ce8782f57142e6fd9"
 metafile = true
 
 [[files]]

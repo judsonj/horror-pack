@@ -1,0 +1,10 @@
+{
+  "type": "fusion:connecting",
+  "loader": "fusion:model",
+  "parent": "minecraft:block/cube_all",
+  "render_type": "cutout",
+  "textures": {
+    "all": "scp_ultimate:block/reinforced_glass_connected",
+    "particle": "scp_ultimate:block/newglass3"
+  }
+}
