@@ -385,6 +385,10 @@ file = "kubejs/data/enhancedcelestials/enhancedcelestials/lunar/event/super_bloo
 hash = "19b40713854131c52ebf6f15fdf5a3a278105f57a18fc6a4329e03c480318c91"
 
 [[files]]
+file = "kubejs/data/horror/tags/item/loot_or_fortune.json"
+hash = "063783fd75583c9235e4afb8fce15d78b37a1e76258f8c969c89ebc8e25124de"
+
+[[files]]
 file = "kubejs/data/horrorpack/advancement/engine_awake.json"
 hash = "c1f548ee8ab90649eae4eddd58d24df8f3aebcdb4cf674e79caaf022762b60e2"
 
@@ -441,6 +445,14 @@ file = "kubejs/data/horrorpack/recipe/sunbreaker.json"
 hash = "bece55dafa1f8fa506b6070686aaf90e8d8a23434c55dec58f4b8f67ccbcef36"
 
 [[files]]
+file = "kubejs/data/minecraft/enchantment/fortune.json"
+hash = "91ada95bcee31e1bed54efdebb7c14bcc224ee3e7e8356fb1471231ba6cea18f"
+
+[[files]]
+file = "kubejs/data/minecraft/enchantment/looting.json"
+hash = "c11e53ceed2a94e0de48da24f34cb15064edbea4e52c39084d3a9ffa5dbf35b5"
+
+[[files]]
 file = "kubejs/data/morestructures/worldgen/structure_set/brokenhotairballoon.json"
 hash = "08761b150fb74158657251af9015cb9512f6fe6b52ac825cfb258001ab7ab0a1"
 
@@ -471,6 +483,10 @@ hash = "9868ce84bcfddc6d853b3f47ce4b3aee09c98b20af91974582e76b900368b855"
 [[files]]
 file = "kubejs/server_scripts/idle_freeze.js"
 hash = "3d98a79859b561ad7f7e6f7787fdd020152b5f9bd460fe884d05499fb46514bc"
+
+[[files]]
+file = "kubejs/server_scripts/looting_to_fortune.js"
+hash = "96531936cf9abc10b74dfe9b83b452e314a7bb1f84ea11d0c4436687c6cdc86a"
 
 [[files]]
 file = "kubejs/server_scripts/pace_spore.js"

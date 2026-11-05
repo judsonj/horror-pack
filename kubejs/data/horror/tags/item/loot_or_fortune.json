@@ -1,0 +1,4 @@
+{
+  "replace": false,
+  "values": ["#minecraft:enchantable/sword", "#minecraft:enchantable/mining_loot"]
+}
