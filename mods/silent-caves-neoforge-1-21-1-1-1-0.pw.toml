@@ -1,0 +1,8 @@
+name = "silent_caves-neoforge-1.21.1-1.1.0.jar"
+filename = "silent_caves-neoforge-1.21.1-1.1.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/44uCzPEr/versions/k9mv6Vx9/silent_caves-neoforge-1.21.1-1.1.0.jar"
+hash-format = "sha512"
+hash = "5d35ab77dca63656a30d811bc0b3cc9799f77e165e244880aab2aee97336127a2f7ba9351775ac95e90ad4a590f09d9110137eb66f85e0b49cb7530fb67a3a4a"

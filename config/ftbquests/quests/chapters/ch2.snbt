@@ -5,6 +5,11 @@
 	group: "151E3065A6314194"
 	icon: { id: "create:track" }
 	id: "0750595BB1E99F0F"
+	images: [
+		{ image: "horrorpack:textures/quests/banner_ch2.png", x: 7d, y: -5.5d, width: 8d, height: 2.4d, rotation: 0.0d, order: 0 }
+		{ image: "horrorpack:textures/quests/sign_line.png", x: -2.5d, y: 0d, width: 3d, height: 1d, rotation: 0.0d, order: 0 }
+		{ image: "horrorpack:textures/quests/stencil_quiet.png", x: 13d, y: -5.5d, width: 3d, height: 1d, rotation: 0.0d, order: 0 }
+	]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -14,35 +19,228 @@
 			y: 0d
 			dependencies: ["7D0BC39519E50BC5"]
 			hide_until_deps_complete: true
-			tasks: [{ id: "3AA9E9FD37546294", type: "checkmark" }]
-			rewards: [{ id: "4B2495F4B1FCD586", type: "item", item: { count: 1, id: "minecraft:torch" }, count: 32 }]
-		}
-		{
-			id: "64F936ADB8D3EDAE"
-			x: 2d
-			y: -1.5d
-			dependencies: ["6BA10BBEC0AC73D5"]
-			tasks: [{ id: "2B3785B845DEA428", type: "checkmark" }]
-			rewards: [{ id: "4F3470DEC653A06D", type: "xp_levels", xp_levels: 6 }]
+			shape: "hexagon"
+			tasks: [{ id: "3AA9E9FD37546294", type: "item", item: { count: 1, id: "minecraft:torch" }, count: 16L }]
+			rewards: [{ id: "4B2495F4B1FCD586", type: "item", item: { count: 1, id: "minecraft:lantern" }, count: 4 }]
 		}
 		{
 			id: "2728033B3A3B1410"
 			x: 2d
-			y: 1.5d
+			y: 0d
 			dependencies: ["6BA10BBEC0AC73D5"]
-			optional: true
+			shape: "hexagon"
 			tasks: [{ id: "63D40BFECF313CDA", type: "item", item: { count: 1, id: "create:track" }, count: 16L }]
-			rewards: [{ id: "75FA6DB9033E9E8D", type: "random", table_id: 5557977682739783447L }]
+			rewards: [{ id: "75FA6DB9033E9E8D", type: "random", table_id: 8760363617949925918L }]
+		}
+		{
+			id: "7FF8B824E03C98EF"
+			x: 4d
+			y: 0d
+			dependencies: ["2728033B3A3B1410"]
+			shape: "hexagon"
+			tasks: [{ id: "03D88A2552AD058F", type: "item", item: { count: 1, id: "minecraft:lantern" }, count: 4L }]
+			rewards: [{ id: "1161267B3A9A4CA0", type: "item", item: { count: 1, id: "minecraft:coal" }, count: 16 }]
+		}
+		{
+			id: "74B4C215DE2037A9"
+			x: 6d
+			y: 0d
+			dependencies: ["7FF8B824E03C98EF"]
+			shape: "hexagon"
+			tasks: [{ id: "1CBE03215593FCDA", type: "item", item: { count: 1, id: "from_the_caves:stick_cross" } }]
+			rewards: [{ id: "2B20A3208AA5DB0C", type: "xp_levels", xp_levels: 3 }]
+		}
+		{
+			id: "296B3A2F9AA64A1C"
+			x: 8d
+			y: 0d
+			dependencies: ["74B4C215DE2037A9"]
+			shape: "hexagon"
+			tasks: [{ id: "062DEE0D7DA63282", type: "item", item: { count: 1, id: "from_the_caves:wooden_cross" } }]
+			rewards: [{ id: "2503CD024741CF63", type: "item", item: { count: 1, id: "minecraft:redstone" }, count: 4 }]
+		}
+		{
+			id: "78075ECAC362C9CB"
+			x: 10d
+			y: 0d
+			dependencies: ["296B3A2F9AA64A1C"]
+			shape: "hexagon"
+			tasks: [{ id: "570E2C004D9224B6", type: "item", item: { count: 1, id: "minecraft:white_wool" }, count: 8L }]
+			rewards: [{ id: "4A2E1BA254E93765", type: "item", item: { count: 1, id: "minecraft:leather_boots" } }]
+		}
+		{
+			id: "2881FE965D56CE0A"
+			x: 12d
+			y: 0d
+			dependencies: ["78075ECAC362C9CB"]
+			shape: "hexagon"
+			tasks: [{ id: "54CE4CD40DE9514C", type: "biome", biome: "minecraft:deep_dark" }]
+			rewards: [{ id: "1E118987A1449E13", type: "random", table_id: 5557977682739783447L }]
+		}
+		{
+			id: "132F17720563244A"
+			x: 14d
+			y: 0d
+			dependencies: ["2881FE965D56CE0A"]
+			shape: "hexagon"
+			tasks: [{ id: "5F48B44EFFBF8BE3", type: "advancement", advancement: "deeperdarker:main/find_ancient_city", criterion: "" }]
+			rewards: [{ id: "38C760371D520799", type: "random", table_id: 5557977682739783447L }]
 		}
 		{
 			id: "0B9F12FC3A0D76DB"
-			x: 5d
+			x: 16d
 			y: 0d
-			dependencies: ["64F936ADB8D3EDAE" "6BA10BBEC0AC73D5"]
+			dependencies: ["132F17720563244A"]
 			shape: "gear"
 			size: 2.0d
 			tasks: [{ id: "53F9D6BD881D074D", type: "checkmark" }]
 			rewards: [{ id: "3676B7BF5B5728B0", type: "random", table_id: 5557977682739783447L } { id: "639C389821EC1834", type: "command", command: "/threat heat quest gate2 10", elevate_perms: true, silent: true, auto: "invisible" }]
+		}
+		{
+			id: "64F936ADB8D3EDAE"
+			x: 2d
+			y: -2d
+			dependencies: ["6BA10BBEC0AC73D5"]
+			optional: true
+			tasks: [{ id: "2B3785B845DEA428", type: "checkmark" }]
+			rewards: [{ id: "4F3470DEC653A06D", type: "xp_levels", xp_levels: 6 }]
+		}
+		{
+			id: "37E669B44AB7A238"
+			x: 0d
+			y: -2d
+			dependencies: ["6BA10BBEC0AC73D5"]
+			optional: true
+			tasks: [{ id: "03322780CFAC76BF", type: "kill", entity: "silent_caves:silencing_golem", value: 1L }]
+			rewards: [{ id: "66F0F7EF1730FE33", type: "random", table_id: 5557977682739783447L }]
+		}
+		{
+			id: "5188F1E9630643A3"
+			x: 2d
+			y: 2d
+			dependencies: ["2728033B3A3B1410"]
+			optional: true
+			tasks: [{ id: "1986BF6986C9CB14", type: "structure", structure: "#bettermineshafts:better_mineshafts" }]
+			rewards: [{ id: "24CFF95C3DBB13BF", type: "random", table_id: 8760363617949925918L }]
+		}
+		{
+			id: "7812CC40D6BF64EE"
+			x: 4d
+			y: 3d
+			dependencies: ["5188F1E9630643A3"]
+			optional: true
+			tasks: [{ id: "66B99C89F0E09CD1", type: "structure", structure: "from_the_caves:abandoned_shafts" }]
+			rewards: [{ id: "002E69B8530E307B", type: "random", table_id: 5557977682739783447L }]
+		}
+		{
+			id: "39CA5A0461F170FE"
+			x: 4d
+			y: 2d
+			dependencies: ["5188F1E9630643A3"]
+			optional: true
+			tasks: [{ id: "33CD363213DA0A50", type: "structure", structure: "from_the_caves:miners_mine" }]
+			rewards: [{ id: "2D3C9995BF04732E", type: "random", table_id: 5557977682739783447L }]
+		}
+		{
+			id: "6A450DB86EB3A918"
+			x: 4d
+			y: -2d
+			dependencies: ["7FF8B824E03C98EF"]
+			optional: true
+			tasks: [{ id: "154500B96116ACDB", type: "item", item: { count: 1, id: "minecraft:soul_lantern" }, count: 4L }]
+			rewards: [{ id: "254366A35CFE48B5", type: "xp_levels", xp_levels: 3 }]
+		}
+		{
+			id: "6B3E4E3C7827C2E3"
+			x: 6d
+			y: -2d
+			dependencies: ["7FF8B824E03C98EF"]
+			optional: true
+			tasks: [{ id: "710FA3B300B3629A", type: "item", item: { count: 1, id: "tentaworks:tentacle" } }]
+			rewards: [{ id: "170D5C25451706E0", type: "item", item: { count: 1, id: "create:andesite_alloy" }, count: 4 }]
+		}
+		{
+			id: "16BCAEAEADC90F46"
+			x: 6d
+			y: -3.5d
+			dependencies: ["6B3E4E3C7827C2E3"]
+			optional: true
+			tasks: [{ id: "14467F835A4B2860", type: "item", item: { count: 1, id: "tentaworks:copper_tentacle_rig" } }]
+			rewards: [{ id: "28F1A150815B64AC", type: "random", table_id: 5557977682739783447L }]
+		}
+		{
+			id: "3FC28DEE5BB9B018"
+			x: 8d
+			y: -2d
+			dependencies: ["296B3A2F9AA64A1C"]
+			optional: true
+			tasks: [{ id: "36765DDEA924C063", type: "item", item: { count: 1, id: "from_the_caves:iron_cross" } }]
+			rewards: [{ id: "3ED7576AD5BD1AFD", type: "random", table_id: 8760363617949925918L }]
+		}
+		{
+			id: "25D38220222EB9F7"
+			x: 8d
+			y: 2d
+			dependencies: ["296B3A2F9AA64A1C"]
+			optional: true
+			tasks: [{ id: "5709643EDD595C0A", type: "item", item: { count: 1, id: "from_the_caves:holy_water" } }]
+			rewards: [{ id: "06CE7DCE042680A1", type: "random", table_id: 5557977682739783447L }]
+		}
+		{
+			id: "5C40C197C1BE9281"
+			x: 12d
+			y: -2d
+			dependencies: ["2881FE965D56CE0A"]
+			optional: true
+			tasks: [{ id: "0E538307726699C1", type: "item", item: { count: 1, id: "minecraft:sculk_sensor" } }]
+			rewards: [{ id: "7C1BC37C735C27FA", type: "xp_levels", xp_levels: 4 }]
+		}
+		{
+			id: "43D4302F02CF324C"
+			x: 12d
+			y: 2d
+			dependencies: ["2881FE965D56CE0A"]
+			optional: true
+			tasks: [{ id: "34E2167D631E6A50", type: "item", item: { count: 1, id: "minecraft:sculk_catalyst" } }]
+			rewards: [{ id: "4BED27BB012073FA", type: "random", table_id: 8760363617949925918L }]
+		}
+		{
+			id: "7E00ED1B6FF5E185"
+			x: 14d
+			y: -2d
+			dependencies: ["132F17720563244A"]
+			optional: true
+			tasks: [{ id: "3A1C929BAE531E35", type: "item", item: { count: 1, id: "minecraft:echo_shard" }, count: 4L }]
+			rewards: [{ id: "677110C9196A401C", type: "xp_levels", xp_levels: 4 }]
+		}
+		{
+			id: "1E20243C628D2135"
+			x: 16d
+			y: -3d
+			dependencies: ["7E00ED1B6FF5E185"]
+			optional: true
+			tasks: [{ id: "00838108EDE40F38", type: "item", item: { count: 1, id: "minecraft:recovery_compass" } }]
+			rewards: [{ id: "2E6BAFCCCCC86289", type: "xp_levels", xp_levels: 3 }]
+		}
+		{
+			id: "0710F468B9CB220E"
+			x: 14d
+			y: 2d
+			dependencies: ["132F17720563244A"]
+			shape: "gear"
+			size: 1.3d
+			optional: true
+			tasks: [{ id: "27A25E45D6127D50", type: "kill", entity: "minecraft:warden", value: 1L }]
+			rewards: [{ id: "6A7C408F366BDBB9", type: "random", table_id: 2893836879149437615L }]
+		}
+		{
+			id: "009EFC3604D9FFD1"
+			x: 16d
+			y: 3d
+			dependencies: ["0710F468B9CB220E"]
+			optional: true
+			tasks: [{ id: "3C09FBB2D9FA1E09", type: "item", item: { count: 1, id: "deeperdarker:heart_of_the_deep" } }]
+			rewards: [{ id: "4373040C30CCDEB2", type: "random", table_id: 2893836879149437615L }]
 		}
 	]
 }

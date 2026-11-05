@@ -1,0 +1,8 @@
+name = "from_the_caves-0.7.85.fm-neoforge-1.21.1.jar"
+filename = "from_the_caves-0.7.85.fm-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/s41HfLjb/versions/OFvjCG5V/from_the_caves-0.7.85.fm-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "feba2e1d10c217d9fdc23044cba4d72796296e494ced9bfc5dd5f4c8c7e910a72796d7d704bdc7681b4588a8cd83ac57e00965ea3d2029ca2e5021aea94905a6"

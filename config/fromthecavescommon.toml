@@ -1,0 +1,83 @@
+[spawn_settings]
+	#Default spawn rate (Min: 0.0, Max: 10.0, Default: 1.0)
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
+	default_spawn_rate = 1.0
+
+[protection_settings]
+	#Comma-separated list of mod IDs whose blocks should be protected (e.g., 'create,botania,thermal')
+	protected_mod_ids = "create"
+
+[gameplay_settings]
+	#Enable photosensitive safety mode by default
+	photosensitive_mode_enabled = false
+	#Whether the photosensitive warning has been shown to the user
+	photosensitive_warning_shown = false
+	#Whether the freemode warning has been shown to the user
+	freemode_warn_shown = false
+	#Enable upside down cross spawning
+	upside_down_cross_spawn_enabled = true
+	#Allow block destruction/grief (if false, blocks won't be destroyed)
+	allow_grief = false
+	#Enable automatic restoration of broken blocks
+	auto_restore_broken_enabled = true
+	#When true: place the full cross+tower structure in villages (new mode).
+	#When false: place only a chest with a sign (legacy mode).
+	village_cross_new_mode = true
+	#Use the custom mod panorama on the main menu
+	custom_panorama_enabled = true
+	#Play ambient.cave sound instead of ambient.soul_sand_valley.mood for mod events
+	use_vanilla_cave_ambient = false
+	#When true: use the alpha-era models, textures and animations (phase1alpha / phase2alpha).
+	#When false (default): use the remade models, textures and animations (phase1remade / phase2remade).
+	use_alpha_assets = false
+	#When true (default): block disguise entities (glowstone, dirt, stone, logs, etc.) use vanilla Minecraft block textures directly (resource pack compatible).
+	#When false: use the mod's predefined entity textures.
+	use_vanilla_block_textures = true
+	#Enable the silence effect (volume reduction) when dangerous mobs are nearby
+	silence_effect_enabled = true
+	#Enable the heartbeat sound effect when mobs are nearby
+	heartbeat_near_mob_enabled = true
+	#Enable mob reactions to being close to the entity (AnimalFearManagerProcedure)
+	animal_fear_enabled = true
+	#Enable the light level overlay on the HUD
+	light_level_overlay_enabled = true
+	#Spawn Rate System Mode: 2 = Adaptive Director (recently added optimized and fixed system, recommended over classic option, default), 1 = Countdown Timer, 0 = Classic Probability
+	# Default: 2
+	# Range: 0 ~ 2
+	spawn_rate_mode = 2
+	#Legacy option: Enable the Spawn Countdown System
+	counter_mode_enabled = false
+	#Minimum time between events in countdown system (seconds, default: 60)
+	# Default: 60
+	# Range: 10 ~ 7200
+	counter_min_seconds = 60
+	#Maximum time between events in countdown system (seconds, default: 120)
+	# Default: 120
+	# Range: 10 ~ 7200
+	counter_max_seconds = 120
+
+[exorcism_settings]
+	#Comma-separated list of entity IDs or Mod IDs that can be exorcized using MassPossessedBanish
+	#These are regular entities (not possessed variants)
+	#Format: modid:entity_name, modid: (all entities from that mod)
+	#Example: 'from_the_caves:amos, minecraft:, spore:'
+	exorcizable_entities = ""
+	#List of possessed mob exorcism mappings for PossessedMobExorcism
+	#Format: possessed_mob->original_mob,possessed_mob->original_mob
+	#Example: 'from_the_caves:possessed_villager->minecraft:villager,from_the_caves:possessed_pig->minecraft:pig'
+	#The possessed mob will be converted back to its original form when exorcized
+	exorcizable_possessed_mobs = ""
+	#Custom possession pairs for Phase2Possession
+	#Format: original_mob->possessed_mob,original_mob->possessed_mob
+	#Example: 'minecraft:villager->from_the_caves:possessed_villager,minecraft:pig->from_the_caves:possessed_pig'
+	#Original mobs will be converted to their possessed variants
+	custom_possession_pairs = ""
+	#Base probability for Phase 2 mob possession (Min: 0.000005, Max: 0.000040, Default: 0.000025)
+	# Default: 2.5E-5
+	# Range: 5.0E-6 ~ 4.0E-5
+	possession_base_prob = 2.5E-5
+	#Max probability for Phase 2 mob possession (Min: 0.00001, Max: 0.000055, Default: 0.000040)
+	# Default: 4.0E-5
+	# Range: 1.0E-5 ~ 5.5E-5
+	possession_max_prob = 4.0E-5

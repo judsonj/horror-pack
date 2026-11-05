@@ -5,6 +5,9 @@
 	group: "3095EA91149B5FEF"
 	icon: { id: "minecraft:skeleton_skull" }
 	id: "60BB903992A168B6"
+	images: [
+		{ image: "horrorpack:textures/quests/banner_horrors.png", x: 3d, y: -4.5d, width: 8d, height: 2.4d, rotation: 0.0d, order: 0 }
+	]
 	order_index: 10
 	quest_links: [ ]
 	quests: [
@@ -49,6 +52,27 @@
 			y: 0d
 			tasks: [{ id: "78ED15811B52CEA9", type: "checkmark" }]
 			rewards: [{ id: "7DC43CCD7095CFF8", type: "xp_levels", xp_levels: 3 }]
+		}
+		{
+			id: "7F38C96463632CCB"
+			x: 6d
+			y: -2d
+			tasks: [{ id: "23C5F1AD54451795", type: "kill", entity: "silent_caves:silencing_golem", value: 1L }]
+			rewards: [{ id: "3002AE57EC84E35C", type: "random", table_id: 5557977682739783447L }]
+		}
+		{
+			id: "091946D95301C968"
+			x: 6d
+			y: 0d
+			tasks: [{ id: "21B7B3B7EC355EEE", type: "item", item: { count: 1, id: "from_the_caves:wooden_cross" } }]
+			rewards: [{ id: "783379ABC75A7C2C", type: "item", item: { count: 1, id: "minecraft:redstone" }, count: 4 }]
+		}
+		{
+			id: "3CADEDB868BE1BB6"
+			x: 6d
+			y: 2d
+			tasks: [{ id: "57C487DA56102C95", type: "biome", biome: "minecraft:deep_dark" }]
+			rewards: [{ id: "213C8674F795366F", type: "random", table_id: 5557977682739783447L }]
 		}
 	]
 }

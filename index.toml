@@ -17,6 +17,10 @@ file = "config/fallingtree.json"
 hash = "0ff0318e33bcbd0fddf0d0f7b396111768f053a4733e289c3199ca40da2c8a71"
 
 [[files]]
+file = "config/fromthecavescommon.toml"
+hash = "e73eee73222ca6d41ebf1fffdf93ec43ab4cb569bceda410ab02eaaa150710c3"
+
+[[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "358b42a1e89bd82a67a7a9ec4db675a318d61ef4302e5a77a764bb1eb05bde91"
 
@@ -30,7 +34,7 @@ hash = "d73d67188ada628627d51ba018110bda6450c1649822837ed829164b4344893a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch2.snbt"
-hash = "ba5c3f601ff3956bb3945971e0895545694ec7acfa020315dbeac65c0c6b2019"
+hash = "6b18cf15eb39997769e5126bdd3292a65f1635a4f610e938d7e6e5a444721351"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch3.snbt"
@@ -54,7 +58,7 @@ hash = "5909bc48495a008f055bfbf4f712196f194b4505b1451a476ec740906fddbaee"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/g_horrors.snbt"
-hash = "ed8084dd6504f4cd753317e81f576ce8d4ac874fea1723f393fcc36807bcda44"
+hash = "3e8bbbe1f2a5d3a17a9c3a7c94eb3bc8eaa84efc1147b87b0f20192833969930"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/g_spore.snbt"
@@ -70,7 +74,7 @@ hash = "65a9535f763cc9487e646c28afd72713ee5acf7e8113eb951f8adb28ba58aa55"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "6bc60e6f0e7e5d8418fd2af79644435c64762b25248e437b4274f7a3bf36a183"
+hash = "e3514c7151d3c9b9fdf4583000dca465dce9e1553af65d8cde525d88140a4ed3"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/common.snbt"
@@ -147,6 +151,22 @@ hash = "4991e399d360cb2342b2c483c3f95873c6d21c9852d344cfec7e3e5610f29e2d"
 [[files]]
 file = "kubejs/assets/horrorpack/lang/en_us.json"
 hash = "49cc6912adbae2ff461bf0a9b4c90e5aec694adc7cbc328f4af8be9631af787d"
+
+[[files]]
+file = "kubejs/assets/horrorpack/textures/quests/banner_ch2.png"
+hash = "397ee28ab6be30d1d76a9f924dcb40b1ce56710a91be1c3c858097d8d9e3e886"
+
+[[files]]
+file = "kubejs/assets/horrorpack/textures/quests/banner_horrors.png"
+hash = "5bc3899ce2b6ee0c7917ceb501336d128e9a947871c5851d44f3a0481d47fc12"
+
+[[files]]
+file = "kubejs/assets/horrorpack/textures/quests/sign_line.png"
+hash = "a2bc5eb2f95387b36807f88d7e38da655db3a4b03bf7bd5df8042abd91987a58"
+
+[[files]]
+file = "kubejs/assets/horrorpack/textures/quests/stencil_quiet.png"
+hash = "4d6c9b26e8253220f6a776288bc34d077e1b3d9223435d20763eedd06fd52df4"
 
 [[files]]
 file = "kubejs/assets/scp_ultimate/models/block/reinforced_glass.json"
@@ -576,6 +596,11 @@ hash = "b2230a254c0988b8ae5b0597b1de2da8add5a867054e496a95f9f90a7079393c"
 metafile = true
 
 [[files]]
+file = "mods/copycats-3-0-9-mc-1-21-1-neoforge.pw.toml"
+hash = "20a98d31041eb256af8a65c5e84180c1f48d6003362de0e55f20686307ba0b01"
+metafile = true
+
+[[files]]
 file = "mods/corgilib-neoforge-1-21-1-5-0-0-10.pw.toml"
 hash = "e199f7fdeb152babd24bce135d5ce4306a42e772d74af7c4f8b063505fed2346"
 metafile = true
@@ -661,6 +686,11 @@ hash = "c89cf14d55ddb33cc2571cc7d72703d733f781a4f04a9c3ba101238aeec28d7e"
 metafile = true
 
 [[files]]
+file = "mods/deeperdarker-neoforge-1-21-1-1-4-1.pw.toml"
+hash = "3f0c1e85c08e09f79b2fcaf4754a78c70bf08157394c0de8b255d7fb8c3c6523"
+metafile = true
+
+[[files]]
 file = "mods/distanthorizons-3-3-3-1-21-1-fabric-neoforge.pw.toml"
 hash = "ffca99ba87a85fc2a04ee89eac5fe8b5386ff634e12243d0e007ec0953a42e53"
 metafile = true
@@ -727,6 +757,16 @@ metafile = true
 [[files]]
 file = "mods/forge-weeping-angels-mc1-21-v1-0-5-forge.pw.toml"
 hash = "a127067354db59cbc976338630c00aad4d3c5ae5f40f8aa2d3f73b3419ca1de0"
+metafile = true
+
+[[files]]
+file = "mods/framedblocks-10-6-3.pw.toml"
+hash = "37dbae282c42a5877786ae81dc999015891f33fd7df2630bf84f7e57adae0abf"
+metafile = true
+
+[[files]]
+file = "mods/from-the-caves-0-7-85-fm-neoforge-1-21-1.pw.toml"
+hash = "edcb9ed8404224489aae1c02864c1ed4d6543ac21e17caf94d4e02c213e7301d"
 metafile = true
 
 [[files]]
@@ -878,6 +918,10 @@ hash = "2f156884ca37186f217f05ffe8e3ac9f3c7df4c7efea09e5ae1c724f967fa859"
 metafile = true
 
 [[files]]
+file = "mods/octo-arms-1.6.0+mc1.21.1.jar"
+hash = "c81d53ee12277a8ac8031574d0b5e8aa6fb5dc1632f3ce5628718eaabf8362cc"
+
+[[files]]
 file = "mods/open-parties-and-claims-neoforge-1-21-1-0-33-0.pw.toml"
 hash = "af9dc3d91b85e448d822d35fe42e40ce9f47871ac1dddf7027fffd1be54b35df"
 metafile = true
@@ -929,6 +973,11 @@ hash = "8ef19420c96aa3fbae987f25890d65b1c05e1274823679cc8248326d2e2992e7"
 [[files]]
 file = "mods/searchables-neoforge-1-21-1-1-0-2.pw.toml"
 hash = "44d8808acb558a329e9f36f8b4fb18614ff74177ed30e648dee3e19e899d6705"
+metafile = true
+
+[[files]]
+file = "mods/silent-caves-neoforge-1-21-1-1-1-0.pw.toml"
+hash = "69addf9ea4b896754d96549466927e370432f74e3c84908d7425f0f472bc5a56"
 metafile = true
 
 [[files]]
