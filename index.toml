@@ -485,6 +485,10 @@ file = "kubejs/server_scripts/safety.js"
 hash = "e816e9cdf0d0bd2de51b9f61341d2745e6952f77f007ada1b20d4013a19e8c5d"
 
 [[files]]
+file = "kubejs/server_scripts/spore_zone.js"
+hash = "6b366254a194cad0c0660b93936285349950f00fcc5be6914d8272b93da2238f"
+
+[[files]]
 file = "kubejs/server_scripts/starter_kit.js"
 hash = "77ac8f0f49d17ed89e29404192c515cfaaef95ce014a9c39afce84645484b705"
 
