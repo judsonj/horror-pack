@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [" P ", "EHE", " A "],
+  "key": {
+    "P": { "item": "minecraft:carved_pumpkin" },
+    "E": { "item": "minecraft:ender_eye" },
+    "H": { "item": "minecraft:hay_block" },
+    "A": { "item": "minecraft:armor_stand" }
+  },
+  "result": { "id": "horrorpack:scarecrow", "count": 1 }
+}

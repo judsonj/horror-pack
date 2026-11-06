@@ -150,7 +150,7 @@ hash = "4991e399d360cb2342b2c483c3f95873c6d21c9852d344cfec7e3e5610f29e2d"
 
 [[files]]
 file = "kubejs/assets/horrorpack/lang/en_us.json"
-hash = "49cc6912adbae2ff461bf0a9b4c90e5aec694adc7cbc328f4af8be9631af787d"
+hash = "4115d104959025242fb23d2b6dad7b4f4a944c850f6487f03b931acb6677378a"
 
 [[files]]
 file = "kubejs/assets/horrorpack/textures/quests/banner_ch2.png"
@@ -441,6 +441,10 @@ file = "kubejs/data/horrorpack/recipe/rail_lance.json"
 hash = "a6b862ffbcdab42f1ead58179794f90bc2ca22d9382984fa3ae2a06a652a5624"
 
 [[files]]
+file = "kubejs/data/horrorpack/recipe/scarecrow.json"
+hash = "2e4feee5db9e20e9e86f258a1aaf51bfb76c741285c313450dd0e49cb18d5263"
+
+[[files]]
 file = "kubejs/data/horrorpack/recipe/sunbreaker.json"
 hash = "bece55dafa1f8fa506b6070686aaf90e8d8a23434c55dec58f4b8f67ccbcef36"
 
@@ -477,6 +481,10 @@ file = "kubejs/server_scripts/faces_daylight.js"
 hash = "d7d85b6d6580316fa1bb12a561d681871db0469c92a5a6c3b92f1a37a0efa17b"
 
 [[files]]
+file = "kubejs/server_scripts/fall_kill_xp.js"
+hash = "c53d197c4145a5cab6b1f453e652096cd692dcdcccd488d81cc59f29bb02bae6"
+
+[[files]]
 file = "kubejs/server_scripts/horror_grace.js"
 hash = "9868ce84bcfddc6d853b3f47ce4b3aee09c98b20af91974582e76b900368b855"
 
@@ -501,6 +509,10 @@ file = "kubejs/server_scripts/safety.js"
 hash = "e816e9cdf0d0bd2de51b9f61341d2745e6952f77f007ada1b20d4013a19e8c5d"
 
 [[files]]
+file = "kubejs/server_scripts/scarecrow.js"
+hash = "8ea2aefa17f69cd31798fb289b935c2caf1aa07a3f1e03aa3cce1f500e94637b"
+
+[[files]]
 file = "kubejs/server_scripts/spore_zone.js"
 hash = "6b366254a194cad0c0660b93936285349950f00fcc5be6914d8272b93da2238f"
 
@@ -517,8 +529,16 @@ file = "kubejs/server_scripts/survivor_call.js"
 hash = "045c3d54df32d67d3876c5156e54019f03eb86424dc979451a51ec1bf07be670"
 
 [[files]]
+file = "kubejs/server_scripts/tall_sugar_cane.js"
+hash = "d5ac10a935672706f77416f853106b21aadac98780ac20b5a7ed873a879852c5"
+
+[[files]]
 file = "kubejs/server_scripts/world_move.js"
 hash = "6d2c1dec9343293123b16c405439809b817ae43ef106e1e69b4b3608f99ebd1e"
+
+[[files]]
+file = "kubejs/server_scripts/xp_to_belts.js"
+hash = "0a4288c61c674686efcda2a4e1c88d4f833753525b0afc0f131835d5251d30cf"
 
 [[files]]
 file = "kubejs/server_scripts/zz_fluff_mobs.js"
@@ -530,7 +550,7 @@ hash = "f1f2394de55e2f790206f5ee08d57fd2409310eff6dad2cb49207107938b863f"
 
 [[files]]
 file = "kubejs/startup_scripts/horror_items.js"
-hash = "b84c10cce7d0f3e042df45ee0f4f33b57776727b906a894117db7fb4d0d51df8"
+hash = "f53040b33e8dbaf45d08443b42a413a3255aef7d1fbb300f72f08538ca2f815f"
 
 [[files]]
 file = "mods/accessories-neoforge-1-1-0-beta-54-1-21-1.pw.toml"
