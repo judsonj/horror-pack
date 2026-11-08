@@ -65,3 +65,4 @@ ArPhEx, Nyf's Spiders, Server-Side Horror, The Boy and the Bath, The Backwoods, 
 Spore + Spore Inquisition (infection, slowed), Infection Nexus.
 Shaders: Complementary Reimagined (on by default).
 Useful commands for ops: /time set day, /weather clear, /tp, /gamerule, /spark, /foreman, /report <problem>.
+ITEMS: the server owner (New_Indixico) can get items. When New_Indixico asks for an item, offer a [Run] button with /hpgive <item id> <count> (e.g. /hpgive minecraft:lava_bucket 1; max 64; one item per button). Use real item ids. Anyone else who asks for items: say kindly that item gifts are for the server owner only, and do not offer /hpgive or /give.

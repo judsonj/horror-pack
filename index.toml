@@ -114,7 +114,7 @@ hash = "36326bc819c1e11c55835e5b03513171a0c253dc8bdb568edf79a3561d67ec3f"
 
 [[files]]
 file = "config/survivors/claude_context.md"
-hash = "b85cd42e60c228676e43632f85a7ade6e8bf237ba7dc615a982a425863403ad4"
+hash = "9588d095c6054d708cf65069d7dfc4055b3079b0ec3fb02a348d2c48155ab272"
 
 [[files]]
 file = "config/survivors/conductor.json"
@@ -469,6 +469,14 @@ file = "kubejs/data/neoforge/loot_modifiers/global_loot_modifiers.json"
 hash = "f65a86e683000a3475fd6cdd20464e3a776a7d9dad1da3e119c0db4d4f2e9786"
 
 [[files]]
+file = "kubejs/server_scripts/claude_give.js"
+hash = "4ef410c5b168f96ceefc8418caa6dddb0990114084f3b814b60a3eedcee91161"
+
+[[files]]
+file = "kubejs/server_scripts/create_guard.js"
+hash = "b8c0d2a34d12b3332cf7d766df3b4ea97c7ba2d6395e99192fa8aab523effdd7"
+
+[[files]]
 file = "kubejs/server_scripts/enchant_reroll.js"
 hash = "876ec03c6407aefdcda656ec0ca848d961d0c6992e7a06fc7f79779c0a323336"
 
@@ -513,6 +521,10 @@ file = "kubejs/server_scripts/scarecrow.js"
 hash = "8ea2aefa17f69cd31798fb289b935c2caf1aa07a3f1e03aa3cce1f500e94637b"
 
 [[files]]
+file = "kubejs/server_scripts/sort.js"
+hash = "ccf75fcca86e0b5800a16044d0b98353fde17fe65439fd5302c2f8c2719b2569"
+
+[[files]]
 file = "kubejs/server_scripts/spore_zone.js"
 hash = "6b366254a194cad0c0660b93936285349950f00fcc5be6914d8272b93da2238f"
 
@@ -541,12 +553,20 @@ file = "kubejs/server_scripts/xp_to_belts.js"
 hash = "0a4288c61c674686efcda2a4e1c88d4f833753525b0afc0f131835d5251d30cf"
 
 [[files]]
+file = "kubejs/server_scripts/zz_fluff_mimic.js"
+hash = "b75b608e0f21a72357c52d5b32668cf5747313d39b8ff62d7d75a595116f99fe"
+
+[[files]]
+file = "kubejs/server_scripts/zz_fluff_mimic2.js"
+hash = "690fcb98a4aefae5c6d3443aa1df71042391f6244d2e1ec0d968059aa67cbf30"
+
+[[files]]
 file = "kubejs/server_scripts/zz_fluff_mobs.js"
 hash = "4fd9bf1cf375c747c02a4ca3cf8661c6f327da115025823395fd61ec9c656f2d"
 
 [[files]]
 file = "kubejs/server_scripts/zz_fluff_scares.js"
-hash = "f1f2394de55e2f790206f5ee08d57fd2409310eff6dad2cb49207107938b863f"
+hash = "fd28fd88df5b82ff6ed214038a43a29d64d8ffe1e49b6d55ccc16983d1d1e93d"
 
 [[files]]
 file = "kubejs/startup_scripts/horror_items.js"
@@ -1116,11 +1136,6 @@ metafile = true
 [[files]]
 file = "mods/the-obsessed-1-5-2g-neoforge-1-21-1.pw.toml"
 hash = "5f8cdeff573f472d9494c02211a415369150677d2dea48d622b3362936ff1248"
-metafile = true
-
-[[files]]
-file = "mods/the-ravenous-2-0-5-neoforge-1-21-1.pw.toml"
-hash = "89304eec0a920dc090d67be6ecdc0cd4da793b048fd8196a9dd148d87bf9c0bc"
 metafile = true
 
 [[files]]

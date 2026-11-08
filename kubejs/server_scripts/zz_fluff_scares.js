@@ -26,9 +26,20 @@ function flfSafe(server, p) {
 function flfSound(server, p, sound, x, y, z, vol, pitch) {
   hpCmd(server, 'execute in ' + hpDim(hpLvl(p)) + ' run playsound ' + sound + ' hostile ' + p.uuid + ' ' + x + ' ' + y + ' ' + z + ' ' + vol + ' ' + pitch)
 }
+// Which way an entity faces, in degrees. getYRot() is not callable from Rhino on players, so try safe routes in order.
+function hpYawDeg(e) {
+  try { let y = Number(e.yRot); if (!isNaN(y)) return y } catch (err) { }
+  try { let v = e.getLookAngle(); let x = Number(v.x()), z = Number(v.z()); if (x !== 0 || z !== 0) return Math.atan2(-x, z) * 180 / Math.PI } catch (err) { }
+  return Math.random() * 360
+}
+function hpPitchDeg(e) {
+  try { let p = Number(e.xRot); if (!isNaN(p)) return p } catch (err) { }
+  try { let v = e.getLookAngle(); return -Math.asin(Math.max(-1, Math.min(1, Number(v.y())))) * 180 / Math.PI } catch (err) { }
+  return 0
+}
 // Unit vector the player faces (x, z).
 function flfFacing(p) {
-  let yaw = Number(p.getYRot()) * Math.PI / 180
+  let yaw = hpYawDeg(p) * Math.PI / 180
   return { x: -Math.sin(yaw), z: Math.cos(yaw) }
 }
 function flfOpen(level, x, y, z) {
@@ -52,6 +63,7 @@ function flfStep(server, p, f, d, delay) {
 }
 
 function flfScare(server, p) {
+  if (typeof mimGate === 'function' && !mimGate(server, p)) return  // shared per-player cap (zz_fluff_mimic.js)
   let pick = Math.floor(Math.random() * 4)
   let f = flfFacing(p)
   if (pick === 0) {
