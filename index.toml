@@ -514,7 +514,7 @@ hash = "3da6bdcced942ab1b12e08aa2093e672d1408d634b83b3eb44d4c6b01d682dcf"
 
 [[files]]
 file = "kubejs/server_scripts/safety.js"
-hash = "e816e9cdf0d0bd2de51b9f61341d2745e6952f77f007ada1b20d4013a19e8c5d"
+hash = "e3401423f9eaa5e6c045b92c1364b2b86f07501d54015086673d1f31a0f19998"
 
 [[files]]
 file = "kubejs/server_scripts/scarecrow.js"
@@ -522,7 +522,7 @@ hash = "8ea2aefa17f69cd31798fb289b935c2caf1aa07a3f1e03aa3cce1f500e94637b"
 
 [[files]]
 file = "kubejs/server_scripts/sort.js"
-hash = "ccf75fcca86e0b5800a16044d0b98353fde17fe65439fd5302c2f8c2719b2569"
+hash = "d9689b4d420260e19a1e7b53f96059db01c575c2c1e19216765e1c0ae7c8c48e"
 
 [[files]]
 file = "kubejs/server_scripts/spore_zone.js"
@@ -607,6 +607,11 @@ hash = "b564fce6cf82663276510cc15a675c419744173ce129fcdcb533dd9d987ff869"
 metafile = true
 
 [[files]]
+file = "mods/armor-hider-neoforge-0-14-6-mc-1-21-0-1.pw.toml"
+hash = "3368b429a5149100a0005ba3fb5d328290430b9b579311c6bd1c5847ec6ec02c"
+metafile = true
+
+[[files]]
 file = "mods/arphex-5-0-2-neoforge-1-21-1.pw.toml"
 hash = "55b83539250ce31a767ca24a202ca133a927cab15cc5c4d9b2a15cdcb94d5596"
 metafile = true
@@ -620,6 +625,10 @@ metafile = true
 file = "mods/better-advanced-tooltips-2101-1-0-build-5.pw.toml"
 hash = "0d57f6ea17e0c85871a5d10449f48175c09816b1497d1a7411e1cabd11f7c27b"
 metafile = true
+
+[[files]]
+file = "mods/bigtanks-0.3.0.jar"
+hash = "36dbd14205d15b0b42ff0d68594ed7de2393d9937f54fbc9f295c9a47617d70c"
 
 [[files]]
 file = "mods/blockui-1.0.212-1.21.1-snapshot.jar"
@@ -802,6 +811,11 @@ metafile = true
 [[files]]
 file = "mods/entityculling-neoforge-1-11-3-mc1-21-1.pw.toml"
 hash = "2f6748be75ddc2b94923101b303726eb25676c357b52e365f7d5870c2b00a4b7"
+metafile = true
+
+[[files]]
+file = "mods/eunomia-neoforge-0-3-15-mc-1-21-0-1.pw.toml"
+hash = "e326c416864383993dd49245aeb4accc152569da87bc58c83cec6662fc398365"
 metafile = true
 
 [[files]]

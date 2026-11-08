@@ -226,9 +226,16 @@ function safBand(server, player, st) {
   else if (band === 'exposed') hpBar(server, name, 'Exposed.', 'dark_gray')
 }
 
+// Rare since 2026-11-08 (operator: "lights always flickering"): at most one pulse per player per 60 s, half chance after that
+// (~1 a minute or so). Was 35% every 5 s scan = near-constant Darkness.
+const SAF_LO_GAP = 1200
+let safLoLast = {}
 function safLightsOutPulse(server, player, place) {
-  if (!hpLightsOut(server) || place.powered > 0 || place.light < 6 || Math.random() > 0.35) return
+  if (!hpLightsOut(server) || place.powered > 0 || place.light < 6) return
   let name = String(player.username)
+  if (safLoLast[name] && server.tickCount - safLoLast[name] < SAF_LO_GAP) return
+  if (Math.random() > 0.5) return
+  safLoLast[name] = server.tickCount
   hpCmd(server, 'effect give ' + name + ' minecraft:darkness 4 0 true')
   // (repeating fizz sound removed 2026-10-25 at the operator's request)
 }

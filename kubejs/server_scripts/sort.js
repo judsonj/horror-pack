@@ -1,6 +1,6 @@
 // Our own sort, by what you're doing (not A-Z). Server-side only: players need nothing installed.
 //   /sort              looking at a chest/barrel/shulker within reach -> sorts it; otherwise sorts YOUR inventory (hotbar, armor, offhand untouched)
-//   sneak + right-click a chest/barrel/shulker with an EMPTY hand -> sorts it (instead of opening it)
+//   sneak + right-click: TURNED OFF 2026-11-08 (operator). Set SRT_SNEAK_SORT = true to bring it back.
 //   /hpsort at <x> <y> <z>   (op/console) sorts the container there: for testing
 // Order: 1 weapons/tools (best first) · 2 armor · 3 light + survival (torches, food best first, potions) · 4 building blocks (most first)
 //        · 5 Create parts · 6 ores -> raw -> ingots/gems -> nuggets/dust · 7 everything else · 8 junk (rotten flesh, bones, string, seeds...)
@@ -187,7 +187,9 @@ ServerEvents.commandRegistry(event => {
       }))))))
 })
 
+const SRT_SNEAK_SORT = false
 BlockEvents.rightClicked(event => {
+  if (!SRT_SNEAK_SORT) return
   let p = event.player
   if (!p || !p.isShiftKeyDown()) return
   if (String(event.hand).toLowerCase().indexOf('main') < 0) return
