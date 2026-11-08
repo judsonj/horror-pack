@@ -627,10 +627,6 @@ hash = "0d57f6ea17e0c85871a5d10449f48175c09816b1497d1a7411e1cabd11f7c27b"
 metafile = true
 
 [[files]]
-file = "mods/bigtanks-0.3.1.jar"
-hash = "0f341e2a0c8401a9d6f7f5d67fe4a891b554c034bb52bd2429fa57fde6919d7b"
-
-[[files]]
 file = "mods/blockui-1.0.212-1.21.1-snapshot.jar"
 hash = "b7bab58b5f3d8eb722609005d628a0094d9220eb3b7edf4e0acd4ee9d592dca4"
 
